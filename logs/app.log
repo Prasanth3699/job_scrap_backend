@@ -313,3 +313,11 @@ server closed the connection unexpectedly
 FROM (SELECT jobs.id AS jobs_id, jobs.job_title AS jobs_job_title, jobs.company_name AS jobs_company_name, jobs.job_type AS jobs_job_type, jobs.category AS jobs_category, jobs.salary AS jobs_salary, jobs.experience AS jobs_experience, jobs.location AS jobs_location, jobs.description AS jobs_description, jobs.detail_url AS jobs_detail_url, jobs.apply_link AS jobs_apply_link, jobs.posting_date AS jobs_posting_date, jobs.created_at AS jobs_created_at, jobs.updated_at AS jobs_updated_at 
 FROM jobs) AS anon_1]
 (Background on this error at: https://sqlalche.me/e/20/e3q8)
+2025-02-23 17:52:40 | INFO | Shutting down the application...
+2025-02-23 17:52:40 | INFO | Application shutdown completed successfully
+2025-02-23 17:52:50 | INFO | Starting up the application...
+2025-02-23 17:52:50 | INFO | Scheduled job scraping for 9:00
+2025-02-23 17:52:50 | INFO | Scheduler initialized successfully
+2025-02-23 17:52:50 | INFO | Application startup completed successfully
+2025-02-23 18:02:45 | INFO | Shutting down the application...
+2025-02-23 18:02:45 | INFO | Application shutdown completed successfully

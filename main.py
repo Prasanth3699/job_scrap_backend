@@ -7,6 +7,12 @@ from app.core.logger import logger
 from fastapi.middleware.cors import CORSMiddleware
 
 
+origins = [
+    "https://job-scrap-ckpdxhkvy-prasanths-projects-1c782ce1.vercel.app",
+    "http://localhost:3000",
+]
+
+
 def get_application():
     db = next(get_db())
     settings = SettingsService.get_settings(db)
@@ -17,10 +23,12 @@ def get_application():
     # Configure CORS
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["http://localhost:3000"],  # Allow requests from your Next.js app
+        allow_origins=origins,  # Allow requests from your Next.js app
         allow_credentials=True,
         allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
         allow_headers=["*"],  # Allow all headers
+        expose_headers=["*"],
+        max_age=600,  # Cache preflight requests for 10 minutes
     )
 
     @app.on_event("startup")
