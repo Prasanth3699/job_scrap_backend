@@ -321,3 +321,9 @@ FROM jobs) AS anon_1]
 2025-02-23 17:52:50 | INFO | Application startup completed successfully
 2025-02-23 18:02:45 | INFO | Shutting down the application...
 2025-02-23 18:02:45 | INFO | Application shutdown completed successfully
+2025-02-23 18:03:11 | INFO | Starting up the application...
+2025-02-23 18:03:12 | INFO | Scheduled job scraping for 9:00
+2025-02-23 18:03:12 | INFO | Scheduler initialized successfully
+2025-02-23 18:03:12 | INFO | Application startup completed successfully
+2025-02-23 18:08:05 | INFO | Shutting down the application...
+2025-02-23 18:08:05 | INFO | Application shutdown completed successfully

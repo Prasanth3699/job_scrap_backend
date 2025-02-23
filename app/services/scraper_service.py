@@ -29,29 +29,38 @@ IST = pytz.timezone("Asia/Kolkata")
 
 
 def init_driver():
-    """Initialize a headless Chrome driver."""
+    """Initialize a headless Chrome driver for Render environment."""
     try:
         chrome_options = Options()
-        if settings.SELENIUM_HEADLESS:
-            chrome_options.add_argument("--headless")
+
+        # Required options for Render
+        chrome_options.add_argument("--headless")
         chrome_options.add_argument("--disable-gpu")
-        chrome_options.add_argument("--window-size=1920,1080")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
+        chrome_options.binary_location = (
+            "/usr/bin/google-chrome-stable"  # Render's Chrome path
+        )
+
+        # Additional options from your existing code
+        chrome_options.add_argument("--window-size=1920,1080")
         chrome_options.add_argument("--disable-web-security")
         chrome_options.add_argument(
             "--disable-features=IsolateOrigins,site-per-process"
         )
-        # Add these options to handle WebGL warning
         chrome_options.add_argument("--disable-software-rasterizer")
         chrome_options.add_argument("--disable-webgl")
         chrome_options.add_argument("--disable-webgl2")
 
-        service = Service(ChromeDriverManager().install())
+        # Use a specific ChromeDriver version that matches Render's Chrome
+        driver_manager = ChromeDriverManager(version="latest")
+        service = Service(driver_manager.install())
+
         driver = webdriver.Chrome(service=service, options=chrome_options)
         driver.set_page_load_timeout(settings.SELENIUM_TIMEOUT)
         return driver
     except Exception as e:
+        logger.error(f"Driver initialization error: {str(e)}")
         raise ScraperException(f"Failed to initialize driver: {str(e)}")
 
 

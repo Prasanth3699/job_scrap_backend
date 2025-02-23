@@ -5,11 +5,16 @@ from app.api.router import api_router
 from app.db.session import get_db
 from app.core.logger import logger
 from fastapi.middleware.cors import CORSMiddleware
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
 
 
-origins = [
-    "https://job-scrap-ckpdxhkvy-prasanths-projects-1c782ce1.vercel.app",
-    "http://localhost:3000",
+ORIGINS = [
+    origin.strip()
+    for origin in os.getenv("ALLOWED_ORIGINS", "").split(",")
+    if origin.strip()
 ]
 
 
@@ -23,7 +28,7 @@ def get_application():
     # Configure CORS
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=origins,  # Allow requests from your Next.js app
+        allow_origins=ORIGINS,  # Allow requests from your Next.js app
         allow_credentials=True,
         allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
         allow_headers=["*"],  # Allow all headers
