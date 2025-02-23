@@ -11,11 +11,11 @@ import os
 load_dotenv()
 
 
-ORIGINS = [
-    origin.strip()
-    for origin in os.getenv("ALLOWED_ORIGINS", "").split(",")
-    if origin.strip()
-]
+# ORIGINS = [
+#     origin.strip()
+#     for origin in os.getenv("ALLOWED_ORIGINS", "").split(",")
+#     if origin.strip()
+# ]
 
 origins = [
     "https://job-scrap-ckpdxhkvy-prasanths-projects-1c782ce1.vercel.app",

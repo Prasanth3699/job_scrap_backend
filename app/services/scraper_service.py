@@ -39,8 +39,8 @@ def init_driver():
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
 
-        # Remove the binary location setting as we'll use the default
-        # chrome_options.binary_location = "/usr/bin/google-chrome-stable"
+        # Set Chrome binary path explicitly
+        chrome_options.binary_location = "/usr/bin/google-chrome"
 
         # Additional options
         chrome_options.add_argument("--window-size=1920,1080")
@@ -52,10 +52,9 @@ def init_driver():
         chrome_options.add_argument("--disable-webgl")
         chrome_options.add_argument("--disable-webgl2")
 
-        # Use ChromeDriverManager with cache_valid_range
+        # Use ChromeDriver from webdriver_manager
         driver = webdriver.Chrome(
-            service=Service(ChromeDriverManager().install()),
-            options=chrome_options,
+            service=Service(ChromeDriverManager().install()), options=chrome_options
         )
 
         driver.set_page_load_timeout(settings.SELENIUM_TIMEOUT)

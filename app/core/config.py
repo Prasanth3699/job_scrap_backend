@@ -1,6 +1,7 @@
+from pydantic import AnyHttpUrl
 from pydantic_settings import BaseSettings
+from typing import List
 from functools import lru_cache
-from typing import Optional
 
 
 class Settings(BaseSettings):
@@ -49,8 +50,11 @@ class Settings(BaseSettings):
     SLACK_WEBHOOK_URL: str | None = None
     DISCORD_WEBHOOK_URL: str | None = None
 
+    allowed_origins: List[AnyHttpUrl] = []
+
     class Config:
         env_file = ".env"
+        env_file_encoding = "utf-8"
 
 
 @lru_cache()
