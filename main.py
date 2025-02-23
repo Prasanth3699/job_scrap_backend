@@ -18,7 +18,7 @@ load_dotenv()
 # ]
 
 origins = [
-    "https://job-scrap-ckpdxhkvy-prasanths-projects-1c782ce1.vercel.app",
+    "https://job-scrap-jql3j90k6-prasanths-projects-1c782ce1.vercel.app/",
     "http://localhost:3000",
 ]
 
