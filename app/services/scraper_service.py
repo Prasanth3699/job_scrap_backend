@@ -38,11 +38,9 @@ def init_driver():
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.binary_location = (
-            "/usr/bin/google-chrome-stable"  # Render's Chrome path
-        )
+        chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 
-        # Additional options from your existing code
+        # Additional options
         chrome_options.add_argument("--window-size=1920,1080")
         chrome_options.add_argument("--disable-web-security")
         chrome_options.add_argument(
@@ -52,9 +50,8 @@ def init_driver():
         chrome_options.add_argument("--disable-webgl")
         chrome_options.add_argument("--disable-webgl2")
 
-        # Use a specific ChromeDriver version that matches Render's Chrome
-        driver_manager = ChromeDriverManager(version="latest")
-        service = Service(driver_manager.install())
+        # Install and setup ChromeDriver
+        service = Service(ChromeDriverManager().install())
 
         driver = webdriver.Chrome(service=service, options=chrome_options)
         driver.set_page_load_timeout(settings.SELENIUM_TIMEOUT)
