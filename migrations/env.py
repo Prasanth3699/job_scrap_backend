@@ -5,6 +5,11 @@ from sqlalchemy import pool
 
 from alembic import context
 
+import os
+from dotenv import load_dotenv
+
+load_dotenv(verbose=True)
+
 from app.db.base import Base
 from app.models.job import Job
 from app.models.settings import Settings
@@ -20,6 +25,11 @@ config = context.config
 # This line sets up loggers basically.
 if config.config_file_name is not None:
     fileConfig(config.config_file_name)
+
+
+# Get database URL from settings
+settings = get_settings()
+config.set_main_option("sqlalchemy.url", os.getenv("DATABASE_URL"))
 
 # add your model's MetaData object here
 # for 'autogenerate' support

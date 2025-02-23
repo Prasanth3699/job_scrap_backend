@@ -11,6 +11,9 @@ class Settings(BaseSettings):
 
     # Database Settings
     DATABASE_URL: str
+    DB_POOL_SIZE: int = 20
+    DB_MAX_OVERFLOW: int = 10
+    DB_POOL_TIMEOUT: int = 30
 
     # Email Settings
     EMAIL_SENDER: str
@@ -45,9 +48,6 @@ class Settings(BaseSettings):
     # New Notification Settings
     SLACK_WEBHOOK_URL: str | None = None
     DISCORD_WEBHOOK_URL: str | None = None
-
-    class Config:
-        env_file = ".env"
 
     class Config:
         env_file = ".env"

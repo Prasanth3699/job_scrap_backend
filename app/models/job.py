@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, Date, DateTime, Text
+from sqlalchemy import Column, Integer, String, Date, DateTime, Text, Index
 from sqlalchemy.sql import func
 from ..db.base import Base
 
@@ -26,3 +26,8 @@ class Job(Base):
 
     def __str__(self):
         return self.job_title
+
+    __table_args__ = (
+        Index("idx_job_title_company", job_title, company_name),
+        Index("idx_posting_date", posting_date),
+    )

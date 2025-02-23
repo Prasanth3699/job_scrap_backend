@@ -1,8 +1,8 @@
-"""second migrations
+"""initial_migration
 
-Revision ID: ff62893dc014
-Revises: 74cb5090ceec
-Create Date: 2025-02-16 02:31:45.894223
+Revision ID: fc6382cfa223
+Revises: 
+Create Date: 2025-02-23 13:05:47.578813
 
 """
 from typing import Sequence, Union
@@ -12,8 +12,8 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'ff62893dc014'
-down_revision: Union[str, None] = '74cb5090ceec'
+revision: str = 'fc6382cfa223'
+down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None
 
@@ -25,6 +25,7 @@ def upgrade() -> None:
     sa.Column('job_title', sa.String(length=255), nullable=False),
     sa.Column('company_name', sa.String(length=255), nullable=True),
     sa.Column('job_type', sa.String(length=100), nullable=True),
+    sa.Column('category', sa.String(length=100), nullable=True),
     sa.Column('salary', sa.String(length=100), nullable=True),
     sa.Column('experience', sa.String(length=100), nullable=True),
     sa.Column('location', sa.String(length=255), nullable=True),
@@ -32,13 +33,26 @@ def upgrade() -> None:
     sa.Column('detail_url', sa.String(length=500), nullable=True),
     sa.Column('apply_link', sa.String(length=500), nullable=True),
     sa.Column('posting_date', sa.Date(), nullable=True),
-    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=True),
     sa.Column('updated_at', sa.DateTime(timezone=True), nullable=True),
     sa.PrimaryKeyConstraint('id'),
     sa.UniqueConstraint('detail_url')
     )
+    op.create_index('idx_job_title_company', 'jobs', ['job_title', 'company_name'], unique=False)
+    op.create_index('idx_posting_date', 'jobs', ['posting_date'], unique=False)
     op.create_index(op.f('ix_jobs_id'), 'jobs', ['id'], unique=False)
     op.create_index(op.f('ix_jobs_posting_date'), 'jobs', ['posting_date'], unique=False)
+    op.create_table('scraping_history',
+    sa.Column('id', sa.Integer(), nullable=False),
+    sa.Column('start_time', sa.DateTime(timezone=True), nullable=True),
+    sa.Column('end_time', sa.DateTime(timezone=True), nullable=True),
+    sa.Column('jobs_found', sa.Integer(), nullable=True),
+    sa.Column('status', sa.String(length=50), nullable=True),
+    sa.Column('error', sa.Text(), nullable=True),
+    sa.PrimaryKeyConstraint('id')
+    )
+    op.create_index('idx_start_time', 'scraping_history', ['start_time'], unique=False)
+    op.create_index('idx_status', 'scraping_history', ['status'], unique=False)
     op.create_table('settings',
     sa.Column('id', sa.Integer(), nullable=False),
     sa.Column('app_name', sa.String(length=255), nullable=True),
@@ -46,7 +60,7 @@ def upgrade() -> None:
     sa.Column('scheduler_config', sa.JSON(), nullable=False),
     sa.Column('selenium_config', sa.JSON(), nullable=False),
     sa.Column('is_active', sa.Boolean(), nullable=True),
-    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=True),
     sa.Column('updated_at', sa.DateTime(timezone=True), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
@@ -56,7 +70,7 @@ def upgrade() -> None:
     sa.Column('email', sa.String(length=255), nullable=False),
     sa.Column('password_hash', sa.String(length=255), nullable=False),
     sa.Column('is_active', sa.Boolean(), nullable=True),
-    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('(CURRENT_TIMESTAMP)'), nullable=True),
+    sa.Column('created_at', sa.DateTime(timezone=True), server_default=sa.text('now()'), nullable=True),
     sa.Column('updated_at', sa.DateTime(timezone=True), nullable=True),
     sa.PrimaryKeyConstraint('id')
     )
@@ -71,7 +85,12 @@ def downgrade() -> None:
     op.drop_index(op.f('ix_users_email'), table_name='users')
     op.drop_table('users')
     op.drop_table('settings')
+    op.drop_index('idx_status', table_name='scraping_history')
+    op.drop_index('idx_start_time', table_name='scraping_history')
+    op.drop_table('scraping_history')
     op.drop_index(op.f('ix_jobs_posting_date'), table_name='jobs')
     op.drop_index(op.f('ix_jobs_id'), table_name='jobs')
+    op.drop_index('idx_posting_date', table_name='jobs')
+    op.drop_index('idx_job_title_company', table_name='jobs')
     op.drop_table('jobs')
     # ### end Alembic commands ###

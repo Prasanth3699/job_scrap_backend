@@ -75,3 +75,241 @@
 2025-02-22 22:09:42 | INFO | Successfully stored 7 new jobs
 2025-02-22 22:09:48 | INFO | Email sent successfully to prasanthranger09@gmail.com
 2025-02-22 22:09:49 | INFO | Function scrape_and_process_jobs took 221.64 seconds
+2025-02-23 12:28:01 | INFO | Shutting down the application...
+2025-02-23 12:28:01 | INFO | Application shutdown completed successfully
+2025-02-23 13:09:49 | INFO | Created default settings in database
+2025-02-23 13:09:49 | INFO | Starting up the application...
+2025-02-23 13:09:50 | INFO | Scheduled job scraping for 9:00
+2025-02-23 13:09:50 | INFO | Scheduler initialized successfully
+2025-02-23 13:09:50 | INFO | Application startup completed successfully
+2025-02-23 13:14:42 | INFO | Shutting down the application...
+2025-02-23 13:14:42 | INFO | Application shutdown completed successfully
+2025-02-23 13:14:46 | INFO | Starting up the application...
+2025-02-23 13:14:47 | INFO | Scheduled job scraping for 9:00
+2025-02-23 13:14:47 | INFO | Scheduler initialized successfully
+2025-02-23 13:14:47 | INFO | Application startup completed successfully
+2025-02-23 13:17:10 | INFO | Shutting down the application...
+2025-02-23 13:17:10 | INFO | Application shutdown completed successfully
+2025-02-23 13:17:14 | INFO | Starting up the application...
+2025-02-23 13:17:14 | INFO | Scheduled job scraping for 9:00
+2025-02-23 13:17:14 | INFO | Scheduler initialized successfully
+2025-02-23 13:17:14 | INFO | Application startup completed successfully
+2025-02-23 13:17:15 | INFO | Starting job scraping at 2025-02-23 13:17:15.638701
+2025-02-23 13:17:16 | INFO | Starting job scraping...
+2025-02-23 13:17:22 | INFO | Accessing https://www.jobfound.org/
+2025-02-23 13:17:29 | INFO | Collecting job URLs...
+2025-02-23 13:17:55 | INFO | Found 600 job URLs
+2025-02-23 13:17:55 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
+2025-02-23 13:18:32 | WARNING | Error getting apply link: Message: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x009D0283+25139]
+	(No symbol) [0x0095B234]
+	(No symbol) [0x008304A3]
+	(No symbol) [0x0082113B]
+	(No symbol) [0x00820E71]
+	(No symbol) [0x0081ED50]
+	(No symbol) [0x0081F8FD]
+	(No symbol) [0x0082BDB9]
+	(No symbol) [0x0083D225]
+	(No symbol) [0x00842AF6]
+	(No symbol) [0x0081FF0D]
+	(No symbol) [0x0083D0CA]
+	(No symbol) [0x008BE5F0]
+	(No symbol) [0x0089CD36]
+	(No symbol) [0x0086BD29]
+	(No symbol) [0x0086D064]
+	GetHandleVerifier [0x00CDB143+3215603]
+	GetHandleVerifier [0x00CF22BA+3310186]
+	GetHandleVerifier [0x00CEC4D2+3286146]
+	GetHandleVerifier [0x00A69C80+654384]
+	(No symbol) [0x009645BD]
+	(No symbol) [0x009614A8]
+	(No symbol) [0x00961647]
+	(No symbol) [0x00953D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-23 13:18:37 | INFO | Added today's job: Delta is hiring for QA Engineer | Freshers | Remote
+2025-02-23 13:18:38 | INFO | Processing job detail page: https://www.jobfound.org/job/kohort-learning-platform-pvt-ltd-is-hiring-for-web-scraping-and-automation-engineer-or-remote-software-engineer
+2025-02-23 13:18:45 | INFO | Found apply link: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
+2025-02-23 13:18:45 | INFO | Added today's job: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
+2025-02-23 13:18:46 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-frontend-developer-or-hyderabad-frontend-development
+2025-02-23 13:18:54 | INFO | Found apply link: https://wellfound.com/jobs/3226393-web-scraping-automation-engineer-python-remote
+2025-02-23 13:18:54 | INFO | Added today's job: Deloitte is hiring for FrontEnd Developer | Hyderabad
+2025-02-23 13:18:55 | INFO | Processing job detail page: https://www.jobfound.org/job/sita-is-hiring-for-graduate-software-engineer-or-delhi-graduate-engineer-trainee
+2025-02-23 13:19:03 | INFO | Found apply link: https://usijobs.deloitte.com/careersUSI/JobDetail/USI-EH25-MFG-Front-End-Developer-HYD/209978
+2025-02-23 13:19:03 | INFO | Added today's job: SITA is hiring for Graduate, Software Engineer | Delhi
+2025-02-23 13:19:04 | INFO | Processing job detail page: https://www.jobfound.org/job/causalfunnel-is-hiring-for-software-engineer-intern-or-remote-software-engineer
+2025-02-23 13:19:11 | INFO | Found apply link: https://careers.sita.aero/jobs/7451?lang=en-us
+2025-02-23 13:19:11 | INFO | Added yesterday's job: CausalFunnel is hiring for Software Engineer Intern | Remote
+2025-02-23 13:19:12 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-software-developer-or-freshers-or-raemote-software-engineer
+2025-02-23 13:19:18 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4161186258/?alternateChannel=search
+2025-02-23 13:19:18 | INFO | Added yesterday's job: Delta is hiring for Software Developer | Freshers | Raemote
+2025-02-23 13:19:19 | INFO | Processing job detail page: https://www.jobfound.org/job/rockwell-automation-inc-is-hiring-for-graduate-engineer-trainee-or-pune-graduate-engineer-trainee
+2025-02-23 13:19:26 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b950a22c536072946aa7d7?referralCode=FHZR3S
+2025-02-23 13:19:26 | INFO | Added yesterday's job: Rockwell Automation, Inc. is hiring for Graduate Engineer Trainee | Pune
+2025-02-23 13:19:27 | INFO | Processing job detail page: https://www.jobfound.org/job/csg-is-hiring-for-software-development-engineer-grad-or-bangalore-software-engineer
+2025-02-23 13:19:28 | INFO | Popup dismissed
+2025-02-23 13:19:31 | INFO | Found apply link: https://rockwellautomation.wd1.myworkdayjobs.com/en-US/External_Rockwell_Automation/job/Pune-India/GRADUATE-ENGINEER-TRAINEE_R24-6085
+2025-02-23 13:19:31 | INFO | Added yesterday's job: CSG is hiring for Software Development Engineer Grad | Bangalore
+2025-02-23 13:19:32 | INFO | Processing job detail page: https://www.jobfound.org/job/kevit-technologies-is-hiring-for-chatbot-developer-fresher-or-rajkot-software-engineer
+2025-02-23 13:19:38 | INFO | Found apply link: https://csgi.wd5.myworkdayjobs.com/CSGCareers/job/INBangaloreOffice/Software-Development-Engineer-Grad_29170-1?source=LinkedIn
+2025-02-23 13:19:38 | INFO | Added yesterday's job: Kevit Technologies is hiring for Chatbot Developer (Fresher) | Rajkot
+2025-02-23 13:19:39 | INFO | Processing job detail page: https://www.jobfound.org/job/walter-p-moore-is-hiring-for-application-developer-intern-or-bengalur-software-engineer
+2025-02-23 13:19:46 | INFO | Found apply link: https://kevit.keka.com/careers/jobdetails/71852?source=linkedin
+2025-02-23 13:19:46 | INFO | Added yesterday's job: Walter P Moore is hiring for Application Developer Intern | Bengalur
+2025-02-23 13:19:47 | INFO | Processing job detail page: https://www.jobfound.org/job/standard-chartered-is-hiring-for-backend-developer-or-bangalore
+2025-02-23 13:19:54 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4103519814/
+2025-02-23 13:19:54 | INFO | Added yesterday's job: Standard Chartered is hiring for Backend Developer | Bangalore
+2025-02-23 13:19:55 | INFO | Processing job detail page: https://www.jobfound.org/job/healthtrip-is-hiring-for-full-stack-developer-intern-or-pune-full-stack-development
+2025-02-23 13:20:01 | INFO | Found older job after processing current jobs. Stopping collection.
+2025-02-23 13:20:01 | INFO | Successfully scraped 11 jobs (Today: 4, Yesterday: 7)
+2025-02-23 13:20:04 | INFO | Function scrape_jobs took 167.98 seconds
+2025-02-23 13:20:04 | INFO | Found 11 jobs from scraping
+2025-02-23 13:20:04 | INFO | Storing jobs in database...
+2025-02-23 13:20:05 | INFO | Found 11 new jobs to store
+2025-02-23 13:20:05 | INFO | Attempting to store 11 jobs
+2025-02-23 13:20:05 | INFO | Prepared job for storage: Delta is hiring for QA Engineer | Freshers | Remote
+2025-02-23 13:20:05 | INFO | Prepared job for storage: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
+2025-02-23 13:20:05 | INFO | Prepared job for storage: Deloitte is hiring for FrontEnd Developer | Hyderabad
+2025-02-23 13:20:05 | INFO | Prepared job for storage: SITA is hiring for Graduate, Software Engineer | Delhi
+2025-02-23 13:20:05 | INFO | Prepared job for storage: CausalFunnel is hiring for Software Engineer Intern | Remote
+2025-02-23 13:20:05 | INFO | Prepared job for storage: Delta is hiring for Software Developer | Freshers | Raemote
+2025-02-23 13:20:05 | INFO | Prepared job for storage: Rockwell Automation, Inc. is hiring for Graduate Engineer Trainee | Pune
+2025-02-23 13:20:05 | INFO | Prepared job for storage: CSG is hiring for Software Development Engineer Grad | Bangalore
+2025-02-23 13:20:05 | INFO | Prepared job for storage: Kevit Technologies is hiring for Chatbot Developer (Fresher) | Rajkot
+2025-02-23 13:20:05 | INFO | Prepared job for storage: Walter P Moore is hiring for Application Developer Intern | Bengalur
+2025-02-23 13:20:05 | INFO | Prepared job for storage: Standard Chartered is hiring for Backend Developer | Bangalore
+2025-02-23 13:20:05 | INFO | Successfully stored 11 jobs
+2025-02-23 13:20:05 | INFO | Successfully stored 11 new jobs
+2025-02-23 13:20:08 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-adb5a92b959sm16780289a12.63 - gsmtp')
+2025-02-23 13:20:08 | WARNING | Attempt 1/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-adb5a92b959sm16780289a12.63 - gsmtp')
+2025-02-23 13:20:13 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7340b47071dsm7406192b3a.117 - gsmtp')
+2025-02-23 13:20:13 | WARNING | Attempt 2/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7340b47071dsm7406192b3a.117 - gsmtp')
+2025-02-23 13:20:18 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fceb10fab1sm4168554a91.32 - gsmtp')
+2025-02-23 13:20:18 | WARNING | Attempt 3/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fceb10fab1sm4168554a91.32 - gsmtp')
+2025-02-23 13:20:18 | ERROR | Error in scrape_and_process_jobs: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fceb10fab1sm4168554a91.32 - gsmtp')
+2025-02-23 13:20:21 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d556d3b1sm160986885ad.163 - gsmtp')
+2025-02-23 13:20:21 | WARNING | Attempt 1/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d556d3b1sm160986885ad.163 - gsmtp')
+2025-02-23 13:20:26 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-732521b82b3sm16797196b3a.92 - gsmtp')
+2025-02-23 13:20:26 | WARNING | Attempt 2/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-732521b82b3sm16797196b3a.92 - gsmtp')
+2025-02-23 13:20:31 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d5348e68sm160979745ad.28 - gsmtp')
+2025-02-23 13:20:31 | WARNING | Attempt 3/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d5348e68sm160979745ad.28 - gsmtp')
+2025-02-23 13:20:31 | ERROR | Failed to send error report email: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d5348e68sm160979745ad.28 - gsmtp')
+2025-02-23 13:20:31 | ERROR | Function scrape_and_process_jobs failed after 196.10 seconds: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fceb10fab1sm4168554a91.32 - gsmtp')
+2025-02-23 13:21:22 | INFO | Updated settings in database
+2025-02-23 13:21:29 | INFO | Starting job scraping at 2025-02-23 13:21:29.900997
+2025-02-23 13:21:30 | INFO | Starting job scraping...
+2025-02-23 13:21:32 | INFO | Accessing https://www.jobfound.org/
+2025-02-23 13:21:39 | INFO | Collecting job URLs...
+2025-02-23 13:22:05 | INFO | Found 600 job URLs
+2025-02-23 13:22:05 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
+2025-02-23 13:22:22 | WARNING | Error getting posting date: Message: 
+Stacktrace:
+	GetHandleVerifier [0x009D0283+25139]
+	(No symbol) [0x0095B234]
+	(No symbol) [0x008304A3]
+	(No symbol) [0x00878338]
+	(No symbol) [0x0087868B]
+	(No symbol) [0x008C0F62]
+	(No symbol) [0x0089CF84]
+	(No symbol) [0x008BE6E1]
+	(No symbol) [0x0089CD36]
+	(No symbol) [0x0086BD29]
+	(No symbol) [0x0086D064]
+	GetHandleVerifier [0x00CDB143+3215603]
+	GetHandleVerifier [0x00CF22BA+3310186]
+	GetHandleVerifier [0x00CEC4D2+3286146]
+	GetHandleVerifier [0x00A69C80+654384]
+	(No symbol) [0x009645BD]
+	(No symbol) [0x009614A8]
+	(No symbol) [0x00961647]
+	(No symbol) [0x00953D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-23 13:22:22 | INFO | Processing job detail page: https://www.jobfound.org/job/kohort-learning-platform-pvt-ltd-is-hiring-for-web-scraping-and-automation-engineer-or-remote-software-engineer
+2025-02-23 13:22:30 | INFO | Found apply link: https://wellfound.com/jobs/3226393-web-scraping-automation-engineer-python-remote
+2025-02-23 13:22:30 | INFO | Added today's job: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
+2025-02-23 13:22:31 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-frontend-developer-or-hyderabad-frontend-development
+2025-02-23 13:22:42 | INFO | Found apply link: https://usijobs.deloitte.com/careersUSI/JobDetail/USI-EH25-MFG-Front-End-Developer-HYD/209978
+2025-02-23 13:22:42 | INFO | Added today's job: Deloitte is hiring for FrontEnd Developer | Hyderabad
+2025-02-23 13:22:43 | INFO | Processing job detail page: https://www.jobfound.org/job/sita-is-hiring-for-graduate-software-engineer-or-delhi-graduate-engineer-trainee
+2025-02-23 13:22:55 | INFO | Found apply link: https://careers.sita.aero/jobs/7451?lang=en-us
+2025-02-23 13:22:55 | INFO | Added today's job: SITA is hiring for Graduate, Software Engineer | Delhi
+2025-02-23 13:22:56 | INFO | Processing job detail page: https://www.jobfound.org/job/causalfunnel-is-hiring-for-software-engineer-intern-or-remote-software-engineer
+2025-02-23 13:23:05 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4161186258/?alternateChannel=search
+2025-02-23 13:23:06 | INFO | Added yesterday's job: CausalFunnel is hiring for Software Engineer Intern | Remote
+2025-02-23 13:23:07 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-software-developer-or-freshers-or-raemote-software-engineer
+2025-02-23 13:23:44 | WARNING | Error getting apply link: Message: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x009D0283+25139]
+	(No symbol) [0x0095B234]
+	(No symbol) [0x008304A3]
+	(No symbol) [0x0082113B]
+	(No symbol) [0x00820E71]
+	(No symbol) [0x0081ED50]
+	(No symbol) [0x0081F8FD]
+	(No symbol) [0x0082BDB9]
+	(No symbol) [0x0083D225]
+	(No symbol) [0x00842AF6]
+	(No symbol) [0x0081FF0D]
+	(No symbol) [0x0083D0CA]
+	(No symbol) [0x008BE5F0]
+	(No symbol) [0x0089CD36]
+	(No symbol) [0x0086BD29]
+	(No symbol) [0x0086D064]
+	GetHandleVerifier [0x00CDB143+3215603]
+	GetHandleVerifier [0x00CF22BA+3310186]
+	GetHandleVerifier [0x00CEC4D2+3286146]
+	GetHandleVerifier [0x00A69C80+654384]
+	(No symbol) [0x009645BD]
+	(No symbol) [0x009614A8]
+	(No symbol) [0x00961647]
+	(No symbol) [0x00953D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-23 13:23:49 | INFO | Added yesterday's job: Delta is hiring for Software Developer | Freshers | Raemote
+2025-02-23 13:23:50 | INFO | Processing job detail page: https://www.jobfound.org/job/rockwell-automation-inc-is-hiring-for-graduate-engineer-trainee-or-pune-graduate-engineer-trainee
+2025-02-23 13:23:57 | INFO | Found apply link: https://www.jobfound.org/job/delta-is-hiring-for-software-developer-or-freshers-or-raemote-software-engineer
+2025-02-23 13:23:57 | INFO | Added yesterday's job: Rockwell Automation, Inc. is hiring for Graduate Engineer Trainee | Pune
+2025-02-23 13:23:58 | INFO | Processing job detail page: https://www.jobfound.org/job/csg-is-hiring-for-software-development-engineer-grad-or-bangalore-software-engineer
+2025-02-23 13:23:59 | INFO | Popup dismissed
+2025-02-23 13:24:02 | INFO | Found apply link: https://rockwellautomation.wd1.myworkdayjobs.com/en-US/External_Rockwell_Automation/job/Pune-India/GRADUATE-ENGINEER-TRAINEE_R24-6085
+2025-02-23 13:24:02 | INFO | Added yesterday's job: CSG is hiring for Software Development Engineer Grad | Bangalore
+2025-02-23 13:24:03 | INFO | Processing job detail page: https://www.jobfound.org/job/kevit-technologies-is-hiring-for-chatbot-developer-fresher-or-rajkot-software-engineer
+2025-02-23 13:24:10 | INFO | Found apply link: https://csgi.wd5.myworkdayjobs.com/CSGCareers/job/INBangaloreOffice/Software-Development-Engineer-Grad_29170-1?source=LinkedIn
+2025-02-23 13:24:10 | INFO | Added yesterday's job: Kevit Technologies is hiring for Chatbot Developer (Fresher) | Rajkot
+2025-02-23 13:24:11 | INFO | Processing job detail page: https://www.jobfound.org/job/walter-p-moore-is-hiring-for-application-developer-intern-or-bengalur-software-engineer
+2025-02-23 13:24:17 | INFO | Found apply link: https://kevit.keka.com/careers/jobdetails/71852?source=linkedin
+2025-02-23 13:24:17 | INFO | Added yesterday's job: Walter P Moore is hiring for Application Developer Intern | Bengalur
+2025-02-23 13:24:18 | INFO | Processing job detail page: https://www.jobfound.org/job/standard-chartered-is-hiring-for-backend-developer-or-bangalore
+2025-02-23 13:24:25 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4103519814/
+2025-02-23 13:24:25 | INFO | Added yesterday's job: Standard Chartered is hiring for Backend Developer | Bangalore
+2025-02-23 13:24:26 | INFO | Processing job detail page: https://www.jobfound.org/job/healthtrip-is-hiring-for-full-stack-developer-intern-or-pune-full-stack-development
+2025-02-23 13:24:31 | INFO | Found older job after processing current jobs. Stopping collection.
+2025-02-23 13:24:31 | INFO | Successfully scraped 10 jobs (Today: 3, Yesterday: 7)
+2025-02-23 13:24:34 | INFO | Function scrape_jobs took 184.09 seconds
+2025-02-23 13:24:34 | INFO | Found 10 jobs from scraping
+2025-02-23 13:24:34 | INFO | Storing jobs in database...
+2025-02-23 13:24:35 | INFO | Found 0 new jobs to store
+2025-02-23 13:24:35 | INFO | No new jobs to store
+2025-02-23 13:24:40 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-23 13:24:40 | INFO | Function scrape_and_process_jobs took 190.77 seconds
+2025-02-23 13:27:17 | ERROR | Error getting dashboard stats: (psycopg2.OperationalError) server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+server closed the connection unexpectedly
+	This probably means the server terminated abnormally
+	before or while processing the request.
+
+[SQL: SELECT count(*) AS count_1 
+FROM (SELECT jobs.id AS jobs_id, jobs.job_title AS jobs_job_title, jobs.company_name AS jobs_company_name, jobs.job_type AS jobs_job_type, jobs.category AS jobs_category, jobs.salary AS jobs_salary, jobs.experience AS jobs_experience, jobs.location AS jobs_location, jobs.description AS jobs_description, jobs.detail_url AS jobs_detail_url, jobs.apply_link AS jobs_apply_link, jobs.posting_date AS jobs_posting_date, jobs.created_at AS jobs_created_at, jobs.updated_at AS jobs_updated_at 
+FROM jobs) AS anon_1]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
