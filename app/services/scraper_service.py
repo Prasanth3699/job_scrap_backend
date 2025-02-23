@@ -38,7 +38,9 @@ def init_driver():
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
-        chrome_options.binary_location = "/usr/bin/google-chrome-stable"
+
+        # Remove the binary location setting as we'll use the default
+        # chrome_options.binary_location = "/usr/bin/google-chrome-stable"
 
         # Additional options
         chrome_options.add_argument("--window-size=1920,1080")
@@ -50,10 +52,12 @@ def init_driver():
         chrome_options.add_argument("--disable-webgl")
         chrome_options.add_argument("--disable-webgl2")
 
-        # Install and setup ChromeDriver
-        service = Service(ChromeDriverManager().install())
+        # Use ChromeDriverManager with cache_valid_range
+        driver = webdriver.Chrome(
+            service=Service(ChromeDriverManager(cache_valid_range=7).install()),
+            options=chrome_options,
+        )
 
-        driver = webdriver.Chrome(service=service, options=chrome_options)
         driver.set_page_load_timeout(settings.SELENIUM_TIMEOUT)
         return driver
     except Exception as e:
