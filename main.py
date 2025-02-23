@@ -33,7 +33,7 @@ def get_application():
     # Configure CORS
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=origins,  # Allow requests from your Next.js app
+        allow_origins=["*"],  # Allow requests from your Next.js app
         allow_credentials=True,
         allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
         allow_headers=["*"],  # Allow all headers
