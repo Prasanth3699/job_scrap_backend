@@ -11,6 +11,8 @@ from webdriver_manager.chrome import ChromeDriverManager
 from loguru import logger
 from typing import List, Dict, Any
 import pytz
+import os
+import subprocess
 
 
 from ..models.scraping_history import ScrapingHistory
@@ -39,8 +41,23 @@ def init_driver():
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
 
-        # Set Chrome binary path explicitly
-        chrome_options.binary_location = "/usr/bin/google-chrome"
+        # Try different Chrome binary locations
+        chrome_binary_locations = [
+            "/usr/bin/google-chrome",
+            "/usr/bin/google-chrome-stable",
+            "/opt/google/chrome/chrome",
+        ]
+
+        chrome_found = False
+        for binary_location in chrome_binary_locations:
+            if os.path.exists(binary_location):
+                chrome_options.binary_location = binary_location
+                chrome_found = True
+                logger.info(f"Chrome binary found at: {binary_location}")
+                break
+
+        if not chrome_found:
+            logger.warning("Chrome binary not found in expected locations")
 
         # Additional options
         chrome_options.add_argument("--window-size=1920,1080")
@@ -52,7 +69,21 @@ def init_driver():
         chrome_options.add_argument("--disable-webgl")
         chrome_options.add_argument("--disable-webgl2")
 
-        # Use ChromeDriver from webdriver_manager
+        # Use ChromeDriver from webdriver_manager with specific version
+        chrome_version = None
+        try:
+            chrome_version = (
+                subprocess.check_output(
+                    [chrome_options.binary_location, "--version"],
+                    stderr=subprocess.STDOUT,
+                )
+                .decode("utf-8")
+                .strip()
+            )
+            logger.info(f"Chrome version: {chrome_version}")
+        except Exception as e:
+            logger.warning(f"Failed to get Chrome version: {e}")
+
         driver = webdriver.Chrome(
             service=Service(ChromeDriverManager().install()), options=chrome_options
         )
