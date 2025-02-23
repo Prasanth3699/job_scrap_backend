@@ -41,22 +41,37 @@ def init_driver():
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
 
-        # Additional options
-        chrome_options.add_argument("--window-size=1920,1080")
-        chrome_options.add_argument("--disable-web-security")
+        # Memory and stability improvements
+        chrome_options.add_argument("--disable-extensions")
+        chrome_options.add_argument("--disable-infobars")
+        chrome_options.add_argument("--disable-notifications")
+        chrome_options.add_argument("--disable-popup-blocking")
+        chrome_options.add_argument("--disable-software-rasterizer")
+        chrome_options.add_argument("--single-process")
+        chrome_options.add_argument("--ignore-certificate-errors")
         chrome_options.add_argument(
-            "--disable-features=IsolateOrigins,site-per-process"
-        )
+            "--disable-javascript"
+        )  # Only if possible for your use case
+        chrome_options.add_argument(
+            "--blink-settings=imagesEnabled=false"
+        )  # Disable images
+        chrome_options.add_argument("--memory-pressure-off")
+        chrome_options.add_argument("--disk-cache-size=0")
 
-        # Set Chrome binary location
-        chrome_options.binary_location = "/usr/bin/google-chrome"
+        # Set specific window size
+        chrome_options.add_argument("--window-size=1280,720")
 
-        # Create a new ChromeDriver instance
+        # Set page load strategy
+        chrome_options.page_load_strategy = "eager"
+
         driver = webdriver.Chrome(
             service=Service(ChromeDriverManager().install()), options=chrome_options
         )
 
-        driver.set_page_load_timeout(settings.SELENIUM_TIMEOUT)
+        # Set shorter timeouts
+        driver.set_page_load_timeout(30)
+        driver.implicitly_wait(10)
+
         return driver
     except Exception as e:
         logger.error(f"Driver initialization error: {str(e)}")
@@ -89,82 +104,117 @@ async def scrape_jobs() -> List[Dict[str, Any]]:
     today_jobs = []
     yesterday_jobs = []
     max_jobs = 20
+    batch_size = 5  # Process URLs in smaller batches
+    max_retries = 3
 
     try:
         driver = init_driver()
         today = datetime.date.today()
         yesterday = today - datetime.timedelta(days=1)
 
-        logger.info(f"Accessing {JOB_PAGE_URL}")
-        driver.get(JOB_PAGE_URL)
-        WebDriverWait(driver, DEFAULT_WAIT).until(
-            EC.presence_of_element_located((By.TAG_NAME, "body"))
-        )
-        dismiss_ads(driver)
+        # Initial page load with retry mechanism
+        retry_count = 0
+        while retry_count < max_retries:
+            try:
+                logger.info(f"Accessing {JOB_PAGE_URL}")
+                driver.get(JOB_PAGE_URL)
+                WebDriverWait(driver, DEFAULT_WAIT).until(
+                    EC.presence_of_element_located((By.TAG_NAME, "body"))
+                )
+                dismiss_ads(driver)
+                break
+            except Exception as e:
+                retry_count += 1
+                logger.warning(f"Retry {retry_count} for initial page load: {str(e)}")
+                if retry_count == max_retries:
+                    raise
+                if driver:
+                    driver.quit()
+                driver = init_driver()
+                time.sleep(2)
 
-        # Get job URLs
+        # Get job URLs with improved error handling
         logger.info("Collecting job URLs...")
-        job_urls = []  # Using list to maintain order
-
-        # Scroll and collect URLs
+        job_urls = []
         scroll_attempts = 0
-        max_scroll_attempts = 3
+        max_scroll_attempts = 2
 
         while scroll_attempts < max_scroll_attempts:
-            driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-            time.sleep(2)
+            try:
+                driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+                time.sleep(2)
 
-            containers = WebDriverWait(driver, DEFAULT_WAIT).until(
-                EC.presence_of_all_elements_located(
-                    (
-                        By.XPATH,
-                        "//div[contains(@class, 'border-b') and contains(@class, 'rounded-lg')]",
+                containers = WebDriverWait(driver, 10).until(
+                    EC.presence_of_all_elements_located(
+                        (
+                            By.XPATH,
+                            "//div[contains(@class, 'border-b') and contains(@class, 'rounded-lg')]",
+                        )
                     )
                 )
-            )
 
-            for container in containers:
-                try:
-                    url = (
-                        WebDriverWait(container, 5)
-                        .until(EC.presence_of_element_located((By.TAG_NAME, "a")))
-                        .get_attribute("href")
-                    )
-                    if url and url not in job_urls:
-                        job_urls.append(url)
-                except Exception:
-                    continue
+                for container in containers:
+                    try:
+                        url = (
+                            WebDriverWait(container, 5)
+                            .until(EC.presence_of_element_located((By.TAG_NAME, "a")))
+                            .get_attribute("href")
+                        )
+                        if url and url not in job_urls:
+                            job_urls.append(url)
+                    except Exception:
+                        continue
 
-            scroll_attempts += 1
+                scroll_attempts += 1
+            except Exception as e:
+                logger.warning(f"Error during URL collection: {str(e)}")
+                if driver:
+                    driver.quit()
+                driver = init_driver()
+                continue
 
         logger.info(f"Found {len(job_urls)} job URLs")
 
-        # Process each URL until we have enough jobs
-        processed_count = 0
-        jobs_found = False
+        # Process URLs in batches
+        for i in range(0, min(len(job_urls), max_jobs), batch_size):
+            batch = job_urls[i : i + batch_size]
 
-        for detail_url in job_urls:
-            if processed_count >= max_jobs:
-                logger.info(f"Reached target of {max_jobs} jobs. Stopping collection.")
-                break
-
-            try:
-                logger.info(f"Processing job detail page: {detail_url}")
-                driver.get(detail_url)
-
-                # Wait for page load with timeout
-                try:
-                    WebDriverWait(driver, 10).until(
-                        EC.presence_of_element_located((By.TAG_NAME, "body"))
+            for detail_url in batch:
+                if len(today_jobs) + len(yesterday_jobs) >= max_jobs:
+                    logger.info(
+                        f"Reached target of {max_jobs} jobs. Stopping collection."
                     )
-                except TimeoutException:
-                    logger.warning(f"Page load timeout for {detail_url}, skipping...")
-                    continue
+                    break
 
-                dismiss_ads(driver)
-
-                # Get posting date
                 try:
+                    if not driver:
+                        driver = init_driver()
+
+                    logger.info(f"Processing job detail page: {detail_url}")
+
+                    # Load page with retry mechanism
+                    retry_count = 0
+                    while retry_count < max_retries:
+                        try:
+                            driver.get(detail_url)
+                            WebDriverWait(driver, 10).until(
+                                EC.presence_of_element_located((By.TAG_NAME, "body"))
+                            )
+                            dismiss_ads(driver)
+                            break
+                        except Exception as e:
+                            retry_count += 1
+                            logger.warning(
+                                f"Retry {retry_count} for {detail_url}: {str(e)}"
+                            )
+                            if retry_count == max_retries:
+                                raise
+                            if driver:
+                                driver.quit()
+                            driver = init_driver()
+                            time.sleep(2)
+
+                    # Get posting date
                     time_elem = WebDriverWait(driver, 10).until(
                         EC.presence_of_element_located((By.TAG_NAME, "time"))
                     )
@@ -173,151 +223,136 @@ async def scrape_jobs() -> List[Dict[str, Any]]:
                         date_text, "%d %B %Y"
                     ).date()
 
-                    # If the job is not from today or yesterday, skip
                     if posting_date not in [today, yesterday]:
-                        logger.debug(
-                            f"Skipping job. Posting date ({posting_date}) is not today or yesterday."
-                        )
-
-                        # If we've already found some jobs and this one is older, stop processing
-                        if jobs_found:
-                            logger.info(
-                                "Found older job after processing current jobs. Stopping collection."
-                            )
-                            break
-
                         continue
 
-                    jobs_found = True  # We found a relevant job
-
-                except (TimeoutException, ValueError) as e:
-                    logger.warning(f"Error getting posting date: {str(e)}")
-                    continue
-
-                # Get job title
-                title_elem = WebDriverWait(driver, 10).until(
-                    EC.presence_of_element_located(
-                        (By.XPATH, "//time/following-sibling::span//h1")
-                    )
-                )
-                job_title = title_elem.text.strip()
-
-                # Get apply link
-                apply_link = detail_url  # Default fallback
-                try:
-                    # Find and click the apply button
-                    apply_button = WebDriverWait(driver, 10).until(
-                        EC.element_to_be_clickable((By.CSS_SELECTOR, "div.pt-1 button"))
-                    )
-
-                    # Store the current window handle
-                    main_window = driver.current_window_handle
-
-                    # Click the button (this should open a new tab)
-                    apply_button.click()
-
-                    # Wait for new window/tab to open
-                    WebDriverWait(driver, 5).until(lambda d: len(d.window_handles) > 1)
-
-                    # Switch to the new tab
-                    new_window = [
-                        handle
-                        for handle in driver.window_handles
-                        if handle != main_window
-                    ][0]
-                    driver.switch_to.window(new_window)
-
-                    # Wait for the new page to load and get its URL
-                    WebDriverWait(driver, 10).until(
-                        EC.presence_of_element_located((By.TAG_NAME, "body"))
-                    )
-
-                    # Get the URL from the new tab
-                    apply_link = driver.current_url
-                    logger.info(f"Found apply link: {apply_link}")
-
-                    # Close the new tab and switch back to the main window
-                    driver.close()
-                    driver.switch_to.window(main_window)
-                except Exception as e:
-                    logger.warning(f"Error getting apply link: {str(e)}")
-
-                # Get job details
-                try:
-                    details_container = WebDriverWait(driver, 5).until(
+                    # Get job title
+                    title_elem = WebDriverWait(driver, 10).until(
                         EC.presence_of_element_located(
-                            (
-                                By.CSS_SELECTOR,
-                                "div.flex.flex-wrap.my-3\\.5.gap-2.items-center.text-xs",
-                            )
+                            (By.XPATH, "//time/following-sibling::span//h1")
                         )
                     )
-                    spans = details_container.find_elements(By.TAG_NAME, "span")
-                    job_type = spans[0].text.strip() if len(spans) > 0 else "N/A"
-                    salary = spans[1].text.strip() if len(spans) > 1 else "N/A"
-                    experience = spans[2].text.strip() if len(spans) > 2 else "N/A"
-                except Exception:
-                    job_type = salary = experience = "N/A"
+                    job_title = title_elem.text.strip()
 
-                # Get company name
-                company_name = None
-                try:
-                    company_elem = driver.find_element(
-                        By.CSS_SELECTOR, "div.company-name, span.company-name"
-                    )
-                    company_name = company_elem.text.strip()
-                except NoSuchElementException:
-                    pass
+                    # Get apply link
+                    apply_link = detail_url  # Default fallback
+                    try:
+                        apply_button = WebDriverWait(driver, 10).until(
+                            EC.element_to_be_clickable(
+                                (By.CSS_SELECTOR, "div.pt-1 button")
+                            )
+                        )
 
-                # Get location
-                location = None
-                try:
-                    location_elem = driver.find_element(
-                        By.CSS_SELECTOR, "div.location, span.location"
-                    )
-                    location = location_elem.text.strip()
-                except NoSuchElementException:
-                    pass
+                        main_window = driver.current_window_handle
+                        apply_button.click()
 
-                # Get description
-                description = None
-                try:
-                    desc_elem = driver.find_element(
-                        By.CSS_SELECTOR, "div.job-description, div.description"
-                    )
-                    description = desc_elem.text.strip()
-                except NoSuchElementException:
-                    pass
+                        # Wait for new window/tab to open
+                        WebDriverWait(driver, 5).until(
+                            lambda d: len(d.window_handles) > 1
+                        )
 
-                # Create job data dictionary
-                job_data = {
-                    "detail_url": detail_url,
-                    "job_title": job_title,
-                    "posting_date": posting_date.strftime("%d %B %Y"),
-                    "job_type": job_type,
-                    "salary": salary,
-                    "experience": experience,
-                    "apply_link": apply_link,
-                    "company_name": company_name,
-                    "location": location,
-                    "description": description,
-                }
+                        new_window = [
+                            handle
+                            for handle in driver.window_handles
+                            if handle != main_window
+                        ][0]
+                        driver.switch_to.window(new_window)
 
-                # Add to appropriate list based on posting date
-                if posting_date == today:
-                    today_jobs.append(job_data)
-                    logger.info(f"Added today's job: {job_title}")
-                elif posting_date == yesterday:
-                    yesterday_jobs.append(job_data)
-                    logger.info(f"Added yesterday's job: {job_title}")
+                        WebDriverWait(driver, 10).until(
+                            EC.presence_of_element_located((By.TAG_NAME, "body"))
+                        )
 
-                processed_count += 1
+                        apply_link = driver.current_url
+                        logger.info(f"Found apply link: {apply_link}")
 
-            except Exception as e:
-                logger.error(f"Error processing job {detail_url}: {str(e)}")
-                continue
+                        driver.close()
+                        driver.switch_to.window(main_window)
+                    except Exception as e:
+                        logger.warning(f"Error getting apply link: {str(e)}")
 
-            time.sleep(1)  # Small delay between jobs
+                    # Get job details
+                    try:
+                        details_container = WebDriverWait(driver, 5).until(
+                            EC.presence_of_element_located(
+                                (
+                                    By.CSS_SELECTOR,
+                                    "div.flex.flex-wrap.my-3\\.5.gap-2.items-center.text-xs",
+                                )
+                            )
+                        )
+                        spans = details_container.find_elements(By.TAG_NAME, "span")
+                        job_type = spans[0].text.strip() if len(spans) > 0 else "N/A"
+                        salary = spans[1].text.strip() if len(spans) > 1 else "N/A"
+                        experience = spans[2].text.strip() if len(spans) > 2 else "N/A"
+                    except Exception:
+                        job_type = salary = experience = "N/A"
+
+                    # Get company name
+                    company_name = None
+                    try:
+                        company_elem = driver.find_element(
+                            By.CSS_SELECTOR, "div.company-name, span.company-name"
+                        )
+                        company_name = company_elem.text.strip()
+                    except NoSuchElementException:
+                        pass
+
+                    # Get location
+                    location = None
+                    try:
+                        location_elem = driver.find_element(
+                            By.CSS_SELECTOR, "div.location, span.location"
+                        )
+                        location = location_elem.text.strip()
+                    except NoSuchElementException:
+                        pass
+
+                    # Get description
+                    description = None
+                    try:
+                        desc_elem = driver.find_element(
+                            By.CSS_SELECTOR, "div.job-description, div.description"
+                        )
+                        description = desc_elem.text.strip()
+                    except NoSuchElementException:
+                        pass
+
+                    # Create job data dictionary
+                    job_data = {
+                        "detail_url": detail_url,
+                        "job_title": job_title,
+                        "posting_date": posting_date.strftime("%d %B %Y"),
+                        "job_type": job_type,
+                        "salary": salary,
+                        "experience": experience,
+                        "apply_link": apply_link,
+                        "company_name": company_name,
+                        "location": location,
+                        "description": description,
+                    }
+
+                    # Add to appropriate list based on posting date
+                    if posting_date == today:
+                        today_jobs.append(job_data)
+                        logger.info(f"Added today's job: {job_title}")
+                    elif posting_date == yesterday:
+                        yesterday_jobs.append(job_data)
+                        logger.info(f"Added yesterday's job: {job_title}")
+
+                except Exception as e:
+                    logger.error(f"Error processing job {detail_url}: {str(e)}")
+                    if driver:
+                        driver.quit()
+                    driver = None
+                    continue
+
+                time.sleep(1)  # Small delay between jobs
+
+            # Recreate driver between batches to prevent memory issues
+            if driver:
+                driver.quit()
+            driver = init_driver()
+            time.sleep(2)  # Delay between batches
 
         # Combine today's and yesterday's jobs
         all_jobs = today_jobs + yesterday_jobs

@@ -331,3 +331,52 @@ FROM jobs) AS anon_1]
 2025-02-23 19:06:48 | INFO | Scheduled job scraping for 9:00
 2025-02-23 19:06:48 | INFO | Scheduler initialized successfully
 2025-02-23 19:06:48 | INFO | Application startup completed successfully
+2025-02-23 20:36:21 | INFO | Starting job scraping at 2025-02-23 20:36:21.951527
+2025-02-23 20:36:22 | INFO | Starting job scraping...
+2025-02-23 20:36:26 | INFO | Accessing https://www.jobfound.org/
+2025-02-23 20:36:35 | INFO | Collecting job URLs...
+2025-02-23 20:37:01 | INFO | Found 600 job URLs
+2025-02-23 20:37:01 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
+2025-02-23 20:37:10 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b8040e3278ca84d7648a81?referralCode=FHZR3S
+2025-02-23 20:37:10 | INFO | Added today's job: Delta is hiring for QA Engineer | Freshers | Remote
+2025-02-23 20:37:11 | INFO | Processing job detail page: https://www.jobfound.org/job/kohort-learning-platform-pvt-ltd-is-hiring-for-web-scraping-and-automation-engineer-or-remote-software-engineer
+2025-02-23 20:37:18 | INFO | Found apply link: https://wellfound.com/jobs/3226393-web-scraping-automation-engineer-python-remote
+2025-02-23 20:37:18 | INFO | Added today's job: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
+2025-02-23 20:37:19 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-frontend-developer-or-hyderabad-frontend-development
+2025-02-23 20:37:31 | INFO | Found apply link: https://usijobs.deloitte.com/careersUSI/JobDetail/USI-EH25-MFG-Front-End-Developer-HYD/209978
+2025-02-23 20:37:31 | INFO | Added today's job: Deloitte is hiring for FrontEnd Developer | Hyderabad
+2025-02-23 20:37:32 | INFO | Processing job detail page: https://www.jobfound.org/job/sita-is-hiring-for-graduate-software-engineer-or-delhi-graduate-engineer-trainee
+2025-02-23 20:37:45 | INFO | Found apply link: https://careers.sita.aero/jobs/7451?lang=en-us
+2025-02-23 20:37:46 | INFO | Added today's job: SITA is hiring for Graduate, Software Engineer | Delhi
+2025-02-23 20:37:47 | INFO | Processing job detail page: https://www.jobfound.org/job/causalfunnel-is-hiring-for-software-engineer-intern-or-remote-software-engineer
+2025-02-23 20:37:55 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4161186258/?alternateChannel=search
+2025-02-23 20:37:55 | INFO | Added yesterday's job: CausalFunnel is hiring for Software Engineer Intern | Remote
+2025-02-23 20:37:56 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-software-developer-or-freshers-or-raemote-software-engineer
+2025-02-23 20:38:02 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b950a22c536072946aa7d7?referralCode=FHZR3S
+2025-02-23 20:38:03 | INFO | Added yesterday's job: Delta is hiring for Software Developer | Freshers | Raemote
+2025-02-23 20:38:04 | INFO | Processing job detail page: https://www.jobfound.org/job/rockwell-automation-inc-is-hiring-for-graduate-engineer-trainee-or-pune-graduate-engineer-trainee
+2025-02-23 20:38:15 | INFO | Found apply link: https://rockwellautomation.wd1.myworkdayjobs.com/en-US/External_Rockwell_Automation/job/Pune-India/GRADUATE-ENGINEER-TRAINEE_R24-6085
+2025-02-23 20:38:15 | INFO | Added yesterday's job: Rockwell Automation, Inc. is hiring for Graduate Engineer Trainee | Pune
+2025-02-23 20:38:16 | INFO | Processing job detail page: https://www.jobfound.org/job/csg-is-hiring-for-software-development-engineer-grad-or-bangalore-software-engineer
+2025-02-23 20:38:17 | INFO | Popup dismissed
+2025-02-23 20:38:24 | INFO | Found apply link: https://csgi.wd5.myworkdayjobs.com/CSGCareers/job/INBangaloreOffice/Software-Development-Engineer-Grad_29170-1?source=LinkedIn
+2025-02-23 20:38:24 | INFO | Added yesterday's job: CSG is hiring for Software Development Engineer Grad | Bangalore
+2025-02-23 20:38:25 | INFO | Processing job detail page: https://www.jobfound.org/job/kevit-technologies-is-hiring-for-chatbot-developer-fresher-or-rajkot-software-engineer
+2025-02-23 20:38:32 | INFO | Found apply link: https://kevit.keka.com/careers/jobdetails/71852?source=linkedin
+2025-02-23 20:38:32 | INFO | Added yesterday's job: Kevit Technologies is hiring for Chatbot Developer (Fresher) | Rajkot
+2025-02-23 20:38:33 | INFO | Processing job detail page: https://www.jobfound.org/job/walter-p-moore-is-hiring-for-application-developer-intern-or-bengalur-software-engineer
+2025-02-23 20:38:42 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4103519814/
+2025-02-23 20:38:42 | INFO | Added yesterday's job: Walter P Moore is hiring for Application Developer Intern | Bengalur
+2025-02-23 20:38:43 | INFO | Processing job detail page: https://www.jobfound.org/job/standard-chartered-is-hiring-for-backend-developer-or-bangalore
+2025-02-23 20:38:54 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67aede1a16ea4af278c3b967?referralCode=FHZR3S
+2025-02-23 20:38:54 | INFO | Added yesterday's job: Standard Chartered is hiring for Backend Developer | Bangalore
+2025-02-23 20:38:55 | INFO | Processing job detail page: https://www.jobfound.org/job/healthtrip-is-hiring-for-full-stack-developer-intern-or-pune-full-stack-development
+2025-02-23 20:39:04 | INFO | Found older job after processing current jobs. Stopping collection.
+2025-02-23 20:39:04 | INFO | Successfully scraped 11 jobs (Today: 4, Yesterday: 7)
+2025-02-23 20:39:06 | INFO | Function scrape_jobs took 164.67 seconds
+2025-02-23 20:39:06 | INFO | Found 11 jobs from scraping
+2025-02-23 20:39:06 | INFO | Storing jobs in database...
+2025-02-23 20:39:08 | INFO | Found 0 new jobs to store
+2025-02-23 20:39:08 | INFO | No new jobs to store
+2025-02-23 20:39:12 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-23 20:39:12 | INFO | Function scrape_and_process_jobs took 171.00 seconds

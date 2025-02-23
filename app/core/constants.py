@@ -2,7 +2,7 @@
 JOB_PAGE_URL = "https://www.jobfound.org/"
 
 # Selenium
-DEFAULT_WAIT = 10  # seconds
+DEFAULT_WAIT = 30  # seconds
 MAX_RETRIES = 3
 RETRY_DELAY = 2  # seconds
 
