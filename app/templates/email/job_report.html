@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .header {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .job-item {
+        margin-bottom: 20px;
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+      .job-title {
+        color: #007bff;
+        margin: 0 0 10px 0;
+      }
+      .job-detail {
+        margin: 5px 0;
+      }
+      .linkedin-format {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 30px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h2>Job Scraping Report - {{ date.strftime('%d %B %Y') }}</h2>
+      <p>Total Jobs Found: {{ jobs|length }}</p>
+    </div>
+
+    {% if jobs %}
+    <div class="jobs-list">
+      <h3>New Jobs:</h3>
+      {% for job in jobs %}
+      <div class="job-item">
+        <h4 class="job-title">{{ job.job_title }}</h4>
+        {% if job.company_name %}
+        <p class="job-detail">Company: {{ job.company_name }}</p>
+        {% endif %} {% if job.job_type and job.job_type != "N/A" %}
+        <p class="job-detail">Type: {{ job.job_type }}</p>
+        {% endif %} {% if job.salary and job.salary != "N/A" %}
+        <p class="job-detail">Salary: {{ job.salary }}</p>
+        {% endif %} {% if job.experience and job.experience != "N/A" %}
+        <p class="job-detail">Experience: {{ job.experience }}</p>
+        {% endif %}
+        <p class="job-detail">
+          <a href="{{ job.apply_link }}">Apply Here</a>
+        </p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="linkedin-format">
+      <h3>LinkedIn Post Format:</h3>
+      <pre>{{ linkedin_format }}</pre>
+    </div>
+    {% else %}
+    <p>No new jobs found today.</p>
+    {% endif %}
+  </body>
+</html>

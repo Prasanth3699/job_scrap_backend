@@ -1,0 +1,77 @@
+2025-02-22 22:06:07 | INFO | Starting job scraping at 2025-02-22 22:06:07.370295
+2025-02-22 22:06:07 | INFO | Starting job scraping...
+2025-02-22 22:06:16 | INFO | Accessing https://www.jobfound.org/
+2025-02-22 22:06:23 | INFO | Collecting job URLs...
+2025-02-22 22:06:45 | INFO | Found 600 job URLs
+2025-02-22 22:06:45 | INFO | Processing job detail page: https://www.jobfound.org/job/ihs-is-hiring-for-software-engineering-intern-or-remote-software-engineer
+2025-02-22 22:06:56 | INFO | Found apply link: https://us242.dayforcehcm.com/CandidatePortal/en-US/ihs/Posting/View/621
+2025-02-22 22:06:56 | INFO | Added today's job: IHS is hiring for Software Engineering Intern | Remote
+2025-02-22 22:06:57 | INFO | Processing job detail page: https://www.jobfound.org/job/walter-p-moore-is-hiring-for-application-developer-intern-or-bengalur-software-engineer
+2025-02-22 22:07:06 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4103519814/
+2025-02-22 22:07:06 | INFO | Added today's job: Walter P Moore is hiring for Application Developer Intern | Bengalur
+2025-02-22 22:07:07 | INFO | Processing job detail page: https://www.jobfound.org/job/standard-chartered-is-hiring-for-backend-developer-or-bangalore
+2025-02-22 22:07:15 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67aede1a16ea4af278c3b967?referralCode=FHZR3S
+2025-02-22 22:07:15 | INFO | Added today's job: Standard Chartered is hiring for Backend Developer | Bangalore
+2025-02-22 22:07:16 | INFO | Processing job detail page: https://www.jobfound.org/job/healthtrip-is-hiring-for-full-stack-developer-intern-or-pune-full-stack-development
+2025-02-22 22:07:23 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4161047462/?alternateChannel=search
+2025-02-22 22:07:24 | INFO | Added yesterday's job: Healthtrip is hiring for Full Stack Developer (Intern) | Pune
+2025-02-22 22:07:25 | INFO | Processing job detail page: https://www.jobfound.org/job/sails-software-inc-is-hiring-for-react-developer-or-visakhapatnam-frontend-development
+2025-02-22 22:07:35 | INFO | Found apply link: https://sailssoftware.freshteam.com/jobs/f5BtyeyrsfYY/react-developer
+2025-02-22 22:07:35 | INFO | Added yesterday's job: Sails Software Inc is hiring for React Developer | Visakhapatnam
+2025-02-22 22:07:36 | INFO | Processing job detail page: https://www.jobfound.org/job/verint-is-hiring-for-associate-software-engineer-or-remote-software-engineer
+2025-02-22 22:07:46 | INFO | Found apply link: https://fa-epcb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/3160
+2025-02-22 22:07:46 | INFO | Added yesterday's job: Verint is hiring for Associate Software Engineer | Remote
+2025-02-22 22:07:47 | INFO | Processing job detail page: https://www.jobfound.org/job/neevhq-is-hiring-for-backend-developer-intern-or-remote-backend-development
+2025-02-22 22:07:48 | INFO | Popup dismissed
+2025-02-22 22:07:52 | INFO | Found apply link: https://wellfound.com/jobs/3224226-backend-developer-intern-build-scalable-systems-at-neev
+2025-02-22 22:07:52 | INFO | Added yesterday's job: NeevHQ is hiring for Backend Developer Intern | Remote
+2025-02-22 22:07:53 | INFO | Processing job detail page: https://www.jobfound.org/job/delightree-is-hiring-for-backend-developer-nodejs-or-remote-backend-development
+2025-02-22 22:08:00 | INFO | Found apply link: https://wellfound.com/jobs/3086592-backend-developer-nodejs
+2025-02-22 22:08:00 | INFO | Added yesterday's job: Delightree is hiring for Backend Developer - NodeJS | Remote
+2025-02-22 22:08:01 | INFO | Processing job detail page: https://www.jobfound.org/job/gigaml-is-hiring-for-founding-full-stack-engineer-or-bengaluru-full-stack-development
+2025-02-22 22:08:07 | INFO | Found apply link: https://app.flexiple.com/talent/jobs/10633
+2025-02-22 22:08:07 | INFO | Added yesterday's job: GigaML is hiring for Founding Full Stack Engineer | Bengaluru
+2025-02-22 22:08:08 | INFO | Processing job detail page: https://www.jobfound.org/job/pocketly-is-hiring-for-software-developer-or-bengaluru-software-engineer
+2025-02-22 22:08:10 | INFO | Popup dismissed
+2025-02-22 22:08:11 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4160861115/?alternateChannel=search
+2025-02-22 22:08:11 | INFO | Added yesterday's job: Pocketly is hiring for Software Developer | Bengaluru
+2025-02-22 22:08:12 | INFO | Processing job detail page: https://www.jobfound.org/job/navex-is-hiring-for-software-engineer
+2025-02-22 22:08:25 | INFO | Found apply link: https://navexglobal.wd5.myworkdayjobs.com/en-US/NAVEX/job/Bangalore/Software-Engineer_R5622
+2025-02-22 22:08:25 | INFO | Added yesterday's job: NAVEX is hiring for Software Engineer | Bangalore
+2025-02-22 22:08:26 | INFO | Processing job detail page: https://www.jobfound.org/job/shell-is-hiring-for-graduate-programme-or-bangalore-graduate-engineer-trainee
+2025-02-22 22:08:39 | INFO | Found apply link: https://shell.wd3.myworkdayjobs.com/Proactive/job/Shell-Technology-Centre---Bangalore/Shell-Graduate-Programme-2025---India_R152209-1?source=KrishanKumarLinkedin
+2025-02-22 22:08:39 | INFO | Added yesterday's job: Shell is hiring for Graduate Programme | Bangalore
+2025-02-22 22:08:40 | INFO | Processing job detail page: https://www.jobfound.org/job/corelogic-is-hiring-for-software-engineer-ornoida-software-engineer
+2025-02-22 22:08:47 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4138264498/?alternateChannel=search
+2025-02-22 22:08:47 | INFO | Added yesterday's job: CoreLogic is hiring for Software Engineer | Noida
+2025-02-22 22:08:48 | INFO | Processing job detail page: https://www.jobfound.org/job/blackberry-is-hiring-for-student-intern-or-hyderabad-software-engineer
+2025-02-22 22:09:00 | INFO | Found apply link: https://bb.wd3.myworkdayjobs.com/en-US/BlackBerry/job/Hyderabad-Telangana-India/Student-Intern_20240796-1
+2025-02-22 22:09:00 | INFO | Added yesterday's job: BlackBerry is hiring for Student Intern | Hyderabad
+2025-02-22 22:09:01 | INFO | Processing job detail page: https://www.jobfound.org/job/cex-is-hiring-for-trainee-associate-devops-engineer-or-software-engineer
+2025-02-22 22:09:09 | INFO | Found apply link: https://in.webuy.com/careers/careerDetails/?type=1&jobId=741
+2025-02-22 22:09:09 | INFO | Added yesterday's job: CeX is hiring for Trainee / Associate DevOps Engineer | Freshers
+2025-02-22 22:09:10 | INFO | Processing job detail page: https://www.jobfound.org/job/mr-cooper-group-is-hiring-for-software-development-engineer-or-chennai-bangalore-software-engineer
+2025-02-22 22:09:23 | INFO | Found apply link: https://careers.mrcooper.com/us/en/job/MRCOUS023132EXTERNALENUS/Software-development-Engineer
+2025-02-22 22:09:24 | INFO | Added yesterday's job: Mr. Cooper Group is hiring for Software development Engineer | Chennai, Bangalore
+2025-02-22 22:09:25 | INFO | Processing job detail page: https://www.jobfound.org/job/qest-is-hiring-for-fullstack-developer-or-bangalore-full-stack-development
+2025-02-22 22:09:32 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b4165521efc2e46ab860ec?referralCode=FHZR3S
+2025-02-22 22:09:32 | INFO | Added yesterday's job: Qest is hiring for Fullstack Developer | Bangalore
+2025-02-22 22:09:33 | INFO | Processing job detail page: https://www.jobfound.org/job/myntra-is-hiring-for-software-engineer-java-backend-2024-passouts
+2025-02-22 22:09:40 | INFO | Found older job after processing current jobs. Stopping collection.
+2025-02-22 22:09:40 | INFO | Successfully scraped 17 jobs (Today: 3, Yesterday: 14)
+2025-02-22 22:09:42 | INFO | Function scrape_jobs took 214.94 seconds
+2025-02-22 22:09:42 | INFO | Found 17 jobs from scraping
+2025-02-22 22:09:42 | INFO | Storing jobs in database...
+2025-02-22 22:09:42 | INFO | Found 7 new jobs to store
+2025-02-22 22:09:42 | INFO | Attempting to store 7 jobs
+2025-02-22 22:09:42 | INFO | Prepared job for storage: IHS is hiring for Software Engineering Intern | Remote
+2025-02-22 22:09:42 | INFO | Prepared job for storage: Walter P Moore is hiring for Application Developer Intern | Bengalur
+2025-02-22 22:09:42 | INFO | Prepared job for storage: Standard Chartered is hiring for Backend Developer | Bangalore
+2025-02-22 22:09:42 | INFO | Prepared job for storage: Healthtrip is hiring for Full Stack Developer (Intern) | Pune
+2025-02-22 22:09:42 | INFO | Prepared job for storage: Sails Software Inc is hiring for React Developer | Visakhapatnam
+2025-02-22 22:09:42 | INFO | Prepared job for storage: Verint is hiring for Associate Software Engineer | Remote
+2025-02-22 22:09:42 | INFO | Prepared job for storage: NeevHQ is hiring for Backend Developer Intern | Remote
+2025-02-22 22:09:42 | INFO | Successfully stored 7 jobs
+2025-02-22 22:09:42 | INFO | Successfully stored 7 new jobs
+2025-02-22 22:09:48 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-22 22:09:49 | INFO | Function scrape_and_process_jobs took 221.64 seconds

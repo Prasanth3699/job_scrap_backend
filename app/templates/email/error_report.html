@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        color: #333;
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      .error-header {
+        background-color: #fee;
+        color: #c00;
+        padding: 20px;
+        border-radius: 5px;
+        margin-bottom: 20px;
+      }
+      .error-details {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 5px;
+        white-space: pre-wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="error-header">
+      <h2>Job Scraping Error Report - {{ date.strftime('%d %B %Y') }}</h2>
+    </div>
+
+    <div class="error-details">
+      <h3>Error Details:</h3>
+      <p>{{ error }}</p>
+    </div>
+  </body>
+</html>
