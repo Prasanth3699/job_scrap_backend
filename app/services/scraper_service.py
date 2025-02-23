@@ -54,7 +54,7 @@ def init_driver():
 
         # Use ChromeDriverManager with cache_valid_range
         driver = webdriver.Chrome(
-            service=Service(ChromeDriverManager(cache_valid_range=7).install()),
+            service=Service(ChromeDriverManager().install()),
             options=chrome_options,
         )
 
