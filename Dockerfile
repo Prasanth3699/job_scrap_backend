@@ -7,6 +7,10 @@ RUN apt-get update && apt-get install -y \
     unzip \
     curl \
     xvfb \
+    postgresql-client \
+    postgresql-server-dev-all \
+    python3-dev \
+    gcc \
     && rm -rf /var/lib/apt/lists/*
 
 # Install Chrome
@@ -17,7 +21,7 @@ RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key
     && rm -rf /var/lib/apt/lists/*
 
 # Set working directory
-WORKDIR /app
+WORKDIR /backend
 
 # Copy requirements file
 COPY requirements.txt .
@@ -31,6 +35,10 @@ COPY . .
 # Set environment variables
 ENV PYTHONUNBUFFERED=1
 ENV SELENIUM_TIMEOUT=30
+ENV PORT=10000
+
+# Make sure the backend directory is in the Python path
+ENV PYTHONPATH=/backend
 
 # Command to run the application
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "10000"]
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "${PORT}"]

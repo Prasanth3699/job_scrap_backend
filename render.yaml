@@ -1,6 +1,11 @@
 services:
   - type: web
-    name: job_scrapper
+    name: job-scrapper
     env: docker
     buildCommand: ""
     startCommand: ""
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: PYTHONPATH
+        value: "/backend"
