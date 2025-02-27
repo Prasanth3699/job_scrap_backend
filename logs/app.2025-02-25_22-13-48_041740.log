@@ -1,0 +1,289 @@
+2025-02-25 22:13:48 | INFO | Starting job scraping at 2025-02-25 22:13:48.017897
+2025-02-25 22:13:48 | INFO | Starting job scraping...
+2025-02-25 22:13:51 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 22:14:01 | INFO | Collecting job URLs...
+2025-02-25 22:14:27 | INFO | Found 600 job URLs
+2025-02-25 22:14:27 | INFO | Processing job detail page: https://www.jobfound.org/job/qt-group-is-hiring-for-software-engineer-or-bangalore-software-engineer
+2025-02-25 22:14:43 | INFO | Found apply link: https://unstop.com/jobs/software-engineer-software-quality-solutions-qt-group-1403444?lb=OVPecQB&utm_medium=Share&utm_source=shortUrl
+2025-02-25 22:14:44 | INFO | Added today's job: Qt Group is hiring for Software Engineer | Bangalore
+2025-02-25 22:14:45 | INFO | Processing job detail page: https://www.jobfound.org/job/oracle-is-hiring-for-software-development-engineer-or-delhi-software-engineer
+2025-02-25 22:14:51 | INFO | Found apply link: https://unstop.com/jobs/software-development-engineer-oracle-1408304?lb=OVPecQB&utm_medium=Share&utm_source=shortUrl
+2025-02-25 22:14:51 | INFO | Added today's job: Oracle is hiring for Software Development Engineer | Delhi
+2025-02-25 22:14:52 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 22:15:11 | INFO | Found apply link: https://jobs.danfoss.com/job/Pune-Software-Engineer/814439202/
+2025-02-25 22:15:11 | INFO | Added today's job: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 22:15:12 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 22:15:14 | INFO | Popup dismissed
+2025-02-25 22:15:18 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 22:15:18 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 22:15:19 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 22:15:29 | INFO | Found apply link: https://careers.equifax.com/en/jobs/j00164929/junior-software-engineer/?source=Applied_LinkedIn
+2025-02-25 22:15:29 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 22:15:30 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 22:15:39 | INFO | Found apply link: https://wellfound.com/jobs/3210523-backend-developer-intern
+2025-02-25 22:15:39 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 22:15:40 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 22:15:41 | INFO | Popup dismissed
+2025-02-25 22:15:43 | INFO | Found apply link: https://southasiacareers.deloitte.com/job/Bengaluru-Intern-Data-Science-Bengaluru-Digital-Excellence-Centre/36247044/
+2025-02-25 22:15:43 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 22:15:44 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 22:16:00 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67bd5d02deab716510d9f1ce?referralCode=FHZR3S
+2025-02-25 22:16:00 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 22:16:01 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 22:16:12 | INFO | Found apply link: https://careers.iba-worldwide.com/job/Chandigarh-Software-Engineer-Frontend/1146476855/?feedId=354655
+2025-02-25 22:16:13 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 22:16:14 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 22:16:15 | INFO | Popup dismissed
+2025-02-25 22:16:16 | INFO | Found apply link: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFo7Rx3UhDD2QAAAZU-AH_YeZBSJfsm9aWIeDQsTWoz_otlyMqayXMk09R_InwM2dexTGCCb59wHNpaqDaDDXg_CVC6mJlraqyHTkl4QKngtphVWehsszLh8wxYYrVIMY8-1ek=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4142768989%2F
+2025-02-25 22:16:16 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 22:16:17 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 22:16:25 | INFO | Found apply link: https://salescodeai.keka.com/careers/jobdetails/68945
+2025-02-25 22:16:26 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 22:16:27 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 22:16:28 | INFO | Popup dismissed
+2025-02-25 22:16:29 | INFO | Found apply link: https://app.dover.com/apply/natoma/2060a3ed-f24a-4446-96ab-ca0fd584cd32?rs=42706078
+2025-02-25 22:16:29 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 22:16:30 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 22:16:38 | INFO | Found apply link: https://www.linkedin.com/jobs/view/react-native-developer-at-risk-resources-4163887711/?originalSubdomain=in
+2025-02-25 22:16:38 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 22:16:39 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 22:16:41 | INFO | Popup dismissed
+2025-02-25 22:16:42 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-25 22:16:42 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 22:16:43 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 22:16:53 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-25 22:16:53 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 22:16:54 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 22:17:01 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-25 22:17:01 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 22:17:02 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 22:17:13 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-25 22:17:13 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 22:17:14 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 22:17:26 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-25 22:17:26 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 22:17:27 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 22:17:38 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-25 22:17:38 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 22:17:39 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 22:17:40 | INFO | Popup dismissed
+2025-02-25 22:17:44 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-25 22:17:44 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 22:17:45 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 22:17:45 | INFO | Successfully scraped 20 jobs (Today: 11, Yesterday: 9)
+2025-02-25 22:17:47 | INFO | Function scrape_jobs took 239.64 seconds
+2025-02-25 22:17:47 | INFO | Found 20 jobs from scraping
+2025-02-25 22:17:47 | INFO | Storing jobs in database...
+2025-02-25 22:17:48 | INFO | Found 2 new jobs to store
+2025-02-25 22:17:48 | INFO | Attempting to store 2 jobs
+2025-02-25 22:17:48 | INFO | Prepared job for storage: Qt Group is hiring for Software Engineer | Bangalore
+2025-02-25 22:17:48 | INFO | Prepared job for storage: Oracle is hiring for Software Development Engineer | Delhi
+2025-02-25 22:17:48 | INFO | Successfully stored 2 jobs
+2025-02-25 22:17:48 | INFO | Successfully stored 2 new jobs
+2025-02-25 22:17:53 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 22:17:53 | INFO | Function scrape_and_process_jobs took 245.33 seconds
+2025-02-25 22:39:12 | INFO | Starting job scraping at 2025-02-25 22:39:12.379394
+2025-02-25 22:39:12 | INFO | Starting job scraping...
+2025-02-25 22:39:16 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 22:39:23 | INFO | Collecting job URLs...
+2025-02-25 22:39:53 | INFO | Found 600 job URLs
+2025-02-25 22:39:53 | INFO | Processing job detail page: https://www.jobfound.org/job/qt-group-is-hiring-for-software-engineer-or-bangalore-software-engineer
+2025-02-25 22:40:01 | INFO | Found apply link: https://unstop.com/jobs/software-engineer-software-quality-solutions-qt-group-1403444?lb=OVPecQB&utm_medium=Share&utm_source=shortUrl
+2025-02-25 22:40:01 | INFO | Added today's job: Qt Group is hiring for Software Engineer | Bangalore
+2025-02-25 22:40:02 | INFO | Processing job detail page: https://www.jobfound.org/job/oracle-is-hiring-for-software-development-engineer-or-delhi-software-engineer
+2025-02-25 22:40:08 | INFO | Found apply link: https://unstop.com/jobs/software-development-engineer-oracle-1408304?lb=OVPecQB&utm_medium=Share&utm_source=shortUrl
+2025-02-25 22:40:09 | INFO | Added today's job: Oracle is hiring for Software Development Engineer | Delhi
+2025-02-25 22:40:10 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 22:40:20 | INFO | Found apply link: https://jobs.danfoss.com/job/Pune-Software-Engineer/814439202/
+2025-02-25 22:40:20 | INFO | Added today's job: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 22:40:21 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 22:40:22 | INFO | Popup dismissed
+2025-02-25 22:40:32 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 22:40:32 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 22:40:33 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 22:40:52 | INFO | Found apply link: https://careers.equifax.com/en/jobs/j00164929/junior-software-engineer/?source=Applied_LinkedIn
+2025-02-25 22:40:53 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 22:40:54 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 22:41:02 | INFO | Found apply link: https://wellfound.com/jobs/3210523-backend-developer-intern
+2025-02-25 22:41:02 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 22:41:03 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 22:41:04 | INFO | Popup dismissed
+2025-02-25 22:41:09 | INFO | Found apply link: https://southasiacareers.deloitte.com/job/Bengaluru-Intern-Data-Science-Bengaluru-Digital-Excellence-Centre/36247044/
+2025-02-25 22:41:09 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 22:41:10 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 22:41:19 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67bd5d02deab716510d9f1ce?referralCode=FHZR3S
+2025-02-25 22:41:19 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 22:41:20 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 22:41:30 | INFO | Found apply link: https://careers.iba-worldwide.com/job/Chandigarh-Software-Engineer-Frontend/1146476855/?feedId=354655
+2025-02-25 22:41:30 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 22:41:31 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 22:41:32 | INFO | Popup dismissed
+2025-02-25 22:41:35 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4142768989/
+2025-02-25 22:41:35 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 22:41:36 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 22:41:43 | INFO | Found apply link: https://salescodeai.keka.com/careers/jobdetails/68945
+2025-02-25 22:41:43 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 22:41:44 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 22:41:45 | INFO | Popup dismissed
+2025-02-25 22:41:46 | INFO | Found apply link: https://app.dover.com/apply/natoma/2060a3ed-f24a-4446-96ab-ca0fd584cd32?rs=42706078
+2025-02-25 22:41:46 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 22:41:47 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 22:41:54 | INFO | Found apply link: https://www.linkedin.com/jobs/view/react-native-developer-at-risk-resources-4163887711/?originalSubdomain=in
+2025-02-25 22:41:55 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 22:41:56 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 22:41:57 | INFO | Popup dismissed
+2025-02-25 22:41:58 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-25 22:41:58 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 22:41:59 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 22:42:08 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-25 22:42:08 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 22:42:09 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 22:42:16 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-25 22:42:16 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 22:42:17 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 22:42:27 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-25 22:42:27 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 22:42:28 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 22:42:39 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-25 22:42:39 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 22:42:40 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 22:42:49 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-25 22:42:49 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 22:42:50 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 22:42:51 | INFO | Popup dismissed
+2025-02-25 22:42:54 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-25 22:42:54 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 22:42:55 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 22:42:55 | INFO | Successfully scraped 20 jobs (Today: 11, Yesterday: 9)
+2025-02-25 22:42:57 | INFO | Function scrape_jobs took 225.28 seconds
+2025-02-25 22:42:57 | INFO | Found 20 jobs from scraping
+2025-02-25 22:42:57 | INFO | Storing jobs in database...
+2025-02-25 22:42:58 | INFO | Found 0 new jobs to store
+2025-02-25 22:42:58 | INFO | No new jobs to store
+2025-02-25 22:43:02 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 22:43:02 | INFO | Function scrape_and_process_jobs took 230.28 seconds
+2025-02-25 23:52:36 | INFO | Starting job scraping at 2025-02-25 23:52:36.977311
+2025-02-25 23:52:37 | INFO | Starting job scraping...
+2025-02-25 23:52:40 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 23:52:48 | INFO | Collecting job URLs...
+2025-02-25 23:53:16 | INFO | Found 600 job URLs
+2025-02-25 23:53:16 | INFO | Processing job detail page: https://www.jobfound.org/job/qt-group-is-hiring-for-software-engineer-or-bangalore-software-engineer
+2025-02-25 23:53:28 | INFO | Found apply link: https://unstop.com/jobs/software-engineer-software-quality-solutions-qt-group-1403444?lb=OVPecQB&utm_medium=Share&utm_source=shortUrl
+2025-02-25 23:53:28 | INFO | Added today's job: Qt Group is hiring for Software Engineer | Bangalore
+2025-02-25 23:53:29 | INFO | Processing job detail page: https://www.jobfound.org/job/oracle-is-hiring-for-software-development-engineer-or-delhi-software-engineer
+2025-02-25 23:53:36 | INFO | Found apply link: https://unstop.com/jobs/software-development-engineer-oracle-1408304?lb=OVPecQB&utm_medium=Share&utm_source=shortUrl
+2025-02-25 23:53:36 | INFO | Added today's job: Oracle is hiring for Software Development Engineer | Delhi
+2025-02-25 23:53:37 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 23:55:53 | INFO | Starting up the application...
+2025-02-25 23:55:53 | INFO | Scheduler initialized successfully
+2025-02-25 23:55:53 | INFO | Application startup completed successfully
+2025-02-26 00:23:33 | INFO | Starting up the application...
+2025-02-26 00:23:34 | INFO | Scheduler initialized successfully
+2025-02-26 00:23:34 | INFO | Application startup completed successfully
+2025-02-26 00:23:38 | ERROR | Driver initialization failed: 'JobScraper' object has no attribute 'optimize_page_load'
+2025-02-26 00:26:42 | INFO | Shutting down the application...
+2025-02-26 00:26:42 | INFO | Application shutdown completed successfully
+2025-02-26 00:26:46 | INFO | Starting up the application...
+2025-02-26 00:26:46 | INFO | Scheduler initialized successfully
+2025-02-26 00:26:46 | INFO | Application startup completed successfully
+2025-02-26 00:26:52 | INFO | Shutting down the application...
+2025-02-26 00:26:52 | INFO | Application shutdown completed successfully
+2025-02-26 00:27:22 | INFO | Starting up the application...
+2025-02-26 00:27:23 | INFO | Scheduler initialized successfully
+2025-02-26 00:27:23 | INFO | Application startup completed successfully
+2025-02-26 00:35:55 | INFO | Shutting down the application...
+2025-02-26 00:35:55 | INFO | Application shutdown completed successfully
+2025-02-26 00:35:58 | INFO | Starting up the application...
+2025-02-26 00:35:58 | INFO | Scheduler initialized successfully
+2025-02-26 00:35:58 | INFO | Application startup completed successfully
+2025-02-26 00:36:45 | INFO | Shutting down the application...
+2025-02-26 00:36:45 | INFO | Application shutdown completed successfully
+2025-02-26 06:52:55 | INFO | Starting up the application...
+2025-02-26 06:52:56 | INFO | Scheduler initialized successfully
+2025-02-26 06:52:56 | INFO | Application startup completed successfully
+2025-02-26 06:57:51 | INFO | Shutting down the application...
+2025-02-26 06:57:51 | INFO | Application shutdown completed successfully
+2025-02-26 06:57:54 | INFO | Starting up the application...
+2025-02-26 06:57:54 | INFO | Scheduler initialized successfully
+2025-02-26 06:57:54 | INFO | Application startup completed successfully
+2025-02-26 06:58:35 | ERROR | Error collecting job URLs: Message: 
+
+2025-02-26 06:58:35 | ERROR | Error in collect_job_urls: Failed to collect job URLs: Message: 
+
+2025-02-26 06:59:17 | INFO | Shutting down the application...
+2025-02-26 06:59:17 | INFO | Application shutdown completed successfully
+2025-02-26 06:59:20 | INFO | Starting up the application...
+2025-02-26 06:59:21 | INFO | Scheduler initialized successfully
+2025-02-26 06:59:21 | INFO | Application startup completed successfully
+2025-02-26 07:00:07 | ERROR | Error collecting job URLs: Message: 
+
+2025-02-26 07:00:07 | ERROR | Function collect_job_urls failed after 12.24 seconds: Failed to collect job URLs: Message: 
+
+2025-02-26 07:00:07 | WARNING | Attempt 1/3 failed: Failed to collect job URLs: Message: 
+
+2025-02-26 07:00:21 | ERROR | Error collecting job URLs: Message: 
+
+2025-02-26 07:00:21 | ERROR | Function collect_job_urls failed after 12.23 seconds: Failed to collect job URLs: Message: 
+
+2025-02-26 07:00:21 | WARNING | Attempt 2/3 failed: Failed to collect job URLs: Message: 
+
+2025-02-26 07:00:35 | ERROR | Error collecting job URLs: Message: 
+
+2025-02-26 07:00:35 | ERROR | Function collect_job_urls failed after 12.25 seconds: Failed to collect job URLs: Message: 
+
+2025-02-26 07:00:35 | WARNING | Attempt 3/3 failed: Failed to collect job URLs: Message: 
+
+2025-02-26 07:00:35 | ERROR | Error in collect_job_urls: Failed to collect job URLs: Message: 
+
+2025-02-26 07:06:06 | INFO | Shutting down the application...
+2025-02-26 07:06:06 | INFO | Application shutdown completed successfully
+2025-02-26 07:06:09 | INFO | Starting up the application...
+2025-02-26 07:06:09 | INFO | Scheduler initialized successfully
+2025-02-26 07:06:09 | INFO | Application startup completed successfully
+2025-02-26 07:06:50 | ERROR | Error collecting job URLs: Message: 
+
+2025-02-26 07:06:50 | ERROR | Function collect_job_urls failed after 12.24 seconds: Failed to collect job URLs: Message: 
+
+2025-02-26 07:06:50 | WARNING | Attempt 1/3 failed: Failed to collect job URLs: Message: 
+
+2025-02-26 07:07:05 | ERROR | Error collecting job URLs: Message: 
+
+2025-02-26 07:07:05 | ERROR | Function collect_job_urls failed after 12.25 seconds: Failed to collect job URLs: Message: 
+
+2025-02-26 07:07:05 | WARNING | Attempt 2/3 failed: Failed to collect job URLs: Message: 
+
+2025-02-26 07:07:19 | ERROR | Error collecting job URLs: Message: 
+
+2025-02-26 07:07:19 | ERROR | Function collect_job_urls failed after 12.23 seconds: Failed to collect job URLs: Message: 
+
+2025-02-26 07:07:19 | WARNING | Attempt 3/3 failed: Failed to collect job URLs: Message: 
+
+2025-02-26 07:07:19 | ERROR | Error in collect_job_urls: Failed to collect job URLs: Message: 
+
+2025-02-26 07:17:35 | INFO | Shutting down the application...
+2025-02-26 07:17:35 | INFO | Application shutdown completed successfully
+2025-02-26 07:17:39 | INFO | Starting up the application...
+2025-02-26 07:17:39 | INFO | Scheduler initialized successfully
+2025-02-26 07:17:39 | INFO | Application startup completed successfully
+2025-02-26 07:18:01 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-02-26 07:18:12 | INFO | Function collect_job_urls took 11.68 seconds
+2025-02-26 22:31:25 | INFO | Application shutdown completed successfully
+2025-02-26 22:31:35 | INFO | Scheduler initialized successfully
+2025-02-26 22:31:35 | INFO | Application startup completed successfully
+2025-02-26 22:32:44 | ERROR | Error in workflow: 'function' object has no attribute 's'
+2025-02-26 22:32:44 | INFO | Shutting down the application...
+2025-02-26 22:32:44 | INFO | Application shutdown completed successfully
+2025-02-26 22:32:48 | INFO | Scheduler initialized successfully
+2025-02-26 22:32:48 | INFO | Application startup completed successfully
+2025-02-26 22:32:58 | WARNING | Attempt 1/3 failed: scrape_and_process_jobs() takes 0 positional arguments but 1 was given
+2025-02-26 22:33:00 | ERROR | Function scrape_and_process_jobs failed after 0.00 seconds: scrape_and_process_jobs() takes 0 positional arguments but 1 was given
+2025-02-26 22:33:00 | WARNING | Attempt 2/3 failed: scrape_and_process_jobs() takes 0 positional arguments but 1 was given
+2025-02-26 22:33:02 | ERROR | Function scrape_and_process_jobs failed after 0.00 seconds: scrape_and_process_jobs() takes 0 positional arguments but 1 was given
+2025-02-26 22:33:02 | WARNING | Attempt 3/3 failed: scrape_and_process_jobs() takes 0 positional arguments but 1 was given
+2025-02-26 22:33:02 | ERROR | Error in workflow: scrape_and_process_jobs() takes 0 positional arguments but 1 was given
+2025-02-26 22:33:58 | INFO | Shutting down the application...
+2025-02-26 22:33:58 | INFO | Application shutdown completed successfully
+2025-02-26 22:34:03 | INFO | Scheduler initialized successfully
+2025-02-26 22:34:03 | INFO | Application startup completed successfully
+2025-02-26 22:54:28 | INFO | Shutting down the application...
+2025-02-26 22:54:28 | INFO | Application shutdown completed successfully

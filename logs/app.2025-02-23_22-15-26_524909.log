@@ -1,0 +1,72 @@
+2025-02-23 22:15:26 | INFO | Updated settings in database
+2025-02-24 20:14:24 | INFO | Starting job scraping at 2025-02-24 20:14:24.930291
+2025-02-24 20:14:25 | INFO | Starting job scraping...
+2025-02-24 20:14:37 | INFO | Accessing https://www.jobfound.org/
+2025-02-24 20:14:45 | INFO | Collecting job URLs...
+2025-02-24 20:15:17 | INFO | Found 600 job URLs
+2025-02-24 20:15:17 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-24 20:15:18 | INFO | Popup dismissed
+2025-02-24 20:15:20 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-24 20:15:20 | INFO | Added today's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-24 20:15:21 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-24 20:15:30 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-24 20:15:30 | INFO | Added today's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-24 20:15:31 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-24 20:15:38 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-24 20:15:38 | INFO | Added today's job: Bilby is hiring for Data Engineer | Remote
+2025-02-24 20:15:39 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-24 20:15:52 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-24 20:15:52 | INFO | Added today's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-24 20:15:53 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-24 20:16:06 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-24 20:16:07 | INFO | Added today's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-24 20:16:08 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-24 20:16:29 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-24 20:16:29 | INFO | Added today's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-24 20:16:30 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-24 20:16:32 | INFO | Popup dismissed
+2025-02-24 20:16:37 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-24 20:16:38 | INFO | Added today's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-24 20:16:39 | INFO | Processing job detail page: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development
+2025-02-24 20:16:47 | INFO | Found apply link: https://www.ycombinator.com/companies/clinikally/jobs/UC6DxFI-full-stack-engineer
+2025-02-24 20:16:47 | INFO | Added today's job: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-24 20:16:48 | INFO | Processing job detail page: https://www.jobfound.org/job/salesforce-is-hiring-for-software-engineering-mts-or-hyderabad-software-engineer
+2025-02-24 20:17:01 | INFO | Found apply link: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS---Demos_JR283044?source=LinkedIn_Jobs
+2025-02-24 20:17:01 | INFO | Added today's job: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-24 20:17:02 | INFO | Processing job detail page: https://www.jobfound.org/job/bigyellowfish-technologies-is-hiring-for-junior-web-developer-or-bangalore-software-engineer
+2025-02-24 20:17:12 | INFO | Found apply link: https://www.expertia.ai/bigyellowfish-io/job/hiring-junior-web-developer-66e28c6808052473ec9a9709?easy_apply=true&date-refresh=02/24/2025
+2025-02-24 20:17:13 | INFO | Added today's job: Bigyellowfish Technologies is hiring for Junior Web Developer | Bangalore
+2025-02-24 20:17:14 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
+2025-02-24 20:17:22 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b8040e3278ca84d7648a81?referralCode=FHZR3S
+2025-02-24 20:17:22 | INFO | Added yesterday's job: Delta is hiring for QA Engineer | Freshers | Remote
+2025-02-24 20:17:23 | INFO | Processing job detail page: https://www.jobfound.org/job/kohort-learning-platform-pvt-ltd-is-hiring-for-web-scraping-and-automation-engineer-or-remote-software-engineer
+2025-02-24 20:17:31 | INFO | Found apply link: https://wellfound.com/jobs/3226393-web-scraping-automation-engineer-python-remote
+2025-02-24 20:17:31 | INFO | Added yesterday's job: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
+2025-02-24 20:17:32 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-frontend-developer-or-hyderabad-frontend-development
+2025-02-24 20:17:44 | INFO | Found apply link: https://usijobs.deloitte.com/careersUSI/JobDetail/USI-EH25-MFG-Front-End-Developer-HYD/209978
+2025-02-24 20:17:45 | INFO | Added yesterday's job: Deloitte is hiring for FrontEnd Developer | Hyderabad
+2025-02-24 20:17:46 | INFO | Processing job detail page: https://www.jobfound.org/job/sita-is-hiring-for-graduate-software-engineer-or-delhi-graduate-engineer-trainee
+2025-02-24 20:17:59 | INFO | Found apply link: https://careers.sita.aero/jobs/7451?lang=en-us
+2025-02-24 20:17:59 | INFO | Added yesterday's job: SITA is hiring for Graduate, Software Engineer | Delhi
+2025-02-24 20:18:00 | INFO | Processing job detail page: https://www.jobfound.org/job/causalfunnel-is-hiring-for-software-engineer-intern-or-remote-software-engineer
+2025-02-24 20:18:06 | INFO | Found older job after processing current jobs. Stopping collection.
+2025-02-24 20:18:06 | INFO | Successfully scraped 14 jobs (Today: 10, Yesterday: 4)
+2025-02-24 20:18:08 | INFO | Function scrape_jobs took 223.78 seconds
+2025-02-24 20:18:08 | INFO | Found 14 jobs from scraping
+2025-02-24 20:18:08 | INFO | Storing jobs in database...
+2025-02-24 20:18:09 | INFO | Found 10 new jobs to store
+2025-02-24 20:18:09 | INFO | Attempting to store 10 jobs
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Harness is hiring for Software Engineer | Bengaluru
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Bilby is hiring for Data Engineer | Remote
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-24 20:18:09 | INFO | Prepared job for storage: Bigyellowfish Technologies is hiring for Junior Web Developer | Bangalore
+2025-02-24 20:18:09 | INFO | Successfully stored 10 jobs
+2025-02-24 20:18:09 | INFO | Successfully stored 10 new jobs
+2025-02-24 20:18:14 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-24 20:18:14 | INFO | Function scrape_and_process_jobs took 229.54 seconds

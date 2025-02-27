@@ -1,3 +1,4 @@
+from app.core.celery_app import configure_celery
 from fastapi import FastAPI
 from app.services.settings_service import SettingsService
 from app.services.scheduler_service import init_scheduler, scheduler
@@ -10,6 +11,7 @@ import os
 
 load_dotenv()
 
+celery = configure_celery()
 
 # ORIGINS = [
 #     origin.strip()

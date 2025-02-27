@@ -1,0 +1,1419 @@
+2025-02-25 20:22:45 | INFO | Starting job scraping at 2025-02-25 20:22:45.410208
+2025-02-25 20:22:46 | INFO | Starting job scraping...
+2025-02-25 20:23:09 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 20:23:16 | INFO | Collecting job URLs...
+2025-02-25 20:23:49 | INFO | Found 600 job URLs
+2025-02-25 20:23:49 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 20:23:51 | INFO | Popup dismissed
+2025-02-25 20:23:55 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 20:23:56 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 20:23:57 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 20:24:05 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:24:05 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 20:24:06 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 20:24:14 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:24:14 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 20:24:15 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 20:24:19 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:24:19 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 20:24:20 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 20:24:27 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:24:27 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 20:24:28 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 20:24:35 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:24:36 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 20:24:37 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 20:24:42 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:24:42 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 20:24:43 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 20:24:50 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:24:50 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 20:24:51 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 20:24:56 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:24:56 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 20:24:57 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 20:25:04 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:25:04 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 20:25:05 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 20:25:07 | INFO | Popup dismissed
+2025-02-25 20:25:08 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010AE156]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:25:09 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 20:25:10 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 20:25:18 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:25:18 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 20:25:19 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 20:25:27 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_2_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:25:27 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 20:25:28 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 20:25:35 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:25:36 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 20:25:37 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 20:25:44 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:25:44 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 20:25:45 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 20:25:52 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:25:52 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 20:25:53 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 20:25:54 | INFO | Popup dismissed
+2025-02-25 20:25:56 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:25:56 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 20:25:57 | INFO | Processing job detail page: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development
+2025-02-25 20:26:04 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:26:05 | INFO | Added yesterday's job: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-25 20:26:06 | INFO | Processing job detail page: https://www.jobfound.org/job/salesforce-is-hiring-for-software-engineering-mts-or-hyderabad-software-engineer
+2025-02-25 20:26:14 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:26:14 | INFO | Added yesterday's job: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-25 20:26:15 | INFO | Processing job detail page: https://www.jobfound.org/job/bigyellowfish-technologies-is-hiring-for-junior-web-developer-or-bangalore-software-engineer
+2025-02-25 20:26:22 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x01210283+25139]
+	(No symbol) [0x0119B234]
+	(No symbol) [0x010704A3]
+	(No symbol) [0x010BE5D0]
+	(No symbol) [0x010BC984]
+	(No symbol) [0x010BA517]
+	(No symbol) [0x010B97D4]
+	(No symbol) [0x010ADE55]
+	(No symbol) [0x010DCF3C]
+	(No symbol) [0x010AD8E4]
+	(No symbol) [0x010DD1B4]
+	(No symbol) [0x010FE6E1]
+	(No symbol) [0x010DCD36]
+	(No symbol) [0x010ABD29]
+	(No symbol) [0x010AD064]
+	GetHandleVerifier [0x0151B143+3215603]
+	GetHandleVerifier [0x015322BA+3310186]
+	GetHandleVerifier [0x0152C4D2+3286146]
+	GetHandleVerifier [0x012A9C80+654384]
+	(No symbol) [0x011A45BD]
+	(No symbol) [0x011A14A8]
+	(No symbol) [0x011A1647]
+	(No symbol) [0x01193D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 20:26:22 | INFO | Added yesterday's job: Bigyellowfish Technologies is hiring for Junior Web Developer | Bangalore
+2025-02-25 20:26:23 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 20:26:23 | INFO | Successfully scraped 20 jobs (Today: 8, Yesterday: 12)
+2025-02-25 20:26:25 | INFO | Function scrape_jobs took 219.78 seconds
+2025-02-25 20:26:25 | INFO | Found 20 jobs from scraping
+2025-02-25 20:26:25 | INFO | Storing jobs in database...
+2025-02-25 20:26:27 | INFO | Found 10 new jobs to store
+2025-02-25 20:26:27 | INFO | Attempting to store 10 jobs
+2025-02-25 20:26:27 | INFO | Prepared job for storage: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 20:26:27 | INFO | Prepared job for storage: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 20:26:27 | INFO | Prepared job for storage: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 20:26:27 | INFO | Prepared job for storage: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 20:26:27 | INFO | Prepared job for storage: American Express is hiring for Engineer I | Bangalore
+2025-02-25 20:26:27 | INFO | Prepared job for storage: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 20:26:27 | INFO | Prepared job for storage: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 20:26:27 | INFO | Prepared job for storage: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 20:26:27 | INFO | Prepared job for storage: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 20:26:27 | INFO | Prepared job for storage: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 20:26:27 | INFO | Successfully stored 10 jobs
+2025-02-25 20:26:27 | INFO | Successfully stored 10 new jobs
+2025-02-25 20:26:32 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 20:26:32 | INFO | Function scrape_and_process_jobs took 227.01 seconds
+2025-02-25 20:45:39 | INFO | Starting job scraping at 2025-02-25 20:45:39.968768
+2025-02-25 20:45:40 | INFO | Starting job scraping...
+2025-02-25 20:45:49 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 20:45:56 | INFO | Collecting job URLs...
+2025-02-25 20:46:26 | INFO | Found 600 job URLs
+2025-02-25 20:46:26 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 20:46:43 | INFO | Found apply link: https://jobs.danfoss.com/job/Pune-Software-Engineer/814439202/
+2025-02-25 20:46:43 | INFO | Added today's job: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 20:46:44 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 20:46:46 | INFO | Popup dismissed
+2025-02-25 20:46:51 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 20:46:51 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 20:46:52 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 20:47:08 | INFO | Found apply link: https://careers.equifax.com/en/jobs/j00164929/junior-software-engineer/?source=Applied_LinkedIn
+2025-02-25 20:47:08 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 20:47:09 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 20:47:20 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x002C0283+25139]
+	(No symbol) [0x0024B234]
+	(No symbol) [0x001204A3]
+	(No symbol) [0x0016E5D0]
+	(No symbol) [0x0016C984]
+	(No symbol) [0x0016A517]
+	(No symbol) [0x001697D4]
+	(No symbol) [0x0015DE55]
+	(No symbol) [0x0018CF3C]
+	(No symbol) [0x0015D8E4]
+	(No symbol) [0x0018D1B4]
+	(No symbol) [0x001AE6E1]
+	(No symbol) [0x0018CD36]
+	(No symbol) [0x0015BD29]
+	(No symbol) [0x0015D064]
+	GetHandleVerifier [0x005CB143+3215603]
+	GetHandleVerifier [0x005E22BA+3310186]
+	GetHandleVerifier [0x005DC4D2+3286146]
+	GetHandleVerifier [0x00359C80+654384]
+	(No symbol) [0x002545BD]
+	(No symbol) [0x002514A8]
+	(No symbol) [0x00251647]
+	(No symbol) [0x00243D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+	(No symbol) [0x00000000]
+
+2025-02-25 20:47:21 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 20:47:22 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 20:47:26 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x002C0283+25139]
+	(No symbol) [0x0024B234]
+	(No symbol) [0x001204A3]
+	(No symbol) [0x0016E5D0]
+	(No symbol) [0x0016C984]
+	(No symbol) [0x0016A517]
+	(No symbol) [0x001697D4]
+	(No symbol) [0x0015DE55]
+	(No symbol) [0x0018CF3C]
+	(No symbol) [0x0015D8E4]
+	(No symbol) [0x0018D1B4]
+	(No symbol) [0x001AE6E1]
+	(No symbol) [0x0018CD36]
+	(No symbol) [0x0015BD29]
+	(No symbol) [0x0015D064]
+	GetHandleVerifier [0x005CB143+3215603]
+	GetHandleVerifier [0x005E22BA+3310186]
+	GetHandleVerifier [0x005DC4D2+3286146]
+	GetHandleVerifier [0x00359C80+654384]
+	(No symbol) [0x002545BD]
+	(No symbol) [0x002514A8]
+	(No symbol) [0x00251647]
+	(No symbol) [0x00243D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+	(No symbol) [0x00000000]
+
+2025-02-25 20:47:26 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 20:47:27 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 20:47:34 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x002C0283+25139]
+	(No symbol) [0x0024B234]
+	(No symbol) [0x001204A3]
+	(No symbol) [0x0016E5D0]
+	(No symbol) [0x0016C984]
+	(No symbol) [0x0016A517]
+	(No symbol) [0x001697D4]
+	(No symbol) [0x0015DE55]
+	(No symbol) [0x0018CF3C]
+	(No symbol) [0x0015D8E4]
+	(No symbol) [0x0018D1B4]
+	(No symbol) [0x001AE6E1]
+	(No symbol) [0x0018CD36]
+	(No symbol) [0x0015BD29]
+	(No symbol) [0x0015D064]
+	GetHandleVerifier [0x005CB143+3215603]
+	GetHandleVerifier [0x005E22BA+3310186]
+	GetHandleVerifier [0x005DC4D2+3286146]
+	GetHandleVerifier [0x00359C80+654384]
+	(No symbol) [0x002545BD]
+	(No symbol) [0x002514A8]
+	(No symbol) [0x00251647]
+	(No symbol) [0x00243D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+	(No symbol) [0x00000000]
+
+2025-02-25 20:47:34 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 20:47:35 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 20:47:43 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x002C0283+25139]
+	(No symbol) [0x0024B234]
+	(No symbol) [0x001204A3]
+	(No symbol) [0x0016E5D0]
+	(No symbol) [0x0016C984]
+	(No symbol) [0x0016A517]
+	(No symbol) [0x001697D4]
+	(No symbol) [0x0015DE55]
+	(No symbol) [0x0018CF3C]
+	(No symbol) [0x0015D8E4]
+	(No symbol) [0x0018D1B4]
+	(No symbol) [0x001AE6E1]
+	(No symbol) [0x0018CD36]
+	(No symbol) [0x0015BD29]
+	(No symbol) [0x0015D064]
+	GetHandleVerifier [0x005CB143+3215603]
+	GetHandleVerifier [0x005E22BA+3310186]
+	GetHandleVerifier [0x005DC4D2+3286146]
+	GetHandleVerifier [0x00359C80+654384]
+	(No symbol) [0x002545BD]
+	(No symbol) [0x002514A8]
+	(No symbol) [0x00251647]
+	(No symbol) [0x00243D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+	(No symbol) [0x00000000]
+
+2025-02-25 20:47:43 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 20:47:44 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 20:47:47 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x002C0283+25139]
+	(No symbol) [0x0024B234]
+	(No symbol) [0x001204A3]
+	(No symbol) [0x0016E5D0]
+	(No symbol) [0x0016C984]
+	(No symbol) [0x0016A517]
+	(No symbol) [0x001697D4]
+	(No symbol) [0x0015DE55]
+	(No symbol) [0x0018CF3C]
+	(No symbol) [0x0015D8E4]
+	(No symbol) [0x0018D1B4]
+	(No symbol) [0x001AE6E1]
+	(No symbol) [0x0018CD36]
+	(No symbol) [0x0015BD29]
+	(No symbol) [0x0015D064]
+	GetHandleVerifier [0x005CB143+3215603]
+	GetHandleVerifier [0x005E22BA+3310186]
+	GetHandleVerifier [0x005DC4D2+3286146]
+	GetHandleVerifier [0x00359C80+654384]
+	(No symbol) [0x002545BD]
+	(No symbol) [0x002514A8]
+	(No symbol) [0x00251647]
+	(No symbol) [0x00243D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+	(No symbol) [0x00000000]
+
+2025-02-25 20:47:47 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 20:47:48 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 20:47:56 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x002C0283+25139]
+	(No symbol) [0x0024B234]
+	(No symbol) [0x001204A3]
+	(No symbol) [0x0016E5D0]
+	(No symbol) [0x0016C984]
+	(No symbol) [0x0016A517]
+	(No symbol) [0x001697D4]
+	(No symbol) [0x0015DE55]
+	(No symbol) [0x0018CF3C]
+	(No symbol) [0x0015D8E4]
+	(No symbol) [0x0018D1B4]
+	(No symbol) [0x001AE6E1]
+	(No symbol) [0x0018CD36]
+	(No symbol) [0x0015BD29]
+	(No symbol) [0x0015D064]
+	GetHandleVerifier [0x005CB143+3215603]
+	GetHandleVerifier [0x005E22BA+3310186]
+	GetHandleVerifier [0x005DC4D2+3286146]
+	GetHandleVerifier [0x00359C80+654384]
+	(No symbol) [0x002545BD]
+	(No symbol) [0x002514A8]
+	(No symbol) [0x00251647]
+	(No symbol) [0x00243D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+	(No symbol) [0x00000000]
+
+2025-02-25 20:47:56 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 20:47:57 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 20:48:01 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x002C0283+25139]
+	(No symbol) [0x0024B234]
+	(No symbol) [0x001204A3]
+	(No symbol) [0x0016E5D0]
+	(No symbol) [0x0016C984]
+	(No symbol) [0x0016A517]
+	(No symbol) [0x001697D4]
+	(No symbol) [0x0015DE55]
+	(No symbol) [0x0018CF3C]
+	(No symbol) [0x0015D8E4]
+	(No symbol) [0x0018D1B4]
+	(No symbol) [0x001AE6E1]
+	(No symbol) [0x0018CD36]
+	(No symbol) [0x0015BD29]
+	(No symbol) [0x0015D064]
+	GetHandleVerifier [0x005CB143+3215603]
+	GetHandleVerifier [0x005E22BA+3310186]
+	GetHandleVerifier [0x005DC4D2+3286146]
+	GetHandleVerifier [0x00359C80+654384]
+	(No symbol) [0x002545BD]
+	(No symbol) [0x002514A8]
+	(No symbol) [0x00251647]
+	(No symbol) [0x00243D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+	(No symbol) [0x00000000]
+
+2025-02-25 20:48:01 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 20:48:02 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 20:48:10 | INFO | Found apply link: https://www.linkedin.com/jobs/view/react-native-developer-at-risk-resources-4163887711/?originalSubdomain=in
+2025-02-25 20:48:10 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 20:48:11 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 20:48:13 | INFO | Popup dismissed
+2025-02-25 20:48:14 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-25 20:48:14 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 20:48:15 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 20:48:26 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-25 20:48:27 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 20:48:28 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 20:48:35 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-25 20:48:36 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 20:48:37 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 20:48:47 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-25 20:48:47 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 20:48:48 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 20:49:23 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-25 20:49:24 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 20:49:25 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 20:49:34 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-25 20:49:34 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 20:49:35 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 20:49:37 | INFO | Popup dismissed
+2025-02-25 20:49:40 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-25 20:49:40 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 20:49:41 | INFO | Processing job detail page: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development
+2025-02-25 20:50:18 | WARNING | Error getting apply link: Message: timeout: Timed out receiving message from renderer: 30.000
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x002C0283+25139]
+	(No symbol) [0x0024B234]
+	(No symbol) [0x001204A3]
+	(No symbol) [0x0011113B]
+	(No symbol) [0x00110E71]
+	(No symbol) [0x0010ED50]
+	(No symbol) [0x0010F8FD]
+	(No symbol) [0x0011BDB9]
+	(No symbol) [0x0012D225]
+	(No symbol) [0x00132AF6]
+	(No symbol) [0x0010FF0D]
+	(No symbol) [0x0012D0CA]
+	(No symbol) [0x001AE5F0]
+	(No symbol) [0x0018CD36]
+	(No symbol) [0x0015BD29]
+	(No symbol) [0x0015D064]
+	GetHandleVerifier [0x005CB143+3215603]
+	GetHandleVerifier [0x005E22BA+3310186]
+	GetHandleVerifier [0x005DC4D2+3286146]
+	GetHandleVerifier [0x00359C80+654384]
+	(No symbol) [0x002545BD]
+	(No symbol) [0x002514A8]
+	(No symbol) [0x00251647]
+	(No symbol) [0x00243D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+	(No symbol) [0x00000000]
+
+2025-02-25 20:50:23 | INFO | Added yesterday's job: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-25 20:50:24 | INFO | Processing job detail page: https://www.jobfound.org/job/salesforce-is-hiring-for-software-engineering-mts-or-hyderabad-software-engineer
+2025-02-25 20:50:31 | INFO | Found apply link: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development#google_vignette
+2025-02-25 20:50:31 | INFO | Added yesterday's job: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-25 20:50:32 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 20:50:32 | INFO | Successfully scraped 20 jobs (Today: 9, Yesterday: 11)
+2025-02-25 20:50:35 | INFO | Function scrape_jobs took 294.83 seconds
+2025-02-25 20:50:35 | INFO | Found 20 jobs from scraping
+2025-02-25 20:50:35 | INFO | Storing jobs in database...
+2025-02-25 20:50:35 | INFO | Found 1 new jobs to store
+2025-02-25 20:50:35 | INFO | Attempting to store 1 jobs
+2025-02-25 20:50:35 | INFO | Prepared job for storage: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 20:50:35 | INFO | Successfully stored 1 jobs
+2025-02-25 20:50:35 | INFO | Successfully stored 1 new jobs
+2025-02-25 20:50:40 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 20:50:40 | INFO | Function scrape_and_process_jobs took 300.20 seconds
+2025-02-25 20:57:19 | INFO | Starting job scraping at 2025-02-25 20:57:19.820178
+2025-02-25 20:57:19 | INFO | Starting job scraping...
+2025-02-25 20:57:22 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 20:57:30 | INFO | Collecting job URLs...
+2025-02-25 20:58:00 | INFO | Found 600 job URLs
+2025-02-25 20:58:00 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 20:58:11 | INFO | Found apply link: https://jobs.danfoss.com/job/Pune-Software-Engineer/814439202/
+2025-02-25 20:58:12 | INFO | Added today's job: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 20:58:13 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 20:58:14 | INFO | Popup dismissed
+2025-02-25 20:58:18 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 20:58:18 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 20:58:19 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 20:58:33 | INFO | Found apply link: https://careers.equifax.com/en/jobs/j00164929/junior-software-engineer/?source=Applied_LinkedIn
+2025-02-25 20:58:33 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 20:58:34 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 20:58:46 | INFO | Found apply link: https://wellfound.com/jobs/3210523-backend-developer-intern
+2025-02-25 20:58:46 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 20:58:47 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 20:58:49 | INFO | Popup dismissed
+2025-02-25 20:58:52 | INFO | Found apply link: https://southasiacareers.deloitte.com/job/Bengaluru-Intern-Data-Science-Bengaluru-Digital-Excellence-Centre/36247044/
+2025-02-25 20:58:52 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 20:58:53 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 20:59:03 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67bd5d02deab716510d9f1ce?referralCode=FHZR3S
+2025-02-25 20:59:04 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 20:59:05 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 20:59:16 | INFO | Found apply link: https://careers.iba-worldwide.com/job/Chandigarh-Software-Engineer-Frontend/1146476855/?feedId=354655
+2025-02-25 20:59:16 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 20:59:17 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 20:59:18 | INFO | Popup dismissed
+2025-02-25 20:59:21 | INFO | Found apply link: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQETNrx-pHZepwAAAZU9uhCYxJluDYjzRn1Vo_lMBxyuiYgIE54LGmtQWJ6S9hqPXXvt3CTLYwzux4paWeuMW6KrktgF1LNa7vpffMjP1MM7Y_eYkTjDc-SV8BaDCLtAh3cGeko=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4142768989%2F
+2025-02-25 20:59:21 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 20:59:22 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 20:59:30 | INFO | Found apply link: https://salescodeai.keka.com/careers/jobdetails/68945
+2025-02-25 20:59:30 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 20:59:31 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 20:59:32 | INFO | Popup dismissed
+2025-02-25 20:59:33 | INFO | Found apply link: https://app.dover.com/apply/natoma/2060a3ed-f24a-4446-96ab-ca0fd584cd32?rs=42706078
+2025-02-25 20:59:33 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 20:59:34 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 20:59:42 | INFO | Found apply link: https://www.linkedin.com/jobs/view/react-native-developer-at-risk-resources-4163887711/?originalSubdomain=in
+2025-02-25 20:59:42 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 20:59:43 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 20:59:45 | INFO | Popup dismissed
+2025-02-25 20:59:46 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-25 20:59:46 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 20:59:47 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 20:59:55 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-25 20:59:56 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 20:59:57 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 21:00:03 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-25 21:00:04 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 21:00:05 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 21:00:15 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-25 21:00:16 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 21:00:17 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 21:00:28 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-25 21:00:28 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 21:00:29 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 21:00:40 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-25 21:00:40 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 21:00:41 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 21:00:42 | INFO | Popup dismissed
+2025-02-25 21:00:45 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-25 21:00:45 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 21:00:46 | INFO | Processing job detail page: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development
+2025-02-25 21:00:54 | INFO | Found apply link: https://www.ycombinator.com/companies/clinikally/jobs/UC6DxFI-full-stack-engineer
+2025-02-25 21:00:54 | INFO | Added yesterday's job: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-25 21:00:55 | INFO | Processing job detail page: https://www.jobfound.org/job/salesforce-is-hiring-for-software-engineering-mts-or-hyderabad-software-engineer
+2025-02-25 21:01:07 | INFO | Found apply link: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS---Demos_JR283044?source=LinkedIn_Jobs
+2025-02-25 21:01:07 | INFO | Added yesterday's job: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-25 21:01:08 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 21:01:08 | INFO | Successfully scraped 20 jobs (Today: 9, Yesterday: 11)
+2025-02-25 21:01:11 | INFO | Function scrape_jobs took 231.51 seconds
+2025-02-25 21:01:11 | INFO | Found 20 jobs from scraping
+2025-02-25 21:01:11 | INFO | Storing jobs in database...
+2025-02-25 21:01:12 | INFO | Found 0 new jobs to store
+2025-02-25 21:01:12 | INFO | No new jobs to store
+2025-02-25 21:01:18 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 21:01:18 | INFO | Function scrape_and_process_jobs took 239.07 seconds
+2025-02-25 21:15:08 | INFO | Starting job scraping at 2025-02-25 21:15:08.433938
+2025-02-25 21:15:08 | INFO | Starting job scraping...
+2025-02-25 21:15:11 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 21:15:20 | INFO | Collecting job URLs...
+2025-02-25 21:15:54 | INFO | Found 600 job URLs
+2025-02-25 21:15:54 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 21:16:01 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 124px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x004F0283+25139]
+	(No symbol) [0x0047B234]
+	(No symbol) [0x003504A3]
+	(No symbol) [0x0039E5D0]
+	(No symbol) [0x0039C984]
+	(No symbol) [0x0039A517]
+	(No symbol) [0x003997D4]
+	(No symbol) [0x0038DE55]
+	(No symbol) [0x003BCF3C]
+	(No symbol) [0x0038D8E4]
+	(No symbol) [0x003BD1B4]
+	(No symbol) [0x003DE6E1]
+	(No symbol) [0x003BCD36]
+	(No symbol) [0x0038BD29]
+	(No symbol) [0x0038D064]
+	GetHandleVerifier [0x007FB143+3215603]
+	GetHandleVerifier [0x008122BA+3310186]
+	GetHandleVerifier [0x0080C4D2+3286146]
+	GetHandleVerifier [0x00589C80+654384]
+	(No symbol) [0x004845BD]
+	(No symbol) [0x004814A8]
+	(No symbol) [0x00481647]
+	(No symbol) [0x00473D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 21:16:01 | INFO | Added today's job: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 21:16:02 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 21:16:04 | INFO | Popup dismissed
+2025-02-25 21:16:12 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 21:16:12 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 21:16:13 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 21:16:23 | INFO | Found apply link: https://careers.equifax.com/en/jobs/j00164929/junior-software-engineer/?source=Applied_LinkedIn
+2025-02-25 21:16:23 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 21:16:24 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 21:16:33 | INFO | Found apply link: https://wellfound.com/jobs/3210523-backend-developer-intern
+2025-02-25 21:16:34 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 21:16:35 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 21:16:36 | INFO | Popup dismissed
+2025-02-25 21:16:38 | INFO | Found apply link: https://southasiacareers.deloitte.com/job/Bengaluru-Intern-Data-Science-Bengaluru-Digital-Excellence-Centre/36247044/
+2025-02-25 21:16:38 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 21:16:39 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 21:16:47 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67bd5d02deab716510d9f1ce?referralCode=FHZR3S
+2025-02-25 21:16:47 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 21:16:48 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 21:16:58 | INFO | Found apply link: https://careers.iba-worldwide.com/job/Chandigarh-Software-Engineer-Frontend/1146476855/?feedId=354655
+2025-02-25 21:16:58 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 21:16:59 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 21:17:01 | INFO | Popup dismissed
+2025-02-25 21:17:03 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4142768989/
+2025-02-25 21:17:04 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 21:17:05 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 21:17:12 | INFO | Found apply link: https://salescodeai.keka.com/careers/jobdetails/68945
+2025-02-25 21:17:12 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 21:17:13 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 21:17:14 | INFO | Popup dismissed
+2025-02-25 21:17:15 | INFO | Found apply link: https://app.dover.com/apply/natoma/2060a3ed-f24a-4446-96ab-ca0fd584cd32?rs=42706078
+2025-02-25 21:17:16 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 21:17:17 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 21:17:24 | INFO | Found apply link: https://www.linkedin.com/jobs/view/react-native-developer-at-risk-resources-4163887711/?originalSubdomain=in
+2025-02-25 21:17:24 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 21:17:25 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 21:17:26 | INFO | Popup dismissed
+2025-02-25 21:17:28 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-25 21:17:28 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 21:17:29 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 21:17:37 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-25 21:17:37 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 21:17:38 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 21:17:46 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-25 21:17:46 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 21:17:47 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 21:17:57 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-25 21:17:57 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 21:17:58 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 21:18:11 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-25 21:18:11 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 21:18:12 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 21:18:22 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-25 21:18:22 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 21:18:23 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 21:18:24 | INFO | Popup dismissed
+2025-02-25 21:18:27 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-25 21:18:27 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 21:18:28 | INFO | Processing job detail page: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development
+2025-02-25 21:18:36 | INFO | Found apply link: https://www.ycombinator.com/companies/clinikally/jobs/UC6DxFI-full-stack-engineer
+2025-02-25 21:18:36 | INFO | Added yesterday's job: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-25 21:18:37 | INFO | Processing job detail page: https://www.jobfound.org/job/salesforce-is-hiring-for-software-engineering-mts-or-hyderabad-software-engineer
+2025-02-25 21:18:47 | INFO | Found apply link: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS---Demos_JR283044?source=LinkedIn_Jobs
+2025-02-25 21:18:47 | INFO | Added yesterday's job: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-25 21:18:48 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 21:18:48 | INFO | Successfully scraped 20 jobs (Today: 9, Yesterday: 11)
+2025-02-25 21:18:51 | INFO | Function scrape_jobs took 222.71 seconds
+2025-02-25 21:18:51 | INFO | Found 20 jobs from scraping
+2025-02-25 21:18:51 | INFO | Storing jobs in database...
+2025-02-25 21:18:51 | INFO | Found 0 new jobs to store
+2025-02-25 21:18:51 | INFO | No new jobs to store
+2025-02-25 21:18:56 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 21:18:56 | INFO | Function scrape_and_process_jobs took 227.92 seconds
+2025-02-25 21:24:06 | INFO | Starting job scraping at 2025-02-25 21:24:06.430945
+2025-02-25 21:24:06 | INFO | Starting job scraping...
+2025-02-25 21:24:09 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 21:24:19 | INFO | Collecting job URLs...
+2025-02-25 21:24:45 | INFO | Found 600 job URLs
+2025-02-25 21:24:45 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 21:25:07 | INFO | Found apply link: https://jobs.danfoss.com/job/Pune-Software-Engineer/814439202/
+2025-02-25 21:25:07 | INFO | Added today's job: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 21:25:08 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 21:25:10 | INFO | Popup dismissed
+2025-02-25 21:25:14 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 21:25:15 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 21:25:16 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 21:25:26 | INFO | Found apply link: https://careers.equifax.com/en/jobs/j00164929/junior-software-engineer/?source=Applied_LinkedIn
+2025-02-25 21:25:26 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 21:25:27 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 21:25:34 | INFO | Found apply link: https://wellfound.com/jobs/3210523-backend-developer-intern
+2025-02-25 21:25:35 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 21:25:36 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 21:25:37 | INFO | Popup dismissed
+2025-02-25 21:25:38 | INFO | Found apply link: https://southasiacareers.deloitte.com/job/Bengaluru-Intern-Data-Science-Bengaluru-Digital-Excellence-Centre/36247044/
+2025-02-25 21:25:38 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 21:25:39 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 21:25:49 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67bd5d02deab716510d9f1ce?referralCode=FHZR3S
+2025-02-25 21:25:49 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 21:25:50 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 21:26:03 | INFO | Found apply link: https://careers.iba-worldwide.com/job/Chandigarh-Software-Engineer-Frontend/1146476855/?feedId=354655
+2025-02-25 21:26:03 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 21:26:04 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 21:26:05 | INFO | Popup dismissed
+2025-02-25 21:26:08 | INFO | Found apply link: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG061vlCECvLAAAAZU90pIIfxV4qLrhrLIImGptUtnPdKsVVxDQ3yV-DbGb_eyHnBB92vWa2BEqSJmIf8BIS1De8bP-l3bSsA2ihSzsYF84Bmh1o_i7AAq035X2VL6u3qCffko=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4142768989%2F
+2025-02-25 21:26:08 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 21:26:09 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 21:26:16 | INFO | Found apply link: https://salescodeai.keka.com/careers/jobdetails/68945
+2025-02-25 21:26:17 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 21:26:18 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 21:26:19 | INFO | Popup dismissed
+2025-02-25 21:26:20 | INFO | Found apply link: https://app.dover.com/apply/natoma/2060a3ed-f24a-4446-96ab-ca0fd584cd32?rs=42706078
+2025-02-25 21:26:20 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 21:26:21 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 21:26:29 | INFO | Found apply link: https://www.linkedin.com/jobs/view/react-native-developer-at-risk-resources-4163887711/?originalSubdomain=in
+2025-02-25 21:26:29 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 21:26:30 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 21:26:31 | INFO | Popup dismissed
+2025-02-25 21:26:33 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-25 21:26:33 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 21:26:34 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 21:26:44 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-25 21:26:45 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 21:26:46 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 21:26:52 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-25 21:26:52 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 21:26:53 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 21:27:05 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-25 21:27:05 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 21:27:06 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 21:27:17 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-25 21:27:18 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 21:27:19 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 21:27:28 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-25 21:27:28 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 21:27:29 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 21:27:30 | INFO | Popup dismissed
+2025-02-25 21:27:33 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-25 21:27:33 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 21:27:34 | INFO | Processing job detail page: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development
+2025-02-25 21:27:41 | INFO | Found apply link: https://www.ycombinator.com/companies/clinikally/jobs/UC6DxFI-full-stack-engineer
+2025-02-25 21:27:41 | INFO | Added yesterday's job: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-25 21:27:42 | INFO | Processing job detail page: https://www.jobfound.org/job/salesforce-is-hiring-for-software-engineering-mts-or-hyderabad-software-engineer
+2025-02-25 21:27:53 | INFO | Found apply link: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS---Demos_JR283044?source=LinkedIn_Jobs
+2025-02-25 21:27:53 | INFO | Added yesterday's job: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-25 21:27:54 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 21:27:54 | INFO | Successfully scraped 20 jobs (Today: 9, Yesterday: 11)
+2025-02-25 21:27:57 | INFO | Function scrape_jobs took 230.61 seconds
+2025-02-25 21:27:57 | INFO | Found 20 jobs from scraping
+2025-02-25 21:27:57 | INFO | Storing jobs in database...
+2025-02-25 21:27:58 | INFO | Found 0 new jobs to store
+2025-02-25 21:27:58 | INFO | No new jobs to store
+2025-02-25 21:28:04 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 21:28:04 | INFO | Function scrape_and_process_jobs took 238.00 seconds
+2025-02-25 21:28:30 | INFO | Starting job scraping at 2025-02-25 21:28:30.291014
+2025-02-25 21:28:30 | INFO | Starting job scraping...
+2025-02-25 21:28:33 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 21:28:40 | INFO | Collecting job URLs...
+2025-02-25 21:29:06 | INFO | Found 600 job URLs
+2025-02-25 21:29:06 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 21:29:17 | INFO | Found apply link: https://jobs.danfoss.com/job/Pune-Software-Engineer/814439202/
+2025-02-25 21:29:17 | INFO | Added today's job: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 21:29:18 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 21:29:19 | INFO | Popup dismissed
+2025-02-25 21:29:29 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 21:29:30 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 21:29:31 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 21:29:40 | INFO | Found apply link: https://careers.equifax.com/en/jobs/j00164929/junior-software-engineer/?source=Applied_LinkedIn
+2025-02-25 21:29:40 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 21:29:41 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 21:30:02 | INFO | Found apply link: https://wellfound.com/jobs/3210523-backend-developer-intern
+2025-02-25 21:30:02 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 21:30:03 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 21:30:04 | INFO | Popup dismissed
+2025-02-25 21:30:13 | INFO | Found apply link: https://southasiacareers.deloitte.com/job/Bengaluru-Intern-Data-Science-Bengaluru-Digital-Excellence-Centre/36247044/
+2025-02-25 21:30:13 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 21:30:14 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 21:30:31 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67bd5d02deab716510d9f1ce?referralCode=FHZR3S
+2025-02-25 21:30:32 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 21:30:33 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 21:30:43 | INFO | Found apply link: https://careers.iba-worldwide.com/job/Chandigarh-Software-Engineer-Frontend/1146476855/?feedId=354655
+2025-02-25 21:30:43 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 21:30:44 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 21:30:46 | INFO | Popup dismissed
+2025-02-25 21:30:47 | INFO | Found apply link: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQE7Ni2UIoIDVgAAAZU91tuwLQ4WiauuwAbglQsPrxfOyL7uJ4hgg8evMWel7ImqT61m97hg_t1UXrsV54a11CzUjg1vFNwhEQh4QM30XNlDYHS4Q8zwtf_Jcu5dTiF-tY81wV4=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4142768989%2F
+2025-02-25 21:30:47 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 21:30:48 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 21:30:56 | INFO | Found apply link: https://salescodeai.keka.com/careers/jobdetails/68945
+2025-02-25 21:30:56 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 21:30:57 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 21:30:58 | INFO | Popup dismissed
+2025-02-25 21:31:00 | INFO | Found apply link: https://app.dover.com/apply/natoma/2060a3ed-f24a-4446-96ab-ca0fd584cd32?rs=42706078
+2025-02-25 21:31:00 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 21:31:01 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 21:31:09 | INFO | Found apply link: https://www.linkedin.com/jobs/view/react-native-developer-at-risk-resources-4163887711/?originalSubdomain=in
+2025-02-25 21:31:09 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 21:31:10 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 21:31:13 | INFO | Popup dismissed
+2025-02-25 21:31:14 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-25 21:31:14 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 21:31:15 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 21:31:27 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-25 21:31:27 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 21:31:28 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 21:31:34 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-25 21:31:34 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 21:31:35 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 21:31:46 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-25 21:31:46 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 21:31:47 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 21:31:58 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-25 21:31:58 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 21:31:59 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 21:32:11 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-25 21:32:11 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 21:32:12 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 21:32:14 | INFO | Popup dismissed
+2025-02-25 21:32:16 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-25 21:32:16 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 21:32:17 | INFO | Processing job detail page: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development
+2025-02-25 21:32:26 | WARNING | Error getting apply link: Message: element click intercepted: Element <button class="justify-center whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-11 bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-4 text-lg rounded-full transition-all duration-200 hover:scale-105 hover:shadow-lg flex items-center gap-2 group">...</button> is not clickable at point (377, 912). Other element would receive the click: <div id="aswift_9_host" style="border: none !important; height: 90px !important; width: 100% !important; margin: 0px !important; padding: 0px !important; position: relative !important; visibility: visible !important; background-color: transparent !important; display: inline-block !important; inset: auto !important; clear: none !important; float: none !important; max-height: none !important; max-width: none !important; opacity: 1 !important; overflow: visible !important; vertical-align: baseline !important; z-index: auto !important;">...</div>
+  (Session info: chrome=133.0.6943.100)
+Stacktrace:
+	GetHandleVerifier [0x004F0283+25139]
+	(No symbol) [0x0047B234]
+	(No symbol) [0x003504A3]
+	(No symbol) [0x0039E5D0]
+	(No symbol) [0x0039C984]
+	(No symbol) [0x0039A517]
+	(No symbol) [0x003997D4]
+	(No symbol) [0x0038DE55]
+	(No symbol) [0x003BCF3C]
+	(No symbol) [0x0038D8E4]
+	(No symbol) [0x003BD1B4]
+	(No symbol) [0x003DE6E1]
+	(No symbol) [0x003BCD36]
+	(No symbol) [0x0038BD29]
+	(No symbol) [0x0038D064]
+	GetHandleVerifier [0x007FB143+3215603]
+	GetHandleVerifier [0x008122BA+3310186]
+	GetHandleVerifier [0x0080C4D2+3286146]
+	GetHandleVerifier [0x00589C80+654384]
+	(No symbol) [0x004845BD]
+	(No symbol) [0x004814A8]
+	(No symbol) [0x00481647]
+	(No symbol) [0x00473D20]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-02-25 21:32:26 | INFO | Added yesterday's job: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-25 21:32:27 | INFO | Processing job detail page: https://www.jobfound.org/job/salesforce-is-hiring-for-software-engineering-mts-or-hyderabad-software-engineer
+2025-02-25 21:32:37 | INFO | Found apply link: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS---Demos_JR283044?source=LinkedIn_Jobs
+2025-02-25 21:32:37 | INFO | Added yesterday's job: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-25 21:32:38 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 21:32:38 | INFO | Successfully scraped 20 jobs (Today: 9, Yesterday: 11)
+2025-02-25 21:32:40 | INFO | Function scrape_jobs took 250.41 seconds
+2025-02-25 21:32:40 | INFO | Found 20 jobs from scraping
+2025-02-25 21:32:40 | INFO | Storing jobs in database...
+2025-02-25 21:32:41 | INFO | Found 0 new jobs to store
+2025-02-25 21:32:41 | INFO | No new jobs to store
+2025-02-25 21:32:46 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 21:32:46 | INFO | Function scrape_and_process_jobs took 256.63 seconds
+2025-02-25 21:47:25 | INFO | Starting job scraping at 2025-02-25 21:47:25.576578
+2025-02-25 21:47:25 | INFO | Starting job scraping...
+2025-02-25 21:47:28 | INFO | Accessing https://www.jobfound.org/
+2025-02-25 21:47:35 | INFO | Collecting job URLs...
+2025-02-25 21:48:10 | INFO | Found 600 job URLs
+2025-02-25 21:48:10 | INFO | Processing job detail page: https://www.jobfound.org/job/danfoss-is-hiring-for-software-engineer-or-pune-software-engineer
+2025-02-25 21:48:20 | INFO | Found apply link: https://jobs.danfoss.com/job/Pune-Software-Engineer/814439202/
+2025-02-25 21:48:21 | INFO | Added today's job: Danfoss is hiring for Software Engineer | Pune
+2025-02-25 21:48:22 | INFO | Processing job detail page: https://www.jobfound.org/job/eudia-is-hiring-for-software-engineer-intern-or-bangalore-software-engineer
+2025-02-25 21:48:23 | INFO | Popup dismissed
+2025-02-25 21:48:27 | INFO | Found apply link: https://jobs.lever.co/Eudia/7c03b027-dd20-45e7-a70b-14796eec2fc8
+2025-02-25 21:48:27 | INFO | Added today's job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-25 21:48:28 | INFO | Processing job detail page: https://www.jobfound.org/job/equifax-is-hiring-for-junior-software-engineer-or-pune-software-engineer
+2025-02-25 21:48:44 | INFO | Found apply link: https://careers.equifax.com/en/jobs/j00164929/junior-software-engineer/?source=Applied_LinkedIn
+2025-02-25 21:48:44 | INFO | Added today's job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-25 21:48:45 | INFO | Processing job detail page: https://www.jobfound.org/job/paralleldots-is-hiring-for-backend-developer-intern-or-remote
+2025-02-25 21:48:59 | INFO | Found apply link: https://wellfound.com/jobs/3210523-backend-developer-intern
+2025-02-25 21:48:59 | INFO | Added today's job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-25 21:49:00 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-data-science-intern-or-bengaluru-machine-learning-data-science
+2025-02-25 21:49:01 | INFO | Popup dismissed
+2025-02-25 21:49:04 | INFO | Found apply link: https://southasiacareers.deloitte.com/job/Bengaluru-Intern-Data-Science-Bengaluru-Digital-Excellence-Centre/36247044/
+2025-02-25 21:49:05 | INFO | Added today's job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-25 21:49:06 | INFO | Processing job detail page: https://www.jobfound.org/job/american-express-is-hiring-for-engineer-i-or-bangalore-software-engineer
+2025-02-25 21:49:18 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67bd5d02deab716510d9f1ce?referralCode=FHZR3S
+2025-02-25 21:49:18 | INFO | Added today's job: American Express is hiring for Engineer I | Bangalore
+2025-02-25 21:49:19 | INFO | Processing job detail page: https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer
+2025-02-25 21:49:31 | INFO | Found apply link: https://careers.iba-worldwide.com/job/Chandigarh-Software-Engineer-Frontend/1146476855/?feedId=354655
+2025-02-25 21:49:32 | INFO | Added today's job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-25 21:49:33 | INFO | Processing job detail page: https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer
+2025-02-25 21:49:34 | INFO | Popup dismissed
+2025-02-25 21:49:36 | INFO | Found apply link: https://www.linkedin.com/authwall?trk=bf&trkInfo=AQG45U6kW0tR9wAAAZU96BHwf0LVR5qOkIoihe3EpUNNx8YnqQ97-NuwK3pc2x9iuC47k7AyGWZGeCsaW7f6WFra0x8pjy_2NR2Ar0lH6mzWFe7ji2N4rjGt_5N9Tp76ipZx_aY=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fjobs%2Fview%2F4142768989%2F
+2025-02-25 21:49:36 | INFO | Added today's job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-25 21:49:37 | INFO | Processing job detail page: https://www.jobfound.org/job/salescodeai-is-hiring-for-software-engineer-trainee-or-freshers-0-1-yr-software-engineer
+2025-02-25 21:49:44 | INFO | Found apply link: https://salescodeai.keka.com/careers/jobdetails/68945
+2025-02-25 21:49:44 | INFO | Added today's job: SalesCode.ai is hiring for Software Engineer Trainee | Freshers ( 0 -1 yr )
+2025-02-25 21:49:45 | INFO | Processing job detail page: https://www.jobfound.org/job/natoma-is-hiring-for-software-engineer-or-bangalore-hybrid-software-engineer
+2025-02-25 21:49:46 | INFO | Popup dismissed
+2025-02-25 21:49:47 | INFO | Found apply link: https://app.dover.com/apply/natoma/2060a3ed-f24a-4446-96ab-ca0fd584cd32?rs=42706078
+2025-02-25 21:49:47 | INFO | Added yesterday's job: Natoma is hiring for Software Engineer | Bangalore (Hybrid)
+2025-02-25 21:49:48 | INFO | Processing job detail page: https://www.jobfound.org/job/risk-resources-is-hiring-for-react-native-developeror-delhi-frontend-development
+2025-02-25 21:49:56 | INFO | Found apply link: https://www.linkedin.com/jobs/view/react-native-developer-at-risk-resources-4163887711/?originalSubdomain=in
+2025-02-25 21:49:56 | INFO | Added yesterday's job: Risk Resources is hiring for React Native Developer | Delhi
+2025-02-25 21:49:57 | INFO | Processing job detail page: https://www.jobfound.org/job/saleschat-is-hiring-for-full-stack-developer-frontend-web-heavy-or-mumbai-full-stack-development
+2025-02-25 21:49:58 | INFO | Popup dismissed
+2025-02-25 21:49:59 | INFO | Found apply link: https://wellfound.com/jobs/3022190-full-stack-developer-frontend-web-heavy
+2025-02-25 21:49:59 | INFO | Added yesterday's job: Saleschat is hiring for Full Stack Developer - Frontend (Web) Heavy | Mumbai
+2025-02-25 21:50:00 | INFO | Processing job detail page: https://www.jobfound.org/job/harness-is-hiring-for-software-engineer-or-bengaluru-software-engineer
+2025-02-25 21:50:09 | INFO | Found apply link: https://www.harness.io/company/jobs/apply?gh_jid=4634082007&gh_src=3ed167d67us
+2025-02-25 21:50:09 | INFO | Added yesterday's job: Harness is hiring for Software Engineer | Bengaluru
+2025-02-25 21:50:10 | INFO | Processing job detail page: https://www.jobfound.org/job/bilby-is-hiring-for-data-engineer-or-remote-software-engineer
+2025-02-25 21:50:16 | INFO | Found apply link: https://app.dover.com/apply/bilby/05731492-faef-4254-b304-154f72259994?rs=42706078
+2025-02-25 21:50:16 | INFO | Added yesterday's job: Bilby is hiring for Data Engineer | Remote
+2025-02-25 21:50:17 | INFO | Processing job detail page: https://www.jobfound.org/job/skyworks-is-hiring-for-software-engineer-1-or-bengaluru-software-engineer
+2025-02-25 21:50:29 | INFO | Found apply link: https://careers.skyworksinc.com/job/Bengaluru-Software-Engineer-1-KA/1265801800/?feedId=177000
+2025-02-25 21:50:29 | INFO | Added yesterday's job: Skyworks is hiring for Software Engineer 1 | Bengaluru
+2025-02-25 21:50:30 | INFO | Processing job detail page: https://www.jobfound.org/job/arctic-wolf-is-hiring-for-developer-full-stack-or-bengaluru-full-stack-development
+2025-02-25 21:50:40 | INFO | Found apply link: https://arcticwolf.wd1.myworkdayjobs.com/External/job/Bengaluru-IND/Developer---Full-Stack_R25_216?gh_src=8cf3ad402us
+2025-02-25 21:50:40 | INFO | Added yesterday's job: Arctic Wolf is hiring for Developer - Full Stack | Bengaluru
+2025-02-25 21:50:41 | INFO | Processing job detail page: https://www.jobfound.org/job/coherent-is-hiring-for-software-engineer-intern-or-india-freshers-software-engineer
+2025-02-25 21:50:51 | INFO | Found apply link: https://hcwp.fa.us2.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX_8001/job/2006601
+2025-02-25 21:50:51 | INFO | Added yesterday's job: Coherent is hiring for Software Engineer - Intern | India, Freshers
+2025-02-25 21:50:52 | INFO | Processing job detail page: https://www.jobfound.org/job/enalo-is-hiring-for-frontend-developer-or-remote
+2025-02-25 21:50:56 | INFO | Popup dismissed
+2025-02-25 21:50:58 | INFO | Found apply link: https://cuvette.tech/app/public/internship/67b7edec3278ca84d75dacee?referralCode=FHZR3S
+2025-02-25 21:50:58 | INFO | Added yesterday's job: Enalo is hiring for Frontend Developer | Remote | Freshers
+2025-02-25 21:50:59 | INFO | Processing job detail page: https://www.jobfound.org/job/clinikally-is-hiring-for-full-stack-engineer-or-bengaluru-gurugram-full-stack-development
+2025-02-25 21:51:07 | INFO | Found apply link: https://www.ycombinator.com/companies/clinikally/jobs/UC6DxFI-full-stack-engineer
+2025-02-25 21:51:07 | INFO | Added yesterday's job: Clinikally is hiring for Full Stack Engineer | Bengaluru, Gurugram
+2025-02-25 21:51:08 | INFO | Processing job detail page: https://www.jobfound.org/job/salesforce-is-hiring-for-software-engineering-mts-or-hyderabad-software-engineer
+2025-02-25 21:51:19 | INFO | Found apply link: https://salesforce.wd12.myworkdayjobs.com/External_Career_Site/job/India---Hyderabad/Software-Engineering-MTS---Demos_JR283044?source=LinkedIn_Jobs
+2025-02-25 21:51:19 | INFO | Added yesterday's job: Salesforce is hiring for Software Engineering MTS | Hyderabad
+2025-02-25 21:51:20 | INFO | Reached target of 20 jobs. Stopping collection.
+2025-02-25 21:51:20 | INFO | Successfully scraped 20 jobs (Today: 9, Yesterday: 11)
+2025-02-25 21:51:22 | INFO | Function scrape_jobs took 237.06 seconds
+2025-02-25 21:51:22 | INFO | Found 20 jobs from scraping
+2025-02-25 21:51:22 | INFO | Storing jobs in database...
+2025-02-25 21:51:23 | INFO | Found 0 new jobs to store
+2025-02-25 21:51:23 | INFO | No new jobs to store
+2025-02-25 21:51:28 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-02-25 21:51:28 | INFO | Function scrape_and_process_jobs took 242.73 seconds

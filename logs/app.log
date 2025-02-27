@@ -1,382 +1,227 @@
-2025-02-22 22:06:07 | INFO | Starting job scraping at 2025-02-22 22:06:07.370295
-2025-02-22 22:06:07 | INFO | Starting job scraping...
-2025-02-22 22:06:16 | INFO | Accessing https://www.jobfound.org/
-2025-02-22 22:06:23 | INFO | Collecting job URLs...
-2025-02-22 22:06:45 | INFO | Found 600 job URLs
-2025-02-22 22:06:45 | INFO | Processing job detail page: https://www.jobfound.org/job/ihs-is-hiring-for-software-engineering-intern-or-remote-software-engineer
-2025-02-22 22:06:56 | INFO | Found apply link: https://us242.dayforcehcm.com/CandidatePortal/en-US/ihs/Posting/View/621
-2025-02-22 22:06:56 | INFO | Added today's job: IHS is hiring for Software Engineering Intern | Remote
-2025-02-22 22:06:57 | INFO | Processing job detail page: https://www.jobfound.org/job/walter-p-moore-is-hiring-for-application-developer-intern-or-bengalur-software-engineer
-2025-02-22 22:07:06 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4103519814/
-2025-02-22 22:07:06 | INFO | Added today's job: Walter P Moore is hiring for Application Developer Intern | Bengalur
-2025-02-22 22:07:07 | INFO | Processing job detail page: https://www.jobfound.org/job/standard-chartered-is-hiring-for-backend-developer-or-bangalore
-2025-02-22 22:07:15 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67aede1a16ea4af278c3b967?referralCode=FHZR3S
-2025-02-22 22:07:15 | INFO | Added today's job: Standard Chartered is hiring for Backend Developer | Bangalore
-2025-02-22 22:07:16 | INFO | Processing job detail page: https://www.jobfound.org/job/healthtrip-is-hiring-for-full-stack-developer-intern-or-pune-full-stack-development
-2025-02-22 22:07:23 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4161047462/?alternateChannel=search
-2025-02-22 22:07:24 | INFO | Added yesterday's job: Healthtrip is hiring for Full Stack Developer (Intern) | Pune
-2025-02-22 22:07:25 | INFO | Processing job detail page: https://www.jobfound.org/job/sails-software-inc-is-hiring-for-react-developer-or-visakhapatnam-frontend-development
-2025-02-22 22:07:35 | INFO | Found apply link: https://sailssoftware.freshteam.com/jobs/f5BtyeyrsfYY/react-developer
-2025-02-22 22:07:35 | INFO | Added yesterday's job: Sails Software Inc is hiring for React Developer | Visakhapatnam
-2025-02-22 22:07:36 | INFO | Processing job detail page: https://www.jobfound.org/job/verint-is-hiring-for-associate-software-engineer-or-remote-software-engineer
-2025-02-22 22:07:46 | INFO | Found apply link: https://fa-epcb-saasfaprod1.fa.ocs.oraclecloud.com/hcmUI/CandidateExperience/en/sites/CX/job/3160
-2025-02-22 22:07:46 | INFO | Added yesterday's job: Verint is hiring for Associate Software Engineer | Remote
-2025-02-22 22:07:47 | INFO | Processing job detail page: https://www.jobfound.org/job/neevhq-is-hiring-for-backend-developer-intern-or-remote-backend-development
-2025-02-22 22:07:48 | INFO | Popup dismissed
-2025-02-22 22:07:52 | INFO | Found apply link: https://wellfound.com/jobs/3224226-backend-developer-intern-build-scalable-systems-at-neev
-2025-02-22 22:07:52 | INFO | Added yesterday's job: NeevHQ is hiring for Backend Developer Intern | Remote
-2025-02-22 22:07:53 | INFO | Processing job detail page: https://www.jobfound.org/job/delightree-is-hiring-for-backend-developer-nodejs-or-remote-backend-development
-2025-02-22 22:08:00 | INFO | Found apply link: https://wellfound.com/jobs/3086592-backend-developer-nodejs
-2025-02-22 22:08:00 | INFO | Added yesterday's job: Delightree is hiring for Backend Developer - NodeJS | Remote
-2025-02-22 22:08:01 | INFO | Processing job detail page: https://www.jobfound.org/job/gigaml-is-hiring-for-founding-full-stack-engineer-or-bengaluru-full-stack-development
-2025-02-22 22:08:07 | INFO | Found apply link: https://app.flexiple.com/talent/jobs/10633
-2025-02-22 22:08:07 | INFO | Added yesterday's job: GigaML is hiring for Founding Full Stack Engineer | Bengaluru
-2025-02-22 22:08:08 | INFO | Processing job detail page: https://www.jobfound.org/job/pocketly-is-hiring-for-software-developer-or-bengaluru-software-engineer
-2025-02-22 22:08:10 | INFO | Popup dismissed
-2025-02-22 22:08:11 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4160861115/?alternateChannel=search
-2025-02-22 22:08:11 | INFO | Added yesterday's job: Pocketly is hiring for Software Developer | Bengaluru
-2025-02-22 22:08:12 | INFO | Processing job detail page: https://www.jobfound.org/job/navex-is-hiring-for-software-engineer
-2025-02-22 22:08:25 | INFO | Found apply link: https://navexglobal.wd5.myworkdayjobs.com/en-US/NAVEX/job/Bangalore/Software-Engineer_R5622
-2025-02-22 22:08:25 | INFO | Added yesterday's job: NAVEX is hiring for Software Engineer | Bangalore
-2025-02-22 22:08:26 | INFO | Processing job detail page: https://www.jobfound.org/job/shell-is-hiring-for-graduate-programme-or-bangalore-graduate-engineer-trainee
-2025-02-22 22:08:39 | INFO | Found apply link: https://shell.wd3.myworkdayjobs.com/Proactive/job/Shell-Technology-Centre---Bangalore/Shell-Graduate-Programme-2025---India_R152209-1?source=KrishanKumarLinkedin
-2025-02-22 22:08:39 | INFO | Added yesterday's job: Shell is hiring for Graduate Programme | Bangalore
-2025-02-22 22:08:40 | INFO | Processing job detail page: https://www.jobfound.org/job/corelogic-is-hiring-for-software-engineer-ornoida-software-engineer
-2025-02-22 22:08:47 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4138264498/?alternateChannel=search
-2025-02-22 22:08:47 | INFO | Added yesterday's job: CoreLogic is hiring for Software Engineer | Noida
-2025-02-22 22:08:48 | INFO | Processing job detail page: https://www.jobfound.org/job/blackberry-is-hiring-for-student-intern-or-hyderabad-software-engineer
-2025-02-22 22:09:00 | INFO | Found apply link: https://bb.wd3.myworkdayjobs.com/en-US/BlackBerry/job/Hyderabad-Telangana-India/Student-Intern_20240796-1
-2025-02-22 22:09:00 | INFO | Added yesterday's job: BlackBerry is hiring for Student Intern | Hyderabad
-2025-02-22 22:09:01 | INFO | Processing job detail page: https://www.jobfound.org/job/cex-is-hiring-for-trainee-associate-devops-engineer-or-software-engineer
-2025-02-22 22:09:09 | INFO | Found apply link: https://in.webuy.com/careers/careerDetails/?type=1&jobId=741
-2025-02-22 22:09:09 | INFO | Added yesterday's job: CeX is hiring for Trainee / Associate DevOps Engineer | Freshers
-2025-02-22 22:09:10 | INFO | Processing job detail page: https://www.jobfound.org/job/mr-cooper-group-is-hiring-for-software-development-engineer-or-chennai-bangalore-software-engineer
-2025-02-22 22:09:23 | INFO | Found apply link: https://careers.mrcooper.com/us/en/job/MRCOUS023132EXTERNALENUS/Software-development-Engineer
-2025-02-22 22:09:24 | INFO | Added yesterday's job: Mr. Cooper Group is hiring for Software development Engineer | Chennai, Bangalore
-2025-02-22 22:09:25 | INFO | Processing job detail page: https://www.jobfound.org/job/qest-is-hiring-for-fullstack-developer-or-bangalore-full-stack-development
-2025-02-22 22:09:32 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b4165521efc2e46ab860ec?referralCode=FHZR3S
-2025-02-22 22:09:32 | INFO | Added yesterday's job: Qest is hiring for Fullstack Developer | Bangalore
-2025-02-22 22:09:33 | INFO | Processing job detail page: https://www.jobfound.org/job/myntra-is-hiring-for-software-engineer-java-backend-2024-passouts
-2025-02-22 22:09:40 | INFO | Found older job after processing current jobs. Stopping collection.
-2025-02-22 22:09:40 | INFO | Successfully scraped 17 jobs (Today: 3, Yesterday: 14)
-2025-02-22 22:09:42 | INFO | Function scrape_jobs took 214.94 seconds
-2025-02-22 22:09:42 | INFO | Found 17 jobs from scraping
-2025-02-22 22:09:42 | INFO | Storing jobs in database...
-2025-02-22 22:09:42 | INFO | Found 7 new jobs to store
-2025-02-22 22:09:42 | INFO | Attempting to store 7 jobs
-2025-02-22 22:09:42 | INFO | Prepared job for storage: IHS is hiring for Software Engineering Intern | Remote
-2025-02-22 22:09:42 | INFO | Prepared job for storage: Walter P Moore is hiring for Application Developer Intern | Bengalur
-2025-02-22 22:09:42 | INFO | Prepared job for storage: Standard Chartered is hiring for Backend Developer | Bangalore
-2025-02-22 22:09:42 | INFO | Prepared job for storage: Healthtrip is hiring for Full Stack Developer (Intern) | Pune
-2025-02-22 22:09:42 | INFO | Prepared job for storage: Sails Software Inc is hiring for React Developer | Visakhapatnam
-2025-02-22 22:09:42 | INFO | Prepared job for storage: Verint is hiring for Associate Software Engineer | Remote
-2025-02-22 22:09:42 | INFO | Prepared job for storage: NeevHQ is hiring for Backend Developer Intern | Remote
-2025-02-22 22:09:42 | INFO | Successfully stored 7 jobs
-2025-02-22 22:09:42 | INFO | Successfully stored 7 new jobs
-2025-02-22 22:09:48 | INFO | Email sent successfully to prasanthranger09@gmail.com
-2025-02-22 22:09:49 | INFO | Function scrape_and_process_jobs took 221.64 seconds
-2025-02-23 12:28:01 | INFO | Shutting down the application...
-2025-02-23 12:28:01 | INFO | Application shutdown completed successfully
-2025-02-23 13:09:49 | INFO | Created default settings in database
-2025-02-23 13:09:49 | INFO | Starting up the application...
-2025-02-23 13:09:50 | INFO | Scheduled job scraping for 9:00
-2025-02-23 13:09:50 | INFO | Scheduler initialized successfully
-2025-02-23 13:09:50 | INFO | Application startup completed successfully
-2025-02-23 13:14:42 | INFO | Shutting down the application...
-2025-02-23 13:14:42 | INFO | Application shutdown completed successfully
-2025-02-23 13:14:46 | INFO | Starting up the application...
-2025-02-23 13:14:47 | INFO | Scheduled job scraping for 9:00
-2025-02-23 13:14:47 | INFO | Scheduler initialized successfully
-2025-02-23 13:14:47 | INFO | Application startup completed successfully
-2025-02-23 13:17:10 | INFO | Shutting down the application...
-2025-02-23 13:17:10 | INFO | Application shutdown completed successfully
-2025-02-23 13:17:14 | INFO | Starting up the application...
-2025-02-23 13:17:14 | INFO | Scheduled job scraping for 9:00
-2025-02-23 13:17:14 | INFO | Scheduler initialized successfully
-2025-02-23 13:17:14 | INFO | Application startup completed successfully
-2025-02-23 13:17:15 | INFO | Starting job scraping at 2025-02-23 13:17:15.638701
-2025-02-23 13:17:16 | INFO | Starting job scraping...
-2025-02-23 13:17:22 | INFO | Accessing https://www.jobfound.org/
-2025-02-23 13:17:29 | INFO | Collecting job URLs...
-2025-02-23 13:17:55 | INFO | Found 600 job URLs
-2025-02-23 13:17:55 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
-2025-02-23 13:18:32 | WARNING | Error getting apply link: Message: timeout: Timed out receiving message from renderer: 30.000
-  (Session info: chrome=133.0.6943.100)
-Stacktrace:
-	GetHandleVerifier [0x009D0283+25139]
-	(No symbol) [0x0095B234]
-	(No symbol) [0x008304A3]
-	(No symbol) [0x0082113B]
-	(No symbol) [0x00820E71]
-	(No symbol) [0x0081ED50]
-	(No symbol) [0x0081F8FD]
-	(No symbol) [0x0082BDB9]
-	(No symbol) [0x0083D225]
-	(No symbol) [0x00842AF6]
-	(No symbol) [0x0081FF0D]
-	(No symbol) [0x0083D0CA]
-	(No symbol) [0x008BE5F0]
-	(No symbol) [0x0089CD36]
-	(No symbol) [0x0086BD29]
-	(No symbol) [0x0086D064]
-	GetHandleVerifier [0x00CDB143+3215603]
-	GetHandleVerifier [0x00CF22BA+3310186]
-	GetHandleVerifier [0x00CEC4D2+3286146]
-	GetHandleVerifier [0x00A69C80+654384]
-	(No symbol) [0x009645BD]
-	(No symbol) [0x009614A8]
-	(No symbol) [0x00961647]
-	(No symbol) [0x00953D20]
-	BaseThreadInitThunk [0x76CB5D49+25]
-	RtlInitializeExceptionChain [0x7778CDEB+107]
-	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
-
-2025-02-23 13:18:37 | INFO | Added today's job: Delta is hiring for QA Engineer | Freshers | Remote
-2025-02-23 13:18:38 | INFO | Processing job detail page: https://www.jobfound.org/job/kohort-learning-platform-pvt-ltd-is-hiring-for-web-scraping-and-automation-engineer-or-remote-software-engineer
-2025-02-23 13:18:45 | INFO | Found apply link: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
-2025-02-23 13:18:45 | INFO | Added today's job: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
-2025-02-23 13:18:46 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-frontend-developer-or-hyderabad-frontend-development
-2025-02-23 13:18:54 | INFO | Found apply link: https://wellfound.com/jobs/3226393-web-scraping-automation-engineer-python-remote
-2025-02-23 13:18:54 | INFO | Added today's job: Deloitte is hiring for FrontEnd Developer | Hyderabad
-2025-02-23 13:18:55 | INFO | Processing job detail page: https://www.jobfound.org/job/sita-is-hiring-for-graduate-software-engineer-or-delhi-graduate-engineer-trainee
-2025-02-23 13:19:03 | INFO | Found apply link: https://usijobs.deloitte.com/careersUSI/JobDetail/USI-EH25-MFG-Front-End-Developer-HYD/209978
-2025-02-23 13:19:03 | INFO | Added today's job: SITA is hiring for Graduate, Software Engineer | Delhi
-2025-02-23 13:19:04 | INFO | Processing job detail page: https://www.jobfound.org/job/causalfunnel-is-hiring-for-software-engineer-intern-or-remote-software-engineer
-2025-02-23 13:19:11 | INFO | Found apply link: https://careers.sita.aero/jobs/7451?lang=en-us
-2025-02-23 13:19:11 | INFO | Added yesterday's job: CausalFunnel is hiring for Software Engineer Intern | Remote
-2025-02-23 13:19:12 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-software-developer-or-freshers-or-raemote-software-engineer
-2025-02-23 13:19:18 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4161186258/?alternateChannel=search
-2025-02-23 13:19:18 | INFO | Added yesterday's job: Delta is hiring for Software Developer | Freshers | Raemote
-2025-02-23 13:19:19 | INFO | Processing job detail page: https://www.jobfound.org/job/rockwell-automation-inc-is-hiring-for-graduate-engineer-trainee-or-pune-graduate-engineer-trainee
-2025-02-23 13:19:26 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b950a22c536072946aa7d7?referralCode=FHZR3S
-2025-02-23 13:19:26 | INFO | Added yesterday's job: Rockwell Automation, Inc. is hiring for Graduate Engineer Trainee | Pune
-2025-02-23 13:19:27 | INFO | Processing job detail page: https://www.jobfound.org/job/csg-is-hiring-for-software-development-engineer-grad-or-bangalore-software-engineer
-2025-02-23 13:19:28 | INFO | Popup dismissed
-2025-02-23 13:19:31 | INFO | Found apply link: https://rockwellautomation.wd1.myworkdayjobs.com/en-US/External_Rockwell_Automation/job/Pune-India/GRADUATE-ENGINEER-TRAINEE_R24-6085
-2025-02-23 13:19:31 | INFO | Added yesterday's job: CSG is hiring for Software Development Engineer Grad | Bangalore
-2025-02-23 13:19:32 | INFO | Processing job detail page: https://www.jobfound.org/job/kevit-technologies-is-hiring-for-chatbot-developer-fresher-or-rajkot-software-engineer
-2025-02-23 13:19:38 | INFO | Found apply link: https://csgi.wd5.myworkdayjobs.com/CSGCareers/job/INBangaloreOffice/Software-Development-Engineer-Grad_29170-1?source=LinkedIn
-2025-02-23 13:19:38 | INFO | Added yesterday's job: Kevit Technologies is hiring for Chatbot Developer (Fresher) | Rajkot
-2025-02-23 13:19:39 | INFO | Processing job detail page: https://www.jobfound.org/job/walter-p-moore-is-hiring-for-application-developer-intern-or-bengalur-software-engineer
-2025-02-23 13:19:46 | INFO | Found apply link: https://kevit.keka.com/careers/jobdetails/71852?source=linkedin
-2025-02-23 13:19:46 | INFO | Added yesterday's job: Walter P Moore is hiring for Application Developer Intern | Bengalur
-2025-02-23 13:19:47 | INFO | Processing job detail page: https://www.jobfound.org/job/standard-chartered-is-hiring-for-backend-developer-or-bangalore
-2025-02-23 13:19:54 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4103519814/
-2025-02-23 13:19:54 | INFO | Added yesterday's job: Standard Chartered is hiring for Backend Developer | Bangalore
-2025-02-23 13:19:55 | INFO | Processing job detail page: https://www.jobfound.org/job/healthtrip-is-hiring-for-full-stack-developer-intern-or-pune-full-stack-development
-2025-02-23 13:20:01 | INFO | Found older job after processing current jobs. Stopping collection.
-2025-02-23 13:20:01 | INFO | Successfully scraped 11 jobs (Today: 4, Yesterday: 7)
-2025-02-23 13:20:04 | INFO | Function scrape_jobs took 167.98 seconds
-2025-02-23 13:20:04 | INFO | Found 11 jobs from scraping
-2025-02-23 13:20:04 | INFO | Storing jobs in database...
-2025-02-23 13:20:05 | INFO | Found 11 new jobs to store
-2025-02-23 13:20:05 | INFO | Attempting to store 11 jobs
-2025-02-23 13:20:05 | INFO | Prepared job for storage: Delta is hiring for QA Engineer | Freshers | Remote
-2025-02-23 13:20:05 | INFO | Prepared job for storage: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
-2025-02-23 13:20:05 | INFO | Prepared job for storage: Deloitte is hiring for FrontEnd Developer | Hyderabad
-2025-02-23 13:20:05 | INFO | Prepared job for storage: SITA is hiring for Graduate, Software Engineer | Delhi
-2025-02-23 13:20:05 | INFO | Prepared job for storage: CausalFunnel is hiring for Software Engineer Intern | Remote
-2025-02-23 13:20:05 | INFO | Prepared job for storage: Delta is hiring for Software Developer | Freshers | Raemote
-2025-02-23 13:20:05 | INFO | Prepared job for storage: Rockwell Automation, Inc. is hiring for Graduate Engineer Trainee | Pune
-2025-02-23 13:20:05 | INFO | Prepared job for storage: CSG is hiring for Software Development Engineer Grad | Bangalore
-2025-02-23 13:20:05 | INFO | Prepared job for storage: Kevit Technologies is hiring for Chatbot Developer (Fresher) | Rajkot
-2025-02-23 13:20:05 | INFO | Prepared job for storage: Walter P Moore is hiring for Application Developer Intern | Bengalur
-2025-02-23 13:20:05 | INFO | Prepared job for storage: Standard Chartered is hiring for Backend Developer | Bangalore
-2025-02-23 13:20:05 | INFO | Successfully stored 11 jobs
-2025-02-23 13:20:05 | INFO | Successfully stored 11 new jobs
-2025-02-23 13:20:08 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-adb5a92b959sm16780289a12.63 - gsmtp')
-2025-02-23 13:20:08 | WARNING | Attempt 1/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 41be03b00d2f7-adb5a92b959sm16780289a12.63 - gsmtp')
-2025-02-23 13:20:13 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7340b47071dsm7406192b3a.117 - gsmtp')
-2025-02-23 13:20:13 | WARNING | Attempt 2/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-7340b47071dsm7406192b3a.117 - gsmtp')
-2025-02-23 13:20:18 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fceb10fab1sm4168554a91.32 - gsmtp')
-2025-02-23 13:20:18 | WARNING | Attempt 3/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fceb10fab1sm4168554a91.32 - gsmtp')
-2025-02-23 13:20:18 | ERROR | Error in scrape_and_process_jobs: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fceb10fab1sm4168554a91.32 - gsmtp')
-2025-02-23 13:20:21 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d556d3b1sm160986885ad.163 - gsmtp')
-2025-02-23 13:20:21 | WARNING | Attempt 1/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d556d3b1sm160986885ad.163 - gsmtp')
-2025-02-23 13:20:26 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-732521b82b3sm16797196b3a.92 - gsmtp')
-2025-02-23 13:20:26 | WARNING | Attempt 2/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d2e1a72fcca58-732521b82b3sm16797196b3a.92 - gsmtp')
-2025-02-23 13:20:31 | ERROR | Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d5348e68sm160979745ad.28 - gsmtp')
-2025-02-23 13:20:31 | WARNING | Attempt 3/3 failed: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d5348e68sm160979745ad.28 - gsmtp')
-2025-02-23 13:20:31 | ERROR | Failed to send error report email: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials d9443c01a7336-220d5348e68sm160979745ad.28 - gsmtp')
-2025-02-23 13:20:31 | ERROR | Function scrape_and_process_jobs failed after 196.10 seconds: Error sending email: (535, b'5.7.8 Username and Password not accepted. For more information, go to\n5.7.8  https://support.google.com/mail/?p=BadCredentials 98e67ed59e1d1-2fceb10fab1sm4168554a91.32 - gsmtp')
-2025-02-23 13:21:22 | INFO | Updated settings in database
-2025-02-23 13:21:29 | INFO | Starting job scraping at 2025-02-23 13:21:29.900997
-2025-02-23 13:21:30 | INFO | Starting job scraping...
-2025-02-23 13:21:32 | INFO | Accessing https://www.jobfound.org/
-2025-02-23 13:21:39 | INFO | Collecting job URLs...
-2025-02-23 13:22:05 | INFO | Found 600 job URLs
-2025-02-23 13:22:05 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
-2025-02-23 13:22:22 | WARNING | Error getting posting date: Message: 
-Stacktrace:
-	GetHandleVerifier [0x009D0283+25139]
-	(No symbol) [0x0095B234]
-	(No symbol) [0x008304A3]
-	(No symbol) [0x00878338]
-	(No symbol) [0x0087868B]
-	(No symbol) [0x008C0F62]
-	(No symbol) [0x0089CF84]
-	(No symbol) [0x008BE6E1]
-	(No symbol) [0x0089CD36]
-	(No symbol) [0x0086BD29]
-	(No symbol) [0x0086D064]
-	GetHandleVerifier [0x00CDB143+3215603]
-	GetHandleVerifier [0x00CF22BA+3310186]
-	GetHandleVerifier [0x00CEC4D2+3286146]
-	GetHandleVerifier [0x00A69C80+654384]
-	(No symbol) [0x009645BD]
-	(No symbol) [0x009614A8]
-	(No symbol) [0x00961647]
-	(No symbol) [0x00953D20]
-	BaseThreadInitThunk [0x76CB5D49+25]
-	RtlInitializeExceptionChain [0x7778CDEB+107]
-	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
-
-2025-02-23 13:22:22 | INFO | Processing job detail page: https://www.jobfound.org/job/kohort-learning-platform-pvt-ltd-is-hiring-for-web-scraping-and-automation-engineer-or-remote-software-engineer
-2025-02-23 13:22:30 | INFO | Found apply link: https://wellfound.com/jobs/3226393-web-scraping-automation-engineer-python-remote
-2025-02-23 13:22:30 | INFO | Added today's job: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
-2025-02-23 13:22:31 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-frontend-developer-or-hyderabad-frontend-development
-2025-02-23 13:22:42 | INFO | Found apply link: https://usijobs.deloitte.com/careersUSI/JobDetail/USI-EH25-MFG-Front-End-Developer-HYD/209978
-2025-02-23 13:22:42 | INFO | Added today's job: Deloitte is hiring for FrontEnd Developer | Hyderabad
-2025-02-23 13:22:43 | INFO | Processing job detail page: https://www.jobfound.org/job/sita-is-hiring-for-graduate-software-engineer-or-delhi-graduate-engineer-trainee
-2025-02-23 13:22:55 | INFO | Found apply link: https://careers.sita.aero/jobs/7451?lang=en-us
-2025-02-23 13:22:55 | INFO | Added today's job: SITA is hiring for Graduate, Software Engineer | Delhi
-2025-02-23 13:22:56 | INFO | Processing job detail page: https://www.jobfound.org/job/causalfunnel-is-hiring-for-software-engineer-intern-or-remote-software-engineer
-2025-02-23 13:23:05 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4161186258/?alternateChannel=search
-2025-02-23 13:23:06 | INFO | Added yesterday's job: CausalFunnel is hiring for Software Engineer Intern | Remote
-2025-02-23 13:23:07 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-software-developer-or-freshers-or-raemote-software-engineer
-2025-02-23 13:23:44 | WARNING | Error getting apply link: Message: timeout: Timed out receiving message from renderer: 30.000
-  (Session info: chrome=133.0.6943.100)
-Stacktrace:
-	GetHandleVerifier [0x009D0283+25139]
-	(No symbol) [0x0095B234]
-	(No symbol) [0x008304A3]
-	(No symbol) [0x0082113B]
-	(No symbol) [0x00820E71]
-	(No symbol) [0x0081ED50]
-	(No symbol) [0x0081F8FD]
-	(No symbol) [0x0082BDB9]
-	(No symbol) [0x0083D225]
-	(No symbol) [0x00842AF6]
-	(No symbol) [0x0081FF0D]
-	(No symbol) [0x0083D0CA]
-	(No symbol) [0x008BE5F0]
-	(No symbol) [0x0089CD36]
-	(No symbol) [0x0086BD29]
-	(No symbol) [0x0086D064]
-	GetHandleVerifier [0x00CDB143+3215603]
-	GetHandleVerifier [0x00CF22BA+3310186]
-	GetHandleVerifier [0x00CEC4D2+3286146]
-	GetHandleVerifier [0x00A69C80+654384]
-	(No symbol) [0x009645BD]
-	(No symbol) [0x009614A8]
-	(No symbol) [0x00961647]
-	(No symbol) [0x00953D20]
-	BaseThreadInitThunk [0x76CB5D49+25]
-	RtlInitializeExceptionChain [0x7778CDEB+107]
-	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
-
-2025-02-23 13:23:49 | INFO | Added yesterday's job: Delta is hiring for Software Developer | Freshers | Raemote
-2025-02-23 13:23:50 | INFO | Processing job detail page: https://www.jobfound.org/job/rockwell-automation-inc-is-hiring-for-graduate-engineer-trainee-or-pune-graduate-engineer-trainee
-2025-02-23 13:23:57 | INFO | Found apply link: https://www.jobfound.org/job/delta-is-hiring-for-software-developer-or-freshers-or-raemote-software-engineer
-2025-02-23 13:23:57 | INFO | Added yesterday's job: Rockwell Automation, Inc. is hiring for Graduate Engineer Trainee | Pune
-2025-02-23 13:23:58 | INFO | Processing job detail page: https://www.jobfound.org/job/csg-is-hiring-for-software-development-engineer-grad-or-bangalore-software-engineer
-2025-02-23 13:23:59 | INFO | Popup dismissed
-2025-02-23 13:24:02 | INFO | Found apply link: https://rockwellautomation.wd1.myworkdayjobs.com/en-US/External_Rockwell_Automation/job/Pune-India/GRADUATE-ENGINEER-TRAINEE_R24-6085
-2025-02-23 13:24:02 | INFO | Added yesterday's job: CSG is hiring for Software Development Engineer Grad | Bangalore
-2025-02-23 13:24:03 | INFO | Processing job detail page: https://www.jobfound.org/job/kevit-technologies-is-hiring-for-chatbot-developer-fresher-or-rajkot-software-engineer
-2025-02-23 13:24:10 | INFO | Found apply link: https://csgi.wd5.myworkdayjobs.com/CSGCareers/job/INBangaloreOffice/Software-Development-Engineer-Grad_29170-1?source=LinkedIn
-2025-02-23 13:24:10 | INFO | Added yesterday's job: Kevit Technologies is hiring for Chatbot Developer (Fresher) | Rajkot
-2025-02-23 13:24:11 | INFO | Processing job detail page: https://www.jobfound.org/job/walter-p-moore-is-hiring-for-application-developer-intern-or-bengalur-software-engineer
-2025-02-23 13:24:17 | INFO | Found apply link: https://kevit.keka.com/careers/jobdetails/71852?source=linkedin
-2025-02-23 13:24:17 | INFO | Added yesterday's job: Walter P Moore is hiring for Application Developer Intern | Bengalur
-2025-02-23 13:24:18 | INFO | Processing job detail page: https://www.jobfound.org/job/standard-chartered-is-hiring-for-backend-developer-or-bangalore
-2025-02-23 13:24:25 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4103519814/
-2025-02-23 13:24:25 | INFO | Added yesterday's job: Standard Chartered is hiring for Backend Developer | Bangalore
-2025-02-23 13:24:26 | INFO | Processing job detail page: https://www.jobfound.org/job/healthtrip-is-hiring-for-full-stack-developer-intern-or-pune-full-stack-development
-2025-02-23 13:24:31 | INFO | Found older job after processing current jobs. Stopping collection.
-2025-02-23 13:24:31 | INFO | Successfully scraped 10 jobs (Today: 3, Yesterday: 7)
-2025-02-23 13:24:34 | INFO | Function scrape_jobs took 184.09 seconds
-2025-02-23 13:24:34 | INFO | Found 10 jobs from scraping
-2025-02-23 13:24:34 | INFO | Storing jobs in database...
-2025-02-23 13:24:35 | INFO | Found 0 new jobs to store
-2025-02-23 13:24:35 | INFO | No new jobs to store
-2025-02-23 13:24:40 | INFO | Email sent successfully to prasanthranger09@gmail.com
-2025-02-23 13:24:40 | INFO | Function scrape_and_process_jobs took 190.77 seconds
-2025-02-23 13:27:17 | ERROR | Error getting dashboard stats: (psycopg2.OperationalError) server closed the connection unexpectedly
-	This probably means the server terminated abnormally
-	before or while processing the request.
-server closed the connection unexpectedly
-	This probably means the server terminated abnormally
-	before or while processing the request.
-
-[SQL: SELECT count(*) AS count_1 
-FROM (SELECT jobs.id AS jobs_id, jobs.job_title AS jobs_job_title, jobs.company_name AS jobs_company_name, jobs.job_type AS jobs_job_type, jobs.category AS jobs_category, jobs.salary AS jobs_salary, jobs.experience AS jobs_experience, jobs.location AS jobs_location, jobs.description AS jobs_description, jobs.detail_url AS jobs_detail_url, jobs.apply_link AS jobs_apply_link, jobs.posting_date AS jobs_posting_date, jobs.created_at AS jobs_created_at, jobs.updated_at AS jobs_updated_at 
-FROM jobs) AS anon_1]
-(Background on this error at: https://sqlalche.me/e/20/e3q8)
-2025-02-23 17:52:40 | INFO | Shutting down the application...
-2025-02-23 17:52:40 | INFO | Application shutdown completed successfully
-2025-02-23 17:52:50 | INFO | Starting up the application...
-2025-02-23 17:52:50 | INFO | Scheduled job scraping for 9:00
-2025-02-23 17:52:50 | INFO | Scheduler initialized successfully
-2025-02-23 17:52:50 | INFO | Application startup completed successfully
-2025-02-23 18:02:45 | INFO | Shutting down the application...
-2025-02-23 18:02:45 | INFO | Application shutdown completed successfully
-2025-02-23 18:03:11 | INFO | Starting up the application...
-2025-02-23 18:03:12 | INFO | Scheduled job scraping for 9:00
-2025-02-23 18:03:12 | INFO | Scheduler initialized successfully
-2025-02-23 18:03:12 | INFO | Application startup completed successfully
-2025-02-23 18:08:05 | INFO | Shutting down the application...
-2025-02-23 18:08:05 | INFO | Application shutdown completed successfully
-2025-02-23 19:06:46 | INFO | Starting up the application...
-2025-02-23 19:06:48 | INFO | Scheduled job scraping for 9:00
-2025-02-23 19:06:48 | INFO | Scheduler initialized successfully
-2025-02-23 19:06:48 | INFO | Application startup completed successfully
-2025-02-23 20:36:21 | INFO | Starting job scraping at 2025-02-23 20:36:21.951527
-2025-02-23 20:36:22 | INFO | Starting job scraping...
-2025-02-23 20:36:26 | INFO | Accessing https://www.jobfound.org/
-2025-02-23 20:36:35 | INFO | Collecting job URLs...
-2025-02-23 20:37:01 | INFO | Found 600 job URLs
-2025-02-23 20:37:01 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-qa-engineer-or-freshers-or-remote-sdet
-2025-02-23 20:37:10 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b8040e3278ca84d7648a81?referralCode=FHZR3S
-2025-02-23 20:37:10 | INFO | Added today's job: Delta is hiring for QA Engineer | Freshers | Remote
-2025-02-23 20:37:11 | INFO | Processing job detail page: https://www.jobfound.org/job/kohort-learning-platform-pvt-ltd-is-hiring-for-web-scraping-and-automation-engineer-or-remote-software-engineer
-2025-02-23 20:37:18 | INFO | Found apply link: https://wellfound.com/jobs/3226393-web-scraping-automation-engineer-python-remote
-2025-02-23 20:37:18 | INFO | Added today's job: Kohort Learning Platform pvt ltd is hiring for Web Scraping & Automation Engineer | Remote
-2025-02-23 20:37:19 | INFO | Processing job detail page: https://www.jobfound.org/job/deloitte-is-hiring-for-frontend-developer-or-hyderabad-frontend-development
-2025-02-23 20:37:31 | INFO | Found apply link: https://usijobs.deloitte.com/careersUSI/JobDetail/USI-EH25-MFG-Front-End-Developer-HYD/209978
-2025-02-23 20:37:31 | INFO | Added today's job: Deloitte is hiring for FrontEnd Developer | Hyderabad
-2025-02-23 20:37:32 | INFO | Processing job detail page: https://www.jobfound.org/job/sita-is-hiring-for-graduate-software-engineer-or-delhi-graduate-engineer-trainee
-2025-02-23 20:37:45 | INFO | Found apply link: https://careers.sita.aero/jobs/7451?lang=en-us
-2025-02-23 20:37:46 | INFO | Added today's job: SITA is hiring for Graduate, Software Engineer | Delhi
-2025-02-23 20:37:47 | INFO | Processing job detail page: https://www.jobfound.org/job/causalfunnel-is-hiring-for-software-engineer-intern-or-remote-software-engineer
-2025-02-23 20:37:55 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4161186258/?alternateChannel=search
-2025-02-23 20:37:55 | INFO | Added yesterday's job: CausalFunnel is hiring for Software Engineer Intern | Remote
-2025-02-23 20:37:56 | INFO | Processing job detail page: https://www.jobfound.org/job/delta-is-hiring-for-software-developer-or-freshers-or-raemote-software-engineer
-2025-02-23 20:38:02 | INFO | Found apply link: https://cuvette.tech/app/public/job/67b950a22c536072946aa7d7?referralCode=FHZR3S
-2025-02-23 20:38:03 | INFO | Added yesterday's job: Delta is hiring for Software Developer | Freshers | Raemote
-2025-02-23 20:38:04 | INFO | Processing job detail page: https://www.jobfound.org/job/rockwell-automation-inc-is-hiring-for-graduate-engineer-trainee-or-pune-graduate-engineer-trainee
-2025-02-23 20:38:15 | INFO | Found apply link: https://rockwellautomation.wd1.myworkdayjobs.com/en-US/External_Rockwell_Automation/job/Pune-India/GRADUATE-ENGINEER-TRAINEE_R24-6085
-2025-02-23 20:38:15 | INFO | Added yesterday's job: Rockwell Automation, Inc. is hiring for Graduate Engineer Trainee | Pune
-2025-02-23 20:38:16 | INFO | Processing job detail page: https://www.jobfound.org/job/csg-is-hiring-for-software-development-engineer-grad-or-bangalore-software-engineer
-2025-02-23 20:38:17 | INFO | Popup dismissed
-2025-02-23 20:38:24 | INFO | Found apply link: https://csgi.wd5.myworkdayjobs.com/CSGCareers/job/INBangaloreOffice/Software-Development-Engineer-Grad_29170-1?source=LinkedIn
-2025-02-23 20:38:24 | INFO | Added yesterday's job: CSG is hiring for Software Development Engineer Grad | Bangalore
-2025-02-23 20:38:25 | INFO | Processing job detail page: https://www.jobfound.org/job/kevit-technologies-is-hiring-for-chatbot-developer-fresher-or-rajkot-software-engineer
-2025-02-23 20:38:32 | INFO | Found apply link: https://kevit.keka.com/careers/jobdetails/71852?source=linkedin
-2025-02-23 20:38:32 | INFO | Added yesterday's job: Kevit Technologies is hiring for Chatbot Developer (Fresher) | Rajkot
-2025-02-23 20:38:33 | INFO | Processing job detail page: https://www.jobfound.org/job/walter-p-moore-is-hiring-for-application-developer-intern-or-bengalur-software-engineer
-2025-02-23 20:38:42 | INFO | Found apply link: https://www.linkedin.com/jobs/view/4103519814/
-2025-02-23 20:38:42 | INFO | Added yesterday's job: Walter P Moore is hiring for Application Developer Intern | Bengalur
-2025-02-23 20:38:43 | INFO | Processing job detail page: https://www.jobfound.org/job/standard-chartered-is-hiring-for-backend-developer-or-bangalore
-2025-02-23 20:38:54 | INFO | Found apply link: https://cuvette.tech/app/other-jobs/67aede1a16ea4af278c3b967?referralCode=FHZR3S
-2025-02-23 20:38:54 | INFO | Added yesterday's job: Standard Chartered is hiring for Backend Developer | Bangalore
-2025-02-23 20:38:55 | INFO | Processing job detail page: https://www.jobfound.org/job/healthtrip-is-hiring-for-full-stack-developer-intern-or-pune-full-stack-development
-2025-02-23 20:39:04 | INFO | Found older job after processing current jobs. Stopping collection.
-2025-02-23 20:39:04 | INFO | Successfully scraped 11 jobs (Today: 4, Yesterday: 7)
-2025-02-23 20:39:06 | INFO | Function scrape_jobs took 164.67 seconds
-2025-02-23 20:39:06 | INFO | Found 11 jobs from scraping
-2025-02-23 20:39:06 | INFO | Storing jobs in database...
-2025-02-23 20:39:08 | INFO | Found 0 new jobs to store
-2025-02-23 20:39:08 | INFO | No new jobs to store
-2025-02-23 20:39:12 | INFO | Email sent successfully to prasanthranger09@gmail.com
-2025-02-23 20:39:12 | INFO | Function scrape_and_process_jobs took 171.00 seconds
+2025-02-26 23:11:20 | INFO | Starting up the application...
+2025-02-26 23:11:21 | INFO | Scheduler initialized successfully
+2025-02-26 23:11:21 | INFO | Application startup completed successfully
+2025-02-26 23:17:16 | INFO | Starting job scraping at 2025-02-26 23:17:16.757610
+2025-02-26 23:17:21 | INFO | Accessing https://www.jobfound.org/
+2025-02-26 23:17:22 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-02-26 23:17:32 | INFO | Function collect_job_urls took 9.78 seconds
+2025-02-26 23:17:32 | INFO | Found 20 job URLs
+2025-02-26 23:17:32 | INFO | Function cleanup_memory took 0.07 seconds
+2025-02-26 23:18:08 | INFO | Successfully scraped job: Bajaj Finserv is hiring for Frontend Engineer | Bangalore
+2025-02-26 23:18:08 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:18:09 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:18:50 | INFO | Successfully scraped job: Forvia is hiring for Software Engineer | India
+2025-02-26 23:18:50 | INFO | Function cleanup_memory took 0.07 seconds
+2025-02-26 23:18:51 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:19:34 | INFO | Successfully scraped job: Panasonic is hiring for MTS I - SDE I - JavaScript | Pune | Freshers
+2025-02-26 23:19:34 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:19:35 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:20:15 | INFO | Successfully scraped job: HSBC is hiring for Software Engineer | Pune
+2025-02-26 23:20:15 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:20:16 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:20:55 | INFO | Successfully scraped job: Dell Technologies is hiring for Software Engineer 1 | Bangalore (0-2 years)
+2025-02-26 23:20:55 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:21:01 | INFO | Function cleanup_memory took 0.02 seconds
+2025-02-26 23:21:41 | INFO | Successfully scraped job: Razorpay is hiring for Frontend Engineer | Bangalore
+2025-02-26 23:21:41 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:21:42 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:22:22 | INFO | Successfully scraped job: Wipro is hiring for Developer | Pune
+2025-02-26 23:22:22 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:22:23 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:23:19 | INFO | Successfully scraped job: Infraveo Technologies is hiring for Founding Software Engineer (Frontend) | Ahmedabad
+2025-02-26 23:23:19 | INFO | Function cleanup_memory took 0.07 seconds
+2025-02-26 23:23:20 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:23:54 | INFO | Successfully scraped job: Zeotap is hiring for Software Engineer - Intern | Bengaluru
+2025-02-26 23:23:54 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:23:55 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:24:29 | INFO | Successfully scraped job: Jacobs is hiring for Intern - Full Stack Developers | Freshers
+2025-02-26 23:24:29 | INFO | Function cleanup_memory took 0.04 seconds
+2025-02-26 23:24:39 | INFO | Function cleanup_memory took 0.02 seconds
+2025-02-26 23:25:16 | INFO | Successfully scraped job: Qt Group is hiring for Software Engineer | Bangalore
+2025-02-26 23:25:16 | INFO | Function cleanup_memory took 0.04 seconds
+2025-02-26 23:25:17 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:25:52 | INFO | Successfully scraped job: Oracle is hiring for Software Development Engineer | Delhi
+2025-02-26 23:25:52 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:25:53 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:26:31 | INFO | Successfully scraped job: Danfoss is hiring for Software Engineer | Pune
+2025-02-26 23:26:31 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:26:32 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:27:10 | INFO | Successfully scraped job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-26 23:27:10 | INFO | Function cleanup_memory took 0.07 seconds
+2025-02-26 23:27:11 | INFO | Function cleanup_memory took 0.02 seconds
+2025-02-26 23:27:48 | INFO | Successfully scraped job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-26 23:27:48 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:27:54 | INFO | Function cleanup_memory took 0.02 seconds
+2025-02-26 23:28:31 | INFO | Successfully scraped job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-26 23:28:31 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:28:32 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:29:08 | INFO | Successfully scraped job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-26 23:29:08 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:29:09 | INFO | Function cleanup_memory took 0.02 seconds
+2025-02-26 23:29:46 | INFO | Successfully scraped job: American Express is hiring for Engineer I | Bangalore
+2025-02-26 23:29:46 | INFO | Function cleanup_memory took 0.07 seconds
+2025-02-26 23:29:47 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:30:25 | INFO | Successfully scraped job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-26 23:30:25 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:30:26 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:31:02 | INFO | Successfully scraped job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-26 23:31:02 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:31:10 | INFO | Function scrape_jobs took 832.98 seconds
+2025-02-26 23:31:10 | INFO | Found 20 jobs from scraping
+2025-02-26 23:31:10 | INFO | Storing jobs in database...
+2025-02-26 23:31:11 | INFO | Found 10 new jobs to store
+2025-02-26 23:31:11 | ERROR | Error in scrape_and_process_jobs: object of type 'coroutine' has no len()
+2025-02-26 23:31:11 | ERROR | Function scrape_and_process_jobs failed after 834.90 seconds: object of type 'coroutine' has no len()
+2025-02-26 23:31:11 | WARNING | Attempt 1/3 failed: object of type 'coroutine' has no len()
+2025-02-26 23:31:13 | INFO | Starting job scraping at 2025-02-26 23:31:13.659150
+2025-02-26 23:31:16 | INFO | Accessing https://www.jobfound.org/
+2025-02-26 23:31:16 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-02-26 23:31:28 | INFO | Function collect_job_urls took 11.57 seconds
+2025-02-26 23:31:28 | INFO | Found 20 job URLs
+2025-02-26 23:31:28 | INFO | Function cleanup_memory took 0.07 seconds
+2025-02-26 23:32:04 | INFO | Successfully scraped job: Bajaj Finserv is hiring for Frontend Engineer | Bangalore
+2025-02-26 23:32:04 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:32:05 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:33:00 | INFO | Successfully scraped job: Forvia is hiring for Software Engineer | India
+2025-02-26 23:33:00 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:33:01 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:33:36 | INFO | Successfully scraped job: Panasonic is hiring for MTS I - SDE I - JavaScript | Pune | Freshers
+2025-02-26 23:33:36 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:33:37 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:34:11 | INFO | Successfully scraped job: HSBC is hiring for Software Engineer | Pune
+2025-02-26 23:34:11 | INFO | Function cleanup_memory took 0.04 seconds
+2025-02-26 23:34:12 | INFO | Function cleanup_memory took 0.02 seconds
+2025-02-26 23:34:46 | INFO | Successfully scraped job: Dell Technologies is hiring for Software Engineer 1 | Bangalore (0-2 years)
+2025-02-26 23:34:46 | INFO | Function cleanup_memory took 0.04 seconds
+2025-02-26 23:34:52 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:35:30 | INFO | Successfully scraped job: Razorpay is hiring for Frontend Engineer | Bangalore
+2025-02-26 23:35:30 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:35:31 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:36:12 | INFO | Successfully scraped job: Wipro is hiring for Developer | Pune
+2025-02-26 23:36:12 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:36:13 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:36:50 | INFO | Successfully scraped job: Infraveo Technologies is hiring for Founding Software Engineer (Frontend) | Ahmedabad
+2025-02-26 23:36:50 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:36:51 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:37:37 | INFO | Successfully scraped job: Zeotap is hiring for Software Engineer - Intern | Bengaluru
+2025-02-26 23:37:37 | INFO | Function cleanup_memory took 0.04 seconds
+2025-02-26 23:37:38 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:38:13 | INFO | Successfully scraped job: Jacobs is hiring for Intern - Full Stack Developers | Freshers
+2025-02-26 23:38:14 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:38:35 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:39:14 | INFO | Successfully scraped job: Qt Group is hiring for Software Engineer | Bangalore
+2025-02-26 23:39:14 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:39:15 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:39:48 | INFO | Successfully scraped job: Oracle is hiring for Software Development Engineer | Delhi
+2025-02-26 23:39:48 | INFO | Function cleanup_memory took 0.06 seconds
+2025-02-26 23:39:49 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:40:27 | INFO | Successfully scraped job: Danfoss is hiring for Software Engineer | Pune
+2025-02-26 23:40:27 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:40:28 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:41:05 | INFO | Successfully scraped job: Eudia is hiring for Software Engineer Intern | Bangalore
+2025-02-26 23:41:06 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:41:07 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:41:43 | INFO | Successfully scraped job: Equifax is hiring for Junior Software Engineer | Pune
+2025-02-26 23:41:43 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:41:49 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:42:33 | INFO | Successfully scraped job: ParallelDots is hiring for Backend Developer Intern | Remote
+2025-02-26 23:42:33 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:42:34 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:43:10 | INFO | Successfully scraped job: Deloitte is hiring for Data Science Intern | Bengaluru
+2025-02-26 23:43:10 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:43:11 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:43:49 | INFO | Successfully scraped job: American Express is hiring for Engineer I | Bangalore
+2025-02-26 23:43:49 | INFO | Function cleanup_memory took 0.07 seconds
+2025-02-26 23:43:50 | INFO | Function cleanup_memory took 0.04 seconds
+2025-02-26 23:44:28 | INFO | Successfully scraped job: IBA is hiring for Software Engineer Frontend | Chandigarh
+2025-02-26 23:44:28 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:44:29 | INFO | Function cleanup_memory took 0.03 seconds
+2025-02-26 23:45:06 | INFO | Successfully scraped job: SolarWinds is hiring for Associate Software Engineer | Bengaluru
+2025-02-26 23:45:06 | INFO | Function cleanup_memory took 0.05 seconds
+2025-02-26 23:45:14 | INFO | Function scrape_jobs took 840.28 seconds
+2025-02-26 23:45:14 | INFO | Found 20 jobs from scraping
+2025-02-26 23:45:14 | INFO | Storing jobs in database...
+2025-02-26 23:45:14 | INFO | Found 10 new jobs to store
+2025-02-26 23:45:14 | ERROR | Error in scrape_and_process_jobs: object of type 'coroutine' has no len()
+2025-02-26 23:45:14 | ERROR | Function scrape_and_process_jobs failed after 840.88 seconds: object of type 'coroutine' has no len()
+2025-02-26 23:45:14 | WARNING | Attempt 2/3 failed: object of type 'coroutine' has no len()
+2025-02-26 23:45:16 | INFO | Starting job scraping at 2025-02-26 23:45:16.540515
+2025-02-26 23:45:19 | INFO | Accessing https://www.jobfound.org/
+2025-02-26 23:45:19 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-02-26 23:45:31 | INFO | Function collect_job_urls took 11.55 seconds
+2025-02-26 23:45:31 | INFO | Found 20 job URLs
+2025-02-26 23:45:31 | INFO | Function cleanup_memory took 0.07 seconds
+2025-02-26 23:46:05 | INFO | Function cleanup_memory took 16.43 seconds
+2025-02-26 23:46:22 | INFO | Function cleanup_memory took 16.47 seconds
+2025-02-26 23:46:55 | WARNING | Page load failed for https://www.jobfound.org/job/forvia-is-hiring-for-software-engineer-or-india-software-engineer: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D8251C1CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:46:55 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D8251C1CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:47:12 | WARNING | Page load failed for https://www.jobfound.org/job/forvia-is-hiring-for-software-engineer-or-india-software-engineer: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D8251BA9D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:47:12 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D8251BA9D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:47:12 | ERROR | Error extracting job data from https://www.jobfound.org/job/forvia-is-hiring-for-software-engineer-or-india-software-engineer: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D8251BA9D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:47:29 | INFO | Function cleanup_memory took 16.36 seconds
+2025-02-26 23:47:46 | INFO | Function cleanup_memory took 16.42 seconds
+2025-02-26 23:48:19 | WARNING | Page load failed for https://www.jobfound.org/job/panasonic-is-hiring-for-mts-i-sde-i-javascript-or-pune-or-freshers-frontend-development: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D82515F890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:48:19 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D82515F890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:48:36 | WARNING | Page load failed for https://www.jobfound.org/job/panasonic-is-hiring-for-mts-i-sde-i-javascript-or-pune-or-freshers-frontend-development: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D82518C450>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:48:36 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D82518C450>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:48:36 | ERROR | Error extracting job data from https://www.jobfound.org/job/panasonic-is-hiring-for-mts-i-sde-i-javascript-or-pune-or-freshers-frontend-development: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D82518C450>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:48:52 | INFO | Function cleanup_memory took 16.42 seconds
+2025-02-26 23:49:09 | INFO | Function cleanup_memory took 16.38 seconds
+2025-02-26 23:49:42 | WARNING | Page load failed for https://www.jobfound.org/job/hsbc-is-hiring-for-software-engineer-or-pune-software-engineer: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D8251B8C50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:49:42 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=57034): Max retries exceeded with url: /session/5c0074666d68b52d216ced128f994014/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002D8251B8C50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-26 23:53:49 | INFO | Starting up the application...
+2025-02-26 23:53:50 | INFO | Scheduler initialized successfully
+2025-02-26 23:53:50 | INFO | Application startup completed successfully
+2025-02-26 23:54:23 | INFO | Starting job scraping at 2025-02-26 23:54:23.974147
+2025-02-26 23:54:27 | INFO | Accessing https://www.jobfound.org/
+2025-02-26 23:54:28 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-02-26 23:54:40 | INFO | Function collect_job_urls took 11.76 seconds
+2025-02-26 23:54:40 | INFO | Found 20 job URLs
+2025-02-26 23:54:40 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:55:16 | INFO | Successfully scraped job: Bajaj Finserv is hiring for Frontend Engineer | Bangalore
+2025-02-26 23:55:17 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:56:01 | INFO | Successfully scraped job: Forvia is hiring for Software Engineer | India
+2025-02-26 23:56:01 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:56:36 | INFO | Successfully scraped job: Panasonic is hiring for MTS I - SDE I - JavaScript | Pune | Freshers
+2025-02-26 23:56:36 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:57:11 | INFO | Successfully scraped job: HSBC is hiring for Software Engineer | Pune
+2025-02-26 23:57:11 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:57:46 | INFO | Successfully scraped job: Dell Technologies is hiring for Software Engineer 1 | Bangalore (0-2 years)
+2025-02-26 23:57:47 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:58:22 | INFO | Successfully scraped job: Razorpay is hiring for Frontend Engineer | Bangalore
+2025-02-26 23:58:22 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:58:57 | INFO | Successfully scraped job: Wipro is hiring for Developer | Pune
+2025-02-26 23:58:58 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-26 23:59:32 | INFO | Successfully scraped job: Infraveo Technologies is hiring for Founding Software Engineer (Frontend) | Ahmedabad
+2025-02-26 23:59:33 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:00:07 | INFO | Successfully scraped job: Zeotap is hiring for Software Engineer - Intern | Bengaluru
+2025-02-27 00:00:07 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:00:40 | INFO | Function cleanup_memory took 0.20 seconds
+2025-02-27 00:00:52 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:01:27 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:02:00 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:02:33 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:03:06 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:03:38 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:04:11 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:04:43 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:05:16 | INFO | Function cleanup_memory took 0.01 seconds
+2025-02-27 00:06:12 | ERROR | Error extracting job data from https://www.jobfound.org/job/iba-is-hiring-for-software-engineer-frontend-or-chandigarh-software-engineer: HTTPConnectionPool(host='localhost', port=55279): Max retries exceeded with url: /session/a1f7408b6cd7ab2545d17d80b7c35d7c/element/f.B006361460295AC18FD5A313A8501E7E.d.BF792D33CABC8A3B5EC8FC516FB2494B.e.101/text (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002674B2BBD90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-27 00:06:29 | INFO | Function cleanup_memory took 16.32 seconds
+2025-02-27 00:06:46 | WARNING | Page load failed for https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer: HTTPConnectionPool(host='localhost', port=55279): Max retries exceeded with url: /session/a1f7408b6cd7ab2545d17d80b7c35d7c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002674B2BB550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-27 00:06:46 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=55279): Max retries exceeded with url: /session/a1f7408b6cd7ab2545d17d80b7c35d7c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002674B2BB550>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-27 00:07:02 | WARNING | Page load failed for https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer: HTTPConnectionPool(host='localhost', port=55279): Max retries exceeded with url: /session/a1f7408b6cd7ab2545d17d80b7c35d7c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002674BF97050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-27 00:07:02 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=55279): Max retries exceeded with url: /session/a1f7408b6cd7ab2545d17d80b7c35d7c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002674BF97050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-27 00:07:02 | ERROR | Error extracting job data from https://www.jobfound.org/job/solarwinds-is-hiring-for-associate-software-engineer-or-bengaluru-software-engineer: HTTPConnectionPool(host='localhost', port=55279): Max retries exceeded with url: /session/a1f7408b6cd7ab2545d17d80b7c35d7c/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002674BF97050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-02-27 00:07:08 | INFO | Shutting down the application...
+2025-02-27 00:07:08 | INFO | Application shutdown completed successfully
+2025-02-27 07:17:04 | INFO | Starting up the application...
+2025-02-27 07:17:05 | INFO | Scheduler initialized successfully
+2025-02-27 07:17:05 | INFO | Application startup completed successfully
+2025-02-27 07:17:15 | INFO | Function scrape_and_process_jobs took 0.00 seconds
+2025-02-27 07:17:50 | INFO | Function scrape_and_process_jobs took 0.00 seconds
+2025-02-27 07:19:31 | INFO | Function scrape_and_process_jobs took 0.00 seconds
+2025-02-27 07:19:31 | INFO | Function scrape_and_process_jobs took 0.00 seconds
+2025-02-27 07:20:23 | INFO | Function scrape_and_process_jobs took 0.00 seconds
+2025-02-27 07:22:05 | INFO | Function scrape_and_process_jobs took 0.00 seconds
+2025-02-27 07:22:17 | INFO | Function scrape_and_process_jobs took 0.00 seconds

@@ -1,6 +1,6 @@
 from pydantic import AnyHttpUrl
 from pydantic_settings import BaseSettings
-from typing import List
+from typing import List, Optional
 from functools import lru_cache
 
 
@@ -52,8 +52,21 @@ class Settings(BaseSettings):
 
     allowed_origins: List[AnyHttpUrl] = []
 
+    CELERY_BROKER_URL: str = "redis://localhost:6379/0"
+    CELERY_RESULT_BACKEND: str = "redis://localhost:6379/1"
+    CELERY_TASK_ALWAYS_EAGER: bool = False
+    CELERY_TASK_SERIALIZER: str = "json"
+    CELERY_RESULT_SERIALIZER: str = "json"
+    CELERY_ACCEPT_CONTENT: List[str] = ["json"]
+    CELERY_TIMEZONE: str = "Asia/Kolkata"
+    CELERY_ENABLE_UTC: bool = True
+
+    # Additional settings
+    PYTHONUNBUFFERED: Optional[str] = None
+
     class Config:
         env_file = ".env"
+        extra = "allow"
         env_file_encoding = "utf-8"
 
 

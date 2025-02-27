@@ -16,7 +16,7 @@ jinja_env = Environment(loader=FileSystemLoader(str(template_dir)))
 
 
 @retry_on_exception()
-async def send_email_report(
+def send_email_report(
     subject: str, template_name: str, data: Dict[str, Any], db: Session
 ):
     """Send email using template and database configuration"""
