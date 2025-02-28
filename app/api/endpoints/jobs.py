@@ -1,25 +1,39 @@
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
-from typing import List, Optional
+from typing import Dict, List, Optional
 from ...db.session import get_db
 from ...services.scraper_service import scrape_and_process_jobs
 from ...schemas.job import JobResponse
 from ...db.repositories.job_repository import JobRepository
 from ...core.constants import DEFAULT_LIMIT, DEFAULT_OFFSET
+from loguru import logger
 
 router = APIRouter()
 
 
-@router.post("/scrape", response_model=dict)
+@router.post("/scrape", response_model=Dict[str, str])
 async def trigger_scrape(
     background_tasks: BackgroundTasks, db: Session = Depends(get_db)
-):
+) -> Dict[str, str]:
     """Trigger job scraping manually"""
     try:
-        background_tasks.add_task(scrape_and_process_jobs)
-        return {"message": "Job scraping started", "status": "success"}
+        result = await scrape_and_process_jobs()
+        return result
     except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+        logger.error(f"Error in scrape endpoint: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to scrape jobs: {str(e)}")
+
+
+# @router.post("/scrape", response_model=dict)
+# async def trigger_scrape(
+#     background_tasks: BackgroundTasks, db: Session = Depends(get_db)
+# ):
+#     """Trigger job scraping manually"""
+#     try:
+#         await background_tasks.add_task(scrape_and_process_jobs)
+#         return {"message": "Job scraping started", "status": "success"}
+#     except Exception as e:
+#         raise HTTPException(status_code=500, detail=str(e))
 
 
 @router.get("", response_model=List[JobResponse])

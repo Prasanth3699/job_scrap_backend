@@ -7,11 +7,11 @@ from ..core.constants import MAX_RETRIES, RETRY_DELAY
 def retry_on_exception(retries=MAX_RETRIES, delay=RETRY_DELAY):
     def decorator(func):
         @wraps(func)
-        async def wrapper(*args, **kwargs):
+        def wrapper(*args, **kwargs):
             last_exception = None
             for attempt in range(retries):
                 try:
-                    return await func(*args, **kwargs)
+                    return func(*args, **kwargs)
                 except Exception as e:
                     last_exception = e
                     logger.warning(f"Attempt {attempt + 1}/{retries} failed: {str(e)}")
@@ -26,12 +26,12 @@ def retry_on_exception(retries=MAX_RETRIES, delay=RETRY_DELAY):
 
 def log_execution_time(func):
     @wraps(func)
-    async def wrapper(*args, **kwargs):
+    def wrapper(*args, **kwargs):
         import time
 
         start_time = time.time()
         try:
-            result = await func(*args, **kwargs)
+            result = func(*args, **kwargs)
             end_time = time.time()
             logger.info(
                 f"Function {func.__name__} took {end_time - start_time:.2f} seconds"
