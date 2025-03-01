@@ -50,6 +50,9 @@ class Settings(BaseSettings):
     SLACK_WEBHOOK_URL: str | None = None
     DISCORD_WEBHOOK_URL: str | None = None
 
+    CELERY_BROKER_URL: str = "redis://localhost:6379/0"
+    CELERY_RESULT_BACKEND: str = "redis://localhost:6379/1"
+
     allowed_origins: List[AnyHttpUrl] = []
 
     class Config:

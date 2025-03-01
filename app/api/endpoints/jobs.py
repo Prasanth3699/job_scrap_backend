@@ -1,6 +1,8 @@
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from typing import Dict, List, Optional
+
+from app.tasks import run_scraping_job
 from ...db.session import get_db
 from ...services.scraper_service import scrape_and_process_jobs
 from ...schemas.job import JobResponse
@@ -12,16 +14,14 @@ router = APIRouter()
 
 
 @router.post("/scrape", response_model=Dict[str, str])
-async def trigger_scrape(
-    background_tasks: BackgroundTasks, db: Session = Depends(get_db)
-) -> Dict[str, str]:
-    """Trigger job scraping manually"""
+async def trigger_scrape():
+    """Trigger job scraping manually through Celery"""
     try:
-        result = await scrape_and_process_jobs()
-        return result
+        run_scraping_job.delay()
+        return {"status": "success", "message": "Scraping job has been queued"}
     except Exception as e:
-        logger.error(f"Error in scrape endpoint: {str(e)}")
-        raise HTTPException(status_code=500, detail=f"Failed to scrape jobs: {str(e)}")
+        logger.error(f"Error triggering scrape: {str(e)}")
+        raise HTTPException(status_code=500, detail="Failed to queue scraping job")
 
 
 # @router.post("/scrape", response_model=dict)

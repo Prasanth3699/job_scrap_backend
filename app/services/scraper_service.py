@@ -27,7 +27,6 @@ from ..utils.decorators import retry_on_exception, log_execution_time
 from sqlalchemy.orm import Session
 from ..models.job import Job
 
-# from ..core.celery_config import celery_app
 
 settings = get_settings()
 
@@ -63,7 +62,7 @@ class JobScraper:
     def get_by_url(self, url: str) -> Optional[Job]:
         return self.db.query(Job).filter(Job.detail_url == url).first()
 
-    async def store_jobs(self, jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
+    def store_jobs(self, jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Store jobs in database"""
         stored_jobs = []
         try:
@@ -593,7 +592,7 @@ class JobScraper:
 
 @retry_on_exception()
 @log_execution_time
-async def scrape_and_process_jobs():
+def scrape_and_process_jobs():
     logger.info(f"Starting job scraping at {datetime.datetime.now()}")
     db = SessionLocal()
     history_record = None
@@ -613,7 +612,7 @@ async def scrape_and_process_jobs():
             history_record.status = "success"
             history_record.jobs_found = 0
             history_record.end_time = datetime.datetime.now(IST)
-            await send_email_report(
+            send_email_report(
                 "Job Scraping Report - No Jobs Found",
                 "email/job_report.html",
                 {"jobs": [], "date": datetime.date.today()},
@@ -636,7 +635,7 @@ async def scrape_and_process_jobs():
             logger.info(f"Found {len(new_jobs)} new jobs to store")
 
             if new_jobs:
-                stored_jobs = await scraper.store_jobs(new_jobs)
+                stored_jobs = scraper.store_jobs(new_jobs)
                 logger.info(f"Successfully stored {len(stored_jobs)} new jobs")
 
                 # Get the actual Job objects from database for LinkedIn format
@@ -655,7 +654,7 @@ async def scrape_and_process_jobs():
                 history_record.end_time = datetime.datetime.now(IST)
 
                 # Send email report
-                await send_email_report(
+                send_email_report(
                     f"Job Scraping Report - {len(stored_jobs)} New Jobs",
                     "email/job_report.html",
                     {
@@ -675,7 +674,7 @@ async def scrape_and_process_jobs():
                 history_record.status = "success"
                 history_record.jobs_found = 0
                 history_record.end_time = datetime.datetime.now(IST)
-                await send_email_report(
+                send_email_report(
                     "Job Scraping Report - No New Jobs",
                     "email/job_report.html",
                     {"jobs": [], "date": datetime.date.today()},
@@ -691,7 +690,7 @@ async def scrape_and_process_jobs():
                 history_record.error = str(e)
                 history_record.end_time = datetime.datetime.now(IST)
             try:
-                await send_email_report(
+                send_email_report(
                     "Job Scraping Error Report",
                     "email/error_report.html",
                     {"error": error_msg, "date": datetime.date.today()},
