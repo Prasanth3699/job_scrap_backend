@@ -15,6 +15,7 @@ from app.models.job import Job
 from app.models.settings import Settings
 from app.models.scraping_history import ScrapingHistory
 from app.models.user import User
+from app.models.job_source import JobSource
 from app.core.config import get_settings
 
 # this is the Alembic Config object, which provides

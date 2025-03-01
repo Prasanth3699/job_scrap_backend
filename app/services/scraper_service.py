@@ -16,6 +16,8 @@ import os
 from functools import wraps
 import traceback
 
+
+from ..services.job_source_service import JobSourceService
 from ..models.scraping_history import ScrapingHistory
 from ..utils.linkedin_formatter import create_linkedin_format
 from ..db.repositories.job_repository import JobRepository
@@ -46,19 +48,14 @@ SCRAPER_CONFIG = {
 }
 
 
-class ScraperException(Exception):
-    """Custom exception for scraper-specific errors"""
-
-    pass
-
-
 class JobScraper:
 
-    def __init__(self, db: Session):
+    def __init__(self, db: Session, source_url: str = None):
         self.driver = None
         self.wait = None
         self.config = SCRAPER_CONFIG
         self.db = db
+        self.source_url = source_url or self.source_url
 
     def get_by_url(self, url: str) -> Optional[Job]:
         return self.db.query(Job).filter(Job.detail_url == url).first()
@@ -419,92 +416,63 @@ class JobScraper:
             return "N/A"
 
     def get_description_html(self, description_container) -> str:
-        """Get the HTML content removing all class attributes including main container"""
+        """Get the HTML content with a simpler, more reliable approach"""
         try:
             if not description_container:
                 return "N/A"
 
-            # Get the raw HTML and clean it using JavaScript
+            # Get the HTML directly without JavaScript
+            description_html = description_container.get_attribute("outerHTML")
+
+            if not description_html:
+                return "N/A"
+
+            # Clean the HTML using a simpler JavaScript approach
             clean_html = self.driver.execute_script(
                 """
-                function cleanHTML(element) {
-                    // Create a new div element
-                    const container = document.createElement('div');
+                function cleanHTML(html) {
+                    const div = document.createElement('div');
+                    div.innerHTML = arguments[0];
                     
-                    // Copy the content
-                    container.innerHTML = element.innerHTML;
-                    
-                    // Function to clean all elements
-                    function cleanElement(el) {
-                        // Remove all attributes except href and src
-                        const attrs = el.attributes;
-                        if (attrs) {
-                            for (let i = attrs.length - 1; i >= 0; i--) {
-                                const attrName = attrs[i].name;
-                                if (!['href', 'src'].includes(attrName)) {
-                                    el.removeAttribute(attrName);
-                                }
-                            }
-                        }
-                        
-                        // Clean all child elements
-                        el.childNodes.forEach(child => {
-                            if (child.nodeType === 1) { // Element node
-                                cleanElement(child);
-                            }
-                        });
+                    // Remove script tags
+                    const scripts = div.getElementsByTagName('script');
+                    while(scripts.length > 0) {
+                        scripts[0].parentNode.removeChild(scripts[0]);
                     }
                     
-                    // Clean the container and all its children
-                    cleanElement(container);
+                    // Remove style tags
+                    const styles = div.getElementsByTagName('style');
+                    while(styles.length > 0) {
+                        styles[0].parentNode.removeChild(styles[0]);
+                    }
                     
-                    return container.outerHTML;
+                    // Remove all classes and ids
+                    const elements = div.getElementsByTagName('*');
+                    for(let el of elements) {
+                        el.removeAttribute('class');
+                        el.removeAttribute('id');
+                    }
+                    
+                    return div.innerHTML;
                 }
                 return cleanHTML(arguments[0]);
-            """,
-                description_container,
+                """,
+                description_html,
             )
 
-            if clean_html:
-                # Additional formatting for better readability
-                clean_html = self.driver.execute_script(
-                    """
-                    function formatHTML(html) {
-                        const temp = document.createElement('div');
-                        temp.innerHTML = html;
-                        
-                        // Remove empty elements except br and hr
-                        function removeEmpty(element) {
-                            Array.from(element.children).forEach(child => {
-                                if (!['br', 'hr'].includes(child.tagName.toLowerCase()) && 
-                                    !child.textContent.trim()) {
-                                    child.remove();
-                                } else {
-                                    removeEmpty(child);
-                                }
-                            });
-                        }
-                        
-                        removeEmpty(temp);
-                        
-                        // Basic formatting
-                        return temp.innerHTML
-                            .replace(/>\s+</g, '>\n<')  // Add newline between tags
-                            .replace(/(<\/[^>]+>)/g, '$1\n')  // Add newline after closing tags
-                            .replace(/(<[^\/][^>]*>)(?!\n)/g, '$1\n')  // Add newline after opening tags
-                            .trim();
-                    }
-                    return formatHTML(arguments[0]);
-                """,
-                    clean_html,
-                )
+            if not clean_html or clean_html in ["undefined", "null", ""]:
+                # Fallback to plain text
+                return f"<div>{description_container.text}</div>"
 
-                return f"<div>{clean_html}</div>"
-            return "N/A"
+            return f"<div>{clean_html}</div>"
 
         except Exception as e:
             logger.error(f"Error getting description HTML: {str(e)}")
-            return "N/A"
+            try:
+                # Fallback to plain text
+                return f"<div>{description_container.text}</div>"
+            except:
+                return "N/A"
 
     @retry_on_exception()
     @log_execution_time
@@ -515,8 +483,8 @@ class JobScraper:
         max_scroll_attempts = 2
 
         try:
-            logger.info(f"Attempting to load URL: {JOB_PAGE_URL}")
-            self.driver.get(JOB_PAGE_URL)
+            logger.info(f"Attempting to load URL: {self.source_url}")
+            self.driver.get(self.source_url)
             while scroll_attempts < max_scroll_attempts:
                 self.driver.execute_script(
                     "window.scrollTo(0, document.body.scrollHeight);"
@@ -599,12 +567,12 @@ class JobScraper:
             if not self.init_driver():
                 raise ScraperException("Failed to initialize driver")
 
-            logger.info(f"Accessing {JOB_PAGE_URL}")
+            logger.info(f"Accessing {self.source_url}")
 
             # Load main page
-            self.driver.get(JOB_PAGE_URL)
+            self.driver.get(self.source_url)
 
-            if not self.safe_page_load(JOB_PAGE_URL):
+            if not self.safe_page_load(self.source_url):
                 raise ScraperException("Failed to load main page")
 
             job_urls = self.collect_job_urls()
@@ -658,103 +626,170 @@ class JobScraper:
 
 @retry_on_exception()
 @log_execution_time
-def scrape_and_process_jobs():
-    logger.info(f"Starting job scraping at {datetime.datetime.now()}")
-    db = SessionLocal()
+def scrape_and_process_jobs(source_id: Optional[int] = None):
+    logger.info(
+        f"Starting job scraping at {datetime.datetime.now()} for source_id: {source_id}"
+    )
+
+    db = None
     history_record = None
 
     try:
-        # Create history record
-        history_record = ScrapingHistory(start_time=datetime.datetime.now(IST))
-        db.add(history_record)
-        db.commit()
+        db = SessionLocal()
 
-        # Initialize scraper with db session
-        scraper = JobScraper(db=db)
-        scraped_jobs = scraper.scrape_jobs()
+        # Get job sources to scrape
+        if source_id:
+            source = JobSourceService.get_source_by_id(db, source_id)
+            if not source:
+                raise ValueError(f"Job source with ID {source_id} not found")
+            sources = [source]
+            logger.info(f"Scraping single source: {source.name} (ID: {source.id})")
+        else:
+            sources = JobSourceService.get_active_sources(db)
+            logger.info(f"Found {len(sources)} active sources to scrape")
 
-        if not scraped_jobs:
-            logger.info("No jobs found from scraping")
-            history_record.status = "success"
-            history_record.jobs_found = 0
-            history_record.end_time = datetime.datetime.now(IST)
-            send_email_report(
-                "Job Scraping Report - No Jobs Found",
-                "email/job_report.html",
-                {"jobs": [], "date": datetime.date.today()},
-                db,
-            )
-            return {"status": "success", "message": "No jobs found"}
+        if not sources:
+            logger.warning("No active sources found to scrape")
+            return {
+                "status": "success",
+                "message": "No active sources found to scrape",
+                "jobs_found": "0",
+            }
 
-        logger.info(f"Found {len(scraped_jobs)} jobs from scraping")
+        total_new_jobs = 0
+        all_stored_jobs = []
+        last_scraper = None  # Keep track of last scraper instance
 
+        for source in sources:
+            try:
+                # Create history record for this source
+                history_record = ScrapingHistory(
+                    start_time=datetime.datetime.now(IST), source_id=source.id
+                )
+                db.add(history_record)
+                db.commit()
+
+                logger.info(f"Processing source: {source.name} (ID: {source.id})")
+
+                # Initialize scraper with source URL
+                scraper = JobScraper(db=db, source_url=source.url)
+                last_scraper = scraper  # Store reference to current scraper
+                scraped_jobs = scraper.scrape_jobs()
+
+                if not scraped_jobs:
+                    logger.info(f"No jobs found from scraping source: {source.name}")
+                    history_record.status = "success"
+                    history_record.jobs_found = 0
+                    history_record.end_time = datetime.datetime.now(IST)
+                    db.commit()
+                    continue
+
+                logger.info(
+                    f"Found {len(scraped_jobs)} jobs from scraping source: {source.name}"
+                )
+
+                try:
+                    # Filter out existing jobs
+                    new_jobs = [
+                        job_data
+                        for job_data in scraped_jobs
+                        if not scraper.get_by_url(job_data["detail_url"])
+                    ]
+
+                    logger.info(
+                        f"Found {len(new_jobs)} new jobs to store from source: {source.name}"
+                    )
+
+                    if new_jobs:
+                        stored_jobs = scraper.store_jobs(new_jobs)
+                        total_new_jobs += len(stored_jobs)
+                        all_stored_jobs.extend(stored_jobs)
+
+                        # Update history record
+                        history_record.jobs_found = len(stored_jobs)
+                        history_record.status = "success"
+                        history_record.end_time = datetime.datetime.now(IST)
+                    else:
+                        history_record.status = "success"
+                        history_record.jobs_found = 0
+                        history_record.end_time = datetime.datetime.now(IST)
+
+                    # Update source last scraped timestamp
+                    source.last_scraped_at = datetime.datetime.now(IST)
+                    db.commit()
+
+                except Exception as e:
+                    error_msg = (
+                        f"Error processing jobs for source {source.name}: {str(e)}"
+                    )
+                    logger.error(error_msg)
+                    history_record.status = "failed"
+                    history_record.error = str(e)
+                    history_record.end_time = datetime.datetime.now(IST)
+                    db.commit()
+                    continue
+
+            except Exception as e:
+                logger.error(f"Error scraping source {source.name}: {str(e)}")
+                if history_record:
+                    history_record.status = "failed"
+                    history_record.error = str(e)
+                    history_record.end_time = datetime.datetime.now(IST)
+                    db.commit()
+                continue
+
+            finally:
+                if scraper and scraper.driver:
+                    scraper.driver.quit()
+
+        # Handle email reports
         try:
-            logger.info("Storing jobs in database...")
-
-            # Filter out existing jobs
-            new_jobs = []
-            for job_data in scraped_jobs:
-                existing_job = scraper.get_by_url(job_data["detail_url"])
-                if not existing_job:
-                    new_jobs.append(job_data)
-
-            logger.info(f"Found {len(new_jobs)} new jobs to store")
-
-            if new_jobs:
-                stored_jobs = scraper.store_jobs(new_jobs)
-                logger.info(f"Successfully stored {len(stored_jobs)} new jobs")
-
-                # Get the actual Job objects from database for LinkedIn format
+            if total_new_jobs > 0 and last_scraper:
+                # Get the actual Job objects
                 job_objects = [
-                    scraper.get_by_url(job["detail_url"])
-                    for job in stored_jobs
-                    if scraper.get_by_url(job["detail_url"])
+                    last_scraper.get_by_url(job["detail_url"])
+                    for job in all_stored_jobs
+                    if last_scraper.get_by_url(job["detail_url"])
                 ]
 
-                # Create LinkedIn format using the Job objects
                 linkedin_format = create_linkedin_format(job_objects)
 
-                # Update history record
-                history_record.jobs_found = len(stored_jobs)
-                history_record.status = "success"
-                history_record.end_time = datetime.datetime.now(IST)
-
-                # Send email report
                 send_email_report(
-                    f"Job Scraping Report - {len(stored_jobs)} New Jobs",
+                    f"Job Scraping Report - {total_new_jobs} New Jobs",
                     "email/job_report.html",
                     {
-                        "jobs": job_objects,  # Use Job objects instead of dictionaries
+                        "jobs": job_objects,
                         "date": datetime.date.today(),
                         "linkedin_format": linkedin_format,
                     },
                     db,
                 )
-                return {
-                    "status": "success",
-                    "message": f"Stored {len(stored_jobs)} new jobs",
-                    "jobs_found": str(len(stored_jobs)),
-                }
             else:
-                logger.info("No new jobs to store")
-                history_record.status = "success"
-                history_record.jobs_found = 0
-                history_record.end_time = datetime.datetime.now(IST)
                 send_email_report(
                     "Job Scraping Report - No New Jobs",
                     "email/job_report.html",
                     {"jobs": [], "date": datetime.date.today()},
                     db,
                 )
-                return {"status": "success", "message": "No new jobs to store"}
+        except Exception as email_error:
+            logger.error(f"Failed to send email report: {str(email_error)}")
 
-        except Exception as e:
-            error_msg = f"Error in scrape_and_process_jobs: {str(e)}"
-            logger.error(error_msg)
-            if history_record:
-                history_record.status = "failed"
-                history_record.error = str(e)
-                history_record.end_time = datetime.datetime.now(IST)
+        return {
+            "status": "success",
+            "message": f"Stored {total_new_jobs} new jobs",
+            "jobs_found": str(total_new_jobs),
+        }
+
+    except Exception as e:
+        error_msg = f"Error in scrape_and_process_jobs: {str(e)}"
+        logger.error(error_msg)
+        if history_record:
+            history_record.status = "failed"
+            history_record.error = str(e)
+            history_record.end_time = datetime.datetime.now(IST)
+            if db:
+                db.commit()
+        if db:
             try:
                 send_email_report(
                     "Job Scraping Error Report",
@@ -764,9 +799,13 @@ def scrape_and_process_jobs():
                 )
             except Exception as email_error:
                 logger.error(f"Failed to send error report email: {str(email_error)}")
-            raise
+        raise
 
     finally:
-        if history_record:
-            db.commit()
-        db.close()
+        if db:
+            try:
+                if history_record:
+                    db.commit()
+                db.close()
+            except Exception as e:
+                logger.error(f"Error closing database connection: {str(e)}")

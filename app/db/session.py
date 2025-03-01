@@ -5,10 +5,6 @@ from ..core.config import get_settings
 
 settings = get_settings()
 
-# engine = create_engine(
-#     settings.DATABASE_URL,
-#     connect_args={"check_same_thread": False},  # Only needed for SQLite
-# )
 
 # PostgreSQL engine with connection pooling
 engine = create_engine(

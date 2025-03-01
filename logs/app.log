@@ -448,3 +448,4361 @@ urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(1
 2025-03-01 15:41:35 | INFO | Function scrape_and_process_jobs took 166.85 seconds
 2025-03-01 15:47:18 | INFO | Shutting down the application...
 2025-03-01 15:47:18 | INFO | Application shutdown completed successfully
+2025-03-01 15:47:22 | INFO | Starting up the application...
+2025-03-01 15:47:22 | INFO | Scheduler initialized successfully
+2025-03-01 15:47:22 | INFO | Application startup completed successfully
+2025-03-01 15:51:59 | INFO | Shutting down the application...
+2025-03-01 15:51:59 | INFO | Application shutdown completed successfully
+2025-03-01 15:52:05 | INFO | Starting up the application...
+2025-03-01 15:52:06 | INFO | Scheduler initialized successfully
+2025-03-01 15:52:06 | INFO | Application startup completed successfully
+2025-03-01 15:52:35 | INFO | Shutting down the application...
+2025-03-01 15:52:35 | INFO | Application shutdown completed successfully
+2025-03-01 15:52:39 | INFO | Starting up the application...
+2025-03-01 15:52:40 | INFO | Scheduler initialized successfully
+2025-03-01 15:52:40 | INFO | Application startup completed successfully
+2025-03-01 17:47:03 | INFO | Starting scraping task
+2025-03-01 17:47:03 | INFO | Starting job scraping at 2025-03-01 17:47:03.025539
+2025-03-01 17:47:06 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 17:47:14 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 17:47:29 | INFO | Function collect_job_urls took 15.24 seconds
+2025-03-01 17:47:29 | INFO | Found 20 job URLs
+2025-03-01 17:48:00 | INFO | Successfully scraped job: Software Developer
+2025-03-01 17:48:12 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 17:48:17 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 17:48:22 | INFO | Successfully scraped job: Software Developer
+2025-03-01 17:48:29 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 17:48:34 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 17:48:50 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 17:48:52 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 17:48:57 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 17:49:00 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 17:49:06 | INFO | Successfully scraped job: Software Developer
+2025-03-01 17:49:10 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 17:49:15 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 17:49:18 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 17:49:20 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 17:49:23 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 17:49:27 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 17:49:29 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 17:49:34 | INFO | Successfully scraped job: Jr Software Engineer
+2025-03-01 17:49:36 | INFO | Function scrape_jobs took 153.89 seconds
+2025-03-01 17:49:36 | INFO | Found 19 jobs from scraping
+2025-03-01 17:49:36 | INFO | Storing jobs in database...
+2025-03-01 17:49:38 | INFO | Found 0 new jobs to store
+2025-03-01 17:49:38 | INFO | No new jobs to store
+2025-03-01 17:49:42 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 17:49:42 | INFO | Function scrape_and_process_jobs took 159.69 seconds
+2025-03-01 18:22:36 | INFO | Shutting down the application...
+2025-03-01 18:22:36 | INFO | Application shutdown completed successfully
+2025-03-01 18:22:42 | INFO | Starting up the application...
+2025-03-01 18:22:42 | INFO | Scheduler initialized successfully
+2025-03-01 18:22:42 | INFO | Application startup completed successfully
+2025-03-01 18:27:37 | INFO | Shutting down the application...
+2025-03-01 18:27:37 | INFO | Application shutdown completed successfully
+2025-03-01 18:51:03 | INFO | Starting up the application...
+2025-03-01 18:51:04 | INFO | Scheduler initialized successfully
+2025-03-01 18:51:04 | INFO | Application startup completed successfully
+2025-03-01 18:52:36 | INFO | Starting up the application...
+2025-03-01 18:52:37 | INFO | Scheduler initialized successfully
+2025-03-01 18:52:37 | INFO | Application startup completed successfully
+2025-03-01 18:53:06 | INFO | Shutting down the application...
+2025-03-01 18:53:06 | INFO | Application shutdown completed successfully
+2025-03-01 18:53:10 | INFO | Starting up the application...
+2025-03-01 18:53:10 | INFO | Scheduler initialized successfully
+2025-03-01 18:53:10 | INFO | Application startup completed successfully
+2025-03-01 18:53:30 | INFO | Shutting down the application...
+2025-03-01 18:53:30 | INFO | Application shutdown completed successfully
+2025-03-01 18:53:33 | INFO | Starting up the application...
+2025-03-01 18:53:34 | INFO | Scheduler initialized successfully
+2025-03-01 18:53:34 | INFO | Application startup completed successfully
+2025-03-01 18:56:39 | INFO | Shutting down the application...
+2025-03-01 18:56:39 | INFO | Application shutdown completed successfully
+2025-03-01 18:56:45 | INFO | Starting up the application...
+2025-03-01 18:56:45 | INFO | Scheduler initialized successfully
+2025-03-01 18:56:45 | INFO | Application startup completed successfully
+2025-03-01 18:57:38 | ERROR | Error triggering scrape: run_scraping_job() got an unexpected keyword argument 'source_id'
+2025-03-01 18:58:35 | INFO | Shutting down the application...
+2025-03-01 18:58:35 | INFO | Application shutdown completed successfully
+2025-03-01 18:58:38 | INFO | Starting up the application...
+2025-03-01 18:58:38 | INFO | Scheduler initialized successfully
+2025-03-01 18:58:38 | INFO | Application startup completed successfully
+2025-03-01 19:01:58 | INFO | Shutting down the application...
+2025-03-01 19:01:58 | INFO | Application shutdown completed successfully
+2025-03-01 19:02:07 | INFO | Starting up the application...
+2025-03-01 19:02:07 | INFO | Scheduler initialized successfully
+2025-03-01 19:02:07 | INFO | Application startup completed successfully
+2025-03-01 19:02:58 | INFO | Starting scraping task for source_id: None
+2025-03-01 19:02:58 | INFO | Starting job scraping at 2025-03-01 19:02:58.451460
+2025-03-01 19:03:02 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:03:06 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:03:23 | INFO | Function collect_job_urls took 17.13 seconds
+2025-03-01 19:03:23 | INFO | Found 20 job URLs
+2025-03-01 19:03:48 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:03:51 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:03:52 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:03:57 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:03:59 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:03 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:04:06 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:10 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:04:12 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:14 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 19:04:15 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:17 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:04:19 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:20 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:04:23 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:27 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:04:29 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:31 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 19:04:33 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:44 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 19:04:47 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:47 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 19:04:50 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:51 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 19:04:53 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:53 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:04:56 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:57 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:04:59 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:04:59 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 19:05:00 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:05:02 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 19:05:04 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:05:04 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:05:06 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:05:07 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 19:05:08 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:05:09 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 19:05:12 | INFO | Function scrape_jobs took 132.39 seconds
+2025-03-01 19:05:12 | INFO | Found 19 jobs from scraping source: JobFound Portal
+2025-03-01 19:05:12 | INFO | Storing jobs in database...
+2025-03-01 19:05:12 | INFO | Found 3 new jobs to store from source: JobFound Portal
+2025-03-01 19:05:19 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:05:23 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:05:39 | INFO | Function collect_job_urls took 16.15 seconds
+2025-03-01 19:05:39 | INFO | Found 20 job URLs
+2025-03-01 19:05:41 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:05:43 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:05:45 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:05:47 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:05:48 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:05:54 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:05:56 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:05:59 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:06:01 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:05 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:06:07 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:09 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 19:06:13 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:15 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:06:18 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:20 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:06:22 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:25 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:06:27 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:29 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 19:06:31 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:42 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 19:06:46 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:46 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 19:06:48 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:51 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 19:06:53 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:53 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:06:56 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:57 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:06:58 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:06:59 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 19:07:01 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:07:02 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 19:07:05 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:07:05 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:07:07 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:07:07 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 19:07:08 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:07:09 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 19:07:12 | INFO | Function scrape_jobs took 120.11 seconds
+2025-03-01 19:07:12 | INFO | Found 20 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 19:07:12 | INFO | Storing jobs in database...
+2025-03-01 19:07:13 | INFO | Found 1 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 19:07:18 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 19:07:18 | INFO | Function scrape_and_process_jobs took 259.69 seconds
+2025-03-01 19:09:53 | INFO | Starting scraping task for source_id: None
+2025-03-01 19:09:53 | INFO | Starting job scraping at 2025-03-01 19:09:53.536245
+2025-03-01 19:09:56 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:09:59 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:10:59 | INFO | Starting scraping task for source_id: None
+2025-03-01 19:10:59 | INFO | Starting job scraping at 2025-03-01 19:10:59.578638
+2025-03-01 19:11:03 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:11:06 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:11:22 | INFO | Function collect_job_urls took 15.86 seconds
+2025-03-01 19:11:22 | INFO | Found 20 job URLs
+2025-03-01 19:11:44 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:11:47 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:11:51 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:11:55 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:11:58 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:11:59 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:15:18 | INFO | Starting scraping task for source_id: None
+2025-03-01 19:15:18 | INFO | Starting job scraping at 2025-03-01 19:15:18.596633
+2025-03-01 19:15:22 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:15:28 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:15:42 | INFO | Function collect_job_urls took 14.90 seconds
+2025-03-01 19:15:42 | INFO | Found 20 job URLs
+2025-03-01 19:16:06 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:16:08 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:16:11 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:16:13 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:19:27 | INFO | Starting scraping task for source_id: None
+2025-03-01 19:19:27 | INFO | Starting job scraping at 2025-03-01 19:19:27.737299
+2025-03-01 19:19:31 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:19:35 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:19:50 | INFO | Function collect_job_urls took 14.54 seconds
+2025-03-01 19:19:50 | INFO | Found 20 job URLs
+2025-03-01 19:20:13 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:15 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:20:17 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:23 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:20:24 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:28 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:20:30 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:34 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:20:36 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:38 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 19:20:41 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:42 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:20:44 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:46 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:20:48 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:53 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:20:56 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:20:58 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 19:21:01 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:10 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 19:21:13 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:18 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 19:21:21 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:22 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 19:21:24 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:27 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:21:29 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:31 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:21:32 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:37 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 19:21:39 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:40 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 19:21:42 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:44 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:21:45 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:46 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 19:21:48 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:21:51 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 19:21:54 | INFO | Function scrape_jobs took 145.96 seconds
+2025-03-01 19:21:54 | INFO | Found 19 jobs from scraping source: JobFound Portal
+2025-03-01 19:21:54 | INFO | Storing jobs in database...
+2025-03-01 19:21:55 | INFO | Found 0 new jobs to store from source: JobFound Portal
+2025-03-01 19:22:02 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:22:06 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:22:21 | INFO | Function collect_job_urls took 15.31 seconds
+2025-03-01 19:22:21 | INFO | Found 20 job URLs
+2025-03-01 19:23:48 | WARNING | Page load failed for https://www.jobfound.org/job/poddar-diamonds-is-hiring-for-frontend-developer-or-freshers-frontend-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022111242CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:23:48 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022111242CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:05 | WARNING | Page load failed for https://www.jobfound.org/job/poddar-diamonds-is-hiring-for-frontend-developer-or-freshers-frontend-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D7ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:05 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D7ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:05 | ERROR | Error extracting job data from https://www.jobfound.org/job/poddar-diamonds-is-hiring-for-frontend-developer-or-freshers-frontend-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D7ED0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:22 | WARNING | Page load failed for https://www.jobfound.org/job/wing-assistant-is-hiring-for-frontend-web-developer-mern-or-remote-frontend-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002211125DA10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:22 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002211125DA10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:39 | WARNING | Page load failed for https://www.jobfound.org/job/wing-assistant-is-hiring-for-frontend-web-developer-mern-or-remote-frontend-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D4E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:39 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D4E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:39 | ERROR | Error extracting job data from https://www.jobfound.org/job/wing-assistant-is-hiring-for-frontend-web-developer-mern-or-remote-frontend-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D4E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:56 | WARNING | Page load failed for https://www.jobfound.org/job/amazon-music-is-hiring-for-software-dev-engineer-i-or-bangalore-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022111262CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:24:56 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022111262CD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:25:13 | WARNING | Page load failed for https://www.jobfound.org/job/amazon-music-is-hiring-for-software-dev-engineer-i-or-bangalore-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112B2990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:25:13 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112B2990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:25:13 | ERROR | Error extracting job data from https://www.jobfound.org/job/amazon-music-is-hiring-for-software-dev-engineer-i-or-bangalore-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112B2990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:25:30 | WARNING | Page load failed for https://www.jobfound.org/job/zoho-is-hiring-for-software-developer-or-freshers: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022111259C50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:25:30 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000022111259C50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:25:47 | WARNING | Page load failed for https://www.jobfound.org/job/zoho-is-hiring-for-software-developer-or-freshers: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112BC4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:25:47 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112BC4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:25:47 | ERROR | Error extracting job data from https://www.jobfound.org/job/zoho-is-hiring-for-software-developer-or-freshers: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112BC4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:03 | WARNING | Page load failed for https://www.jobfound.org/job/datachecks-is-hiring-for-fullstack-developer-intern-or-bangalore-full-stack-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112C4990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:03 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112C4990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:20 | WARNING | Page load failed for https://www.jobfound.org/job/datachecks-is-hiring-for-fullstack-developer-intern-or-bangalore-full-stack-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002211125B390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:20 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002211125B390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:20 | ERROR | Error extracting job data from https://www.jobfound.org/job/datachecks-is-hiring-for-fullstack-developer-intern-or-bangalore-full-stack-development: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000002211125B390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:37 | WARNING | Page load failed for https://www.jobfound.org/job/microsoft-is-hiring-for-software-engineer-or-noida-hyderabad-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112C4650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:37 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112C4650>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:54 | WARNING | Page load failed for https://www.jobfound.org/job/microsoft-is-hiring-for-software-engineer-or-noida-hyderabad-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D2350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:54 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D2350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:26:54 | ERROR | Error extracting job data from https://www.jobfound.org/job/microsoft-is-hiring-for-software-engineer-or-noida-hyderabad-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D2350>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:27:11 | WARNING | Page load failed for https://www.jobfound.org/job/zuitech-is-hiring-for-software-developer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D2890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:27:11 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D2890>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:27:28 | WARNING | Page load failed for https://www.jobfound.org/job/zuitech-is-hiring-for-software-developer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112E9D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:27:28 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112E9D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:27:28 | ERROR | Error extracting job data from https://www.jobfound.org/job/zuitech-is-hiring-for-software-developer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112E9D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:27:45 | WARNING | Page load failed for https://www.jobfound.org/job/tower-research-capital-is-hiring-for-software-engineer-or-gurugram-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112F4110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:27:45 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112F4110>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:28:02 | WARNING | Page load failed for https://www.jobfound.org/job/tower-research-capital-is-hiring-for-software-engineer-or-gurugram-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112EB210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:28:02 | WARNING | Attempt 2/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112EB210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:28:02 | ERROR | Error extracting job data from https://www.jobfound.org/job/tower-research-capital-is-hiring-for-software-engineer-or-gurugram-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112EB210>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:28:19 | WARNING | Page load failed for https://www.jobfound.org/job/flywire-is-hiring-for-software-engineer-i-or-remote-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D3A90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:28:19 | WARNING | Attempt 1/2 failed: HTTPConnectionPool(host='localhost', port=64026): Max retries exceeded with url: /session/fc3a0d34064399909fbedf239b400e3b/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000221112D3A90>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-03-01 19:28:50 | INFO | Starting scraping task for source_id: None
+2025-03-01 19:28:50 | INFO | Starting job scraping at 2025-03-01 19:28:50.324597
+2025-03-01 19:28:53 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:28:58 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:29:14 | INFO | Function collect_job_urls took 15.28 seconds
+2025-03-01 19:29:14 | INFO | Found 20 job URLs
+2025-03-01 19:29:37 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:29:39 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:29:40 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:29:45 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:29:49 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:29:53 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:29:55 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:29:59 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:30:01 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:03 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 19:30:07 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:11 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:30:13 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:15 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:30:17 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:21 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:30:24 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:26 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 19:30:29 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:39 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 19:30:41 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:42 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 19:30:44 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:45 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 19:30:47 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:47 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:30:51 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:51 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:30:54 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:54 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 19:30:56 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:30:58 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 19:31:02 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:31:02 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:31:05 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:31:05 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 19:31:07 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:31:07 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 19:31:10 | INFO | Function scrape_jobs took 139.21 seconds
+2025-03-01 19:31:10 | INFO | Found 19 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 19:31:10 | INFO | Storing jobs in database...
+2025-03-01 19:31:10 | INFO | Found 0 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 19:31:17 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:31:23 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:31:39 | INFO | Function collect_job_urls took 15.79 seconds
+2025-03-01 19:31:39 | INFO | Found 20 job URLs
+2025-03-01 19:32:03 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:06 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:32:09 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:12 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:32:14 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:18 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:32:20 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:24 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:32:26 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:28 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 19:32:30 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:31 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:32:34 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:36 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:32:38 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:41 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:32:44 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:46 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 19:32:48 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:32:57 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 19:32:58 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:03 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 19:33:06 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:08 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 19:33:09 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:13 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:33:14 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:16 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:33:18 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:23 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 19:33:25 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:26 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 19:33:29 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:30 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:33:32 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:33 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 19:33:35 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:33:38 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 19:33:41 | INFO | Function scrape_jobs took 150.22 seconds
+2025-03-01 19:33:41 | INFO | Found 19 jobs from scraping source: JobFound Portal
+2025-03-01 19:33:41 | INFO | Storing jobs in database...
+2025-03-01 19:33:42 | INFO | Found 0 new jobs to store from source: JobFound Portal
+2025-03-01 19:33:47 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 19:33:47 | INFO | Function scrape_and_process_jobs took 297.26 seconds
+2025-03-01 19:42:12 | INFO | Starting up the application...
+2025-03-01 19:42:13 | INFO | Scheduler initialized successfully
+2025-03-01 19:42:13 | INFO | Application startup completed successfully
+2025-03-01 19:42:26 | INFO | Starting scraping task for source_id: None
+2025-03-01 19:42:26 | INFO | Starting job scraping at 2025-03-01 19:42:26.921742
+2025-03-01 19:42:30 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:42:34 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:42:49 | INFO | Function collect_job_urls took 15.01 seconds
+2025-03-01 19:42:49 | INFO | Found 20 job URLs
+2025-03-01 19:43:12 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:15 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:43:16 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:20 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:43:23 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:26 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:43:29 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:32 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:43:34 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:36 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 19:43:38 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:40 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:43:42 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:44 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:43:45 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:48 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:43:50 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:43:52 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 19:43:54 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:03 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 19:44:05 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:10 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 19:44:11 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:13 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 19:44:16 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:19 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:44:21 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:22 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:44:24 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:28 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 19:44:29 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:31 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 19:44:33 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:35 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:44:37 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:38 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 19:44:40 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:44:43 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 19:44:46 | INFO | Function scrape_jobs took 139.02 seconds
+2025-03-01 19:44:46 | INFO | Found 19 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 19:44:46 | INFO | Storing jobs in database...
+2025-03-01 19:44:46 | INFO | Found 0 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 19:44:49 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:44:52 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:45:08 | INFO | Function collect_job_urls took 15.44 seconds
+2025-03-01 19:45:08 | INFO | Found 20 job URLs
+2025-03-01 19:45:33 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:45:36 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:45:38 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:45:47 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:45:48 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:45:52 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:45:55 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:45:59 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:46:03 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:06 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 19:46:08 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:10 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:46:11 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:13 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:46:14 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:19 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:46:21 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:23 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 19:46:25 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:34 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 19:46:35 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:40 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 19:46:42 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:44 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 19:46:45 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:48 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:46:50 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:52 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:46:54 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:46:57 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 19:46:58 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:47:00 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 19:47:01 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:47:02 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:47:04 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:47:05 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 19:47:07 | ERROR | Error getting description HTML: Message: javascript error: Invalid or unexpected token
+  (Session info: chrome=133.0.6943.127)
+Stacktrace:
+	GetHandleVerifier [0x006B0B43+25139]
+	(No symbol) [0x006413F4]
+	(No symbol) [0x005204E3]
+	(No symbol) [0x00526F01]
+	(No symbol) [0x00529253]
+	(No symbol) [0x005AF765]
+	(No symbol) [0x0058CFCC]
+	(No symbol) [0x005AE778]
+	(No symbol) [0x0058CDC6]
+	(No symbol) [0x0055BDE9]
+	(No symbol) [0x0055D124]
+	GetHandleVerifier [0x009B4373+3185251]
+	GetHandleVerifier [0x009D291A+3309578]
+	GetHandleVerifier [0x009CCF42+3286578]
+	GetHandleVerifier [0x00747AE0+643536]
+	(No symbol) [0x0064A20D]
+	(No symbol) [0x006470B8]
+	(No symbol) [0x00647257]
+	(No symbol) [0x00639E00]
+	BaseThreadInitThunk [0x76CB5D49+25]
+	RtlInitializeExceptionChain [0x7778CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7778CD71+561]
+
+2025-03-01 19:47:11 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 19:47:14 | INFO | Function scrape_jobs took 147.29 seconds
+2025-03-01 19:47:14 | INFO | Found 19 jobs from scraping source: JobFound Portal
+2025-03-01 19:47:14 | INFO | Storing jobs in database...
+2025-03-01 19:47:15 | INFO | Found 0 new jobs to store from source: JobFound Portal
+2025-03-01 19:47:19 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 19:47:19 | INFO | Function scrape_and_process_jobs took 292.43 seconds
+2025-03-01 19:54:20 | INFO | Starting up the application...
+2025-03-01 19:54:20 | INFO | Scheduler initialized successfully
+2025-03-01 19:54:20 | INFO | Application startup completed successfully
+2025-03-01 19:54:50 | INFO | Starting scraping task for source_id: None
+2025-03-01 19:54:50 | INFO | Starting job scraping at 2025-03-01 19:54:50.556664 for source_id: None
+2025-03-01 19:54:50 | INFO | Found 2 active sources to scrape
+2025-03-01 19:54:50 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-01 19:54:53 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:54:58 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 19:55:14 | INFO | Function collect_job_urls took 15.25 seconds
+2025-03-01 19:55:14 | INFO | Found 20 job URLs
+2025-03-01 19:55:39 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:55:47 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 19:55:53 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 19:55:59 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:56:04 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 19:56:09 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:56:13 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:56:21 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:56:26 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 19:56:38 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 19:56:46 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 19:56:50 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 19:56:56 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 19:57:01 | INFO | Successfully scraped job: Software Developer
+2025-03-01 19:57:06 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 19:57:09 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 19:57:12 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 19:57:17 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 19:57:20 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 19:57:23 | INFO | Function scrape_jobs took 152.64 seconds
+2025-03-01 19:57:23 | INFO | Found 19 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 19:57:24 | INFO | Found 0 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 19:57:44 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-01 19:57:51 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 19:57:55 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:04:01 | INFO | Starting up the application...
+2025-03-01 20:04:01 | INFO | Scheduler initialized successfully
+2025-03-01 20:04:01 | INFO | Application startup completed successfully
+2025-03-01 20:04:06 | INFO | Starting scraping task for source_id: None
+2025-03-01 20:04:06 | INFO | Starting job scraping at 2025-03-01 20:04:06.121743 for source_id: None
+2025-03-01 20:04:06 | INFO | Found 2 active sources to scrape
+2025-03-01 20:04:06 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-01 20:04:09 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:04:13 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:04:28 | INFO | Function collect_job_urls took 14.67 seconds
+2025-03-01 20:04:28 | INFO | Found 20 job URLs
+2025-03-01 20:04:32 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:04:37 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:04:44 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 20:04:49 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 20:04:53 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:04:58 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 20:05:02 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:05:05 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:05:11 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:05:15 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 20:05:26 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 20:05:32 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 20:05:36 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 20:05:40 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:05:44 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:05:49 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 20:05:53 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 20:05:56 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:05:59 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 20:06:02 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 20:06:05 | INFO | Function scrape_jobs took 118.39 seconds
+2025-03-01 20:06:05 | INFO | Found 20 jobs from scraping source: JobFound Portal
+2025-03-01 20:06:05 | INFO | Found 0 new jobs to store from source: JobFound Portal
+2025-03-01 20:06:26 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-01 20:06:33 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:06:38 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:06:53 | INFO | Function collect_job_urls took 15.26 seconds
+2025-03-01 20:06:53 | INFO | Found 20 job URLs
+2025-03-01 20:07:22 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:07:29 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 20:07:36 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 20:07:42 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:07:46 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 20:07:51 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:07:55 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:08:01 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:08:04 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 20:08:17 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 20:08:24 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 20:08:29 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 20:08:35 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:08:38 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:08:45 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 20:08:49 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 20:08:53 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:08:57 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 20:09:04 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 20:09:07 | INFO | Function scrape_jobs took 160.69 seconds
+2025-03-01 20:09:07 | INFO | Found 19 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 20:09:07 | INFO | Found 0 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 20:09:32 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 20:09:32 | INFO | Function scrape_and_process_jobs took 326.80 seconds
+2025-03-01 20:16:06 | INFO | Shutting down the application...
+2025-03-01 20:16:06 | INFO | Application shutdown completed successfully
+2025-03-01 20:16:09 | INFO | Starting up the application...
+2025-03-01 20:16:09 | INFO | Scheduler initialized successfully
+2025-03-01 20:16:09 | INFO | Application startup completed successfully
+2025-03-01 20:16:28 | INFO | Starting scraping task for source_id: None
+2025-03-01 20:16:28 | INFO | Starting job scraping at 2025-03-01 20:16:28.931589 for source_id: None
+2025-03-01 20:16:29 | INFO | Found 2 active sources to scrape
+2025-03-01 20:16:30 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-01 20:16:32 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:16:35 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:16:51 | INFO | Function collect_job_urls took 16.03 seconds
+2025-03-01 20:16:51 | INFO | Found 20 job URLs
+2025-03-01 20:16:55 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:17:00 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:17:07 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 20:17:14 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 20:17:21 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:17:26 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 20:17:29 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:17:34 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:17:40 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:17:43 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 20:17:56 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 20:17:59 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 20:18:03 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 20:18:06 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:18:11 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:18:13 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 20:18:16 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 20:18:19 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:18:21 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 20:18:24 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 20:18:27 | INFO | Function scrape_jobs took 117.24 seconds
+2025-03-01 20:18:27 | INFO | Found 20 jobs from scraping source: JobFound Portal
+2025-03-01 20:18:28 | INFO | Found 0 new jobs to store from source: JobFound Portal
+2025-03-01 20:18:49 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-01 20:18:56 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:19:00 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:19:15 | INFO | Function collect_job_urls took 14.77 seconds
+2025-03-01 20:19:15 | INFO | Found 20 job URLs
+2025-03-01 20:19:18 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:19:24 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:19:30 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 20:19:36 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 20:19:43 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:19:47 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 20:19:50 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:19:54 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:19:59 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:20:03 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 20:20:15 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 20:20:21 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 20:20:25 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 20:20:31 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:20:35 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:20:41 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 20:20:45 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 20:20:50 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:20:53 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 20:20:57 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 20:21:00 | INFO | Function scrape_jobs took 130.55 seconds
+2025-03-01 20:21:00 | INFO | Found 20 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 20:21:01 | INFO | Found 0 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 20:21:25 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 20:21:25 | INFO | Function scrape_and_process_jobs took 296.87 seconds
+2025-03-01 20:21:25 | INFO | Starting scraping task for source_id: None
+2025-03-01 20:21:25 | INFO | Starting job scraping at 2025-03-01 20:21:25.823422 for source_id: None
+2025-03-01 20:21:25 | INFO | Found 2 active sources to scrape
+2025-03-01 20:21:26 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-01 20:21:28 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:21:32 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:21:48 | INFO | Function collect_job_urls took 15.98 seconds
+2025-03-01 20:21:48 | INFO | Found 20 job URLs
+2025-03-01 20:22:10 | INFO | Shutting down the application...
+2025-03-01 20:22:10 | INFO | Application shutdown completed successfully
+2025-03-01 20:22:13 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:22:14 | INFO | Starting up the application...
+2025-03-01 20:22:14 | INFO | Scheduler initialized successfully
+2025-03-01 20:22:14 | INFO | Application startup completed successfully
+2025-03-01 20:22:16 | INFO | Shutting down the application...
+2025-03-01 20:22:16 | INFO | Application shutdown completed successfully
+2025-03-01 20:22:18 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 20:23:58 | INFO | Starting up the application...
+2025-03-01 20:23:59 | INFO | Scheduler initialized successfully
+2025-03-01 20:23:59 | INFO | Application startup completed successfully
+2025-03-01 20:24:23 | INFO | Starting scraping task for source_id: None
+2025-03-01 20:24:23 | INFO | Starting job scraping at 2025-03-01 20:24:23.574868 for source_id: None
+2025-03-01 20:24:24 | INFO | Found 2 active sources to scrape
+2025-03-01 20:24:24 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-01 20:24:27 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:24:29 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:24:45 | INFO | Function collect_job_urls took 15.97 seconds
+2025-03-01 20:24:45 | INFO | Found 20 job URLs
+2025-03-01 20:25:12 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:25:18 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 20:25:24 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 20:25:29 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:25:34 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 20:25:37 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:25:40 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:25:46 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:25:50 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 20:26:01 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 20:26:09 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 20:26:13 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 20:26:17 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:26:21 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:26:27 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 20:26:31 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 20:26:35 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:26:38 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 20:26:40 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 20:26:43 | INFO | Function scrape_jobs took 139.11 seconds
+2025-03-01 20:26:43 | INFO | Found 19 jobs from scraping source: JobFound Portal
+2025-03-01 20:26:44 | INFO | Found 0 new jobs to store from source: JobFound Portal
+2025-03-01 20:27:05 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-01 20:27:12 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-01 20:27:15 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-01 20:27:19 | INFO | Function collect_job_urls took 4.07 seconds
+2025-03-01 20:27:19 | INFO | Found 20 job URLs
+2025-03-01 20:27:47 | INFO | Successfully scraped job: Junior Software Developer
+2025-03-01 20:27:55 | INFO | Successfully scraped job: Web Developer (Full Stack)
+2025-03-01 20:28:02 | INFO | Successfully scraped job: Full Stack Engineer
+2025-03-01 20:28:07 | INFO | Successfully scraped job: Manager, Engineering - Web Platform
+2025-03-01 20:28:10 | INFO | Successfully scraped job: Mobile Engineer
+2025-03-01 20:28:16 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:28:19 | INFO | Successfully scraped job: Front-End Software Engineer
+2025-03-01 20:28:26 | INFO | Successfully scraped job: Front End Software Engineer
+2025-03-01 20:28:35 | INFO | Successfully scraped job: Developer Intern
+2025-03-01 20:28:40 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:28:45 | INFO | Successfully scraped job: Frontend Software Engineering Intern
+2025-03-01 20:28:52 | INFO | Successfully scraped job: Software Engineering Intern
+2025-03-01 20:28:56 | INFO | Successfully scraped job: Software Engineering Technology Intern
+2025-03-01 20:29:02 | INFO | Successfully scraped job: Software Engineering Intern
+2025-03-01 20:29:05 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:29:11 | INFO | Successfully scraped job: Data Analyst
+2025-03-01 20:29:20 | INFO | Function scrape_jobs took 134.42 seconds
+2025-03-01 20:29:20 | INFO | Found 16 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 20:29:22 | INFO | Found 5 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 20:29:47 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 20:29:47 | INFO | Function scrape_and_process_jobs took 323.99 seconds
+2025-03-01 20:29:47 | INFO | Starting scraping task for source_id: None
+2025-03-01 20:29:47 | INFO | Starting job scraping at 2025-03-01 20:29:47.585132 for source_id: None
+2025-03-01 20:29:47 | INFO | Found 2 active sources to scrape
+2025-03-01 20:29:47 | INFO | Processing source: Updated JobFound Portal (ID: 1)
+2025-03-01 20:29:50 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:29:53 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:30:08 | INFO | Function collect_job_urls took 14.67 seconds
+2025-03-01 20:30:08 | INFO | Found 20 job URLs
+2025-03-01 20:30:11 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:30:16 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:30:23 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 20:30:29 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 20:30:34 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:30:38 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 20:30:41 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:30:45 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:30:51 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:30:55 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 20:31:06 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 20:31:13 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 20:31:17 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 20:31:23 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:31:27 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:31:32 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 20:31:34 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 20:31:39 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:31:43 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 20:31:48 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 20:31:51 | INFO | Function scrape_jobs took 123.27 seconds
+2025-03-01 20:31:51 | INFO | Found 20 jobs from scraping source: Updated JobFound Portal
+2025-03-01 20:31:51 | INFO | Found 0 new jobs to store from source: Updated JobFound Portal
+2025-03-01 20:32:12 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-01 20:32:15 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-01 20:32:19 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-01 20:32:23 | INFO | Function collect_job_urls took 4.12 seconds
+2025-03-01 20:32:23 | INFO | Found 20 job URLs
+2025-03-01 20:32:48 | INFO | Successfully scraped job: Junior Software Developer
+2025-03-01 20:32:55 | INFO | Successfully scraped job: Web Developer (Full Stack)
+2025-03-01 20:33:02 | INFO | Successfully scraped job: Full Stack Engineer
+2025-03-01 20:33:08 | INFO | Successfully scraped job: Manager, Engineering - Web Platform
+2025-03-01 20:33:13 | INFO | Successfully scraped job: Mobile Engineer
+2025-03-01 20:33:19 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:33:21 | INFO | Successfully scraped job: Front-End Software Engineer
+2025-03-01 20:33:28 | INFO | Successfully scraped job: Front End Software Engineer
+2025-03-01 20:33:34 | INFO | Successfully scraped job: Developer Intern
+2025-03-01 20:33:38 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:33:41 | INFO | Successfully scraped job: Frontend Software Engineering Intern
+2025-03-01 20:33:47 | INFO | Successfully scraped job: Software Engineering Intern
+2025-03-01 20:33:53 | INFO | Successfully scraped job: Software Engineering Technology Intern
+2025-03-01 20:33:58 | INFO | Successfully scraped job: Software Engineering Intern
+2025-03-01 20:34:00 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:34:07 | INFO | Successfully scraped job: Data Analyst
+2025-03-01 20:34:14 | INFO | Function scrape_jobs took 122.10 seconds
+2025-03-01 20:34:14 | INFO | Found 16 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 20:34:14 | INFO | Found 0 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 20:34:39 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 20:34:39 | INFO | Function scrape_and_process_jobs took 292.24 seconds
+2025-03-01 20:34:39 | INFO | Starting scraping task for source_id: 1
+2025-03-01 20:34:39 | INFO | Starting job scraping at 2025-03-01 20:34:39.845719 for source_id: 1
+2025-03-01 20:34:39 | INFO | Scraping single source: Updated JobFound Portal (ID: 1)
+2025-03-01 20:34:40 | INFO | Processing source: Updated JobFound Portal (ID: 1)
+2025-03-01 20:34:42 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:34:48 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:35:16 | INFO | Function collect_job_urls took 28.19 seconds
+2025-03-01 20:35:16 | INFO | Found 20 job URLs
+2025-03-01 20:38:28 | INFO | Shutting down the application...
+2025-03-01 20:38:28 | INFO | Application shutdown completed successfully
+2025-03-01 20:38:32 | INFO | Starting up the application...
+2025-03-01 20:38:32 | INFO | Scheduler initialized successfully
+2025-03-01 20:38:32 | INFO | Application startup completed successfully
+2025-03-01 20:38:47 | INFO | Starting scraping task for source_id: 1
+2025-03-01 20:38:47 | INFO | Starting job scraping at 2025-03-01 20:38:47.463843 for source_id: 1
+2025-03-01 20:38:48 | INFO | Scraping single source: Updated JobFound Portal (ID: 1)
+2025-03-01 20:38:48 | INFO | Processing source: Updated JobFound Portal (ID: 1)
+2025-03-01 20:38:50 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:38:55 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:39:29 | INFO | Starting scraping task for source_id: None
+2025-03-01 20:39:29 | INFO | Starting job scraping at 2025-03-01 20:39:29.497771 for source_id: None
+2025-03-01 20:39:30 | INFO | Found 2 active sources to scrape
+2025-03-01 20:39:30 | INFO | Processing source: Updated JobFound Portal (ID: 1)
+2025-03-01 20:39:32 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 20:39:37 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 20:39:52 | INFO | Function collect_job_urls took 15.11 seconds
+2025-03-01 20:39:52 | INFO | Found 20 job URLs
+2025-03-01 20:39:58 | INFO | Successfully scraped job: Trainee
+2025-03-01 20:40:03 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:40:07 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:40:15 | INFO | Successfully scraped job: Frontend Web Developer (MERN)
+2025-03-01 20:40:19 | INFO | Successfully scraped job: Software Dev Engineer I
+2025-03-01 20:40:25 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:40:29 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 20:40:33 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:40:36 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:40:41 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:40:45 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 20:40:56 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 20:41:04 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 20:41:08 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 20:41:13 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 20:41:17 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:41:23 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 20:41:26 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 20:41:30 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:41:33 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 20:41:36 | INFO | Function scrape_jobs took 125.95 seconds
+2025-03-01 20:41:36 | INFO | Found 20 jobs from scraping source: Updated JobFound Portal
+2025-03-01 20:41:37 | INFO | Found 1 new jobs to store from source: Updated JobFound Portal
+2025-03-01 20:41:58 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-01 20:42:05 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-01 20:42:10 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-01 20:42:15 | INFO | Function collect_job_urls took 4.75 seconds
+2025-03-01 20:42:15 | INFO | Found 20 job URLs
+2025-03-01 20:42:40 | INFO | Successfully scraped job: Junior Software Developer
+2025-03-01 20:42:45 | INFO | Successfully scraped job: Web Developer (Full Stack)
+2025-03-01 20:42:55 | INFO | Successfully scraped job: Full Stack Engineer
+2025-03-01 20:42:59 | INFO | Successfully scraped job: Manager, Engineering - Web Platform
+2025-03-01 20:43:03 | INFO | Successfully scraped job: Mobile Engineer
+2025-03-01 20:43:07 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:43:11 | INFO | Successfully scraped job: Front-End Software Engineer
+2025-03-01 20:43:17 | INFO | Successfully scraped job: Front End Software Engineer
+2025-03-01 20:43:24 | INFO | Successfully scraped job: Developer Intern
+2025-03-01 20:43:28 | INFO | Successfully scraped job: Software Developer
+2025-03-01 20:43:33 | INFO | Successfully scraped job: Frontend Software Engineering Intern
+2025-03-01 20:43:50 | INFO | Successfully scraped job: Software Engineering Intern
+2025-03-01 20:43:52 | INFO | Successfully scraped job: Software Engineering Technology Intern
+2025-03-01 20:43:55 | INFO | Successfully scraped job: Software Engineering Intern
+2025-03-01 20:43:57 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 20:43:58 | INFO | Successfully scraped job: Data Analyst
+2025-03-01 20:44:06 | INFO | Function scrape_jobs took 128.40 seconds
+2025-03-01 20:44:06 | INFO | Found 16 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-01 20:44:08 | INFO | Found 0 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-01 20:44:33 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 20:44:33 | INFO | Function scrape_and_process_jobs took 303.73 seconds
+2025-03-01 22:35:37 | INFO | Shutting down the application...
+2025-03-01 22:35:37 | INFO | Application shutdown completed successfully
+2025-03-01 22:35:41 | INFO | Starting up the application...
+2025-03-01 22:35:42 | INFO | Scheduler initialized successfully
+2025-03-01 22:35:42 | INFO | Application startup completed successfully
+2025-03-01 23:33:18 | INFO | Shutting down the application...
+2025-03-01 23:33:18 | INFO | Application shutdown completed successfully
+2025-03-01 23:33:23 | INFO | Starting up the application...
+2025-03-01 23:33:23 | INFO | Scheduler initialized successfully
+2025-03-01 23:33:23 | INFO | Application startup completed successfully
+2025-03-01 23:38:19 | INFO | Shutting down the application...
+2025-03-01 23:38:19 | INFO | Application shutdown completed successfully
