@@ -73,3 +73,378 @@
 2025-03-01 12:40:08 | INFO | Starting up the application...
 2025-03-01 12:40:08 | INFO | Scheduler initialized successfully
 2025-03-01 12:40:08 | INFO | Application startup completed successfully
+2025-03-01 13:30:32 | INFO | Shutting down the application...
+2025-03-01 13:30:32 | INFO | Application shutdown completed successfully
+2025-03-01 13:30:36 | INFO | Starting up the application...
+2025-03-01 13:30:40 | INFO | Scheduler initialized successfully
+2025-03-01 13:30:40 | INFO | Application startup completed successfully
+2025-03-01 13:31:40 | INFO | Starting scraping task
+2025-03-01 13:31:40 | INFO | Starting job scraping at 2025-03-01 13:31:40.931199
+2025-03-01 13:31:44 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 13:31:51 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 13:32:07 | INFO | Function collect_job_urls took 16.44 seconds
+2025-03-01 13:32:07 | INFO | Found 20 job URLs
+2025-03-01 13:33:02 | INFO | Successfully scraped job: Tower Research Capital is hiring for Software Engineer | Gurugram
+2025-03-01 13:33:24 | INFO | Successfully scraped job: Flywire is hiring for Software Engineer I | Remote | Freshers
+2025-03-01 13:34:04 | INFO | Successfully scraped job: Zebra Technologies is hiring for Software Engineer, I | Freshers (0-2 years)
+2025-03-01 13:34:23 | INFO | Successfully scraped job: CrowdStrike is hiring for Engineering Intern | Pune
+2025-03-01 13:34:41 | INFO | Successfully scraped job: Proso.ai is hiring for Junior Software Engineer | Noida
+2025-03-01 13:35:01 | INFO | Successfully scraped job: Nykaa is hiring for Frontend Developer | Gurugram
+2025-03-01 13:35:20 | INFO | Successfully scraped job: Credit Saison Finance Pvt Ltd is hiring for Software Developer | Remote
+2025-03-01 13:35:38 | INFO | Successfully scraped job: Comcast is hiring for Engineer 1, Software Development & Engineering | Chennai
+2025-03-01 13:35:57 | INFO | Successfully scraped job: WMall is hiring for Fullstack Developer | Bengaluru
+2025-03-01 13:36:15 | INFO | Successfully scraped job: Newton School is hiring for Software Engineer | Bangalore
+2025-03-01 13:36:33 | INFO | Successfully scraped job: Harman is hiring for Graduate Hire | Bangalore
+2025-03-01 13:36:50 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 13:37:09 | INFO | Successfully scraped job: CreateBytes is hiring for Frontend Developer | Jaipur
+2025-03-01 13:37:28 | INFO | Successfully scraped job: Mr. Cooper Group is hiring for Software Engineer | Chennai
+2025-03-01 13:37:48 | INFO | Successfully scraped job: Egnyte is hiring for Jr Software Engineer | Remote
+2025-03-01 13:39:02 | INFO | Function scrape_jobs took 441.41 seconds
+2025-03-01 13:39:02 | INFO | Found 15 jobs from scraping
+2025-03-01 13:39:02 | INFO | Storing jobs in database...
+2025-03-01 13:39:02 | INFO | Found 0 new jobs to store
+2025-03-01 13:39:02 | INFO | No new jobs to store
+2025-03-01 13:39:07 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 13:39:07 | INFO | Function scrape_and_process_jobs took 446.46 seconds
+2025-03-01 13:41:12 | INFO | Shutting down the application...
+2025-03-01 13:41:12 | INFO | Application shutdown completed successfully
+2025-03-01 13:41:16 | INFO | Starting up the application...
+2025-03-01 13:41:17 | INFO | Scheduler initialized successfully
+2025-03-01 13:41:17 | INFO | Application startup completed successfully
+2025-03-01 13:41:19 | INFO | Starting scraping task
+2025-03-01 13:41:19 | INFO | Starting job scraping at 2025-03-01 13:41:19.976675
+2025-03-01 13:41:22 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 13:41:30 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 13:41:40 | INFO | Function collect_job_urls took 9.86 seconds
+2025-03-01 13:41:40 | INFO | Found 20 job URLs
+2025-03-01 13:42:32 | INFO | Successfully scraped job: Tower Research Capital is hiring for Software Engineer | Gurugram
+2025-03-01 13:42:54 | INFO | Successfully scraped job: Flywire is hiring for Software Engineer I | Remote | Freshers
+2025-03-01 13:43:26 | INFO | Successfully scraped job: Zebra Technologies is hiring for Software Engineer, I | Freshers (0-2 years)
+2025-03-01 13:43:44 | INFO | Successfully scraped job: CrowdStrike is hiring for Engineering Intern | Pune
+2025-03-01 13:44:03 | INFO | Successfully scraped job: Proso.ai is hiring for Junior Software Engineer | Noida
+2025-03-01 13:44:20 | INFO | Successfully scraped job: Nykaa is hiring for Frontend Developer | Gurugram
+2025-03-01 13:44:40 | INFO | Successfully scraped job: Credit Saison Finance Pvt Ltd is hiring for Software Developer | Remote
+2025-03-01 13:44:58 | INFO | Successfully scraped job: Comcast is hiring for Engineer 1, Software Development & Engineering | Chennai
+2025-03-01 13:45:15 | INFO | Successfully scraped job: WMall is hiring for Fullstack Developer | Bengaluru
+2025-03-01 13:45:33 | INFO | Successfully scraped job: Newton School is hiring for Software Engineer | Bangalore
+2025-03-01 13:45:52 | INFO | Successfully scraped job: Harman is hiring for Graduate Hire | Bangalore
+2025-03-01 13:46:09 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 13:46:28 | INFO | Successfully scraped job: CreateBytes is hiring for Frontend Developer | Jaipur
+2025-03-01 13:46:46 | INFO | Successfully scraped job: Mr. Cooper Group is hiring for Software Engineer | Chennai
+2025-03-01 13:47:04 | INFO | Successfully scraped job: Egnyte is hiring for Jr Software Engineer | Remote
+2025-03-01 13:48:20 | INFO | Function scrape_jobs took 420.24 seconds
+2025-03-01 13:48:20 | INFO | Found 15 jobs from scraping
+2025-03-01 13:48:20 | INFO | Storing jobs in database...
+2025-03-01 13:48:21 | INFO | Found 0 new jobs to store
+2025-03-01 13:48:21 | INFO | No new jobs to store
+2025-03-01 13:48:25 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 13:48:25 | INFO | Function scrape_and_process_jobs took 425.84 seconds
+2025-03-01 13:48:29 | INFO | Shutting down the application...
+2025-03-01 13:48:29 | INFO | Application shutdown completed successfully
+2025-03-01 13:48:39 | INFO | Starting up the application...
+2025-03-01 13:48:40 | INFO | Scheduler initialized successfully
+2025-03-01 13:48:40 | INFO | Application startup completed successfully
+2025-03-01 13:49:00 | INFO | Starting scraping task
+2025-03-01 13:49:00 | INFO | Starting job scraping at 2025-03-01 13:49:00.137836
+2025-03-01 13:49:03 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-01 13:49:11 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-01 13:49:15 | INFO | Function collect_job_urls took 4.04 seconds
+2025-03-01 13:49:15 | INFO | Found 20 job URLs
+2025-03-01 13:49:51 | INFO | Successfully scraped job: Robert Half is hiring for Mobile Engineer
+2025-03-01 13:50:07 | INFO | Successfully scraped job: Bottomline is hiring for Software Engineer
+2025-03-01 13:50:19 | INFO | Successfully scraped job: Parsley Health is hiring for Front-End Software Engineer
+2025-03-01 13:50:36 | INFO | Successfully scraped job: CrowdStrike is hiring for Front End Software Engineer
+2025-03-01 13:50:50 | INFO | Successfully scraped job: J. J. Keller is hiring for Developer Intern
+2025-03-01 13:51:01 | INFO | Successfully scraped job: Dapper Labs is hiring for Frontend Software Engineering Intern
+2025-03-01 13:51:16 | INFO | Successfully scraped job: Calix is hiring for Software Engineering Intern
+2025-03-01 13:51:31 | INFO | Successfully scraped job: Myriad Genetics is hiring for Software Engineering Technology Intern
+2025-03-01 13:51:40 | INFO | Successfully scraped job: ThredUp is hiring for Software Engineering Intern
+2025-03-01 13:51:51 | INFO | Successfully scraped job: Scale is hiring for Software Engineer
+2025-03-01 13:52:07 | INFO | Successfully scraped job: Optum is hiring for Data Analyst
+2025-03-01 13:53:10 | INFO | Function scrape_jobs took 249.97 seconds
+2025-03-01 13:53:10 | INFO | Found 11 jobs from scraping
+2025-03-01 13:53:10 | INFO | Storing jobs in database...
+2025-03-01 13:53:11 | INFO | Found 11 new jobs to store
+2025-03-01 13:53:11 | INFO | Successfully stored 11 new jobs
+2025-03-01 13:53:18 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 13:53:18 | INFO | Function scrape_and_process_jobs took 258.09 seconds
+2025-03-01 13:53:18 | INFO | Starting scraping task
+2025-03-01 13:53:18 | INFO | Starting job scraping at 2025-03-01 13:53:18.247959
+2025-03-01 13:53:20 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-01 13:53:30 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-01 13:53:36 | INFO | Function collect_job_urls took 6.05 seconds
+2025-03-01 13:53:36 | INFO | Found 20 job URLs
+2025-03-01 13:54:15 | INFO | Successfully scraped job: Robert Half is hiring for Mobile Engineer
+2025-03-01 13:54:29 | INFO | Successfully scraped job: Bottomline is hiring for Software Engineer
+2025-03-01 13:54:42 | INFO | Successfully scraped job: Parsley Health is hiring for Front-End Software Engineer
+2025-03-01 13:55:02 | INFO | Successfully scraped job: CrowdStrike is hiring for Front End Software Engineer
+2025-03-01 13:55:12 | INFO | Successfully scraped job: J. J. Keller is hiring for Developer Intern
+2025-03-01 13:55:20 | INFO | Successfully scraped job: Dapper Labs is hiring for Frontend Software Engineering Intern
+2025-03-01 13:55:30 | INFO | Successfully scraped job: Calix is hiring for Software Engineering Intern
+2025-03-01 13:55:40 | INFO | Successfully scraped job: Myriad Genetics is hiring for Software Engineering Technology Intern
+2025-03-01 13:55:48 | INFO | Successfully scraped job: ThredUp is hiring for Software Engineering Intern
+2025-03-01 13:55:56 | INFO | Successfully scraped job: Scale is hiring for Software Engineer
+2025-03-01 13:56:05 | INFO | Successfully scraped job: Optum is hiring for Data Analyst
+2025-03-01 13:57:10 | INFO | Function scrape_jobs took 232.00 seconds
+2025-03-01 13:57:10 | INFO | Found 11 jobs from scraping
+2025-03-01 13:57:10 | INFO | Storing jobs in database...
+2025-03-01 13:57:11 | INFO | Found 0 new jobs to store
+2025-03-01 13:57:11 | INFO | No new jobs to store
+2025-03-01 13:57:14 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 13:57:15 | INFO | Function scrape_and_process_jobs took 236.80 seconds
+2025-03-01 14:19:41 | INFO | Shutting down the application...
+2025-03-01 14:19:41 | INFO | Application shutdown completed successfully
+2025-03-01 14:19:45 | INFO | Starting up the application...
+2025-03-01 14:19:46 | INFO | Scheduler initialized successfully
+2025-03-01 14:19:46 | INFO | Application startup completed successfully
+2025-03-01 14:20:50 | INFO | Shutting down the application...
+2025-03-01 14:20:50 | INFO | Application shutdown completed successfully
+2025-03-01 14:20:53 | INFO | Starting up the application...
+2025-03-01 14:20:54 | INFO | Scheduler initialized successfully
+2025-03-01 14:20:54 | INFO | Application startup completed successfully
+2025-03-01 14:20:56 | INFO | Starting scraping task
+2025-03-01 14:20:56 | INFO | Starting job scraping at 2025-03-01 14:20:56.960925
+2025-03-01 14:21:04 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-01 14:21:14 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-01 14:21:18 | INFO | Function collect_job_urls took 3.67 seconds
+2025-03-01 14:21:18 | INFO | Found 20 job URLs
+2025-03-01 14:21:56 | INFO | Successfully scraped job: Robert Half is hiring for Mobile Engineer
+2025-03-01 14:22:09 | INFO | Successfully scraped job: Bottomline is hiring for Software Engineer
+2025-03-01 14:22:20 | INFO | Successfully scraped job: Parsley Health is hiring for Front-End Software Engineer
+2025-03-01 14:22:37 | INFO | Successfully scraped job: CrowdStrike is hiring for Front End Software Engineer
+2025-03-01 14:22:52 | INFO | Successfully scraped job: J. J. Keller is hiring for Developer Intern
+2025-03-01 14:23:03 | INFO | Successfully scraped job: Dapper Labs is hiring for Frontend Software Engineering Intern
+2025-03-01 14:23:22 | INFO | Successfully scraped job: Calix is hiring for Software Engineering Intern
+2025-03-01 14:23:34 | INFO | Successfully scraped job: Myriad Genetics is hiring for Software Engineering Technology Intern
+2025-03-01 14:23:46 | INFO | Successfully scraped job: ThredUp is hiring for Software Engineering Intern
+2025-03-01 14:23:58 | INFO | Successfully scraped job: Scale is hiring for Software Engineer
+2025-03-01 14:24:14 | INFO | Successfully scraped job: Optum is hiring for Data Analyst
+2025-03-01 14:25:22 | INFO | Function scrape_jobs took 265.18 seconds
+2025-03-01 14:25:22 | INFO | Found 11 jobs from scraping
+2025-03-01 14:25:22 | INFO | Storing jobs in database...
+2025-03-01 14:25:22 | INFO | Found 0 new jobs to store
+2025-03-01 14:25:22 | INFO | No new jobs to store
+2025-03-01 14:25:27 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 14:25:27 | INFO | Function scrape_and_process_jobs took 270.84 seconds
+2025-03-01 14:43:37 | INFO | Shutting down the application...
+2025-03-01 14:43:37 | INFO | Application shutdown completed successfully
+2025-03-01 14:43:39 | INFO | Starting up the application...
+2025-03-01 14:43:40 | INFO | Scheduler initialized successfully
+2025-03-01 14:43:40 | INFO | Application startup completed successfully
+2025-03-01 14:43:40 | INFO | Shutting down the application...
+2025-03-01 14:43:40 | INFO | Application shutdown completed successfully
+2025-03-01 14:43:47 | INFO | Starting up the application...
+2025-03-01 14:43:48 | INFO | Scheduler initialized successfully
+2025-03-01 14:43:48 | INFO | Application startup completed successfully
+2025-03-01 14:43:48 | INFO | Shutting down the application...
+2025-03-01 14:43:48 | INFO | Application shutdown completed successfully
+2025-03-01 14:43:53 | INFO | Starting up the application...
+2025-03-01 14:43:53 | INFO | Scheduler initialized successfully
+2025-03-01 14:43:53 | INFO | Application startup completed successfully
+2025-03-01 14:52:59 | INFO | Shutting down the application...
+2025-03-01 14:52:59 | INFO | Application shutdown completed successfully
+2025-03-01 14:53:02 | INFO | Starting up the application...
+2025-03-01 14:53:03 | INFO | Scheduler initialized successfully
+2025-03-01 14:53:03 | INFO | Application startup completed successfully
+2025-03-01 14:57:59 | INFO | Shutting down the application...
+2025-03-01 14:57:59 | INFO | Application shutdown completed successfully
+2025-03-01 14:58:58 | INFO | Starting up the application...
+2025-03-01 14:58:59 | INFO | Scheduler initialized successfully
+2025-03-01 14:58:59 | INFO | Application startup completed successfully
+2025-03-01 15:12:24 | INFO | Starting up the application...
+2025-03-01 15:12:24 | INFO | Scheduler initialized successfully
+2025-03-01 15:12:24 | INFO | Application startup completed successfully
+2025-03-01 15:12:27 | INFO | Starting job scraping at 2025-03-01 15:12:27.895943
+2025-03-01 15:12:30 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 15:12:34 | ERROR | Scraping failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+Traceback (most recent call last):
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1374, in getresponse
+    response.begin()
+  File "C:\Users\Prasanth\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+ConnectionResetError: [WinError 10054] An existing connection was forcibly closed by the remote host
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Prasanth\Desktop\webscrapper\job_scraper\backend\app\services\scraper_service.py", line 846, in scrape_jobs
+    self.driver.get(JOB_PAGE_URL)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 427, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 404, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 428, in _request
+    response = self._conn.request(method, url, body=body, headers=headers, timeout=self._client_config.timeout)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\_request_methods.py", line 143, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\_request_methods.py", line 278, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\poolmanager.py", line 443, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\util\retry.py", line 474, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\util\util.py", line 38, in reraise
+    raise value.with_traceback(tb)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\urllib3\connection.py", line 516, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 1374, in getresponse
+    response.begin()
+  File "C:\Users\Prasanth\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 318, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\AppData\Local\Programs\Python\Python311\Lib\http\client.py", line 279, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Prasanth\AppData\Local\Programs\Python\Python311\Lib\socket.py", line 706, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.ProtocolError: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+
+2025-03-01 15:12:54 | ERROR | Function scrape_jobs failed after 26.98 seconds: Job scraping failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-03-01 15:12:54 | WARNING | Attempt 1/3 failed: Job scraping failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-03-01 15:12:59 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 15:13:04 | WARNING | Page load failed for https://www.jobfound.org/: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-03-01 15:13:04 | WARNING | Attempt 1/2 failed: ('Connection aborted.', ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None))
+2025-03-01 15:14:04 | INFO | Starting up the application...
+2025-03-01 15:14:04 | INFO | Scheduler initialized successfully
+2025-03-01 15:14:04 | INFO | Application startup completed successfully
+2025-03-01 15:14:07 | INFO | Starting scraping task
+2025-03-01 15:14:07 | INFO | Starting job scraping at 2025-03-01 15:14:07.245823
+2025-03-01 15:14:10 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 15:14:23 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 15:14:34 | INFO | Function collect_job_urls took 10.55 seconds
+2025-03-01 15:14:34 | INFO | Found 20 job URLs
+2025-03-01 15:15:02 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:15:09 | INFO | Successfully scraped job: Software Developer
+2025-03-01 15:15:16 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:15:23 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 15:15:54 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 15:15:57 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 15:16:06 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 15:16:09 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 15:16:16 | INFO | Successfully scraped job: Software Developer
+2025-03-01 15:16:19 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 15:16:24 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 15:16:26 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:16:29 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 15:16:32 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 15:16:36 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 15:16:39 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:16:45 | INFO | Successfully scraped job: Jr Software Engineer
+2025-03-01 15:16:54 | INFO | Function scrape_jobs took 166.06 seconds
+2025-03-01 15:16:54 | INFO | Found 17 jobs from scraping
+2025-03-01 15:16:54 | INFO | Storing jobs in database...
+2025-03-01 15:16:54 | INFO | Found 2 new jobs to store
+2025-03-01 15:16:54 | INFO | Successfully stored 2 new jobs
+2025-03-01 15:16:59 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 15:17:00 | INFO | Function scrape_and_process_jobs took 172.92 seconds
+2025-03-01 15:25:26 | INFO | Shutting down the application...
+2025-03-01 15:25:26 | INFO | Application shutdown completed successfully
+2025-03-01 15:25:30 | INFO | Starting up the application...
+2025-03-01 15:25:30 | INFO | Scheduler initialized successfully
+2025-03-01 15:25:30 | INFO | Application startup completed successfully
+2025-03-01 15:25:37 | INFO | Starting scraping task
+2025-03-01 15:25:37 | INFO | Starting job scraping at 2025-03-01 15:25:37.935296
+2025-03-01 15:25:40 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 15:25:49 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 15:26:06 | INFO | Function collect_job_urls took 16.65 seconds
+2025-03-01 15:26:06 | INFO | Found 20 job URLs
+2025-03-01 15:26:14 | INFO | Successfully scraped job: Software Developer
+2025-03-01 15:26:21 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 15:26:27 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:26:31 | INFO | Successfully scraped job: Software Developer
+2025-03-01 15:26:38 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:26:44 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 15:27:01 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 15:27:04 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 15:27:12 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 15:27:15 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 15:27:21 | INFO | Successfully scraped job: Software Developer
+2025-03-01 15:27:24 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 15:27:29 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 15:27:34 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:27:39 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 15:27:41 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 15:27:45 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 15:27:48 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:27:53 | INFO | Successfully scraped job: Jr Software Engineer
+2025-03-01 15:27:58 | INFO | Function scrape_jobs took 140.70 seconds
+2025-03-01 15:27:58 | INFO | Found 19 jobs from scraping
+2025-03-01 15:27:58 | INFO | Storing jobs in database...
+2025-03-01 15:27:59 | INFO | Found 2 new jobs to store
+2025-03-01 15:27:59 | INFO | Successfully stored 2 new jobs
+2025-03-01 15:28:04 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 15:28:04 | INFO | Function scrape_and_process_jobs took 146.32 seconds
+2025-03-01 15:38:43 | INFO | Shutting down the application...
+2025-03-01 15:38:43 | INFO | Application shutdown completed successfully
+2025-03-01 15:38:47 | INFO | Starting up the application...
+2025-03-01 15:38:47 | INFO | Scheduler initialized successfully
+2025-03-01 15:38:47 | INFO | Application startup completed successfully
+2025-03-01 15:38:48 | INFO | Starting scraping task
+2025-03-01 15:38:48 | INFO | Starting job scraping at 2025-03-01 15:38:48.810326
+2025-03-01 15:38:51 | INFO | Accessing https://www.jobfound.org/
+2025-03-01 15:38:56 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-01 15:39:14 | INFO | Function collect_job_urls took 17.61 seconds
+2025-03-01 15:39:14 | INFO | Found 20 job URLs
+2025-03-01 15:39:43 | INFO | Successfully scraped job: Fullstack Developer Intern
+2025-03-01 15:39:50 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:39:55 | INFO | Successfully scraped job: Software Developer
+2025-03-01 15:40:02 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:40:09 | INFO | Successfully scraped job: Software Engineer I
+2025-03-01 15:40:31 | INFO | Successfully scraped job: Software Engineer, I
+2025-03-01 15:40:34 | INFO | Successfully scraped job: Engineering Intern
+2025-03-01 15:40:44 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-01 15:40:48 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 15:40:54 | INFO | Successfully scraped job: Software Developer
+2025-03-01 15:40:57 | INFO | Successfully scraped job: Engineer 1, Software Development & Engineering
+2025-03-01 15:41:01 | INFO | Successfully scraped job: Fullstack Developer
+2025-03-01 15:41:06 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:41:09 | INFO | Successfully scraped job: Graduate Hire
+2025-03-01 15:41:12 | INFO | Successfully scraped job: Flipkart Runway Season 5: Empowering Women Engineers for a Future in Tech
+2025-03-01 15:41:15 | INFO | Successfully scraped job: Frontend Developer
+2025-03-01 15:41:19 | INFO | Successfully scraped job: Software Engineer
+2025-03-01 15:41:23 | INFO | Successfully scraped job: Jr Software Engineer
+2025-03-01 15:41:29 | INFO | Function scrape_jobs took 160.99 seconds
+2025-03-01 15:41:29 | INFO | Found 18 jobs from scraping
+2025-03-01 15:41:29 | INFO | Storing jobs in database...
+2025-03-01 15:41:30 | INFO | Found 0 new jobs to store
+2025-03-01 15:41:30 | INFO | No new jobs to store
+2025-03-01 15:41:35 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-01 15:41:35 | INFO | Function scrape_and_process_jobs took 166.85 seconds
+2025-03-01 15:47:18 | INFO | Shutting down the application...
+2025-03-01 15:47:18 | INFO | Application shutdown completed successfully

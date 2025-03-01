@@ -1,4 +1,5 @@
 import datetime
+import re
 import time
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -90,49 +91,6 @@ class JobScraper:
             self.db.rollback()
             logger.error(f"Error storing jobs: {str(e)}")
             raise
-
-    def optimize_page_load(self):
-        """Configure driver for faster page loading"""
-        prefs = {
-            "profile.default_content_setting_values": {
-                "images": 2,  # Disable images
-                "plugins": 2,  # Disable plugins
-                "popups": 2,  # Disable popups
-                "geolocation": 2,  # Disable geolocation
-                "notifications": 2,  # Disable notifications
-                "auto_select_certificate": 2,  # Disable SSL selection
-                "fullscreen": 2,  # Disable fullscreen
-                "mouselock": 2,  # Disable mouselock
-                "mixed_script": 2,  # Disable mixed script
-                "media_stream": 2,  # Disable media stream
-                "media_stream_mic": 2,  # Disable mic
-                "media_stream_camera": 2,  # Disable camera
-                "protocol_handlers": 2,  # Disable protocol handlers
-                "ppapi_broker": 2,  # Disable broker
-                "automatic_downloads": 2,  # Disable automatic downloads
-                "midi_sysex": 2,  # Disable midi
-                "push_messaging": 2,  # Disable push
-                "ssl_cert_decisions": 2,  # Disable SSL cert decisions
-                "metro_switch_to_desktop": 2,  # Disable metro switch
-                "protected_media_identifier": 2,  # Disable protected media
-                "app_banner": 2,  # Disable app banner
-                "site_engagement": 2,  # Disable site engagement
-                "durable_storage": 2,  # Disable durable storage
-            },
-            "disk-cache-size": 4096,
-            "profile.managed_default_content_settings.images": 2,
-        }
-        return prefs
-
-    def cleanup(self):
-        """Cleanup browser resources"""
-        try:
-            if self.driver:
-                self.driver.quit()
-                self.driver = None
-                self.wait = None
-        except Exception as e:
-            logger.error(f"Error during cleanup: {str(e)}")
 
     def init_driver(self):
         """Initialize optimized Chrome driver"""
@@ -365,33 +323,28 @@ class JobScraper:
 
     @retry_on_exception(retries=2, delay=0.5)
     def extract_job_data(self, detail_url: str) -> Optional[Dict[str, Any]]:
-        """Optimized job data extraction"""
+        """Enhanced job data extraction with HTML description and better company name extraction"""
         try:
             if not self.safe_page_load(detail_url):
                 return None
 
-            # Get all elements in one go to reduce DOM queries
+            # Get all elements in one go
             elements = {
                 "time": self.get_element_safely(By.TAG_NAME, "time"),
-                "title": self.get_element_safely(
+                "title_element": self.get_element_safely(
                     By.XPATH, "//time/following-sibling::span//h1"
                 ),
                 "details": self.get_element_safely(
                     By.CSS_SELECTOR,
                     "div.flex.flex-wrap.my-3\\.5.gap-2.items-center.text-xs",
                 ),
-                "company": self.get_element_safely(
-                    By.CSS_SELECTOR, "div.company-name, span.company-name"
-                ),
-                "location": self.get_element_safely(
-                    By.CSS_SELECTOR, "div.location, span.location"
-                ),
-                "description": self.get_element_safely(
-                    By.CSS_SELECTOR, "div.job-description, div.description"
+                "description_container": self.get_element_safely(
+                    By.XPATH,
+                    "//time/following-sibling::span[2]//div[contains(@class, 'prose')]",
                 ),
             }
 
-            if not elements["time"] or not elements["title"]:
+            if not elements["time"] or not elements["title_element"]:
                 return None
 
             # Process date
@@ -404,6 +357,22 @@ class JobScraper:
             if posting_date not in [today, yesterday]:
                 return None
 
+            # Extract full title
+            full_title = elements["title_element"].text.strip()
+
+            # Extract company name from title
+            company_name = self.extract_company_name(full_title)
+
+            # Extract location from title
+            title_parts = full_title.split("|")
+            location = title_parts[1].strip() if len(title_parts) > 1 else "N/A"
+
+            # Clean job title - remove company name and "is hiring for" part
+            job_title = full_title.split("|")[0] if "|" in full_title else full_title
+            job_title = (
+                job_title.replace(company_name, "").replace("is hiring for", "").strip()
+            )
+
             # Extract details
             details = {"job_type": "N/A", "salary": "N/A", "experience": "N/A"}
             if elements["details"]:
@@ -415,30 +384,127 @@ class JobScraper:
                 if len(spans) > 2:
                     details["experience"] = spans[2].text.strip()
 
+            # Get complete HTML content of description
+            description_html = self.get_description_html(
+                elements["description_container"]
+            )
+
             return {
                 "detail_url": detail_url,
-                "job_title": elements["title"].text.strip(),
+                "job_title": job_title,
                 "posting_date": posting_date.strftime("%d %B %Y"),
                 "job_type": details["job_type"],
                 "salary": details["salary"],
                 "experience": details["experience"],
                 "apply_link": self.get_apply_link(detail_url),
-                "company_name": (
-                    elements["company"].text.strip() if elements["company"] else "N/A"
-                ),
-                "location": (
-                    elements["location"].text.strip() if elements["location"] else "N/A"
-                ),
-                "description": (
-                    elements["description"].text.strip()
-                    if elements["description"]
-                    else "N/A"
-                ),
+                "company_name": company_name,
+                "location": location,
+                "description": description_html,
             }
 
         except Exception as e:
             logger.error(f"Error extracting job data from {detail_url}: {str(e)}")
             return None
+
+    def extract_company_name(self, title: str) -> str:
+        """Extract company name from job title"""
+        try:
+            # Split title by "is hiring"
+            if "is hiring" in title:
+                company_name = title.split("is hiring")[0].strip()
+                return company_name
+            return "N/A"
+        except Exception as e:
+            logger.error(f"Error extracting company name: {str(e)}")
+            return "N/A"
+
+    def get_description_html(self, description_container) -> str:
+        """Get the HTML content removing all class attributes including main container"""
+        try:
+            if not description_container:
+                return "N/A"
+
+            # Get the raw HTML and clean it using JavaScript
+            clean_html = self.driver.execute_script(
+                """
+                function cleanHTML(element) {
+                    // Create a new div element
+                    const container = document.createElement('div');
+                    
+                    // Copy the content
+                    container.innerHTML = element.innerHTML;
+                    
+                    // Function to clean all elements
+                    function cleanElement(el) {
+                        // Remove all attributes except href and src
+                        const attrs = el.attributes;
+                        if (attrs) {
+                            for (let i = attrs.length - 1; i >= 0; i--) {
+                                const attrName = attrs[i].name;
+                                if (!['href', 'src'].includes(attrName)) {
+                                    el.removeAttribute(attrName);
+                                }
+                            }
+                        }
+                        
+                        // Clean all child elements
+                        el.childNodes.forEach(child => {
+                            if (child.nodeType === 1) { // Element node
+                                cleanElement(child);
+                            }
+                        });
+                    }
+                    
+                    // Clean the container and all its children
+                    cleanElement(container);
+                    
+                    return container.outerHTML;
+                }
+                return cleanHTML(arguments[0]);
+            """,
+                description_container,
+            )
+
+            if clean_html:
+                # Additional formatting for better readability
+                clean_html = self.driver.execute_script(
+                    """
+                    function formatHTML(html) {
+                        const temp = document.createElement('div');
+                        temp.innerHTML = html;
+                        
+                        // Remove empty elements except br and hr
+                        function removeEmpty(element) {
+                            Array.from(element.children).forEach(child => {
+                                if (!['br', 'hr'].includes(child.tagName.toLowerCase()) && 
+                                    !child.textContent.trim()) {
+                                    child.remove();
+                                } else {
+                                    removeEmpty(child);
+                                }
+                            });
+                        }
+                        
+                        removeEmpty(temp);
+                        
+                        // Basic formatting
+                        return temp.innerHTML
+                            .replace(/>\s+</g, '>\n<')  // Add newline between tags
+                            .replace(/(<\/[^>]+>)/g, '$1\n')  // Add newline after closing tags
+                            .replace(/(<[^\/][^>]*>)(?!\n)/g, '$1\n')  // Add newline after opening tags
+                            .trim();
+                    }
+                    return formatHTML(arguments[0]);
+                """,
+                    clean_html,
+                )
+
+                return f"<div>{clean_html}</div>"
+            return "N/A"
+
+        except Exception as e:
+            logger.error(f"Error getting description HTML: {str(e)}")
+            return "N/A"
 
     @retry_on_exception()
     @log_execution_time
