@@ -209,21 +209,21 @@ class JobScraper:
             self.wait = WebDriverWait(self.driver, self.config["element_timeout"])
 
             # Initial JavaScript optimizations
-            # self.driver.execute_script(
-            #     """
-            #     // Disable console logging
-            #     console.log = function() {};
-            #     console.warn = function() {};
-            #     console.error = function() {};
+            self.driver.execute_script(
+                """
+                // Disable console logging
+                console.log = function() {};
+                console.warn = function() {};
+                console.error = function() {};
 
-            #     // Disable analytics
-            #     window.ga = function() {};
-            #     window._gaq = [];
+                // Disable analytics
+                window.ga = function() {};
+                window._gaq = [];
 
-            #     // Clean up memory
-            #     if (window.gc) { window.gc(); }
-            # """
-            # )
+                // Clean up memory
+                if (window.gc) { window.gc(); }
+            """
+            )
 
             return True
 
@@ -277,49 +277,6 @@ class JobScraper:
             return element
         except Exception:
             return None
-
-    # @retry_on_exception(retries=3, delay=1)
-    # def get_apply_link(self, detail_url: str) -> str:
-    #     """Enhanced apply link extraction with better ad handling"""
-    #     try:
-    #         # First remove all ads and overlays
-    #         self.remove_all_overlays()
-
-    #         # Find the apply button
-    #         apply_button = self.wait.until(
-    #             EC.presence_of_element_located((By.CSS_SELECTOR, "div.pt-1 button"))
-    #         )
-
-    #         # Scroll into view with offset to avoid overlays
-    #         self.driver.execute_script(
-    #             "arguments[0].scrollIntoView({block: 'center', behavior: 'smooth'});",
-    #             apply_button,
-    #         )
-    #         time.sleep(1)  # Allow smooth scroll to complete
-
-    #         # Try multiple click strategies
-    #         try:
-    #             # Try regular click
-    #             apply_button.click()
-    #         except Exception:
-    #             try:
-    #                 # Try JavaScript click
-    #                 self.driver.execute_script("arguments[0].click();", apply_button)
-    #             except Exception:
-    #                 try:
-    #                     # Try Actions click
-    #                     ActionChains(self.driver).move_to_element(
-    #                         apply_button
-    #                     ).click().perform()
-    #                 except Exception:
-    #                     return detail_url
-
-    #         # Handle new window
-    #         return self.get_new_window_url(detail_url)
-
-    #     except Exception as e:
-    #         logger.warning(f"Error getting apply link: {str(e)}")
-    #         return detail_url
 
     @retry_on_exception(retries=3, delay=1)
     def get_apply_link(self, detail_url: str) -> str:
