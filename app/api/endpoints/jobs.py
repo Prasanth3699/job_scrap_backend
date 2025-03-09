@@ -1,7 +1,7 @@
 from fastapi import APIRouter, BackgroundTasks, Depends, HTTPException, Query
 from sqlalchemy.orm import Session
 from typing import Dict, List, Optional
-
+from pydantic import BaseModel
 from app.tasks import run_scraping_job
 from ...utils.task_lock import RedisLock
 from ...db.session import get_db
@@ -41,29 +41,48 @@ async def trigger_scrape(source_id: Optional[int] = None):
         raise HTTPException(status_code=500, detail="Failed to queue scraping job")
 
 
-# @router.post("/scrape", response_model=dict)
-# async def trigger_scrape(
-#     background_tasks: BackgroundTasks, db: Session = Depends(get_db)
-# ):
-#     """Trigger job scraping manually"""
-#     try:
-#         await background_tasks.add_task(scrape_and_process_jobs)
-#         return {"message": "Job scraping started", "status": "success"}
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
+class JobsResponse(BaseModel):
+    jobs: List[JobResponse]
+    total: int
+    hasMore: bool
 
 
-@router.get("", response_model=List[JobResponse])
+@router.get("", response_model=JobsResponse)
 async def get_jobs(
     db: Session = Depends(get_db),
-    skip: int = Query(DEFAULT_OFFSET, ge=0),
+    page: int = Query(1, ge=1),
     limit: int = Query(DEFAULT_LIMIT, ge=1, le=100),
+    search: Optional[str] = None,
+    location: Optional[List[str]] = Query(None),
+    job_type: Optional[List[str]] = Query(None),
+    experience: Optional[List[str]] = Query(None),
+    salary_min: Optional[float] = None,
+    salary_max: Optional[float] = None,
 ):
-    """Get scraped jobs"""
+    """Get jobs with filters and pagination"""
     try:
         repo = JobRepository(db)
-        return repo.get_jobs(skip=skip, limit=limit)
+        skip = (page - 1) * limit
+
+        # Get filtered jobs
+        jobs, total = repo.get_filtered_jobs(
+            skip=skip,
+            limit=limit + 1,  # Get one extra to check if there are more
+            search=search,
+            location=location,
+            job_type=job_type,
+            experience=experience,
+            salary_min=salary_min,
+            salary_max=salary_max,
+        )
+
+        # Check if there are more results
+        has_more = len(jobs) > limit
+        jobs = jobs[:limit]  # Remove the extra item
+
+        return JobsResponse(jobs=jobs, total=total, hasMore=has_more)
     except Exception as e:
+        logger.error(f"Error getting jobs: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -79,7 +98,7 @@ async def get_recent_jobs(
         raise HTTPException(status_code=500, detail=str(e))
 
 
-@router.get("/jobs/{job_id}", response_model=JobResponse)
+@router.get("/{job_id}", response_model=JobResponse)
 async def get_job(job_id: int, db: Session = Depends(get_db)):
     """Get a specific job by ID"""
     repo = JobRepository(db)
@@ -87,3 +106,17 @@ async def get_job(job_id: int, db: Session = Depends(get_db)):
     if not job:
         raise HTTPException(status_code=404, detail="Job not found")
     return job
+
+
+@router.get("/{job_id}/related", response_model=List[JobResponse])
+async def get_related_jobs(
+    job_id: int, limit: int = Query(3, ge=1, le=10), db: Session = Depends(get_db)
+):
+    """Get related jobs based on current job"""
+    repo = JobRepository(db)
+    current_job = repo.get_by_id(job_id)
+    if not current_job:
+        raise HTTPException(status_code=404, detail="Job not found")
+
+    related_jobs = repo.get_related_jobs(current_job, limit)
+    return related_jobs

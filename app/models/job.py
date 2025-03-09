@@ -30,4 +30,7 @@ class Job(Base):
     __table_args__ = (
         Index("idx_job_title_company", job_title, company_name),
         Index("idx_posting_date", posting_date),
+        Index("idx_job_location", location),
+        Index("idx_job_type", job_type),
+        Index("idx_job_experience", experience),
     )

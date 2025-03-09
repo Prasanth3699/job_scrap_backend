@@ -8,6 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
 
+from app.middleware.rate_limit import RateLimitMiddleware
+
 load_dotenv()
 
 
@@ -28,6 +30,7 @@ def get_application():
     settings = SettingsService.get_settings(db)
 
     app = FastAPI(title=settings.app_name)
+    app.add_middleware(RateLimitMiddleware, requests_per_minute=60)
     app.include_router(api_router)
 
     # Configure CORS

@@ -59,6 +59,11 @@ class Settings(BaseSettings):
 
     allowed_origins: List[AnyHttpUrl] = []
 
+    # Websocket Settings
+    WS_SECRET_KEY: str = "1234567890"
+    APP2_URL: str = "http://localhost:8001"
+    REDIS_URL: str = "redis://localhost"
+
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
