@@ -811,3 +811,278 @@ WHERE jobs.detail_url = %(detail_url_1)s
 2025-03-09 19:12:24 | INFO | Scheduler initialized successfully
 2025-03-09 19:12:24 | INFO | Application startup completed successfully
 2025-03-09 22:47:27 | INFO | Starting job scraping at 2025-03-09 22:47:27.387754 for source_id: None
+2025-03-09 22:47:28 | INFO | Found 2 active sources to scrape
+2025-03-09 22:47:28 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-09 22:47:53 | INFO | Accessing https://www.jobfound.org/
+2025-03-09 22:47:59 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-09 22:48:16 | INFO | Function collect_job_urls took 16.86 seconds
+2025-03-09 22:48:16 | INFO | Found 20 job URLs
+2025-03-09 22:48:50 | INFO | Successfully scraped job: Full Stack Engineer Intern
+2025-03-09 22:48:54 | INFO | Successfully scraped job: Full Stack Developer
+2025-03-09 22:49:20 | INFO | Successfully scraped job: Digital Web Developer
+2025-03-09 22:49:24 | INFO | Successfully scraped job: Developer Intern
+2025-03-09 22:49:34 | INFO | Successfully scraped job: Software Engineer, Emerging Talent
+2025-03-09 22:49:38 | INFO | Successfully scraped job: SDE-1
+2025-03-09 22:49:47 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-09 22:49:50 | INFO | Successfully scraped job: Frontend Developer Intern
+2025-03-09 22:49:58 | INFO | Successfully scraped job: Product Engineer
+2025-03-09 22:50:02 | INFO | Successfully scraped job: Fresher : Software Engineer
+2025-03-09 22:50:04 | INFO | Successfully scraped job: Software Engineer
+2025-03-09 22:50:07 | INFO | Successfully scraped job: Junior Software Engineer
+2025-03-09 22:50:09 | INFO | Successfully scraped job: Intern - Software Engineer
+2025-03-09 22:50:13 | INFO | Successfully scraped job: Frontend Developer (React, Next.js)
+2025-03-09 22:50:15 | INFO | Successfully scraped job: Software Engineer
+2025-03-09 22:50:20 | INFO | Successfully scraped job: Software Engineer - I
+2025-03-09 22:50:23 | INFO | Successfully scraped job: Full-Stack Developer
+2025-03-09 22:50:30 | INFO | Successfully scraped job: Software Developer
+2025-03-09 22:50:33 | INFO | Successfully scraped job: Frontend Developer Intern
+2025-03-09 22:50:36 | INFO | Function scrape_jobs took 188.01 seconds
+2025-03-09 22:50:36 | INFO | Found 19 jobs from scraping source: JobFound Portal
+2025-03-09 22:50:37 | INFO | Found 19 new jobs to store from source: JobFound Portal
+2025-03-09 22:50:59 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-09 22:51:02 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-09 22:51:07 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-09 22:51:12 | INFO | Function collect_job_urls took 4.76 seconds
+2025-03-09 22:51:12 | INFO | Found 20 job URLs
+2025-03-09 22:51:42 | INFO | Successfully scraped job: Software Engineering - Intern
+2025-03-09 22:51:50 | INFO | Successfully scraped job: 2025 Intern - Software Engineer
+2025-03-09 22:51:57 | INFO | Successfully scraped job: Software Development in Test Intern
+2025-03-09 22:52:13 | INFO | Successfully scraped job: IT Systems Engineer
+2025-03-09 22:52:17 | INFO | Successfully scraped job: Software Engineer - Summer Internship
+2025-03-09 22:52:42 | INFO | Successfully scraped job: Machine Learning Engineer Intern
+2025-03-09 22:52:45 | INFO | Successfully scraped job: Front-end Developer
+2025-03-09 22:52:47 | INFO | Successfully scraped job: Frontend Developer
+2025-03-09 22:52:51 | INFO | Successfully scraped job: Software Engineer
+2025-03-09 22:52:54 | INFO | Successfully scraped job: Intern
+2025-03-09 22:53:07 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-09 22:53:09 | INFO | Successfully scraped job: Summer Intern Developer Specialist I
+2025-03-09 22:53:20 | INFO | Successfully scraped job: Software Engineering Intern
+2025-03-09 22:53:27 | INFO | Successfully scraped job: Technology - Summer Intern
+2025-03-09 22:53:36 | INFO | Successfully scraped job: Backend Engineer
+2025-03-09 22:53:40 | INFO | Successfully scraped job: Full Stack Engineer
+2025-03-09 22:53:44 | INFO | Successfully scraped job: QA Engineer I
+2025-03-09 22:53:49 | INFO | Function scrape_jobs took 170.40 seconds
+2025-03-09 22:53:49 | INFO | Found 17 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-09 22:53:51 | INFO | Found 9 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-09 22:54:23 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-09 22:54:23 | INFO | Function scrape_and_process_jobs took 415.93 seconds
+2025-03-10 21:58:54 | INFO | Starting job scraping at 2025-03-10 21:58:54.893188 for source_id: None
+2025-03-10 21:58:55 | INFO | Found 2 active sources to scrape
+2025-03-10 21:58:56 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-10 21:59:15 | INFO | Accessing https://www.jobfound.org/
+2025-03-10 21:59:29 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-10 21:59:58 | INFO | Function collect_job_urls took 28.74 seconds
+2025-03-10 21:59:58 | INFO | Found 20 job URLs
+2025-03-10 22:00:22 | INFO | Successfully scraped job: Software Engineer
+2025-03-10 22:00:26 | INFO | Successfully scraped job: Software Engineer
+2025-03-10 22:00:37 | INFO | Successfully scraped job: Cloud DevOps Engineer
+2025-03-10 22:00:43 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-10 22:00:45 | INFO | Successfully scraped job: Frontend Developer
+2025-03-10 22:00:48 | INFO | Successfully scraped job: Associate Engineer
+2025-03-10 22:00:53 | INFO | Successfully scraped job: Software Development Engineer
+2025-03-10 22:00:56 | INFO | Successfully scraped job: Jr Eng Software Eng
+2025-03-10 22:01:00 | INFO | Successfully scraped job: Software Development Engineer
+2025-03-10 22:01:07 | INFO | Successfully scraped job: Software Engineer Intern
+2025-03-10 22:01:10 | INFO | Successfully scraped job: Graduate Software Engineer
+2025-03-10 22:01:13 | INFO | Successfully scraped job: Software Engineer Intern
+2025-03-10 22:01:16 | INFO | Successfully scraped job: Data Engineer Associate
+2025-03-10 22:01:20 | INFO | Successfully scraped job: Full Stack Engineer Intern
+2025-03-10 22:01:23 | INFO | Successfully scraped job: Full Stack Developer
+2025-03-10 22:01:26 | INFO | Successfully scraped job: Digital Web Developer
+2025-03-10 22:01:33 | INFO | Successfully scraped job: Developer Intern
+2025-03-10 22:01:37 | INFO | Successfully scraped job: Software Engineer, Emerging Talent
+2025-03-10 22:01:39 | INFO | Successfully scraped job: SDE-1
+2025-03-10 22:01:43 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-10 22:01:47 | INFO | Function scrape_jobs took 171.20 seconds
+2025-03-10 22:01:47 | INFO | Found 20 jobs from scraping source: JobFound Portal
+2025-03-10 22:01:48 | INFO | Found 13 new jobs to store from source: JobFound Portal
+2025-03-10 22:02:09 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-10 22:02:17 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-10 22:02:20 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-10 22:02:25 | INFO | Function collect_job_urls took 4.56 seconds
+2025-03-10 22:02:25 | INFO | Found 20 job URLs
+2025-03-10 22:02:53 | INFO | Successfully scraped job: Software Developer: Generative AI
+2025-03-10 22:03:02 | INFO | Successfully scraped job: Software Engineering - Intern
+2025-03-10 22:03:11 | INFO | Successfully scraped job: 2025 Intern - Software Engineer
+2025-03-10 22:03:23 | INFO | Successfully scraped job: Software Development in Test Intern
+2025-03-10 22:03:47 | INFO | Successfully scraped job: Software Engineer - Summer Internship
+2025-03-10 22:04:13 | INFO | Successfully scraped job: Machine Learning Engineer Intern
+2025-03-10 22:04:45 | INFO | Function scrape_jobs took 155.58 seconds
+2025-03-10 22:04:45 | INFO | Found 6 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-10 22:04:45 | INFO | Found 1 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-10 22:05:11 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-10 22:05:11 | INFO | Function scrape_and_process_jobs took 376.74 seconds
+2025-03-11 07:49:54 | INFO | Application shutdown completed successfully
+2025-03-11 07:50:05 | INFO | Scheduler initialized successfully
+2025-03-11 07:50:05 | INFO | Application startup completed successfully
+2025-03-11 22:17:13 | INFO | Starting job scraping at 2025-03-11 22:17:13.831095 for source_id: None
+2025-03-11 22:17:14 | INFO | Found 2 active sources to scrape
+2025-03-11 22:17:15 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-11 22:17:53 | INFO | Accessing https://www.jobfound.org/
+2025-03-11 22:18:02 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-11 22:18:20 | INFO | Function collect_job_urls took 18.09 seconds
+2025-03-11 22:18:20 | INFO | Found 20 job URLs
+2025-03-11 22:18:52 | INFO | Successfully scraped job: Full Stack Developer, Intern
+2025-03-11 22:18:57 | INFO | Successfully scraped job: Software Engineer Intern
+2025-03-11 22:19:12 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-11 22:19:15 | INFO | Successfully scraped job: Software Engineer
+2025-03-11 22:19:27 | INFO | Successfully scraped job: SDE I - Frontend
+2025-03-11 22:19:48 | INFO | Successfully scraped job: Frontend Engineer
+2025-03-11 22:19:52 | INFO | Successfully scraped job: Full Stack Developer
+2025-03-11 22:19:56 | INFO | Successfully scraped job: QA Engineer, Software
+2025-03-11 22:20:00 | INFO | Successfully scraped job: Backend Software Intern (NodeJS & Typescript)
+2025-03-11 22:20:03 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-11 22:20:10 | INFO | Successfully scraped job: Mern Stack Developer
+2025-03-11 22:20:25 | INFO | Successfully scraped job: Intern - Engineering
+2025-03-11 22:20:29 | INFO | Successfully scraped job: Front End Engineer
+2025-03-11 22:20:33 | INFO | Successfully scraped job: Software Engineer
+2025-03-11 22:20:37 | INFO | Successfully scraped job: Software Engineer
+2025-03-11 22:21:10 | INFO | Successfully scraped job: Cloud DevOps Engineer
+2025-03-11 22:21:17 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-11 22:21:22 | INFO | Successfully scraped job: Frontend Developer
+2025-03-11 22:21:24 | INFO | Successfully scraped job: Associate Engineer
+2025-03-11 22:21:27 | INFO | Function scrape_jobs took 252.21 seconds
+2025-03-11 22:21:27 | INFO | Found 19 jobs from scraping source: JobFound Portal
+2025-03-11 22:21:28 | INFO | Found 13 new jobs to store from source: JobFound Portal
+2025-03-11 22:21:51 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-11 22:21:55 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-11 22:22:25 | WARNING | Page load failed for https://www.jobfound.org/remote: Message: timeout: Timed out receiving message from renderer: 28.278
+  (Session info: chrome=133.0.6943.143)
+Stacktrace:
+	GetHandleVerifier [0x002E0B43+25139]
+	(No symbol) [0x002713F4]
+	(No symbol) [0x001504E3]
+	(No symbol) [0x0014116B]
+	(No symbol) [0x00140EA1]
+	(No symbol) [0x0013ED80]
+	(No symbol) [0x0013F92D]
+	(No symbol) [0x0014BDF9]
+	(No symbol) [0x0015D2B5]
+	(No symbol) [0x00162BA6]
+	(No symbol) [0x0013FF3D]
+	(No symbol) [0x0015D07E]
+	(No symbol) [0x001DEA66]
+	(No symbol) [0x001BCDC6]
+	(No symbol) [0x0018BDE9]
+	(No symbol) [0x0018D124]
+	GetHandleVerifier [0x005E4373+3185251]
+	GetHandleVerifier [0x0060291A+3309578]
+	GetHandleVerifier [0x005FCF42+3286578]
+	GetHandleVerifier [0x00377AE0+643536]
+	(No symbol) [0x0027A20D]
+	(No symbol) [0x002770B8]
+	(No symbol) [0x00277257]
+	(No symbol) [0x00269E00]
+	BaseThreadInitThunk [0x75FE5D49+25]
+	RtlInitializeExceptionChain [0x7783CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7783CD71+561]
+	(No symbol) [0x00000000]
+
+2025-03-11 22:22:25 | WARNING | Attempt 1/2 failed: Message: timeout: Timed out receiving message from renderer: 28.278
+  (Session info: chrome=133.0.6943.143)
+Stacktrace:
+	GetHandleVerifier [0x002E0B43+25139]
+	(No symbol) [0x002713F4]
+	(No symbol) [0x001504E3]
+	(No symbol) [0x0014116B]
+	(No symbol) [0x00140EA1]
+	(No symbol) [0x0013ED80]
+	(No symbol) [0x0013F92D]
+	(No symbol) [0x0014BDF9]
+	(No symbol) [0x0015D2B5]
+	(No symbol) [0x00162BA6]
+	(No symbol) [0x0013FF3D]
+	(No symbol) [0x0015D07E]
+	(No symbol) [0x001DEA66]
+	(No symbol) [0x001BCDC6]
+	(No symbol) [0x0018BDE9]
+	(No symbol) [0x0018D124]
+	GetHandleVerifier [0x005E4373+3185251]
+	GetHandleVerifier [0x0060291A+3309578]
+	GetHandleVerifier [0x005FCF42+3286578]
+	GetHandleVerifier [0x00377AE0+643536]
+	(No symbol) [0x0027A20D]
+	(No symbol) [0x002770B8]
+	(No symbol) [0x00277257]
+	(No symbol) [0x00269E00]
+	BaseThreadInitThunk [0x75FE5D49+25]
+	RtlInitializeExceptionChain [0x7783CDEB+107]
+	RtlGetAppContainerNamedObjectPath [0x7783CD71+561]
+	(No symbol) [0x00000000]
+
+2025-03-11 22:22:38 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-11 22:22:43 | INFO | Function collect_job_urls took 5.02 seconds
+2025-03-11 22:22:43 | INFO | Found 20 job URLs
+2025-03-11 22:23:15 | INFO | Successfully scraped job: Frontend Developer
+2025-03-11 22:23:22 | INFO | Successfully scraped job: Lead Full-Stack SW Engineer & Partner
+2025-03-11 22:23:39 | INFO | Successfully scraped job: Full-Stack Engineer (Front-End Leaning)
+2025-03-11 22:23:44 | INFO | Successfully scraped job: Frontend Engineer
+2025-03-11 22:23:49 | INFO | Successfully scraped job: Software Developer
+2025-03-11 22:24:02 | INFO | Successfully scraped job: Web Developer
+2025-03-11 22:24:05 | INFO | Successfully scraped job: Software Developer
+2025-03-11 22:24:10 | INFO | Successfully scraped job: Software Engineer Intern
+2025-03-11 22:24:16 | INFO | Successfully scraped job: Artificial Intelligence Intern
+2025-03-11 22:25:08 | INFO | Function scrape_jobs took 197.33 seconds
+2025-03-11 22:25:08 | INFO | Found 9 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-11 22:25:08 | INFO | Found 9 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-11 22:25:38 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-11 22:25:38 | INFO | Function scrape_and_process_jobs took 504.81 seconds
+2025-03-11 22:35:19 | INFO | Application shutdown completed successfully
+2025-03-11 22:48:18 | INFO | Scheduler initialized successfully
+2025-03-11 22:48:18 | INFO | Application startup completed successfully
+2025-03-11 23:24:29 | INFO | Scheduler initialized successfully
+2025-03-11 23:24:29 | INFO | Application startup completed successfully
+2025-03-12 00:02:43 | INFO | Scheduler initialized successfully
+2025-03-12 00:02:43 | INFO | Application startup completed successfully
+2025-03-12 23:41:03 | INFO | Starting job scraping at 2025-03-12 23:41:03.559984 for source_id: None
+2025-03-12 23:41:05 | INFO | Found 2 active sources to scrape
+2025-03-12 23:41:05 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-03-12 23:42:00 | INFO | Accessing https://www.jobfound.org/
+2025-03-12 23:42:07 | INFO | Attempting to load URL: https://www.jobfound.org/
+2025-03-12 23:42:23 | INFO | Function collect_job_urls took 16.13 seconds
+2025-03-12 23:42:23 | INFO | Found 20 job URLs
+2025-03-12 23:42:51 | INFO | Successfully scraped job: Web Developer
+2025-03-12 23:42:58 | INFO | Successfully scraped job: Backend Developer
+2025-03-12 23:43:04 | INFO | Successfully scraped job: Software Engineer - Entry
+2025-03-12 23:43:10 | INFO | Successfully scraped job: Associate Software Development Engineer in Test
+2025-03-12 23:43:16 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-12 23:43:19 | INFO | Successfully scraped job: Frontend Developer
+2025-03-12 23:43:23 | INFO | Successfully scraped job: Software Engineer in Test
+2025-03-12 23:43:27 | INFO | Successfully scraped job: Frontend Developer Intern
+2025-03-12 23:43:33 | INFO | Successfully scraped job: Software Engineer I
+2025-03-12 23:43:54 | INFO | Successfully scraped job: Software Engineer
+2025-03-12 23:44:19 | INFO | Successfully scraped job: Software Engineer
+2025-03-12 23:44:21 | INFO | Successfully scraped job: Frontend Developer Intern
+2025-03-12 23:44:25 | INFO | Successfully scraped job: Software Engineer
+2025-03-12 23:44:27 | INFO | Successfully scraped job: Software Engineer
+2025-03-12 23:44:29 | INFO | Successfully scraped job: Associate Software Engineer 1
+2025-03-12 23:44:32 | INFO | Successfully scraped job: Software Development Engineer
+2025-03-12 23:44:36 | INFO | Successfully scraped job: Full Stack Developer, Intern
+2025-03-12 23:44:38 | INFO | Successfully scraped job: Software Engineer Intern
+2025-03-12 23:44:41 | INFO | Successfully scraped job: Associate Software Engineer
+2025-03-12 23:44:43 | INFO | Function scrape_jobs took 218.19 seconds
+2025-03-12 23:44:43 | INFO | Found 19 jobs from scraping source: JobFound Portal
+2025-03-12 23:44:45 | INFO | Found 16 new jobs to store from source: JobFound Portal
+2025-03-12 23:45:06 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-03-12 23:45:13 | INFO | Accessing https://www.jobfound.org/remote
+2025-03-12 23:45:22 | INFO | Attempting to load URL: https://www.jobfound.org/remote
+2025-03-12 23:45:27 | INFO | Function collect_job_urls took 4.95 seconds
+2025-03-12 23:45:27 | INFO | Found 20 job URLs
+2025-03-12 23:45:58 | INFO | Successfully scraped job: Web Application Developer
+2025-03-12 23:46:04 | INFO | Successfully scraped job: Data Engineer
+2025-03-12 23:46:09 | INFO | Successfully scraped job: Technical Intern
+2025-03-12 23:46:12 | INFO | Successfully scraped job: Founding Open-Source (Research) Engineer
+2025-03-12 23:46:19 | INFO | Successfully scraped job: Front End Developer
+2025-03-12 23:46:27 | INFO | Successfully scraped job: Frontend Developer
+2025-03-12 23:46:31 | INFO | Successfully scraped job: Lead Full-Stack SW Engineer & Partner
+2025-03-12 23:46:37 | INFO | Successfully scraped job: Full-Stack Engineer (Front-End Leaning)
+2025-03-12 23:46:41 | INFO | Successfully scraped job: Frontend Engineer
+2025-03-12 23:46:48 | INFO | Successfully scraped job: Software Developer
+2025-03-12 23:47:04 | INFO | Successfully scraped job: Web Developer
+2025-03-12 23:47:22 | INFO | Successfully scraped job: Software Developer
+2025-03-12 23:47:42 | INFO | Function scrape_jobs took 156.22 seconds
+2025-03-12 23:47:42 | INFO | Found 12 jobs from scraping source: JobFound Portal for Remote Job
+2025-03-12 23:47:43 | INFO | Found 5 new jobs to store from source: JobFound Portal for Remote Job
+2025-03-12 23:48:10 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-03-12 23:48:10 | INFO | Function scrape_and_process_jobs took 426.62 seconds
+2025-03-13 21:33:24 | INFO | Starting job scraping at 2025-03-13 21:33:24.481711 for source_id: None
