@@ -6,7 +6,7 @@ import os
 import shutil
 
 from app.models.user import User
-from app.models.profile import UserProfile, UserProfileStatus
+from app.models.user_profile import UserProfile, UserProfileStatus
 from app.schemas.profile import UserProfileCreate
 
 

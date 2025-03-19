@@ -495,7 +495,7 @@ class JobScraper:
                     EC.presence_of_all_elements_located(
                         (
                             By.XPATH,
-                            "//div[contains(@class, 'border-b') and contains(@class, 'rounded-lg')]",
+                            "//a[contains(@class, 'relative') and contains(@class, 'lg:w-64')]",
                         )
                     )
                 )

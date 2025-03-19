@@ -1,14 +1,4 @@
-from pydantic import BaseModel
-from sqlalchemy import (
-    Column,
-    Integer,
-    String,
-    ForeignKey,
-    DateTime,
-    Enum,
-    Boolean,
-    Text,
-)
+from sqlalchemy import Column, Integer, String, ForeignKey, DateTime, Enum, Text
 from sqlalchemy.orm import relationship
 from sqlalchemy.sql import func
 from ..db.base import Base
@@ -19,7 +9,9 @@ class UserProfile(Base):
     __tablename__ = "user_profiles"
 
     id = Column(Integer, primary_key=True, index=True)
-    user_id = Column(Integer, ForeignKey("users.id"), unique=True, nullable=False)
+    user_id = Column(
+        Integer, ForeignKey("users.id", ondelete="CASCADE"), unique=True, nullable=False
+    )
 
     # Onboarding Details
     profile_status = Column(
@@ -39,5 +31,11 @@ class UserProfile(Base):
     resume_file_path = Column(String(500))
     resume_uploaded_at = Column(DateTime(timezone=True))
 
-    # Relationships
-    user = relationship("User", back_populates="profile")
+    # Modify the relationship to resolve the cascade issue
+    user = relationship(
+        "User",
+        back_populates="profile",
+        # Remove delete-orphan from this side
+        # Use single_parent to ensure unique relationship
+        single_parent=True,
+    )
