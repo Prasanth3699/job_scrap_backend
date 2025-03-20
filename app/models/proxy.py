@@ -2,6 +2,7 @@ from sqlalchemy import Column, Integer, String, DateTime, Boolean, Float, Enum
 from datetime import datetime
 import enum
 from ..db.base import Base
+from ..utils.time_utils import IST
 
 
 class ProxyProtocol(enum.Enum):
@@ -48,9 +49,9 @@ class Proxy(Base):
     failed_requests = Column(Integer, default=0)
 
     # Timestamp Tracking
-    last_checked = Column(DateTime, default=datetime.utcnow)
-    created_at = Column(DateTime, default=datetime.utcnow)
-    updated_at = Column(DateTime, default=datetime.utcnow, onupdate=datetime.utcnow)
+    last_checked = Column(DateTime, default=datetime.now(IST))
+    created_at = Column(DateTime, default=datetime.now(IST))
+    updated_at = Column(DateTime, default=datetime.now(IST), onupdate=datetime.now(IST))
 
     # Additional Flags
     supports_ssl = Column(Boolean, default=False)

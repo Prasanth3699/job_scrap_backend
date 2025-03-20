@@ -4,10 +4,8 @@ import requests
 from sqlalchemy.orm import Session, load_only
 from sqlalchemy import and_, or_
 import random
-import concurrent.futures
-import time
-from datetime import datetime, timedelta
-
+from datetime import datetime, timedelta, timezone
+from ..utils.time_utils import IST
 from ..utils.proxy_validator import ProxyValidator
 from ..models.proxy import Proxy, ProxyProtocol, AnonymityLevel
 
@@ -16,12 +14,13 @@ class ProxyService:
     def __init__(self, db: Session):
         self.db = db
         self.validator = ProxyValidator()
-        self.min_reliable_score = 7.0  # Minimum performance score for consideration
+        self.min_reliable_score = 8.5  # Minimum performance score for consideration
+        self.max_consecutive_failures = 3
 
     def get_validated_proxies(self, min_success_rate: float = 50.0) -> List[Proxy]:
         """Get active proxies with advanced filters"""
         try:
-            hour_ago = datetime.utcnow() - timedelta(hours=1)
+            hour_ago = datetime.now(IST) - timedelta(hours=1)
             return (
                 self.db.query(Proxy)
                 .filter(
@@ -88,7 +87,7 @@ class ProxyService:
                 and proxy.success_rate >= 30
                 and proxy.avg_response_time <= 8.0
             )
-            proxy.last_checked = datetime.utcnow()
+            proxy.last_checked = datetime.now(IST)
 
             self._calculate_performance_score(proxy)
             self.db.commit()
@@ -158,14 +157,14 @@ class ProxyService:
                         country=p_data.get("country", "Unknown"),
                         anonymity=p_data.get("anonymity", AnonymityLevel.TRANSPARENT),
                         is_active=True,
-                        last_checked=datetime.utcnow(),
+                        last_checked=datetime.now(IST),
                     )
                 )
 
     def _fetch_proxy_sources(self) -> List[Dict]:
         """Fetch from multiple sources with improved error handling"""
         sources = [
-            # ("https://proxylist.geonode.com/api/proxy-list", self._parse_geonode),
+            ("https://proxylist.geonode.com/api/proxy-list", self._parse_geonode),
             # (
             #     "https://api.proxyscrape.com/v2/?request=getproxies",
             #     self._parse_proxyscrape,
@@ -192,28 +191,91 @@ class ProxyService:
                 logger.warning(f"Failed to fetch from {url}: {e}")
         return proxies
 
+    def _parse_proxyscrape(self, response) -> List[Dict]:
+        """Parse ProxyScrape API response"""
+        proxies = []
+        for line in response.text.split("\n"):
+            if ":" in line:
+                ip, port = line.strip().split(":", 1)
+                proxies.append(
+                    {
+                        "ip": ip,
+                        "port": int(port),
+                        "protocol": ProxyProtocol.HTTP.value,
+                        "country": "Unknown",
+                        "anonymity": AnonymityLevel.ANONYMOUS.value,
+                    }
+                )
+        return proxies
+
+    def _parse_geonode(self, response) -> List[Dict]:
+        """Parse GeoNode API response"""
+        try:
+            data = response.json()
+            return [
+                {
+                    "ip": item["ip"],
+                    "port": int(item["port"]),
+                    "protocol": (
+                        item["protocols"][0].upper()
+                        if item["protocols"]
+                        else ProxyProtocol.HTTP.value
+                    ),
+                    "country": item.get("country", "Unknown"),
+                    "anonymity": self._map_geonode_anonymity(
+                        item.get("anonymityLevel", 1)
+                    ),
+                    "city": item.get("city", "Unknown"),
+                    "latitude": item.get("latitude", 0.0),
+                    "longitude": item.get("longitude", 0.0),
+                }
+                for item in data.get("data", [])
+            ]
+        except Exception as e:
+            logger.error(f"Error parsing GeoNode response: {e}")
+            return []
+
+    def _map_geonode_anonymity(self, level: int) -> str:
+        """Map GeoNode anonymity levels to our enum"""
+        return {
+            1: AnonymityLevel.TRANSPARENT.value,
+            2: AnonymityLevel.ANONYMOUS.value,
+            3: AnonymityLevel.HIGH_ANONYMITY.value,
+        }.get(level, AnonymityLevel.ANONYMOUS.value)
+
     def _parse_plaintext(self, response) -> List[Dict]:
-        """Parse plaintext IP:port lists"""
+        """Parse plaintext IP:port lists with protocol detection"""
         return [
             {
                 "ip": line.split(":")[0].strip(),
                 "port": int(line.split(":")[1].strip()),
-                "protocol": ProxyProtocol.HTTP.value,
+                "protocol": self._detect_protocol_from_line(line),
                 "country": "Unknown",
                 "anonymity": AnonymityLevel.UNKNOWN.value,
             }
             for line in response.text.split("\n")
-            if ":" in line
+            if ":" in line and line.strip()
         ]
+
+    def _detect_protocol_from_line(self, line: str) -> str:
+        """Detect protocol from line content"""
+        line = line.lower()
+        if "socks4" in line:
+            return ProxyProtocol.SOCKS4.value
+        if "socks5" in line:
+            return ProxyProtocol.SOCKS5.value
+        if "https" in line:
+            return ProxyProtocol.HTTPS.value
+        return ProxyProtocol.HTTP.value
 
     def _calculate_performance_score(self, proxy: Proxy):
         """Advanced performance scoring"""
-        response_score = max(0, 1 - (proxy.avg_response_time / 10))  # 0-1
+        response_score = max(0, 1 - (proxy.avg_response_time / 5))  # 0-1
         success_score = proxy.success_rate / 100  # 0-1
         freshness_score = (
             1
-            if (datetime.utcnow() - proxy.last_checked).total_seconds() < 3600
-            else 0.5
+            if (datetime.now(IST) - proxy.last_checked).total_seconds() < 3600
+            else 0.3
         )
 
         proxy.performance_score = round(

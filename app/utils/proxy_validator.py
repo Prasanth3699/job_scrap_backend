@@ -13,11 +13,10 @@ import random
 class ProxyValidator:
     def __init__(self):
         self.test_urls = [
-            ("http://httpbin.org/ip", 3),
-            ("http://api.ipify.org", 2),
-            ("http://checkip.amazonaws.com", 2),
-            ("https://ident.me", 2),
+            ("https://www.google.com", 2),  # More reliable test URL
+            ("https://api.myip.com", 2),
         ]
+        self.min_success_rate = 75
         self.user_agents = [
             "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36",
             "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15",
@@ -78,7 +77,7 @@ class ProxyValidator:
             )
 
             # Final validation
-            if success_rate < 50:
+            if success_rate < self.min_success_rate:
                 return None
 
             return {
@@ -128,12 +127,18 @@ class ProxyValidator:
         self, proxy: Dict, protocol: str, timeout: int
     ) -> Tuple[bool, float]:
         """Test protocol with verification"""
-        proxies = {
-            "http": f"{protocol}://{proxy['ip']}:{proxy['port']}",
-            "https": f"{protocol}://{proxy['ip']}:{proxy['port']}",
-        }
+        # proxies = {
+        #     "http": f"{protocol}://{proxy['ip']}:{proxy['port']}",
+        #     "https": f"{protocol}://{proxy['ip']}:{proxy['port']}",
+        # }
 
         try:
+            if protocol.lower() == "socks5":
+                proxy_str = f'socks5://{proxy["ip"]}:{proxy["port"]}'
+            else:
+                proxy_str = f'{protocol}://{proxy["ip"]}:{proxy["port"]}'
+
+            proxies = {"http": proxy_str, "https": proxy_str}
             start = time.time()
             with self._create_session() as session:
                 response = session.get(

@@ -1,6 +1,9 @@
 import datetime
+import json
+import random
 import re
 import time
+import requests
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service
@@ -8,6 +11,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver import ActionChains
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException, NoSuchElementException
+from selenium_stealth import stealth
 from webdriver_manager.chrome import ChromeDriverManager
 from loguru import logger
 from typing import List, Dict, Any, Optional
@@ -15,6 +20,7 @@ import pytz
 import os
 from functools import wraps
 import traceback
+from tenacity import retry, stop_after_attempt, wait_exponential
 
 
 from ..services.job_source_service import JobSourceService
@@ -29,11 +35,12 @@ from ..utils.exceptions import ScraperException
 from ..utils.decorators import retry_on_exception, log_execution_time
 from sqlalchemy.orm import Session
 from ..models.job import Job
-
+from .proxy_service import ProxyService
+from .anti_detection_service import AntiDetectionService
+from ..utils.time_utils import IST
 
 settings = get_settings()
 
-IST = pytz.timezone("Asia/Kolkata")
 
 # Configuration
 SCRAPER_CONFIG = {
@@ -50,12 +57,19 @@ SCRAPER_CONFIG = {
 
 class JobScraper:
 
-    def __init__(self, db: Session, source_url: str = None):
+    def __init__(
+        self,
+        db: Session,
+        source_url: str = None,
+        proxy_service: Optional[ProxyService] = None,
+    ):
         self.driver = None
         self.wait = None
         self.config = SCRAPER_CONFIG
         self.db = db
         self.source_url = source_url or self.source_url
+        self.proxy_service = ProxyService(db)
+        self.anti_detection_service = AntiDetectionService()
 
     def get_by_url(self, url: str) -> Optional[Job]:
         return self.db.query(Job).filter(Job.detail_url == url).first()
@@ -90,16 +104,25 @@ class JobScraper:
             raise
 
     def init_driver(self):
-        """Initialize optimized Chrome driver"""
+        """Initialize optimized Chrome driver with proper proxy configuration"""
         try:
             chrome_options = Options()
+
+            # Configure proxy
+            proxy = self.proxy_service.get_random_proxy()
+            if proxy:
+                proxy_str = f"{proxy.ip}:{proxy.port}"
+                logger.info(f"Using proxy: {proxy.protocol}://{proxy_str}")
+                chrome_options.add_argument(
+                    f"--proxy-server={proxy.protocol}://{proxy_str}"
+                )
 
             # Basic headless setup
             if self.config["headless"]:
                 chrome_options.add_argument("--headless=new")
                 chrome_options.add_argument("--window-size=1920,1080")
 
-            # Essential performance options
+            # Essential performance and stealth options
             chrome_options.add_argument("--no-sandbox")
             chrome_options.add_argument("--disable-dev-shm-usage")
             chrome_options.add_argument("--disable-gpu")
@@ -115,25 +138,13 @@ class JobScraper:
             chrome_options.add_argument("--disable-blink-features=AutomationControlled")
             chrome_options.add_argument("--disable-logging")
             chrome_options.add_argument("--disable-machine-learning")
-            chrome_options.add_argument("--disable-features=BlinkGenPropertyTrees")
-            chrome_options.add_argument("--disable-gpu-compositing")
-            chrome_options.add_argument(
-                "--disable-component-extensions-with-background-pages"
-            )
-            chrome_options.add_argument("--disable-accelerated-2d-canvas")
-            chrome_options.add_argument("--disable-accelerated-video")
-            chrome_options.add_experimental_option(
-                "excludeSwitches", ["enable-logging"]
-            )
 
-            # Memory optimization
-            chrome_options.add_argument("--js-flags=--max-old-space-size=2048")
-            chrome_options.add_argument("--memory-pressure-off")
-            chrome_options.add_argument("--disk-cache-size=0")
-            chrome_options.add_argument("--disable-dev-tools")
-            chrome_options.add_argument("--disable-browser-side-navigation")
-            chrome_options.add_argument("--disable-default-apps")
-            chrome_options.add_argument("--disable-translate")
+            # User agent rotation
+            user_agents = [
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            ]
+            chrome_options.add_argument(f"user-agent={random.choice(user_agents)}")
 
             # Performance preferences
             prefs = {
@@ -143,46 +154,54 @@ class JobScraper:
                     "popups": 2,
                     "notifications": 2,
                 },
-                "disk-cache-size": 4096,
+                "credentials_enable_service": False,
+                "profile.password_manager_enabled": False,
             }
             chrome_options.add_experimental_option("prefs", prefs)
-
-            # User agent
-            chrome_options.add_argument(
-                "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-                "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            chrome_options.add_experimental_option(
+                "excludeSwitches", ["enable-automation", "enable-logging"]
             )
+            chrome_options.add_experimental_option("useAutomationExtension", False)
 
-            # Create driver
+            # Create driver instance
             self.driver = webdriver.Chrome(
                 service=Service(ChromeDriverManager().install()), options=chrome_options
             )
 
-            # Set timeouts
+            # Apply stealth settings
+            stealth(
+                self.driver,
+                languages=["en-US", "en"],
+                vendor="Google Inc.",
+                platform="Win32",
+                webgl_vendor="Intel Inc.",
+                renderer="Intel Iris OpenGL Engine",
+                fix_hairline=True,
+                run_on_insecure_origins=True,
+            )
+
+            # Configure timeouts and waits
             self.driver.set_page_load_timeout(self.config["page_load_timeout"])
             self.wait = WebDriverWait(self.driver, self.config["element_timeout"])
 
             # Initial JavaScript optimizations
             self.driver.execute_script(
                 """
-                // Disable console logging
                 console.log = function() {};
                 console.warn = function() {};
                 console.error = function() {};
-
-                // Disable analytics
                 window.ga = function() {};
                 window._gaq = [];
-
-                // Clean up memory
-                if (window.gc) { window.gc(); }
             """
             )
 
+            logger.success("Driver initialized successfully")
             return True
 
         except Exception as e:
             logger.error(f"Driver initialization failed: {str(e)}")
+            if self.driver:
+                self.driver.quit()
             raise ScraperException(f"Failed to initialize driver: {str(e)}")
 
     def handle_ad_frames(self) -> None:
@@ -206,10 +225,22 @@ class JobScraper:
         except Exception as e:
             logger.debug(f"Error handling ad frames: {str(e)}")
 
-    @retry_on_exception(retries=2, delay=0.5)
     def safe_page_load(self, url: str) -> bool:
         """Safely load a page with retries"""
         try:
+            # Rotate proxy on each retry
+            proxy = self.proxy_service.get_random_proxy()
+            if proxy:
+                proxy_str = f"{proxy.ip}:{proxy.port}"
+                self.driver.execute_cdp_cmd(
+                    "Network.setProxy",
+                    {
+                        "proxy": f"http://{proxy_str}",
+                        "proxyType": "MANUAL",
+                        "httpProxy": proxy_str,
+                        "sslProxy": proxy_str,
+                    },
+                )
             self.driver.get(url)
             self.wait.until(EC.presence_of_element_located((By.TAG_NAME, "body")))
             self.handle_ad_frames()
@@ -318,7 +349,7 @@ class JobScraper:
         except Exception as e:
             logger.debug(f"Error removing overlays: {str(e)}")
 
-    @retry_on_exception(retries=2, delay=0.5)
+    @retry_on_exception(retries=3, delay=1)
     def extract_job_data(self, detail_url: str) -> Optional[Dict[str, Any]]:
         """Enhanced job data extraction with HTML description and better company name extraction"""
         try:
@@ -399,6 +430,12 @@ class JobScraper:
                 "description": description_html,
             }
 
+        except (TimeoutException, NoSuchElementException) as network_error:
+            logger.warning(f"Network-related error for {detail_url}: {network_error}")
+            raise
+        except ValueError as val_error:
+            logger.error(f"Validation error for {detail_url}: {val_error}")
+            raise
         except Exception as e:
             logger.error(f"Error extracting job data from {detail_url}: {str(e)}")
             return None
@@ -483,41 +520,54 @@ class JobScraper:
         max_scroll_attempts = 2
 
         try:
-            logger.info(f"Attempting to load URL: {self.source_url}")
+            logger.info(f"Starting URL collection from: {self.source_url}")
+
             self.driver.get(self.source_url)
+
             while scroll_attempts < max_scroll_attempts:
+
+                # Scroll and wait
                 self.driver.execute_script(
                     "window.scrollTo(0, document.body.scrollHeight);"
                 )
                 time.sleep(self.config["scroll_pause_time"])
 
-                containers = self.wait.until(
-                    EC.presence_of_all_elements_located(
-                        (
-                            By.XPATH,
-                            "//a[contains(@class, 'relative') and contains(@class, 'lg:w-64')]",
+                try:
+                    # More robust element location
+                    containers = WebDriverWait(self.driver, 10).until(
+                        EC.presence_of_all_elements_located(
+                            (
+                                By.XPATH,
+                                "//a[contains(@class, 'relative') and contains(@class, 'lg:w-64')]",
+                            )
                         )
                     )
-                )
 
-                for container in containers:
-                    try:
-                        url = (
-                            WebDriverWait(container, 5)
-                            .until(EC.presence_of_element_located((By.TAG_NAME, "a")))
-                            .get_attribute("href")
-                        )
-                        if url and url not in job_urls:
-                            job_urls.append(url)
-                    except Exception:
-                        continue
+                    for container in containers:
+                        try:
+                            # More detailed URL extraction
+                            url = container.get_attribute("href")
+
+                            if url and url not in job_urls:
+                                job_urls.append(url)
+
+                        except Exception as container_error:
+                            logger.error(
+                                f"Error processing container: {container_error}"
+                            )
+
+                except Exception as wait_error:
+                    logger.error(f"Error waiting for job containers: {wait_error}")
+                    break
 
                 scroll_attempts += 1
+
+            logger.info(f"Total job URLs collected: {len(job_urls)}")
 
             return job_urls[: self.config["max_jobs"]]
 
         except Exception as e:
-            logger.error(f"Error collecting job URLs: {str(e)}")
+            logger.error(f"Critical error in URL collection: {e}")
             raise ScraperException(f"Failed to collect job URLs: {str(e)}")
 
     @log_execution_time
@@ -559,13 +609,67 @@ class JobScraper:
         except Exception as e:
             logger.debug(f"Memory cleanup error: {str(e)}")
 
+    def check_network_conditions(self):
+        """Check and log network conditions"""
+        try:
+            network_info = self.driver.execute_script(
+                """
+                return navigator.connection ? {
+                    'type': navigator.connection.effectiveType,
+                    'downlink': navigator.connection.downlink,
+                    'rtt': navigator.connection.rtt
+                } : null;
+            """
+            )
+
+            if network_info:
+                logger.info(f"Network Conditions: {json.dumps(network_info)}")
+
+                # Adjust timeout based on network speed
+                if network_info["type"] in ["slow-2g", "2g"]:
+                    logger.warning("Slow network detected. Increasing timeouts.")
+                    self.config["page_load_timeout"] *= 2
+                    self.config["element_timeout"] *= 2
+        except Exception as e:
+            logger.debug(f"Network condition check failed: {e}")
+
+    def monitor_performance(self):
+        """Monitor and log performance metrics"""
+        try:
+            performance_metrics = self.driver.execute_script(
+                """
+                const performance = window.performance || {};
+                const memory = performance.memory || {};
+                return {
+                    'used_js_heap': memory.usedJSHeapSize,
+                    'total_js_heap': memory.totalJSHeapSize,
+                    'memory_usage_percent': memory.usedJSHeapSize / memory.totalJSHeapSize * 100
+                };
+            """
+            )
+
+            logger.info(f"Performance Metrics: {json.dumps(performance_metrics)}")
+
+            # Log warning if memory usage is high
+            if performance_metrics.get("memory_usage_percent", 0) > 80:
+                logger.warning("High memory usage detected. Consider cleanup.")
+        except Exception as e:
+            logger.debug(f"Performance monitoring error: {e}")
+
     @retry_on_exception()
     @log_execution_time
     def scrape_jobs(self) -> List[Dict[str, Any]]:
-        """Main job scraping function"""
+        """Main job scraping function with periodic proxy refresh"""
         try:
             if not self.init_driver():
                 raise ScraperException("Failed to initialize driver")
+
+            # Initialize proxy refresh timer
+            last_refresh = time.time()
+            refresh_interval = 600  # 10 minutes
+
+            # Check network conditions
+            self.check_network_conditions()
 
             logger.info(f"Accessing {self.source_url}")
 
@@ -580,39 +684,49 @@ class JobScraper:
 
             scraped_jobs = []
             batch_size = self.config["batch_size"]
+
             for i in range(0, len(job_urls), batch_size):
+                # Check if we need to refresh proxies
+                current_time = time.time()
+                if current_time - last_refresh > refresh_interval:
+                    logger.info("Refreshing proxies and restarting driver...")
+                    self.proxy_service.refresh_proxies()
+                    self.driver.quit()
+                    if not self.init_driver():
+                        raise ScraperException(
+                            "Failed to reinitialize driver after proxy refresh"
+                        )
+                    last_refresh = current_time
+
                 batch = job_urls[i : i + batch_size]
                 batch_jobs = []
 
                 try:
                     for url in batch:
                         try:
-
                             job_data = self.extract_job_data(url)
                             if job_data:
                                 batch_jobs.append(job_data)
-                                logger.info(
-                                    f"Successfully scraped job: {job_data['job_title']}"
-                                )
+                                logger.info(f"Scraped: {job_data['job_title']}")
+
+                            time.sleep(self.config["between_jobs_delay"])
 
                         except Exception as e:
-                            logger.error(f"Error processing job {url}: {str(e)}")
+                            logger.error(f"Error processing {url}: {str(e)}")
                             continue
-
-                        # Small delay between jobs
-                        time.sleep(0.5)
 
                     scraped_jobs.extend(batch_jobs)
 
-                    # Full cleanup only after batch completion
-                    # if i + batch_size < len(job_urls):
-                    #     self.cleanup_memory(full_cleanup=True)
-                    #     self.driver.quit()
-                    #     self.init_driver()
+                    # Optional: Cleanup between batches
+                    if i + batch_size < len(job_urls):
+                        self.cleanup_memory(full_cleanup=True)
 
                 except Exception as batch_error:
-                    logger.error(f"Error processing batch: {str(batch_error)}")
+                    logger.error(f"Batch error: {str(batch_error)}")
                     continue
+
+                # Monitor performance after each batch
+                self.monitor_performance()
 
             return scraped_jobs
 
@@ -632,6 +746,7 @@ def scrape_and_process_jobs(source_id: Optional[int] = None):
     )
 
     db = None
+    scraper = None
     history_record = None
 
     try:
@@ -672,7 +787,9 @@ def scrape_and_process_jobs(source_id: Optional[int] = None):
                 logger.info(f"Processing source: {source.name} (ID: {source.id})")
 
                 # Initialize scraper with source URL
-                scraper = JobScraper(db=db, source_url=source.url)
+                scraper = JobScraper(
+                    db=db, source_url=source.url, proxy_service=ProxyService(db)
+                )
                 last_scraper = scraper  # Store reference to current scraper
                 scraped_jobs = scraper.scrape_jobs()
 
@@ -740,7 +857,10 @@ def scrape_and_process_jobs(source_id: Optional[int] = None):
 
             finally:
                 if scraper and scraper.driver:
-                    scraper.driver.quit()
+                    try:
+                        scraper.driver.quit()
+                    except Exception as quit_error:
+                        logger.error(f"Error closing WebDriver: {quit_error}")
 
         # Handle email reports
         try:
