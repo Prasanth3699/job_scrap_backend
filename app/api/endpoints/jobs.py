@@ -17,33 +17,6 @@ from app.core.redis_lock import redis_lock_manager
 router = APIRouter()
 
 
-# @router.post("/scrape", response_model=Dict[str, str])
-# async def trigger_scrape(source_id: Optional[int] = None):
-#     """Trigger job scraping manually through Celery"""
-#     lock_name = f"scraping_task:{source_id if source_id else 'all'}"
-
-#     try:
-#         # Check if task is already running
-#         if RedisLock.is_locked(lock_name):
-#             raise HTTPException(
-#                 status_code=409, detail="A scraping task is already in progress"
-#             )
-
-#         task = run_scraping_job.delay(source_id)
-
-#         return {
-#             "status": "success",
-#             "message": f"Scraping job has been queued for source {source_id if source_id else 'all'}",
-#             "task_id": task.id,
-#         }
-
-#     except HTTPException:
-#         raise
-#     except Exception as e:
-#         logger.error(f"Error triggering scrape: {str(e)}")
-#         raise HTTPException(status_code=500, detail="Failed to queue scraping job")
-
-
 @router.post("/scrape", response_model=Dict[str, str])
 async def trigger_scrape(source_id: Optional[int] = None, force: bool = False):
     lock_name = f"scraping_task:{source_id if source_id else 'all'}"

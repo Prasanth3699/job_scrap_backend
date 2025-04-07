@@ -1,4 +1,5 @@
-from fastapi import APIRouter, Depends, HTTPException, Request, status
+from fastapi import APIRouter, Depends, HTTPException, status, Request
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 
 from ...services.token_service import TokenService
@@ -15,6 +16,7 @@ from ...schemas.auth import (
 from ...services.auth_service import AuthService
 
 router = APIRouter()
+security = HTTPBearer()
 
 
 @router.post("/register", response_model=UserResponse)
@@ -66,3 +68,64 @@ async def get_current_user_info(current_user: User = Depends(get_current_user)):
 async def get_ws_token(current_user: User = Depends(get_current_user)):
     ws_token = TokenService.create_ws_token(current_user.id)
     return {"ws_token": ws_token}
+
+
+@router.post("/validate-token", response_model=dict)
+async def validate_token(
+    request: Request,
+    credentials: HTTPAuthorizationCredentials = Depends(security),
+    db: Session = Depends(get_db),
+):
+    """
+    Validate the provided JWT token
+
+    Returns:
+    - User information if token is valid
+    - Raises HTTPException if token is invalid
+    """
+    try:
+        # Extract token from Authorization header
+        token = credentials.credentials
+
+        # Verify the token
+        payload = AuthService.verify_token(token)
+
+        # Extract user ID from token payload
+        user_id = payload.get("sub")
+        if not user_id:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid token: No user identifier",
+            )
+
+        # Fetch user from database
+        user = db.query(User).filter(User.id == int(user_id)).first()
+        if not user:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found"
+            )
+
+        # Check if user is active
+        if not user.is_active:
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN, detail="User account is inactive"
+            )
+
+        # Return user information
+        return {
+            "user_id": user.id,
+            "email": user.email,
+            "name": user.name,
+            "is_admin": user.is_admin or False,
+            "is_active": user.is_active,
+        }
+
+    except HTTPException:
+        # Re-raise HTTPException to maintain specific error details
+        raise
+    except Exception as e:
+        # Catch any unexpected errors
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=f"Token validation failed: {str(e)}",
+        )

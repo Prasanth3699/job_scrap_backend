@@ -265,21 +265,68 @@ class JobScraper:
 
     @retry_on_exception(retries=3, delay=1)
     def get_apply_link(self, detail_url: str) -> str:
+        """Get the apply link for a job, ensuring it matches the correct job"""
         try:
             self.remove_all_overlays()
+
+            # Store current window handle (the job details page)
+            original_window = self.driver.current_window_handle
+
+            # Find and click the apply button
             apply_button = self.wait.until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "div.pt-1 button"))
             )
 
-            # Optimized click using JavaScript
+            # Click using JavaScript to avoid interception issues
             self.driver.execute_script("arguments[0].click();", apply_button)
 
-            # Reduced wait for new window
-            WebDriverWait(self.driver, 3).until(lambda d: len(d.window_handles) > 1)
-            return self.get_new_window_url(detail_url)
+            # Wait for new window to appear
+            WebDriverWait(self.driver, 5).until(lambda d: len(d.window_handles) > 1)
 
-        except Exception:
+            # Switch to new window and get URL
+            for window_handle in self.driver.window_handles:
+                if window_handle != original_window:
+                    self.driver.switch_to.window(window_handle)
+
+                    # Wait for page to load
+                    WebDriverWait(self.driver, 10).until(
+                        lambda d: d.execute_script("return document.readyState")
+                        == "complete"
+                    )
+
+                    # Get the URL and close the new window
+                    apply_url = self.driver.current_url
+                    self.driver.close()
+
+                    # Switch back to original window
+                    self.driver.switch_to.window(original_window)
+
+                    return apply_url
+
+            # If no new window was found, return the detail URL as fallback
             return detail_url
+
+        except Exception as e:
+            logger.warning(f"Error getting apply link for {detail_url}: {str(e)}")
+            return detail_url
+
+    # @retry_on_exception(retries=3, delay=1)
+    # def get_apply_link(self, detail_url: str) -> str:
+    #     try:
+    #         self.remove_all_overlays()
+    #         apply_button = self.wait.until(
+    #             EC.element_to_be_clickable((By.CSS_SELECTOR, "div.pt-1 button"))
+    #         )
+
+    #         # Optimized click using JavaScript
+    #         self.driver.execute_script("arguments[0].click();", apply_button)
+
+    #         # Reduced wait for new window
+    #         WebDriverWait(self.driver, 3).until(lambda d: len(d.window_handles) > 1)
+    #         return self.get_new_window_url(detail_url)
+
+    #     except Exception:
+    #         return detail_url
 
     def get_new_window_url(self, fallback_url: str) -> str:
         """Handle new window/tab and get URL safely"""
@@ -356,6 +403,13 @@ class JobScraper:
             if not self.safe_page_load(detail_url):
                 return None
 
+            # Close any extra windows that might be open
+            if len(self.driver.window_handles) > 1:
+                for handle in self.driver.window_handles[1:]:
+                    self.driver.switch_to.window(handle)
+                    self.driver.close()
+                self.driver.switch_to.window(self.driver.window_handles[0])
+
             # Get all elements in one go
             elements = {
                 "time": self.get_element_safely(By.TAG_NAME, "time"),
@@ -417,6 +471,9 @@ class JobScraper:
                 elements["description_container"]
             )
 
+            # Get apply link - this will now be properly associated
+            apply_link = self.get_apply_link(detail_url)
+
             return {
                 "detail_url": detail_url,
                 "job_title": job_title,
@@ -424,7 +481,7 @@ class JobScraper:
                 "job_type": details["job_type"],
                 "salary": details["salary"],
                 "experience": details["experience"],
-                "apply_link": self.get_apply_link(detail_url),
+                "apply_link": apply_link,
                 "company_name": company_name,
                 "location": location,
                 "description": description_html,
