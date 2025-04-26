@@ -10,6 +10,8 @@ from ...services.scraper_service import scrape_and_process_jobs
 from ...schemas.job import JobResponse
 from ...db.repositories.job_repository import JobRepository
 from ...core.constants import DEFAULT_LIMIT, DEFAULT_OFFSET
+from ...core.auth import get_current_user
+from ...models.user import User
 from loguru import logger
 from app.core.redis_lock import redis_lock_manager
 
@@ -18,7 +20,15 @@ router = APIRouter()
 
 
 @router.post("/scrape", response_model=Dict[str, str])
-async def trigger_scrape(source_id: Optional[int] = None, force: bool = False):
+async def trigger_scrape(
+    source_id: Optional[int] = None,
+    force: bool = False,
+    current_user: User = Depends(get_current_user),
+):
+    if not current_user.is_admin:
+        raise HTTPException(
+            status_code=403, detail="Only admin users can trigger scraping jobs"
+        )
     lock_name = f"scraping_task:{source_id if source_id else 'all'}"
 
     try:
@@ -71,6 +81,7 @@ async def get_jobs(
     experience: Optional[List[str]] = Query(None),
     salary_min: Optional[float] = None,
     salary_max: Optional[float] = None,
+    current_user: User = Depends(get_current_user),
 ):
     """Get jobs with filters and pagination"""
     try:
@@ -99,9 +110,26 @@ async def get_jobs(
         raise HTTPException(status_code=500, detail=str(e))
 
 
+@router.get("/dashboard", response_model=List[JobResponse])
+async def get_jobs_dashboard(
+    db: Session = Depends(get_db),
+    skip: int = Query(DEFAULT_OFFSET, ge=0),
+    limit: int = Query(DEFAULT_LIMIT, ge=1, le=100),
+    current_user: User = Depends(get_current_user),
+):
+    """Get scraped jobs"""
+    try:
+        repo = JobRepository(db)
+        return repo.get_jobs(skip=skip, limit=limit)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
 @router.get("/recent", response_model=List[JobResponse])
 async def get_recent_jobs(
-    db: Session = Depends(get_db), days: int = Query(1, ge=1, le=30)
+    db: Session = Depends(get_db),
+    days: int = Query(1, ge=1, le=30),
+    current_user: User = Depends(get_current_user),
 ):
     """Get recent jobs from the last N days"""
     try:
@@ -112,7 +140,25 @@ async def get_recent_jobs(
 
 
 @router.get("/{job_id}", response_model=JobResponse)
-async def get_job(job_id: int, db: Session = Depends(get_db)):
+async def get_job(
+    job_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
+    """Get a specific job by ID"""
+    repo = JobRepository(db)
+    job = repo.get_by_id(job_id)
+    if not job:
+        raise HTTPException(status_code=404, detail="Job not found")
+    return job
+
+
+@router.get("/match/{job_id}", response_model=JobResponse)
+async def match_job(
+    job_id: int,
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
+):
     """Get a specific job by ID"""
     repo = JobRepository(db)
     job = repo.get_by_id(job_id)
@@ -123,7 +169,10 @@ async def get_job(job_id: int, db: Session = Depends(get_db)):
 
 @router.get("/{job_id}/related", response_model=List[JobResponse])
 async def get_related_jobs(
-    job_id: int, limit: int = Query(3, ge=1, le=10), db: Session = Depends(get_db)
+    job_id: int,
+    limit: int = Query(3, ge=1, le=10),
+    db: Session = Depends(get_db),
+    current_user: User = Depends(get_current_user),
 ):
     """Get related jobs based on current job"""
     repo = JobRepository(db)

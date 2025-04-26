@@ -13,6 +13,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, NoSuchElementException
 from selenium_stealth import stealth
+from sqlalchemy import and_, or_
 from webdriver_manager.chrome import ChromeDriverManager
 from loguru import logger
 from typing import List, Dict, Any, Optional
@@ -72,7 +73,39 @@ class JobScraper:
         self.anti_detection_service = AntiDetectionService()
 
     def get_by_url(self, url: str) -> Optional[Job]:
-        return self.db.query(Job).filter(Job.detail_url == url).first()
+        """Check if job exists by URL or by unique combination of fields"""
+        from sqlalchemy import or_, and_
+
+        # First try to get the job by URL
+        existing_job = self.db.query(Job).filter(Job.detail_url == url).first()
+        if existing_job:
+            return existing_job
+
+        # If not found by URL, try to get the page and check other fields
+        try:
+            job_data = self.extract_job_data(url)
+            if not job_data:
+                return None
+
+            posting_date = datetime.datetime.strptime(
+                job_data["posting_date"], "%d %B %Y"
+            ).date()
+
+            # Check for existing job with same title, company and date
+            return (
+                self.db.query(Job)
+                .filter(
+                    and_(
+                        Job.job_title == job_data["job_title"],
+                        Job.company_name == job_data["company_name"],
+                        Job.posting_date == posting_date,
+                    )
+                )
+                .first()
+            )
+        except Exception as e:
+            logger.error(f"Error checking for duplicate job: {str(e)}")
+            return None
 
     def store_jobs(self, jobs: List[Dict[str, Any]]) -> List[Dict[str, Any]]:
         """Store jobs in database"""
@@ -309,24 +342,6 @@ class JobScraper:
         except Exception as e:
             logger.warning(f"Error getting apply link for {detail_url}: {str(e)}")
             return detail_url
-
-    # @retry_on_exception(retries=3, delay=1)
-    # def get_apply_link(self, detail_url: str) -> str:
-    #     try:
-    #         self.remove_all_overlays()
-    #         apply_button = self.wait.until(
-    #             EC.element_to_be_clickable((By.CSS_SELECTOR, "div.pt-1 button"))
-    #         )
-
-    #         # Optimized click using JavaScript
-    #         self.driver.execute_script("arguments[0].click();", apply_button)
-
-    #         # Reduced wait for new window
-    #         WebDriverWait(self.driver, 3).until(lambda d: len(d.window_handles) > 1)
-    #         return self.get_new_window_url(detail_url)
-
-    #     except Exception:
-    #         return detail_url
 
     def get_new_window_url(self, fallback_url: str) -> str:
         """Handle new window/tab and get URL safely"""
