@@ -18,6 +18,7 @@ from app.models.user import User
 from app.models.job_source import JobSource
 from app.models.user_profile import UserProfile
 from app.models.proxy import Proxy, ProxyProtocol, AnonymityLevel
+from app.models.parsed_resume import ParsedResume
 
 from app.core.config import get_settings
 

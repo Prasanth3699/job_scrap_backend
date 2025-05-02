@@ -153,6 +153,7 @@ async def get_job(
     return job
 
 
+# this endpoint is for ML service application
 @router.get("/match/{job_id}", response_model=JobResponse)
 async def match_job(
     job_id: int,

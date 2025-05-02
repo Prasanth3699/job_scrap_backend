@@ -37,7 +37,6 @@ async def create_profile(
         return profile
     except Exception as e:
         # Log the error for debugging
-        print(f"Profile creation error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -79,7 +78,6 @@ async def upload_resume(
         return {"message": "Resume uploaded successfully", "profile": profile}
     except Exception as e:
         # Log the error for debugging
-        print(f"Resume upload error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
 
 
@@ -96,5 +94,4 @@ async def get_profile(
         return profile
     except Exception as e:
         # Log the error for debugging
-        print(f"Get profile error: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
