@@ -77,3 +77,17 @@ class ParsedResumeService:
         db.refresh(pr)
 
         return pr
+
+    @staticmethod
+    def get_parsed_resume_by_id(
+        db: Session, resume_id: int, user_id: int
+    ) -> ParsedResume:
+        """
+        Get parsed resume by ID and user ID.
+        """
+        parsed_resume = (
+            db.query(ParsedResume)
+            .filter(ParsedResume.id == resume_id, ParsedResume.user_id == user_id)
+            .first()
+        )
+        return parsed_resume

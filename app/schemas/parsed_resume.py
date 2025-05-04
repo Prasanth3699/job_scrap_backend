@@ -1,5 +1,5 @@
 from datetime import datetime
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, field_validator, validator
 from typing import Any
 
 
@@ -14,7 +14,7 @@ class ParsedResumeResponse(BaseModel):
     resume_file_path: str | None
     raw_text: str
     parsed_data: dict
-    metadata: dict
+    # metadata: dict = Field(default_factory=dict, alias="metadata_")
     uploaded_at: datetime
 
     class Config:

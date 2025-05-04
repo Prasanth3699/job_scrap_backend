@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException, status, Request
+from fastapi import APIRouter, Cookie, Depends, HTTPException, Response, status, Request
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 
@@ -14,6 +14,9 @@ from ...schemas.auth import (
     TokenResponse,
 )
 from ...services.auth_service import AuthService
+from ...core.config import get_settings
+
+settings = get_settings()
 
 router = APIRouter()
 security = HTTPBearer()
@@ -34,19 +37,30 @@ async def register_admin(
 
 
 @router.post("/login", response_model=TokenResponse)
-def login(user_data: UserLogin, db: Session = Depends(get_db)):
-    user = AuthService.authenticate_user(db, user_data)
-    if user is None:
-        raise HTTPException(
-            status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid credentials"
-        )
+def login(
+    user_data: UserLogin,
+    response: Response,
+    db: Session = Depends(get_db),
+):
 
-    # Ensure is_admin is a boolean
-    is_admin = user.is_admin if user.is_admin is not None else False
+    user = AuthService.authenticate_user(db, user_data)
+    is_admin = bool(user.is_admin)
 
     access_token = AuthService.create_access_token(
-        data={"sub": str(user.id), "is_admin": is_admin}
+        {"sub": str(user.id), "is_admin": is_admin}
     )
+    refresh_token = AuthService.create_refresh_token({"sub": str(user.id)})
+
+    # send refresh token in a secure, http-only cookie
+    response.set_cookie(
+        "refresh_token",
+        refresh_token,
+        httponly=True,
+        secure=True,
+        samesite="strict",
+        max_age=settings.REFRESH_TOKEN_EXPIRE_MINUTES * 60,
+    )
+
     return TokenResponse(
         access_token=access_token,
         user=UserResponse(
@@ -129,3 +143,43 @@ async def validate_token(
             status_code=status.HTTP_401_UNAUTHORIZED,
             detail=f"Token validation failed: {str(e)}",
         )
+
+
+@router.post("/refresh", response_model=TokenResponse)
+def refresh_token(
+    response: Response,
+    refresh_token: str = Cookie(...),
+    db: Session = Depends(get_db),
+):
+
+    payload = AuthService.verify_refresh_token(refresh_token)
+    user_id = int(payload["sub"])
+
+    user: User | None = db.query(User).get(user_id)
+    if not user or not user.is_active:
+        raise HTTPException(status_code=401, detail="Invalid user")
+
+    new_access = AuthService.create_access_token(
+        {"sub": str(user.id), "is_admin": bool(user.is_admin)}
+    )
+    new_refresh = AuthService.create_refresh_token({"sub": str(user.id)})
+
+    response.set_cookie(
+        "refresh_token",
+        new_refresh,
+        httponly=True,
+        secure=True,
+        samesite="strict",
+        max_age=settings.REFRESH_TOKEN_EXPIRE_MINUTES * 60,
+    )
+
+    return TokenResponse(
+        access_token=new_access,
+        user=UserResponse(
+            id=user.id,
+            name=user.name,
+            email=user.email,
+            is_active=user.is_active,
+            is_admin=user.is_admin,
+        ),
+    )

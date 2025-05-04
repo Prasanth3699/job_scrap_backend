@@ -44,3 +44,24 @@ async def upload_parsed_resume(
         return result
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
+
+
+@router.get(
+    "/resume/{resume_id}",
+    response_model=ParsedResumeResponse,
+    status_code=200,
+)
+async def get_parsed_resume(
+    resume_id: int,
+    current_user: User = Depends(get_current_user),
+    db: Session = Depends(get_db),
+) -> ParsedResumeResponse:
+    try:
+        parsed_resume = ParsedResumeService.get_parsed_resume_by_id(
+            db=db, resume_id=resume_id, user_id=current_user.id
+        )
+        if not parsed_resume:
+            raise HTTPException(status_code=404, detail="Parsed resume not found")
+        return parsed_resume
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

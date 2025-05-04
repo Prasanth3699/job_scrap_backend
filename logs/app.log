@@ -1,4 +1,799 @@
-2025-05-01 21:52:28 | INFO | Starting up the application...
-2025-05-01 21:52:28 | INFO | Scheduled job scraping for 18:00
-2025-05-01 21:52:28 | INFO | Scheduler initialized successfully
-2025-05-01 21:52:28 | INFO | Application startup completed successfully
+2025-05-03 22:36:29 | INFO | Starting up the application...
+2025-05-03 22:36:31 | INFO | Scheduled job scraping for 18:00
+2025-05-03 22:36:31 | INFO | Scheduler initialized successfully
+2025-05-03 22:36:31 | INFO | Application startup completed successfully
+2025-05-03 22:48:20 | INFO | Starting scraping task for source_id: None
+2025-05-03 22:48:20 | INFO | Starting job scraping at 2025-05-03 22:48:20.810935 for source_id: None
+2025-05-03 22:48:26 | INFO | Found 2 active sources to scrape
+2025-05-03 22:48:27 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-05-03 22:49:15 | SUCCESS | Driver initialized successfully
+2025-05-03 22:49:15 | INFO | Network Conditions: {"downlink": 1.45, "rtt": 100, "type": "4g"}
+2025-05-03 22:49:15 | INFO | Accessing https://www.jobfound.org/
+2025-05-03 22:49:45 | ERROR | Scraping failed: Message: timeout: Timed out receiving message from renderer: 29.418
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+Traceback (most recent call last):
+  File "C:\Users\Prasanth\Desktop\webscrapper\job_scraper\backend\app\services\scraper_service.py", line 749, in scrape_jobs
+    self.driver.get(self.source_url)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 29.418
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+
+2025-05-03 22:49:48 | ERROR | Function scrape_jobs failed after 80.75 seconds: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.418
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:49:48 | WARNING | Attempt 1/3 failed: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.418
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:49:52 | SUCCESS | Driver initialized successfully
+2025-05-03 22:49:52 | INFO | Network Conditions: {"downlink": 1.6, "rtt": 100, "type": "4g"}
+2025-05-03 22:49:52 | INFO | Accessing https://www.jobfound.org/
+2025-05-03 22:50:22 | ERROR | Scraping failed: Message: timeout: Timed out receiving message from renderer: 29.611
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+Traceback (most recent call last):
+  File "C:\Users\Prasanth\Desktop\webscrapper\job_scraper\backend\app\services\scraper_service.py", line 749, in scrape_jobs
+    self.driver.get(self.source_url)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 29.611
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+
+2025-05-03 22:50:24 | ERROR | Function scrape_jobs failed after 34.72 seconds: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.611
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:50:24 | WARNING | Attempt 2/3 failed: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.611
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:50:29 | SUCCESS | Driver initialized successfully
+2025-05-03 22:50:29 | INFO | Network Conditions: {"downlink": 1.5, "rtt": 100, "type": "4g"}
+2025-05-03 22:50:29 | INFO | Accessing https://www.jobfound.org/
+2025-05-03 22:50:59 | ERROR | Scraping failed: Message: timeout: Timed out receiving message from renderer: 29.847
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+Traceback (most recent call last):
+  File "C:\Users\Prasanth\Desktop\webscrapper\job_scraper\backend\app\services\scraper_service.py", line 749, in scrape_jobs
+    self.driver.get(self.source_url)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 29.847
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+
+2025-05-03 22:51:01 | ERROR | Function scrape_jobs failed after 34.59 seconds: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.847
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:51:01 | WARNING | Attempt 3/3 failed: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.847
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:51:01 | ERROR | Error scraping source JobFound Portal: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.847
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:51:22 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-05-03 22:51:32 | SUCCESS | Driver initialized successfully
+2025-05-03 22:51:32 | INFO | Network Conditions: {"downlink": 1.55, "rtt": 100, "type": "4g"}
+2025-05-03 22:51:32 | INFO | Accessing https://www.jobfound.org/remote
+2025-05-03 22:52:02 | ERROR | Scraping failed: Message: timeout: Timed out receiving message from renderer: 29.799
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+Traceback (most recent call last):
+  File "C:\Users\Prasanth\Desktop\webscrapper\job_scraper\backend\app\services\scraper_service.py", line 749, in scrape_jobs
+    self.driver.get(self.source_url)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 454, in get
+    self.execute(Command.GET, {"url": url})
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 429, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\Prasanth\Desktop\webscrapper\venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 232, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: timeout: Timed out receiving message from renderer: 29.799
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+
+2025-05-03 22:52:04 | ERROR | Function scrape_jobs failed after 34.42 seconds: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.799
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:52:04 | WARNING | Attempt 1/3 failed: Job scraping failed: Message: timeout: Timed out receiving message from renderer: 29.799
+  (Session info: chrome=136.0.7103.48)
+Stacktrace:
+	GetHandleVerifier [0x00DFFBD3+61635]
+	GetHandleVerifier [0x00DFFC14+61700]
+	(No symbol) [0x00C205D3]
+	(No symbol) [0x00C1116B]
+	(No symbol) [0x00C10EA1]
+	(No symbol) [0x00C0EE80]
+	(No symbol) [0x00C0F93D]
+	(No symbol) [0x00C1C049]
+	(No symbol) [0x00C2D6C5]
+	(No symbol) [0x00C330E6]
+	(No symbol) [0x00C0FF4D]
+	(No symbol) [0x00C2D461]
+	(No symbol) [0x00CAE91C]
+	(No symbol) [0x00C8D096]
+	(No symbol) [0x00C5C840]
+	(No symbol) [0x00C5D6A4]
+	GetHandleVerifier [0x01047043+2450739]
+	GetHandleVerifier [0x010427C6+2432182]
+	GetHandleVerifier [0x0105D50E+2542078]
+	GetHandleVerifier [0x00E16895+155013]
+	GetHandleVerifier [0x00E1CF7D+181357]
+	GetHandleVerifier [0x00E07428+92440]
+	GetHandleVerifier [0x00E075D0+92864]
+	GetHandleVerifier [0x00DF1FC0+5296]
+	BaseThreadInitThunk [0x76BD5D49+25]
+	RtlInitializeExceptionChain [0x77D5CFFB+107]
+	RtlGetAppContainerNamedObjectPath [0x77D5CF81+561]
+
+2025-05-03 22:52:09 | SUCCESS | Driver initialized successfully
+2025-05-03 22:52:09 | INFO | Network Conditions: {"downlink": 1.5, "rtt": 100, "type": "4g"}
+2025-05-03 22:52:09 | INFO | Accessing https://www.jobfound.org/remote
+2025-05-03 22:52:21 | INFO | Starting URL collection from: https://www.jobfound.org/remote
+2025-05-03 22:52:30 | INFO | Total job URLs collected: 450
+2025-05-03 22:52:30 | INFO | Function collect_job_urls took 8.59 seconds
+2025-05-03 22:52:30 | INFO | Found 20 job URLs
+2025-05-03 22:52:55 | INFO | Scraped: Data Entry Clerk
+2025-05-03 22:53:00 | INFO | Scraped: Associate Software Engineer, Full Stack
+2025-05-03 22:53:06 | INFO | Scraped: Software Engineer I
+2025-05-03 22:53:10 | INFO | Scraped: Apprentice Software Engineer (EX)
+2025-05-03 22:53:24 | WARNING | Error getting apply link for https://www.jobfound.org/job/sunsoft-online-is-hiring-for-frontend-developer-or-remote-frontend-development: Message: 
+
+2025-05-03 22:53:24 | INFO | Scraped: Frontend Developer
+2025-05-03 22:53:29 | INFO | Scraped: Frontend Developer
+2025-05-03 22:53:34 | INFO | Scraped: Junior Web Designer
+2025-05-03 22:53:42 | INFO | Scraped: Freelance Website Designer
+2025-05-03 22:53:49 | INFO | Scraped: Virtual Data Entry & Typist Specialist Flexible Hours
+2025-05-03 22:53:56 | INFO | Scraped: Data Annotator Intern
+2025-05-03 22:53:56 | INFO | Function cleanup_memory took 0.13 seconds
+2025-05-03 22:53:56 | INFO | Performance Metrics: {"memory_usage_percent": 73.12929121759636, "total_js_heap": 247005215, "used_js_heap": 180633163}
+2025-05-03 22:54:01 | INFO | Scraped: Information Technology Specialist 2
+2025-05-03 22:54:09 | INFO | Scraped: Machine Learning Engineer
+2025-05-03 22:54:13 | INFO | Scraped: Developer II
+2025-05-03 22:54:46 | WARNING | Error getting apply link for https://www.jobfound.org/job/horizontal-is-hiring-for-full-stack-developer-or-remote-full-stack-development: Message: 
+
+2025-05-03 22:54:46 | INFO | Scraped: Full Stack Developer
+2025-05-03 22:54:54 | INFO | Scraped: Full Stack Developer
+2025-05-03 22:54:59 | INFO | Scraped: Workday Solutions Engineer
+2025-05-03 22:55:04 | INFO | Scraped: Software Engineer
+2025-05-03 22:55:10 | INFO | Scraped: Software Engineer - Digitech - Fully Remote
+2025-05-03 22:55:24 | WARNING | Error getting apply link for https://www.jobfound.org/job/optum-is-hiring-for-associate-software-engineer-or-remote-software-engineer: Message: 
+
+2025-05-03 22:55:24 | INFO | Scraped: Associate Software Engineer
+2025-05-03 22:55:35 | INFO | Scraped: Associate Software Engineer
+2025-05-03 22:55:35 | INFO | Performance Metrics: {"memory_usage_percent": 97.33672682508336, "total_js_heap": 119166146, "used_js_heap": 115992426}
+2025-05-03 22:55:35 | WARNING | High memory usage detected. Consider cleanup.
+2025-05-03 22:55:37 | INFO | Function scrape_jobs took 211.17 seconds
+2025-05-03 22:55:37 | INFO | Found 20 jobs from scraping source: JobFound Portal for Remote Job
+2025-05-03 22:55:54 | WARNING | Page load failed for https://www.jobfound.org/job/teksystems-is-hiring-for-data-entry-clerk-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC947990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:55:54 | ERROR | Error extracting job data from https://www.jobfound.org/job/teksystems-is-hiring-for-data-entry-clerk-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC947990>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:56:10 | WARNING | Page load failed for https://www.jobfound.org/job/crum-and-forster-is-hiring-for-associate-software-engineer-full-stack-or-remote-full-stack-development: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45AFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:56:10 | ERROR | Error extracting job data from https://www.jobfound.org/job/crum-and-forster-is-hiring-for-associate-software-engineer-full-stack-or-remote-full-stack-development: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45AFD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:56:26 | WARNING | Page load failed for https://www.jobfound.org/job/mx-is-hiring-for-software-engineer-i-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45A690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:56:26 | ERROR | Error extracting job data from https://www.jobfound.org/job/mx-is-hiring-for-software-engineer-i-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45A690>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:56:43 | WARNING | Page load failed for https://www.jobfound.org/job/vsp-vision-is-hiring-for-apprentice-software-engineer-ex-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC947190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:56:43 | ERROR | Error extracting job data from https://www.jobfound.org/job/vsp-vision-is-hiring-for-apprentice-software-engineer-ex-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC947190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:56:59 | WARNING | Page load failed for https://www.jobfound.org/job/sunsoft-online-is-hiring-for-frontend-developer-or-remote-frontend-development: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD445750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:56:59 | ERROR | Error extracting job data from https://www.jobfound.org/job/sunsoft-online-is-hiring-for-frontend-developer-or-remote-frontend-development: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD445750>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:57:15 | WARNING | Page load failed for https://www.jobfound.org/job/onelocal-is-hiring-for-freelance-website-designer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD4469D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:57:15 | ERROR | Error extracting job data from https://www.jobfound.org/job/onelocal-is-hiring-for-freelance-website-designer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=60422): Max retries exceeded with url: /session/305c5ff254725a71c22dbd12171e63ca/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD4469D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-03 22:57:16 | INFO | Found 6 new jobs to store from source: JobFound Portal for Remote Job
+2025-05-03 22:57:42 | INFO | Email sent successfully to prasanthranger09@gmail.com
+2025-05-03 22:57:42 | INFO | Function scrape_and_process_jobs took 561.83 seconds
+2025-05-04 21:44:31 | INFO | Shutting down the application...
+2025-05-04 21:44:31 | INFO | Application shutdown completed successfully
+2025-05-04 21:44:41 | INFO | Starting up the application...
+2025-05-04 21:44:41 | INFO | Scheduled job scraping for 18:00
+2025-05-04 21:44:41 | INFO | Scheduler initialized successfully
+2025-05-04 21:44:41 | INFO | Application startup completed successfully
+2025-05-04 21:47:56 | INFO | Shutting down the application...
+2025-05-04 21:47:56 | INFO | Application shutdown completed successfully
+2025-05-04 21:48:03 | INFO | Starting up the application...
+2025-05-04 21:48:04 | INFO | Scheduled job scraping for 18:00
+2025-05-04 21:48:04 | INFO | Scheduler initialized successfully
+2025-05-04 21:48:04 | INFO | Application startup completed successfully
+2025-05-04 22:01:22 | INFO | Shutting down the application...
+2025-05-04 22:01:22 | INFO | Application shutdown completed successfully
+2025-05-04 22:01:27 | INFO | Starting up the application...
+2025-05-04 22:01:28 | INFO | Scheduled job scraping for 18:00
+2025-05-04 22:01:28 | INFO | Scheduler initialized successfully
+2025-05-04 22:01:28 | INFO | Application startup completed successfully
+2025-05-04 22:02:15 | INFO | Shutting down the application...
+2025-05-04 22:02:15 | INFO | Application shutdown completed successfully
+2025-05-04 22:02:39 | INFO | Starting up the application...
+2025-05-04 22:02:39 | INFO | Scheduled job scraping for 18:00
+2025-05-04 22:02:39 | INFO | Scheduler initialized successfully
+2025-05-04 22:02:39 | INFO | Application startup completed successfully
+2025-05-04 22:22:24 | INFO | Starting scraping task for source_id: None
+2025-05-04 22:22:24 | INFO | Starting job scraping at 2025-05-04 22:22:24.203777 for source_id: None
+2025-05-04 22:22:25 | INFO | Found 2 active sources to scrape
+2025-05-04 22:22:25 | INFO | Processing source: JobFound Portal (ID: 1)
+2025-05-04 22:22:54 | SUCCESS | Driver initialized successfully
+2025-05-04 22:22:54 | INFO | Network Conditions: {"downlink": 1.45, "rtt": 100, "type": "4g"}
+2025-05-04 22:22:54 | INFO | Accessing https://www.jobfound.org/
+2025-05-04 22:23:06 | INFO | Starting URL collection from: https://www.jobfound.org/
+2025-05-04 22:23:14 | INFO | Total job URLs collected: 450
+2025-05-04 22:23:14 | INFO | Function collect_job_urls took 8.35 seconds
+2025-05-04 22:23:14 | INFO | Found 20 job URLs
+2025-05-04 22:23:25 | INFO | Scraped: Front End Development Part Time Intern
+2025-05-04 22:23:30 | INFO | Scraped: Python Developer
+2025-05-04 22:23:34 | INFO | Scraped: Full-Stack Software Developer Intern
+2025-05-04 22:23:37 | INFO | Scraped: Web Developer - Wordpress and React
+2025-05-04 22:23:48 | INFO | Scraped: Software Developer
+2025-05-04 22:23:58 | INFO | Scraped: Software Engineer - UI(full-stack development)
+2025-05-04 22:24:05 | INFO | Scraped: Associate Software Engineer
+2025-05-04 22:24:09 | INFO | Scraped: Full Stack Engineer
+2025-05-04 22:24:17 | INFO | Scraped: Software Engineer
+2025-05-04 22:24:22 | INFO | Scraped: Software Engineer - I (Frontend)
+2025-05-04 22:24:22 | INFO | Function cleanup_memory took 0.14 seconds
+2025-05-04 22:24:22 | INFO | Performance Metrics: {"memory_usage_percent": 54.57598344333253, "total_js_heap": 218365683, "used_js_heap": 119175219}
+2025-05-04 22:24:35 | INFO | Scraped: Software Developer
+2025-05-04 22:24:43 | INFO | Scraped: Junior Software Developer
+2025-05-04 22:24:47 | INFO | Scraped: Frontend Developer
+2025-05-04 22:24:56 | INFO | Scraped: Front-end Developer
+2025-05-04 22:25:03 | INFO | Scraped: Associate Cloud Platform Engineer
+2025-05-04 22:25:22 | WARNING | Error getting apply link for https://www.jobfound.org/job/limechat-software-engineer-or-bangalore-backend-development: Message: 
+
+2025-05-04 22:25:22 | INFO | Scraped: Software Engineer
+2025-05-04 22:25:26 | INFO | Scraped: Software Engineer
+2025-05-04 22:25:30 | INFO | Scraped: Software Engineer - Graduate Entry
+2025-05-04 22:25:34 | INFO | Scraped: Software Engineer Intern
+2025-05-04 22:25:39 | INFO | Scraped: Intern
+2025-05-04 22:25:39 | INFO | Performance Metrics: {"memory_usage_percent": 57.48263155614786, "total_js_heap": 206560244, "used_js_heap": 118736264}
+2025-05-04 22:25:42 | INFO | Function scrape_jobs took 196.29 seconds
+2025-05-04 22:25:42 | INFO | Found 20 jobs from scraping source: JobFound Portal
+2025-05-04 22:25:58 | WARNING | Page load failed for https://www.jobfound.org/job/nioclass-is-hiring-for-front-end-development-part-time-intern-or-delhi-gurgaon-noida-frontend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF8E4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:25:58 | ERROR | Error extracting job data from https://www.jobfound.org/job/nioclass-is-hiring-for-front-end-development-part-time-intern-or-delhi-gurgaon-noida-frontend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF8E4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:26:14 | WARNING | Page load failed for https://www.jobfound.org/job/registerkaro-is-hiring-for-python-developer-or-0-1-years-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45D790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:26:14 | ERROR | Error extracting job data from https://www.jobfound.org/job/registerkaro-is-hiring-for-python-developer-or-0-1-years-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45D790>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:26:31 | WARNING | Page load failed for https://www.jobfound.org/job/qpiai-is-hiring-for-full-stack-software-developer-intern-or-bengaluru-full-stack-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF8E490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:26:31 | ERROR | Error extracting job data from https://www.jobfound.org/job/qpiai-is-hiring-for-full-stack-software-developer-intern-or-bengaluru-full-stack-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF8E490>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:26:47 | WARNING | Page load failed for https://www.jobfound.org/job/fyerx-is-hiring-for-web-developer-wordpress-and-react-or-bengaluru-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD08A090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:26:47 | ERROR | Error extracting job data from https://www.jobfound.org/job/fyerx-is-hiring-for-web-developer-wordpress-and-react-or-bengaluru-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD08A090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:27:03 | WARNING | Page load failed for https://www.jobfound.org/job/softlink-global-is-hiring-for-software-developer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF836D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:27:03 | ERROR | Error extracting job data from https://www.jobfound.org/job/softlink-global-is-hiring-for-software-developer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF836D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:27:20 | WARNING | Page load failed for https://www.jobfound.org/job/ivant-is-hiring-for-software-engineer-uifull-stack-development-or-bangalore-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD457050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:27:20 | ERROR | Error extracting job data from https://www.jobfound.org/job/ivant-is-hiring-for-software-engineer-uifull-stack-development-or-bangalore-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD457050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:27:36 | WARNING | Page load failed for https://www.jobfound.org/job/priceline-is-hiring-for-associate-software-engineer-or-mumbai-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF8F590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:27:36 | ERROR | Error extracting job data from https://www.jobfound.org/job/priceline-is-hiring-for-associate-software-engineer-or-mumbai-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF8F590>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:27:52 | WARNING | Page load failed for https://www.jobfound.org/job/writesonic-is-hiring-for-full-stack-engineer-or-india-full-stack-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45F5D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:27:52 | ERROR | Error extracting job data from https://www.jobfound.org/job/writesonic-is-hiring-for-full-stack-engineer-or-india-full-stack-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45F5D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:28:09 | WARNING | Page load failed for https://www.jobfound.org/job/dentsu-software-engineer-or-bengaluru-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45A050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:28:09 | ERROR | Error extracting job data from https://www.jobfound.org/job/dentsu-software-engineer-or-bengaluru-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45A050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:28:25 | WARNING | Page load failed for https://www.jobfound.org/job/nirvana-is-hiring-for-software-engineer-i-frontend-or-bangalore-frontend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45E4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:28:25 | ERROR | Error extracting job data from https://www.jobfound.org/job/nirvana-is-hiring-for-software-engineer-i-frontend-or-bangalore-frontend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45E4D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:28:41 | WARNING | Page load failed for https://www.jobfound.org/job/resultscx-is-hiring-for-software-developer-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF81850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:28:41 | ERROR | Error extracting job data from https://www.jobfound.org/job/resultscx-is-hiring-for-software-developer-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF81850>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:28:58 | WARNING | Page load failed for https://www.jobfound.org/job/training-basket-is-hiring-for-junior-software-developer-or-india-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD4542D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:28:58 | ERROR | Error extracting job data from https://www.jobfound.org/job/training-basket-is-hiring-for-junior-software-developer-or-india-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD4542D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:29:14 | WARNING | Page load failed for https://www.jobfound.org/job/aestriks-is-hiring-for-frontend-developer-or-new-delhi-frontend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF81390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:29:14 | ERROR | Error extracting job data from https://www.jobfound.org/job/aestriks-is-hiring-for-frontend-developer-or-new-delhi-frontend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF81390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:29:30 | WARNING | Page load failed for https://www.jobfound.org/job/supportfinity-is-hiring-for-front-end-developer-or-remote-frontend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45C150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:29:30 | ERROR | Error extracting job data from https://www.jobfound.org/job/supportfinity-is-hiring-for-front-end-developer-or-remote-frontend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45C150>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:29:47 | WARNING | Page load failed for https://www.jobfound.org/job/huron-is-hiring-for-associate-cloud-platform-engineer-or-bangalore-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC949190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:29:47 | ERROR | Error extracting job data from https://www.jobfound.org/job/huron-is-hiring-for-associate-cloud-platform-engineer-or-bangalore-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC949190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:30:03 | WARNING | Page load failed for https://www.jobfound.org/job/limechat-software-engineer-or-bangalore-backend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF837D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:30:03 | ERROR | Error extracting job data from https://www.jobfound.org/job/limechat-software-engineer-or-bangalore-backend-development: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF837D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:30:19 | WARNING | Page load failed for https://www.jobfound.org/job/nec-corporation-is-hiring-for-trainee-or-freshers-0-1-years-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF80050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:30:19 | ERROR | Error extracting job data from https://www.jobfound.org/job/nec-corporation-is-hiring-for-trainee-or-freshers-0-1-years-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF80050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:30:36 | WARNING | Page load failed for https://www.jobfound.org/job/beekin-is-hiring-for-software-engineer-graduate-entry-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF82D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:30:36 | ERROR | Error extracting job data from https://www.jobfound.org/job/beekin-is-hiring-for-software-engineer-graduate-entry-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FDF82D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:30:52 | WARNING | Page load failed for https://www.jobfound.org/job/valgenesis-for-software-engineer-intern-or-chennai-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD089E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:30:52 | ERROR | Error extracting job data from https://www.jobfound.org/job/valgenesis-for-software-engineer-intern-or-chennai-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD089E10>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:31:08 | WARNING | Page load failed for https://www.jobfound.org/job/aristocrat-is-hiring-for-intern-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45F7D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:31:08 | ERROR | Error extracting job data from https://www.jobfound.org/job/aristocrat-is-hiring-for-intern-or-freshers-software-engineer: HTTPConnectionPool(host='localhost', port=54368): Max retries exceeded with url: /session/72724a8a9807e0de0935a5a9e81c4a57/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD45F7D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:31:08 | INFO | Found 20 new jobs to store from source: JobFound Portal
+2025-05-04 22:31:29 | INFO | Processing source: JobFound Portal for Remote Job (ID: 2)
+2025-05-04 22:31:32 | SUCCESS | Driver initialized successfully
+2025-05-04 22:31:32 | INFO | Network Conditions: {"downlink": 1.45, "rtt": 100, "type": "4g"}
+2025-05-04 22:31:32 | INFO | Accessing https://www.jobfound.org/remote
+2025-05-04 22:31:39 | INFO | Starting URL collection from: https://www.jobfound.org/remote
+2025-05-04 22:31:49 | INFO | Total job URLs collected: 450
+2025-05-04 22:31:49 | INFO | Function collect_job_urls took 10.36 seconds
+2025-05-04 22:31:49 | INFO | Found 20 job URLs
+2025-05-04 22:32:05 | WARNING | Error getting apply link for https://www.jobfound.org/job/powder-river-is-hiring-for-ui-engineer-or-remote-uiorux: Message: 
+
+2025-05-04 22:32:05 | INFO | Scraped: UI Engineer
+2025-05-04 22:32:09 | INFO | Scraped: UI Engineer
+2025-05-04 22:32:29 | WARNING | Error getting apply link for https://www.jobfound.org/job/slash-staffing-is-hiring-for-billing-specialist-medicare-data-entry-or-remote-graduate-engineer-trainee: Message: 
+
+2025-05-04 22:32:29 | INFO | Scraped: Billing Specialist (Medicare Data Entry)
+2025-05-04 22:32:36 | INFO | Scraped: Billing Specialist (Medicare Data Entry)
+2025-05-04 22:32:43 | INFO | Scraped: Software Engineer
+2025-05-04 22:32:52 | INFO | Scraped: Data Entry Specialist
+2025-05-04 22:33:06 | WARNING | Error getting apply link for https://www.jobfound.org/job/natera-is-hiring-for-supervisor-clinical-data-entry-or-remote-graduate-engineer-trainee: Message: 
+
+2025-05-04 22:33:06 | INFO | Scraped: Supervisor, Clinical Data Entry
+2025-05-04 22:33:09 | INFO | Scraped: Supervisor, Clinical Data Entry
+2025-05-04 22:33:14 | INFO | Scraped: Data Entry Analyst
+2025-05-04 22:33:19 | INFO | Scraped: UI
+2025-05-04 22:33:20 | INFO | Function cleanup_memory took 0.19 seconds
+2025-05-04 22:33:20 | INFO | Performance Metrics: {"memory_usage_percent": 57.35847316388455, "total_js_heap": 208345504, "used_js_heap": 119503800}
+2025-05-04 22:33:26 | INFO | Scraped: AI
+2025-05-04 22:33:34 | INFO | Scraped: Web Developer
+2025-05-04 22:33:44 | INFO | Scraped: Data Entry Clerk
+2025-05-04 22:33:49 | INFO | Scraped: Data Entry - 100% Remote Work
+2025-05-04 22:33:57 | INFO | Scraped: Freelance English Remote Annotator
+2025-05-04 22:34:01 | INFO | Scraped: Junior Conversational AI Designer
+2025-05-04 22:34:09 | INFO | Scraped: Tableau Data Visualization - Intern
+2025-05-04 22:34:16 | INFO | Scraped: Software Engineer - Frontend
+2025-05-04 22:34:22 | INFO | Scraped: Associate Software Engineer, Full Stack
+2025-05-04 22:34:30 | INFO | Scraped: Software Engineer I
+2025-05-04 22:34:30 | INFO | Performance Metrics: {"memory_usage_percent": 55.37361160591333, "total_js_heap": 214984890, "used_js_heap": 119044898}
+2025-05-04 22:34:32 | INFO | Function scrape_jobs took 182.80 seconds
+2025-05-04 22:34:32 | INFO | Found 20 jobs from scraping source: JobFound Portal for Remote Job
+2025-05-04 22:34:48 | WARNING | Page load failed for https://www.jobfound.org/job/powder-river-is-hiring-for-ui-engineer-or-remote-uiorux: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD458090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:34:48 | ERROR | Error extracting job data from https://www.jobfound.org/job/powder-river-is-hiring-for-ui-engineer-or-remote-uiorux: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD458090>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:35:05 | WARNING | Page load failed for https://www.jobfound.org/job/measure-marketing-results-inc-is-hiring-for-web-designer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD458390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:35:05 | ERROR | Error extracting job data from https://www.jobfound.org/job/measure-marketing-results-inc-is-hiring-for-web-designer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD458390>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:35:21 | WARNING | Page load failed for https://www.jobfound.org/job/slash-staffing-is-hiring-for-billing-specialist-medicare-data-entry-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC77EE50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:35:21 | ERROR | Error extracting job data from https://www.jobfound.org/job/slash-staffing-is-hiring-for-billing-specialist-medicare-data-entry-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC77EE50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:35:37 | WARNING | Page load failed for https://www.jobfound.org/job/marbill-is-hiring-for-data-entry-specialist-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC78C290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:35:37 | ERROR | Error extracting job data from https://www.jobfound.org/job/marbill-is-hiring-for-data-entry-specialist-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC78C290>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:35:54 | WARNING | Page load failed for https://www.jobfound.org/job/sfi-is-hiring-for-software-engineer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD4447D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:35:54 | ERROR | Error extracting job data from https://www.jobfound.org/job/sfi-is-hiring-for-software-engineer-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD4447D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:36:10 | WARNING | Page load failed for https://www.jobfound.org/job/brooksource-is-hiring-for-data-entry-specialist-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD446FD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:36:10 | ERROR | Error extracting job data from https://www.jobfound.org/job/brooksource-is-hiring-for-data-entry-specialist-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD446FD0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:36:26 | WARNING | Page load failed for https://www.jobfound.org/job/natera-is-hiring-for-supervisor-clinical-data-entry-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC77C3D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:36:26 | ERROR | Error extracting job data from https://www.jobfound.org/job/natera-is-hiring-for-supervisor-clinical-data-entry-or-remote-graduate-engineer-trainee: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FC77C3D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+2025-05-04 22:36:43 | ERROR | Error extracting job data from https://www.jobfound.org/job/act-is-hiring-for-software-engineer-i-or-remote-software-engineer: HTTPConnectionPool(host='localhost', port=52571): Max retries exceeded with url: /session/3b2566c93c674c36af71b824f670a4ae/url (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001C0FD452190>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
