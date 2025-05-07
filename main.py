@@ -45,6 +45,7 @@ def get_application():
         max_age=600,  # Cache preflight requests for 10 minutes
     )
 
+    # ───────── Startup / Shutdown ─────────
     @app.on_event("startup")
     async def startup_event():
         try:
