@@ -10,6 +10,8 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
     LOG_LEVEL: str = "INFO"
 
+    INTER_SERVICE_SECRET: str = "SuperSecretValue"
+
     # Database Settings
     DATABASE_URL: str
     DB_POOL_SIZE: int = 20

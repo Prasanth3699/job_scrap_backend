@@ -343,6 +343,36 @@ class JobScraper:
             logger.warning(f"Error getting apply link for {detail_url}: {str(e)}")
             return detail_url
 
+    def get_by_data(self, job_data: Dict[str, Any]) -> Optional[Job]:
+        """Check if job exists by URL or by unique combination of fields without re-scraping"""
+        # First try to get the job by URL
+        existing_job = (
+            self.db.query(Job).filter(Job.detail_url == job_data["detail_url"]).first()
+        )
+        if existing_job:
+            return existing_job
+
+        # If not found by URL, check for existing job with same title, company and date
+        try:
+            posting_date = datetime.datetime.strptime(
+                job_data["posting_date"], "%d %B %Y"
+            ).date()
+
+            return (
+                self.db.query(Job)
+                .filter(
+                    and_(
+                        Job.job_title == job_data["job_title"],
+                        Job.company_name == job_data["company_name"],
+                        Job.posting_date == posting_date,
+                    )
+                )
+                .first()
+            )
+        except Exception as e:
+            logger.error(f"Error checking for duplicate job: {str(e)}")
+            return None
+
     def get_new_window_url(self, fallback_url: str) -> str:
         """Handle new window/tab and get URL safely"""
         try:
@@ -878,12 +908,16 @@ def scrape_and_process_jobs(source_id: Optional[int] = None):
                 )
 
                 try:
-                    # Filter out existing jobs
-                    new_jobs = [
-                        job_data
-                        for job_data in scraped_jobs
-                        if not scraper.get_by_url(job_data["detail_url"])
-                    ]
+                    # Filter out existing jobs using get_by_data for more thorough duplication check
+                    new_jobs = []
+                    for job_data in scraped_jobs:
+                        # Check if job already exists using the new function
+                        if not scraper.get_by_data(job_data):
+                            new_jobs.append(job_data)
+                        else:
+                            logger.info(
+                                f"Skipping duplicate job: {job_data['job_title']} at {job_data['company_name']}"
+                            )
 
                     logger.info(
                         f"Found {len(new_jobs)} new jobs to store from source: {source.name}"
@@ -938,11 +972,15 @@ def scrape_and_process_jobs(source_id: Optional[int] = None):
         try:
             if total_new_jobs > 0 and last_scraper:
                 # Get the actual Job objects
-                job_objects = [
-                    last_scraper.get_by_url(job["detail_url"])
-                    for job in all_stored_jobs
-                    if last_scraper.get_by_url(job["detail_url"])
-                ]
+                job_objects = []
+                for job in all_stored_jobs:
+                    job_obj = (
+                        last_scraper.db.query(Job)
+                        .filter(Job.detail_url == job["detail_url"])
+                        .first()
+                    )
+                    if job_obj:
+                        job_objects.append(job_obj)
 
                 linkedin_format = create_linkedin_format(job_objects)
 

@@ -1,6 +1,7 @@
 from fastapi import APIRouter, Cookie, Depends, HTTPException, Response, status, Request
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
+from fastapi import Header
 
 from ...services.token_service import TokenService
 from ...core.auth import get_current_user
@@ -112,6 +113,72 @@ async def validate_token(
     - Raises HTTPException if token is invalid
     """
     try:
+        # Extract token from Authorization header
+        token = credentials.credentials
+
+        # Verify the token
+        payload = AuthService.verify_token(token)
+
+        # Extract user ID from token payload
+        user_id = payload.get("sub")
+        if not user_id:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED,
+                detail="Invalid token: No user identifier",
+            )
+
+        # Fetch user from database
+        user = db.query(User).filter(User.id == int(user_id)).first()
+        if not user:
+            raise HTTPException(
+                status_code=status.HTTP_401_UNAUTHORIZED, detail="User not found"
+            )
+
+        # Check if user is active
+        if not user.is_active:
+            raise HTTPException(
+                status_code=status.HTTP_403_FORBIDDEN, detail="User account is inactive"
+            )
+
+        # Return user information
+        return {
+            "user_id": user.id,
+            "email": user.email,
+            "name": user.name,
+            "is_admin": user.is_admin or False,
+            "is_active": user.is_active,
+        }
+
+    except HTTPException:
+        # Re-raise HTTPException to maintain specific error details
+        raise
+    except Exception as e:
+        # Catch any unexpected errors
+        raise HTTPException(
+            status_code=status.HTTP_401_UNAUTHORIZED,
+            detail=f"Token validation failed: {str(e)}",
+        )
+
+
+@router.post("/payment-service/validate-token", response_model=dict)
+async def payment_service_validate_token(
+    request: Request,
+    credentials: HTTPAuthorizationCredentials = Depends(security),
+    db: Session = Depends(get_db),
+    x_internal_secret: str = Header(..., alias="x-internal-secret"),
+):
+    """
+    Validate the provided JWT token
+
+    Returns:
+    - User information if token is valid
+    - Raises HTTPException if token is invalid
+    """
+    try:
+        # Only allow internal calls with correct secret
+        if x_internal_secret != settings.INTER_SERVICE_SECRET:
+            raise HTTPException(status_code=403, detail="Forbidden")
+
         # Extract token from Authorization header
         token = credentials.credentials
 
