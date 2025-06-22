@@ -8,6 +8,8 @@ from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 import os
 
+from app.middleware.rate_limit import RateLimitMiddleware
+
 load_dotenv()
 
 
@@ -28,12 +30,14 @@ def get_application():
     settings = SettingsService.get_settings(db)
 
     app = FastAPI(title=settings.app_name)
+    app.add_middleware(RateLimitMiddleware, requests_per_minute=60)
     app.include_router(api_router)
 
     # Configure CORS
     app.add_middleware(
         CORSMiddleware,
-        allow_origins=["*"],  # Allow requests from your Next.js app
+        # allow_origins=["*"],  # Allow requests from your Next.js app
+        allow_origins=origins,  # Allow requests from your Next.js app
         allow_credentials=True,
         allow_methods=["*"],  # Allow all HTTP methods (GET, POST, etc.)
         allow_headers=["*"],  # Allow all headers
@@ -41,6 +45,7 @@ def get_application():
         max_age=600,  # Cache preflight requests for 10 minutes
     )
 
+    # ───────── Startup / Shutdown ─────────
     @app.on_event("startup")
     async def startup_event():
         try:

@@ -1,6 +1,6 @@
 from pydantic import AnyHttpUrl
 from pydantic_settings import BaseSettings
-from typing import List
+from typing import List, Optional
 from functools import lru_cache
 
 
@@ -9,6 +9,8 @@ class Settings(BaseSettings):
     APP_NAME: str = "Job Scraper"
     ENVIRONMENT: str = "development"
     LOG_LEVEL: str = "INFO"
+
+    INTER_SERVICE_SECRET: str = "SuperSecretValue"
 
     # Database Settings
     DATABASE_URL: str
@@ -35,7 +37,8 @@ class Settings(BaseSettings):
         "bcd2ea681c63e1e6a4362f267c18ceffc318f95111c52d420c11516bfa8dfa6a2e51c863d6521787f336b799e209f8eb648a66a3f1d4abee2e97235b32592d6b46b312bb046ab8a5a8d540dfd0f6b2a8936c64bb911e91bf54073e54abfceafe55b19fcf62c789f1704734253367e24074f7e8cb2182b228998951536a972b70bd7d30032600941206b1d21dd3e44c289a015037c5a480cf7b49390bab7cbe3e38d211aeaf9444ef4ac80b0df7f69dbc5d3e3ec1da30bdc5e54ae1585f3b683c58417b5463c3ab9d41882ca7737b58fae0c199c70a4eecfe485a0ad9f33cf798b56a1733c6c25a447541af5edda5dc6a713f7196813c992191837ced8da9476c"
     )
     ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 30
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
+    REFRESH_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
 
     # New Email Settings
     SMTP_SERVER: str
@@ -50,11 +53,24 @@ class Settings(BaseSettings):
     SLACK_WEBHOOK_URL: str | None = None
     DISCORD_WEBHOOK_URL: str | None = None
 
+    CELERY_BROKER_URL: str = "redis://localhost:6379/0"
+    CELERY_RESULT_BACKEND: str = "redis://localhost:6379/1"
+
+    REDIS_HOST: str = "localhost"
+    REDIS_PORT: int = 6379
+    REDIS_PASSWORD: Optional[str] = ""
+
     allowed_origins: List[AnyHttpUrl] = []
+
+    # Websocket Settings
+    WS_SECRET_KEY: str = "1234567890"
+    APP2_URL: str = "http://localhost:8001"
+    REDIS_URL: str = "redis://localhost"
 
     class Config:
         env_file = ".env"
         env_file_encoding = "utf-8"
+        extra = "allow"
 
 
 @lru_cache()

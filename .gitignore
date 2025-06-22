@@ -2,5 +2,10 @@
 
 # env files (can opt-in for committing if needed)
 .env*
+logs
+*.logs
+*.log
+*__pycache__/
+*.pyc
 
 

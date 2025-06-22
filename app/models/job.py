@@ -7,16 +7,16 @@ class Job(Base):
     __tablename__ = "jobs"
 
     id = Column(Integer, primary_key=True, index=True)
-    job_title = Column(String(255), nullable=False)
-    company_name = Column(String(255))
+    job_title = Column(String(500), nullable=False)
+    company_name = Column(String(500))
     job_type = Column(String(100))
     category = Column(String(100))
     salary = Column(String(100))
     experience = Column(String(100))
-    location = Column(String(255))
+    location = Column(String(500))
     description = Column(Text)
-    detail_url = Column(String(500), unique=True)
-    apply_link = Column(String(500))
+    detail_url = Column(String(1000), unique=True)
+    apply_link = Column(String(1000))
     posting_date = Column(Date, index=True)
     created_at = Column(DateTime(timezone=True), server_default=func.now())
     updated_at = Column(DateTime(timezone=True), onupdate=func.now())
@@ -30,4 +30,7 @@ class Job(Base):
     __table_args__ = (
         Index("idx_job_title_company", job_title, company_name),
         Index("idx_posting_date", posting_date),
+        Index("idx_job_location", location),
+        Index("idx_job_type", job_type),
+        Index("idx_job_experience", experience),
     )

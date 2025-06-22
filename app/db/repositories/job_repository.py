@@ -2,7 +2,8 @@ import datetime
 from sqlalchemy.orm import Session
 from sqlalchemy import desc
 from datetime import date, timedelta
-from typing import Any, Dict, List, Optional
+from sqlalchemy import desc, or_, and_, func
+from typing import Any, Dict, List, Optional, Tuple
 
 from ...utils.exceptions import DatabaseException
 from ...models.job import Job
@@ -58,11 +59,120 @@ class JobRepository:
             logger.error(error_msg)
             raise DatabaseException(error_msg)
 
+    def get_filtered_jobs(
+        self,
+        skip: int = DEFAULT_OFFSET,
+        limit: int = DEFAULT_LIMIT,
+        search: Optional[str] = None,
+        location: Optional[List[str]] = None,
+        job_type: Optional[List[str]] = None,
+        experience: Optional[List[str]] = None,
+        salary_min: Optional[float] = None,
+        salary_max: Optional[float] = None,
+        date_from: Optional[date] = None,
+    ) -> Tuple[List[Job], int]:
+        """
+        Get jobs with filters and return total count
+        """
+        try:
+            query = self.db.query(Job)
+
+            # Apply filters
+            filters = []
+
+            if search:
+                search_filter = or_(
+                    Job.job_title.ilike(f"%{search}%"),
+                    Job.company_name.ilike(f"%{search}%"),
+                    Job.description.ilike(f"%{search}%"),
+                )
+                filters.append(search_filter)
+
+            if location:
+                filters.append(Job.location.in_(location))
+
+            if job_type:
+                filters.append(Job.job_type.in_(job_type))
+
+            if experience:
+                filters.append(Job.experience.in_(experience))
+
+            if date_from:
+                filters.append(Job.posting_date >= date_from)
+
+            # Apply all filters
+            if filters:
+                query = query.filter(and_(*filters))
+
+            # Get total count before pagination
+            total = query.count()
+
+            # Apply pagination and ordering
+            jobs = (
+                query.order_by(desc(Job.posting_date)).offset(skip).limit(limit).all()
+            )
+
+            return jobs, total
+
+        except Exception as e:
+            error_msg = f"Error fetching filtered jobs: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
+
+    def get_related_jobs(self, job: Job, limit: int = 3) -> List[Job]:
+        """
+        Get related jobs based on job title, type, and location
+        """
+        try:
+            # Create a base query excluding the current job
+            query = self.db.query(Job).filter(Job.id != job.id)
+
+            # Split the job title into keywords
+            keywords = job.job_title.lower().split()
+            title_filters = [
+                Job.job_title.ilike(f"%{keyword}%") for keyword in keywords
+            ]
+
+            # Combine filters with OR conditions
+            related_filter = or_(
+                *title_filters,
+                Job.job_type == job.job_type,
+                Job.location == job.location,
+                Job.experience == job.experience,
+            )
+
+            # Apply filters and get results
+            related_jobs = (
+                query.filter(related_filter)
+                .order_by(desc(Job.posting_date))
+                .limit(limit)
+                .all()
+            )
+
+            return related_jobs
+
+        except Exception as e:
+            error_msg = f"Error fetching related jobs: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
+
     def get_by_id(self, job_id: int) -> Optional[Job]:
-        return self.db.query(Job).filter(Job.id == job_id).first()
+        """Get job by ID"""
+        try:
+            return self.db.query(Job).filter(Job.id == job_id).first()
+        except Exception as e:
+            error_msg = f"Error fetching job by ID: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
 
     def get_by_url(self, detail_url: str) -> Optional[Job]:
-        return self.db.query(Job).filter(Job.detail_url == detail_url).first()
+        """Get job by URL"""
+        try:
+            return self.db.query(Job).filter(Job.detail_url == detail_url).first()
+        except Exception as e:
+            error_msg = f"Error fetching job by URL: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
 
     def get_jobs(
         self,
@@ -70,14 +180,50 @@ class JobRepository:
         limit: int = DEFAULT_LIMIT,
         date_from: Optional[date] = None,
     ) -> List[Job]:
-        query = self.db.query(Job)
-        if date_from:
-            query = query.filter(Job.posting_date >= date_from)
-        return query.order_by(desc(Job.posting_date)).offset(skip).limit(limit).all()
+        """Get paginated jobs"""
+        try:
+            jobs, _ = self.get_filtered_jobs(
+                skip=skip, limit=limit, date_from=date_from
+            )
+            return jobs
+        except Exception as e:
+            error_msg = f"Error fetching jobs: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
 
     def get_recent_jobs(self, days: int = 1) -> List[Job]:
-        date_from = date.today() - timedelta(days=days)
-        return self.get_jobs(date_from=date_from)
+        """Get recent jobs from the last N days"""
+        try:
+            date_from = date.today() - timedelta(days=days)
+            return self.get_jobs(date_from=date_from)
+        except Exception as e:
+            error_msg = f"Error fetching recent jobs: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
+
+    def get_job_stats(self) -> Dict[str, Any]:
+        """Get job statistics"""
+        try:
+            stats = {
+                "total_jobs": self.db.query(func.count(Job.id)).scalar(),
+                "total_companies": self.db.query(
+                    func.count(func.distinct(Job.company_name))
+                ).scalar(),
+                "job_types": self.db.query(Job.job_type, func.count(Job.id))
+                .group_by(Job.job_type)
+                .all(),
+                "locations": self.db.query(Job.location, func.count(Job.id))
+                .group_by(Job.location)
+                .all(),
+                "experience_levels": self.db.query(Job.experience, func.count(Job.id))
+                .group_by(Job.experience)
+                .all(),
+            }
+            return stats
+        except Exception as e:
+            error_msg = f"Error fetching job statistics: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
 
     def update(self, job_id: int, job_data: Dict[str, Any]) -> Optional[Job]:
         """Update a job entry"""
