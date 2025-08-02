@@ -1,5 +1,16 @@
 from fastapi import APIRouter
-from .endpoints import jobs, auth, settings, stats, job_sources, profile, parsed_resume
+from .endpoints import (
+    jobs,
+    auth,
+    settings,
+    stats,
+    job_sources,
+    profile,
+    parsed_resume,
+    internal,
+    health,
+    monitoring,
+)
 
 api_router = APIRouter()
 
@@ -19,3 +30,13 @@ api_router.include_router(
 )
 api_router.include_router(settings.router, prefix="/settings", tags=["settings"])
 api_router.include_router(stats.router, prefix="/stats", tags=["statistics"])
+
+# Internal APIs for microservice communication
+api_router.include_router(internal.router, tags=["internal"])
+
+# Health check endpoints (no prefix for standard health endpoints)
+api_router.include_router(health.router, prefix="/health", tags=["health"])
+
+
+# Monitoring endpoints
+api_router.include_router(monitoring.router)

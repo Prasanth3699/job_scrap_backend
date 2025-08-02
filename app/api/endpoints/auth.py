@@ -2,6 +2,8 @@ from fastapi import APIRouter, Cookie, Depends, HTTPException, Response, status,
 from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
 from sqlalchemy.orm import Session
 from fastapi import Header
+from ...core.logger import logger
+import requests
 
 from ...services.token_service import TokenService
 from ...core.auth import get_current_user
@@ -15,6 +17,7 @@ from ...schemas.auth import (
     TokenResponse,
 )
 from ...services.auth_service import AuthService
+from ...services.event_publisher import get_event_publisher
 from ...core.config import get_settings
 
 settings = get_settings()
@@ -27,7 +30,16 @@ security = HTTPBearer()
 async def register(
     user_data: UserCreate, request: Request, db: Session = Depends(get_db)
 ):
-    return AuthService.register_user(db, user_data)
+    user = AuthService.register_user(db, user_data)
+
+    # Publish user registration event
+    try:
+        event_publisher = get_event_publisher()
+        await event_publisher.publish_user_registered(user)
+    except Exception as e:
+        logger.error(f"Failed to publish user registration event: {str(e)}")
+
+    return user
 
 
 @router.post("/admin/register", response_model=UserResponse)
@@ -38,9 +50,10 @@ async def register_admin(
 
 
 @router.post("/login", response_model=TokenResponse)
-def login(
+async def login(
     user_data: UserLogin,
     response: Response,
+    request: Request,
     db: Session = Depends(get_db),
 ):
 
@@ -51,6 +64,18 @@ def login(
         {"sub": str(user.id), "is_admin": is_admin}
     )
     refresh_token = AuthService.create_refresh_token({"sub": str(user.id)})
+
+    # Publish user login event
+    try:
+        event_publisher = get_event_publisher()
+        login_metadata = {
+            "user_agent": request.headers.get("user-agent", "unknown"),
+            "ip_address": request.client.host if request.client else "unknown",
+            "is_admin": is_admin,
+        }
+        await event_publisher.publish_user_login(user, login_metadata)
+    except Exception as e:
+        logger.error(f"Failed to publish user login event: {str(e)}")
 
     # send refresh token in a secure, http-only cookie
     response.set_cookie(

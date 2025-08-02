@@ -10,7 +10,7 @@ class Settings(BaseSettings):
     ENVIRONMENT: str = "development"
     LOG_LEVEL: str = "INFO"
 
-    INTER_SERVICE_SECRET: str = "SuperSecretValue"
+    INTER_SERVICE_SECRET: str
 
     # Database Settings
     DATABASE_URL: str
@@ -33,12 +33,10 @@ class Settings(BaseSettings):
     SELENIUM_TIMEOUT: int = 30
     SELENIUM_HEADLESS: bool = True
 
-    SECRET_KEY: str = (
-        "bcd2ea681c63e1e6a4362f267c18ceffc318f95111c52d420c11516bfa8dfa6a2e51c863d6521787f336b799e209f8eb648a66a3f1d4abee2e97235b32592d6b46b312bb046ab8a5a8d540dfd0f6b2a8936c64bb911e91bf54073e54abfceafe55b19fcf62c789f1704734253367e24074f7e8cb2182b228998951536a972b70bd7d30032600941206b1d21dd3e44c289a015037c5a480cf7b49390bab7cbe3e38d211aeaf9444ef4ac80b0df7f69dbc5d3e3ec1da30bdc5e54ae1585f3b683c58417b5463c3ab9d41882ca7737b58fae0c199c70a4eecfe485a0ad9f33cf798b56a1733c6c25a447541af5edda5dc6a713f7196813c992191837ced8da9476c"
-    )
-    ALGORITHM: str = "HS256"
-    ACCESS_TOKEN_EXPIRE_MINUTES: int = 15
-    REFRESH_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 7  # 7 days
+    SECRET_KEY: str
+    ALGORITHM: str
+    ACCESS_TOKEN_EXPIRE_MINUTES: int = 60 * 24  # 24 hours for development
+    REFRESH_TOKEN_EXPIRE_MINUTES: int = 60 * 24 * 30  # 30 days
 
     # New Email Settings
     SMTP_SERVER: str
@@ -53,19 +51,50 @@ class Settings(BaseSettings):
     SLACK_WEBHOOK_URL: str | None = None
     DISCORD_WEBHOOK_URL: str | None = None
 
+    # Celery Configuration
     CELERY_BROKER_URL: str = "redis://localhost:6379/0"
     CELERY_RESULT_BACKEND: str = "redis://localhost:6379/1"
 
-    REDIS_HOST: str = "localhost"
-    REDIS_PORT: int = 6379
-    REDIS_PASSWORD: Optional[str] = ""
+    # Redis Configuration
+    REDIS_HOST: str
+    REDIS_PORT: int
+    REDIS_PASSWORD: Optional[str]
+    REDIS_URL: str
+
+    # RabbitMQ Configuration
+    RABBITMQ_URL: str
+    RABBITMQ_HOST: str
+    RABBITMQ_PORT: int
+    RABBITMQ_USER: str
+    RABBITMQ_PASSWORD: str
+
+    # Admin Configuration
+    ADMIN_SECRET_KEY: str = "admin-super-secret-key-change-in-production"
+
+    # Service Authentication
+    SERVICE_SECRET_KEY: str = "service-to-service-communication-secret"
+    JWT_SECRET_KEY: str = "jwt-signing-secret-key-change-in-production"
 
     allowed_origins: List[AnyHttpUrl] = []
 
     # Websocket Settings
     WS_SECRET_KEY: str = "1234567890"
     APP2_URL: str = "http://localhost:8001"
-    REDIS_URL: str = "redis://localhost"
+
+    # Internal Service URLs
+    ML_SERVICE_URL: str = "http://ml-service:8001"
+    LLM_SERVICE_URL: str = "http://llm-service:8002"
+    ANALYTICS_SERVICE_URL: str = "http://analytics-service:8003"
+
+    # Data Retention Configuration (in days)
+    DATA_RETENTION_JOBS: int = 90
+    DATA_RETENTION_LOGS: int = 30
+    DATA_RETENTION_METRICS: int = 7
+    DATA_RETENTION_CACHE: int = 1
+
+    # Monitoring Configuration
+    ENABLE_METRICS: bool = True
+    METRICS_EXPORT_INTERVAL: int = 60
 
     class Config:
         env_file = ".env"

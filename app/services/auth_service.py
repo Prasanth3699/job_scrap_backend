@@ -15,9 +15,17 @@ class AuthService:
     # ------------------------------------------------------------------
     # configuration
     # ------------------------------------------------------------------
-    ACCESS_TOKEN_EXPIRE_MINUTES = 15  # 15-minute access token
-    REFRESH_TOKEN_EXPIRE_MINUTES = 60 * 24 * 7  # 7-day refresh token
-    ADMIN_SECRET_KEY = "123456"
+    ACCESS_TOKEN_EXPIRE_MINUTES = 60 * 24  # 24-hour access token for development
+    REFRESH_TOKEN_EXPIRE_MINUTES = 60 * 24 * 30  # 30-day refresh token
+    
+    @classmethod
+    def get_admin_secret_key(cls) -> str:
+        """Get admin secret key from environment with secure fallback"""
+        import os
+        admin_key = os.getenv("ADMIN_SECRET_KEY")
+        if not admin_key:
+            raise ValueError("ADMIN_SECRET_KEY environment variable is required for security")
+        return admin_key
 
     # ------------------------------------------------------------------
     # internal helper – signs a JWT
@@ -88,7 +96,7 @@ class AuthService:
 
     @staticmethod
     def register_admin(db: Session, admin_data: AdminUserCreate) -> User:
-        if admin_data.admin_secret_key != AuthService.ADMIN_SECRET_KEY:
+        if admin_data.admin_secret_key != AuthService.get_admin_secret_key():
             raise HTTPException(status_code=403, detail="Invalid admin secret key")
         if db.query(User).filter(User.email == admin_data.email).first():
             raise HTTPException(status_code=400, detail="Email already registered")

@@ -14,6 +14,8 @@ from ...core.auth import get_current_user
 from ...models.user import User
 from loguru import logger
 from app.core.redis_lock import redis_lock_manager
+from app.core.cache import JobCache, InternalCache
+from app.services.event_publisher import get_event_publisher
 
 
 router = APIRouter()
@@ -85,13 +87,37 @@ async def get_jobs(
 ):
     """Get jobs with filters and pagination"""
     try:
+        # Create cache key from search parameters
+        search_params = {
+            "page": page,
+            "limit": limit,
+            "search": search,
+            "location": location,
+            "job_type": job_type,
+            "experience": experience,
+            "salary_min": salary_min,
+            "salary_max": salary_max,
+        }
+
+        # Try to get from cache first
+        cached_result = JobCache.get_job_search(search_params)
+        if cached_result:
+            try:
+                cached_result["jobs"] = [
+                    JobResponse(**job) for job in cached_result["jobs"]
+                ]
+
+                return JobsResponse(**cached_result)
+            except Exception as e:
+                logger.error(f"Error decoding cached job data: {str(e)}")
+
         repo = JobRepository(db)
         skip = (page - 1) * limit
 
         # Get filtered jobs
         jobs, total = repo.get_filtered_jobs(
             skip=skip,
-            limit=limit + 1,  # Get one extra to check if there are more
+            limit=limit + 1,
             search=search,
             location=location,
             job_type=job_type,
@@ -102,9 +128,23 @@ async def get_jobs(
 
         # Check if there are more results
         has_more = len(jobs) > limit
-        jobs = jobs[:limit]  # Remove the extra item
+        jobs = jobs[:limit]
 
-        return JobsResponse(jobs=jobs, total=total, hasMore=has_more)
+        # Convert to JobResponse and serialize
+        job_models = [JobResponse.model_validate(job) for job in jobs]
+        serialized_jobs = [job.model_dump() for job in job_models]
+
+        result = {
+            "jobs": serialized_jobs,
+            "total": total,
+            "hasMore": has_more,
+        }
+
+        # Cache the result
+        JobCache.set_job_search(search_params, result, ttl=300)
+
+        return JobsResponse(jobs=job_models, total=total, hasMore=has_more)
+
     except Exception as e:
         logger.error(f"Error getting jobs: {str(e)}")
         raise HTTPException(status_code=500, detail=str(e))
@@ -153,19 +193,158 @@ async def get_job(
     return job
 
 
-# this endpoint is for ML service application
-@router.get("/match/{job_id}", response_model=JobResponse)
-async def match_job(
-    job_id: int,
-    db: Session = Depends(get_db),
+# DEPRECATED: This endpoint is being replaced by RabbitMQ event-driven architecture
+# ML services should now send job data requests via message broker instead of direct API calls
+@router.post("/ml/request-job-data")
+async def request_job_data_for_ml(
+    request_data: dict,
     current_user: User = Depends(get_current_user),
 ):
-    """Get a specific job by ID"""
-    repo = JobRepository(db)
-    job = repo.get_by_id(job_id)
-    if not job:
-        raise HTTPException(status_code=404, detail="Job not found")
-    return job
+    """
+    Trigger job data request to be sent via RabbitMQ to ML service.
+    
+    DEPRECATED: This is a transitional endpoint. ML services should directly 
+    send events to RabbitMQ instead of using HTTP API calls.
+    
+    Expected request_data format:
+    {
+        "job_id": int,
+        "ml_service_id": str,
+        "request_id": str (optional),
+        "additional_fields": List[str] (optional)
+    }
+    """
+    try:
+        from ...core.message_broker import EventType, EventMessage, message_broker
+        from uuid import uuid4
+        from datetime import datetime
+        
+        if not current_user.is_admin:
+            raise HTTPException(
+                status_code=403, 
+                detail="Only admin users can trigger ML data requests"
+            )
+        
+        job_id = request_data.get("job_id")
+        ml_service_id = request_data.get("ml_service_id", "ml-service")
+        request_id = request_data.get("request_id", str(uuid4()))
+        additional_fields = request_data.get("additional_fields", [])
+        
+        if not job_id:
+            raise HTTPException(status_code=400, detail="job_id is required")
+        
+        # Create and send event message
+        event_message = EventMessage(
+            event_id=str(uuid4()),
+            event_type=EventType.JOB_DATA_REQUESTED,
+            source_service="core-service-api",
+            timestamp=datetime.now().isoformat(),
+            data={
+                "job_id": job_id,
+                "ml_service_id": ml_service_id,
+                "request_id": request_id,
+                "additional_fields": additional_fields
+            }
+        )
+        
+        # Publish event to message broker
+        await message_broker.publish_message(
+            event_message,
+            routing_key=f"ml.job_data_requested"
+        )
+        
+        logger.info(f"Job data request sent via RabbitMQ for job_id: {job_id}")
+        
+        return {
+            "status": "success",
+            "message": "Job data request sent via RabbitMQ",
+            "request_id": request_id,
+            "job_id": job_id,
+            "ml_service_id": ml_service_id
+        }
+        
+    except Exception as e:
+        logger.error(f"Error sending job data request via RabbitMQ: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to send request: {str(e)}")
+
+
+@router.post("/ml/request-bulk-job-data")
+async def request_bulk_job_data_for_ml(
+    request_data: dict,
+    current_user: User = Depends(get_current_user),
+):
+    """
+    Trigger bulk job data request to be sent via RabbitMQ to ML service.
+    
+    DEPRECATED: This is a transitional endpoint. ML services should directly 
+    send events to RabbitMQ instead of using HTTP API calls.
+    
+    Expected request_data format:
+    {
+        "ml_service_id": str,
+        "request_id": str (optional),
+        "filters": {
+            "job_ids": List[int] (optional),
+            "limit": int (optional, default 100),
+            "offset": int (optional, default 0),
+            "location": List[str] (optional),
+            "job_type": List[str] (optional),
+            "experience": List[str] (optional),
+            "date_from": str (optional),
+            "date_to": str (optional)
+        },
+        "additional_fields": List[str] (optional)
+    }
+    """
+    try:
+        from ...core.message_broker import EventType, EventMessage, message_broker
+        from uuid import uuid4
+        from datetime import datetime
+        
+        if not current_user.is_admin:
+            raise HTTPException(
+                status_code=403, 
+                detail="Only admin users can trigger ML bulk data requests"
+            )
+        
+        ml_service_id = request_data.get("ml_service_id", "ml-service")
+        request_id = request_data.get("request_id", str(uuid4()))
+        filters = request_data.get("filters", {})
+        additional_fields = request_data.get("additional_fields", [])
+        
+        # Create and send event message
+        event_message = EventMessage(
+            event_id=str(uuid4()),
+            event_type=EventType.BULK_JOB_DATA_REQUESTED,
+            source_service="core-service-api",
+            timestamp=datetime.now().isoformat(),
+            data={
+                "ml_service_id": ml_service_id,
+                "request_id": request_id,
+                "filters": filters,
+                "additional_fields": additional_fields
+            }
+        )
+        
+        # Publish event to message broker
+        await message_broker.publish_message(
+            event_message,
+            routing_key=f"ml.bulk_job_data_requested"
+        )
+        
+        logger.info(f"Bulk job data request sent via RabbitMQ for ML service: {ml_service_id}")
+        
+        return {
+            "status": "success",
+            "message": "Bulk job data request sent via RabbitMQ",
+            "request_id": request_id,
+            "ml_service_id": ml_service_id,
+            "filters": filters
+        }
+        
+    except Exception as e:
+        logger.error(f"Error sending bulk job data request via RabbitMQ: {str(e)}")
+        raise HTTPException(status_code=500, detail=f"Failed to send request: {str(e)}")
 
 
 @router.get("/{job_id}/related", response_model=List[JobResponse])

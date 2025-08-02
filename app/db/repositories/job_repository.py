@@ -1,6 +1,6 @@
 import datetime
 from sqlalchemy.orm import Session
-from sqlalchemy import desc
+from sqlalchemy import desc, distinct
 from datetime import date, timedelta
 from sqlalchemy import desc, or_, and_, func
 from typing import Any, Dict, List, Optional, Tuple
@@ -70,6 +70,9 @@ class JobRepository:
         salary_min: Optional[float] = None,
         salary_max: Optional[float] = None,
         date_from: Optional[date] = None,
+        updated_since: Optional[datetime.datetime] = None,
+        categories: Optional[List[str]] = None,
+        locations: Optional[List[str]] = None,
     ) -> Tuple[List[Job], int]:
         """
         Get jobs with filters and return total count
@@ -99,6 +102,15 @@ class JobRepository:
 
             if date_from:
                 filters.append(Job.posting_date >= date_from)
+                
+            if updated_since:
+                filters.append(Job.updated_at >= updated_since)
+                
+            if categories:
+                filters.append(Job.category.in_(categories))
+                
+            if locations:
+                filters.append(Job.location.in_(locations))
 
             # Apply all filters
             if filters:
@@ -252,3 +264,36 @@ class JobRepository:
         except Exception as e:
             self.db.rollback()
             raise DatabaseException(f"Error deleting job: {str(e)}")
+    
+    def get_distinct_categories(self) -> List[str]:
+        """Get all distinct job categories"""
+        try:
+            categories = self.db.query(distinct(Job.category)).filter(
+                Job.category.isnot(None)
+            ).all()
+            return [cat[0] for cat in categories if cat[0]]
+        except Exception as e:
+            error_msg = f"Error fetching job categories: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
+    
+    def get_distinct_locations(self) -> List[str]:
+        """Get all distinct job locations"""
+        try:
+            locations = self.db.query(distinct(Job.location)).filter(
+                Job.location.isnot(None)
+            ).all()
+            return [loc[0] for loc in locations if loc[0]]
+        except Exception as e:
+            error_msg = f"Error fetching job locations: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)
+    
+    def get_jobs_by_ids(self, job_ids: List[int]) -> List[Job]:
+        """Get multiple jobs by their IDs"""
+        try:
+            return self.db.query(Job).filter(Job.id.in_(job_ids)).all()
+        except Exception as e:
+            error_msg = f"Error fetching jobs by IDs: {str(e)}"
+            logger.error(error_msg)
+            raise DatabaseException(error_msg)

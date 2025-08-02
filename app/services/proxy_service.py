@@ -1,4 +1,3 @@
-from loguru import logger
 from typing import List, Dict, Optional
 import requests
 from sqlalchemy.orm import Session, load_only
@@ -8,6 +7,7 @@ from datetime import datetime, timedelta, timezone
 from ..utils.time_utils import IST
 from ..utils.proxy_validator import ProxyValidator
 from ..models.proxy import Proxy, ProxyProtocol, AnonymityLevel
+from ..core.logger import logger
 
 
 class ProxyService:

@@ -3,7 +3,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
-from loguru import logger
+from ..core.logger import logger
 from typing import Any, Dict
 from sqlalchemy.orm import Session
 from ..services.settings_service import SettingsService

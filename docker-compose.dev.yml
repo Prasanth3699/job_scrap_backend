@@ -1,0 +1,179 @@
+# Development environment for Job Scraper microservices
+version: '3.8'
+
+services:
+  # Core job scraper service
+  job-scraper-core:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DATABASE_URL=postgresql://jobscraper:password@postgres:5432/jobscraper_db
+      - REDIS_URL=redis://redis:6379/0
+      - RABBITMQ_URL=amqp://admin:password@rabbitmq:5672/
+      - ADMIN_SECRET_KEY=${ADMIN_SECRET_KEY:-your-super-secret-admin-key-change-in-production}
+      - INTER_SERVICE_SECRET=${INTER_SERVICE_SECRET:-your-inter-service-secret-key}
+      - SERVICE_JWT_SECRET=${SERVICE_JWT_SECRET:-your-service-jwt-secret-key}
+      - EMAIL_SENDER=${EMAIL_SENDER:-noreply@jobscraper.com}
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD:-your-email-password}
+      - SMTP_SERVER=${SMTP_SERVER:-smtp.gmail.com}
+      - SMTP_PORT=${SMTP_PORT:-587}
+      - ENVIRONMENT=development
+    depends_on:
+      - postgres
+      - redis
+      - rabbitmq
+    volumes:
+      - .:/app
+      - ./uploads:/app/uploads
+    networks:
+      - jobscraper-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  # PostgreSQL database
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: jobscraper_db
+      POSTGRES_USER: jobscraper
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./scripts/init-db.sql:/docker-entrypoint-initdb.d/init-db.sql
+    networks:
+      - jobscraper-network
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U jobscraper -d jobscraper_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  # Redis cache
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      - jobscraper-network
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    command: redis-server --appendonly yes
+
+  # RabbitMQ message broker
+  rabbitmq:
+    image: rabbitmq:3-management-alpine
+    environment:
+      RABBITMQ_DEFAULT_USER: admin
+      RABBITMQ_DEFAULT_PASS: password
+      RABBITMQ_DEFAULT_VHOST: /
+    ports:
+      - "5672:5672"    # AMQP port
+      - "15672:15672"  # Management UI
+    volumes:
+      - rabbitmq_data:/var/lib/rabbitmq
+      - ./config/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+    networks:
+      - jobscraper-network
+    healthcheck:
+      test: ["CMD", "rabbitmq-diagnostics", "check_port_connectivity"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 60s
+
+  # Nginx API Gateway
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "8080:8080"  # Metrics port
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/cache:/var/cache/nginx
+      - ./nginx/logs:/var/log/nginx
+    depends_on:
+      - job-scraper-core
+    networks:
+      - jobscraper-network
+    healthcheck:
+      test: ["CMD", "nginx", "-t"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # ML Service placeholder (you'll implement this)
+  # ml-service:
+  #   build: ../ml-service
+  #   ports:
+  #     - "8001:8000"
+  #   environment:
+  #     - CORE_SERVICE_URL=http://job-scraper-core:8000
+  #     - RABBITMQ_URL=amqp://admin:password@rabbitmq:5672/
+  #   depends_on:
+  #     - rabbitmq
+  #     - job-scraper-core
+  #   networks:
+  #     - jobscraper-network
+
+  # LLM Service placeholder (you'll implement this)
+  # llm-service:
+  #   build: ../llm-service
+  #   ports:
+  #     - "8002:8000"
+  #   environment:
+  #     - CORE_SERVICE_URL=http://job-scraper-core:8000
+  #     - RABBITMQ_URL=amqp://admin:password@rabbitmq:5672/
+  #   depends_on:
+  #     - rabbitmq
+  #     - job-scraper-core
+  #   networks:
+  #     - jobscraper-network
+
+  # Development tools
+  adminer:
+    image: adminer
+    ports:
+      - "8080:8080"
+    networks:
+      - jobscraper-network
+    environment:
+      ADMINER_DEFAULT_SERVER: postgres
+
+  # Message broker monitoring
+  rabbitmq-exporter:
+    image: kbudde/rabbitmq-exporter
+    ports:
+      - "9419:9419"
+    environment:
+      RABBIT_URL: http://rabbitmq:15672
+      RABBIT_USER: admin
+      RABBIT_PASSWORD: password
+    depends_on:
+      - rabbitmq
+    networks:
+      - jobscraper-network
+
+volumes:
+  postgres_data:
+  redis_data:
+  rabbitmq_data:
+
+networks:
+  jobscraper-network:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.20.0.0/16
